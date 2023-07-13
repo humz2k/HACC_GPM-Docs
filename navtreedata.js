@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "HACC", "index.html", [
+  [ "HACC_GPM", "index.html", [
     [ "HACC_GPM", "d7/d5b/md__2home_2hqureshi_2HACC__GPM_2README.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
