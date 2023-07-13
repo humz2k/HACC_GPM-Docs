@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['backward_5ffft_0',['backward_fft',['../d1/d3f/namespaceHACCGPM_1_1parallel.html#add12ee925b08f1eca77ec3d4c2b94aed',1,'HACCGPM::parallel::backward_fft()'],['../d5/d07/namespaceHACCGPM_1_1serial.html#af8d988b0ca5106d342dc9591708ff789',1,'HACCGPM::serial::backward_fft(deviceFFT_t *data, deviceFFT_t *out, int ng, int calls=0)'],['../d5/d07/namespaceHACCGPM_1_1serial.html#a91270d38401a52dacf6e8e04acc903da',1,'HACCGPM::serial::backward_fft(deviceFFT_t *data, int ng, int calls=0)']]],
+  ['binpower_1',['BinPower',['../d0/d33/power_8cu.html#ad6d8985f8d4e557aed24d2c7ed1b18cd',1,'BinPower(const hostFFT_t *__restrict d_powerSpectrum, double *__restrict d_binVals, int *__restrict d_binCounts, double minK, double binDelta, double rl, int ng):&#160;power.cu'],['../d0/d33/power_8cu.html#a72fd8eac69d23435bd6d1842b70115b9',1,'BinPower(const deviceFFT_t *__restrict d_grid, double *__restrict d_binVals, int *__restrict d_binCounts, double minK, double binDelta, double rl, int ng):&#160;power.cu']]]
+];

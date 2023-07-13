@@ -1,0 +1,9 @@
+<map id="kspace_solve_gradient" name="kspace_solve_gradient">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,63,160,88"/>
+<area shape="rect" id="Node000002" href="$d8/d93/solver_8cu.html#a1f0dcdf9546948280cdbc0f9a95fdb8a" title=" " alt="" coords="239,5,333,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,60,227,32,229,37,129,65"/>
+<area shape="rect" id="Node000003" href="$d5/d07/namespaceHACCGPM_1_1serial.html#ad9fb99027bd0e8c4666c28a5b85d419e" title=" " alt="" coords="208,55,364,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="160,73,194,73,194,78,160,78"/>
+<area shape="rect" id="Node000004" href="$d5/d07/namespaceHACCGPM_1_1serial.html#adebf563a2ff1ace956181e3a26ea6cb2" title=" " alt="" coords="208,119,364,159"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="124,86,210,113,209,118,123,91"/>
+</map>
