@@ -7,12 +7,12 @@ var searchData=
   ['cambpystr_4',['CAMBPYSTR',['../df/dab/cambpy_8h.html#a819b0f8b6202f04a000987d3c9cb6267',1,'CAMBPYSTR:&#160;cambpy.h'],['../d1/dc2/ccamb_8c.html#a819b0f8b6202f04a000987d3c9cb6267',1,'CAMBPYSTR:&#160;ccamb.c']]],
   ['ccamb_2ec_5',['ccamb.c',['../d1/dc2/ccamb_8c.html',1,'']]],
   ['ccamb_2eh_6',['ccamb.h',['../d9/dd1/ccamb_8h.html',1,'']]],
-  ['cic_7',['CIC',['../d1/d3f/namespaceHACCGPM_1_1parallel.html#a02e404ddd45f930637353436ca2ad1da',1,'HACCGPM::parallel::CIC()'],['../d5/d07/namespaceHACCGPM_1_1serial.html#ac8b4ba312818288e4c808753bc322702',1,'HACCGPM::serial::CIC()']]],
+  ['cic_7',['CIC',['../d1/d3f/namespaceHACCGPM_1_1parallel.html#a02e404ddd45f930637353436ca2ad1da',1,'HACCGPM::parallel::CIC()'],['../d5/d07/namespaceHACCGPM_1_1serial.html#ac8b4ba312818288e4c808753bc322702',1,'HACCGPM::serial::CIC(deviceFFT_t *d_grid, float4 *d_pos, int ng, int blockSize, int calls=0)'],['../d5/d07/namespaceHACCGPM_1_1serial.html#a2277d28b7124644b35cb0ba534a7ee0f',1,'HACCGPM::serial::CIC(float *d_grid, float4 *d_pos, int ng, int blockSize, int calls=0)'],['../d5/d07/namespaceHACCGPM_1_1serial.html#adb5f8f47310bf06c21e2b1ab1c70af82',1,'HACCGPM::serial::CIC(deviceFFT_t *d_grid, float *d_temp, float4 *d_pos, int ng, int blockSize, int calls=0)']]],
   ['cic_2ecu_8',['cic.cu',['../d6/dce/cic_8cu.html',1,'']]],
   ['cic_5fcalls_9',['CIC_CALLS',['../d6/dce/cic_8cu.html#a793ccc2e7f39360df20ee3f323e3fb8d',1,'cic.cu']]],
   ['cic_5fkernel_5ftime_10',['CIC_KERNEL_TIME',['../d6/dce/cic_8cu.html#ac76179fff32b3529b4a5d73452d35b9d',1,'cic.cu']]],
   ['cic_5ftime_11',['CIC_TIME',['../d6/dce/cic_8cu.html#ae55de4065f3d7f164bf46a83f62a5591',1,'cic.cu']]],
-  ['cickernel_12',['CICKernel',['../d6/dce/cic_8cu.html#adc0dd2818da8e0af8703197df0746abe',1,'cic.cu']]],
+  ['cickernel_12',['CICKernel',['../d6/dce/cic_8cu.html#adc0dd2818da8e0af8703197df0746abe',1,'CICKernel(deviceFFT_t *__restrict grid, const float4 *__restrict my_pos, int ng, float mass):&#160;cic.cu'],['../d6/dce/cic_8cu.html#a227be3f0408dd2add1c6a7db646cb528',1,'CICKernel(float *__restrict grid, const float4 *__restrict my_pos, int ng, float mass):&#160;cic.cu']]],
   ['cickernelparallel_13',['CICKernelParallel',['../d6/dce/cic_8cu.html#aadea9eea5f5984f3f9792f4f4b1c8cbe',1,'cic.cu']]],
   ['combine_14',['combine',['../d8/d93/solver_8cu.html#a71c3109fe66f9f1fcac25bd98c8f486d',1,'solver.cu']]],
   ['combine_5fsends_15',['combine_sends',['../d9/dec/transfers_8cpp.html#a9b07afb81e6ca51846ebbbdc77ec0ad2',1,'transfers.cpp']]],
@@ -21,9 +21,8 @@ var searchData=
   ['coords2rank_18',['coords2rank',['../d9/dec/transfers_8cpp.html#ab693f043882d2b52f64f69058b50dd10',1,'transfers.cpp']]],
   ['copy_19',['copy',['../d1/dc6/particleswapkernels_8cu.html#a5ace1b44eb57b3ce75b5c54575963da5',1,'particleswapkernels.cu']]],
   ['cos_20',['cos',['../d4/d77/greens_8cu.html#a433f2f14e1f68ea413b287f57dfb019c',1,'greens.cu']]],
-  ['count_5fbuffer_21',['count_buffer',['../d1/dc6/particleswapkernels_8cu.html#af3bed3ff133b95fc27995b3aa9ea7df3',1,'particleswapkernels.cu']]],
-  ['cputimer_22',['CPUTimer',['../da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6',1,'haccgpm.hpp']]],
-  ['cputimer_5ft_23',['CPUTimer_t',['../da/d0d/haccgpm_8hpp.html#aa790b6767cf9152c32b179d29c46e3ef',1,'haccgpm.hpp']]],
-  ['cpy_24',['cpy',['../d0/d33/power_8cu.html#abb06d3288ef0b39c8812e8cb8d6c3cc7',1,'power.cu']]],
-  ['cudacall_25',['cudaCall',['../da/d0d/haccgpm_8hpp.html#a28fb452217abf040d6df7890f94a54b9',1,'haccgpm.hpp']]]
+  ['cputimer_21',['CPUTimer',['../da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6',1,'haccgpm.hpp']]],
+  ['cputimer_5ft_22',['CPUTimer_t',['../da/d0d/haccgpm_8hpp.html#aa790b6767cf9152c32b179d29c46e3ef',1,'haccgpm.hpp']]],
+  ['cpy_23',['cpy',['../d0/d33/power_8cu.html#abb06d3288ef0b39c8812e8cb8d6c3cc7',1,'power.cu']]],
+  ['cudacall_24',['cudaCall',['../da/d0d/haccgpm_8hpp.html#a28fb452217abf040d6df7890f94a54b9',1,'haccgpm.hpp']]]
 ];

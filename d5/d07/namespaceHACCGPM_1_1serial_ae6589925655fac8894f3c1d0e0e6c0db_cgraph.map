@@ -1,0 +1,31 @@
+<map id="HACCGPM::serial::GetPowerSpectrum" name="HACCGPM::serial::GetPowerSpectrum">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,200,201,240"/>
+<area shape="rect" id="Node000002" href="$d0/d33/power_8cu.html#ad6d8985f8d4e557aed24d2c7ed1b18cd" title=" " alt="" coords="310,30,389,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,198,168,132,205,95,248,64,271,54,296,47,297,52,273,59,251,69,209,99,171,135,119,201"/>
+<area shape="rect" id="Node000005" href="$d5/d07/namespaceHACCGPM_1_1serial.html#ac8b4ba312818288e4c808753bc322702" title=" " alt="" coords="268,131,431,157"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="168,197,294,158,296,163,169,202"/>
+<area shape="rect" id="Node000007" href="$da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6" title=" " alt="" coords="533,183,617,209"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="202,212,519,196,520,201,202,218"/>
+<area shape="rect" id="Node000008" href="$d0/d33/power_8cu.html#abb06d3288ef0b39c8812e8cb8d6c3cc7" title=" " alt="" coords="328,282,371,307"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="158,238,250,268,315,285,314,290,249,273,156,243"/>
+<area shape="rect" id="Node000009" href="$d0/d33/power_8cu.html#a987c68ca36b003c733161e4039f3a7f5" title=" " alt="" coords="302,331,397,357"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="129,238,182,279,250,318,290,331,288,336,248,322,179,283,125,242"/>
+<area shape="rect" id="Node000010" href="$d5/d07/namespaceHACCGPM_1_1serial.html#a33ccdffdab832aa754528e05d4255b7c" title=" " alt="" coords="249,233,449,258"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="202,227,236,231,236,236,201,233"/>
+<area shape="rect" id="Node000012" href="$d0/d33/power_8cu.html#a37872452600d46f9503dcc360a48adcb" title=" " alt="" coords="304,79,395,105"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="125,197,180,157,248,116,290,101,292,106,250,121,183,161,129,202"/>
+<area shape="rect" id="Node000013" href="$d0/d33/power_8cu.html#a1f629b32d30e906a43f7bc9d31a95aba" title=" " alt="" coords="304,381,395,406"/>
+<area shape="poly" id="edge16_Node000001_Node000013" title=" " alt="" coords="119,239,172,303,209,338,251,367,291,382,289,387,248,372,206,342,168,306,115,242"/>
+<area shape="rect" id="Node000003" href="$d5/d07/namespaceHACCGPM_1_1serial.html#ad9fb99027bd0e8c4666c28a5b85d419e" title=" " alt="" coords="497,69,653,109"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="389,48,485,68,484,73,388,53"/>
+<area shape="rect" id="Node000004" href="$d5/d07/namespaceHACCGPM_1_1serial.html#adebf563a2ff1ace956181e3a26ea6cb2" title=" " alt="" coords="497,5,653,45"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="388,37,483,30,484,35,389,42"/>
+<area shape="rect" id="Node000006" href="$d6/dce/cic_8cu.html#adc0dd2818da8e0af8703197df0746abe" title=" " alt="" coords="534,134,617,159"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="431,142,520,143,520,149,431,148"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="405,154,520,181,519,186,404,159"/>
+<area shape="poly" id="edge11_Node000010_Node000007" title=" " alt="" coords="407,230,519,205,521,211,408,235"/>
+<area shape="rect" id="Node000011" href="$d4/d83/classPlanManager.html#a42f7d34dc999efd9bb3d2665537101e0" title=" " alt="" coords="498,233,653,258"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="450,243,484,243,484,248,450,248"/>
+<area shape="poly" id="edge14_Node000012_Node000003" title=" " alt="" coords="395,89,484,88,484,93,395,94"/>
+<area shape="poly" id="edge15_Node000012_Node000004" title=" " alt="" coords="394,79,449,64,503,47,505,52,450,69,395,84"/>
+</map>

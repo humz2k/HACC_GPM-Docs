@@ -17,7 +17,7 @@ var searchData=
   ['get_5fplan_14',['get_plan',['../d4/d83/classPlanManager.html#a42f7d34dc999efd9bb3d2665537101e0',1,'PlanManager']]],
   ['getfinerpowerspectrum_15',['GetFinerPowerSpectrum',['../d5/d07/namespaceHACCGPM_1_1serial.html#a2c364758c8fc90a0a3d8ac62168c2e4c',1,'HACCGPM::serial']]],
   ['getgreens_16',['getGreens',['../d4/d77/greens_8cu.html#ac57b5d2e3828609345a4862eb07de73d',1,'greens.cu']]],
-  ['getpowerspectrum_17',['GetPowerSpectrum',['../d5/d07/namespaceHACCGPM_1_1serial.html#aa89c1764f5268d9a5780657b7a25f780',1,'HACCGPM::serial']]],
+  ['getpowerspectrum_17',['GetPowerSpectrum',['../d5/d07/namespaceHACCGPM_1_1serial.html#aa89c1764f5268d9a5780657b7a25f780',1,'HACCGPM::serial::GetPowerSpectrum(float4 *d_pos, deviceFFT_t *d_grid, int ng, double rl, int nbins, const char *fname, int nfolds, int blockSize, int calls=0)'],['../d5/d07/namespaceHACCGPM_1_1serial.html#ae6589925655fac8894f3c1d0e0e6c0db',1,'HACCGPM::serial::GetPowerSpectrum(float4 *d_pos, deviceFFT_t *d_grid, float *d_tempgrid, int ng, double rl, int nbins, const char *fname, int nfolds, int blockSize, int calls=0)']]],
   ['gpuassert_18',['gpuAssert',['../da/d0d/haccgpm_8hpp.html#ab3e90881a2476fd461eb2bcfcaa7cf63',1,'haccgpm.hpp']]],
   ['gridexchange_19',['gridExchange',['../d1/d3f/namespaceHACCGPM_1_1parallel.html#ac66d632437a71d40e49ac15c25b5a26f',1,'HACCGPM::parallel']]]
 ];

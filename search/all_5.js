@@ -22,10 +22,11 @@ var searchData=
   ['finalize_5fswfft_19',['finalize_swfft',['../d1/d3f/namespaceHACCGPM_1_1parallel.html#ac91e913d79581a70c40b74ad21ed968d',1,'HACCGPM::parallel']]],
   ['find_5fme_20',['FIND_ME',['../d1/dc2/ccamb_8c.html#a5949f0868e278446612f6e2150001898',1,'ccamb.c']]],
   ['findduplicates_21',['findDuplicates',['../d1/dc6/particleswapkernels_8cu.html#a7fd26c484a73cd812fb32787ed77c52c',1,'particleswapkernels.cu']]],
-  ['foldparticles_22',['foldParticles',['../d0/d33/power_8cu.html#a987c68ca36b003c733161e4039f3a7f5',1,'power.cu']]],
-  ['forward_5ffft_23',['forward_fft',['../d1/d3f/namespaceHACCGPM_1_1parallel.html#ab6fb9d3fbd0ac120db603cad0fe58b40',1,'HACCGPM::parallel::forward_fft()'],['../d5/d07/namespaceHACCGPM_1_1serial.html#a33ccdffdab832aa754528e05d4255b7c',1,'HACCGPM::serial::forward_fft(deviceFFT_t *data, deviceFFT_t *out, int ng, int calls=0)'],['../d5/d07/namespaceHACCGPM_1_1serial.html#af7528d9faa62dea23e52934a46ff118b',1,'HACCGPM::serial::forward_fft(deviceFFT_t *data, int ng, int calls=0)']]],
-  ['forward_5ffft_5fcalls_24',['FORWARD_FFT_CALLS',['../d4/df7/swfftmanager_8cpp.html#a9c343dbee29f4a84fea2a139215aaf3b',1,'swfftmanager.cpp']]],
-  ['forward_5ffft_5ftime_25',['FORWARD_FFT_TIME',['../d4/df7/swfftmanager_8cpp.html#a7409c91becef23e50d820551897fbd93',1,'swfftmanager.cpp']]],
-  ['frac_26',['frac',['../d5/de1/structHACCGPM_1_1Params.html#a8aa635cdca8d48b92f7a9a7d4c1e5f83',1,'HACCGPM::Params']]],
-  ['fscal_27',['fscal',['../db/df0/classHACCGPM_1_1Timestepper.html#a0bd90d6926912b009519e60d43f4b81a',1,'HACCGPM::Timestepper']]]
+  ['float2complex_22',['float2complex',['../d6/dce/cic_8cu.html#a11805ab253d9f29ccccf0395c5bd08da',1,'cic.cu']]],
+  ['foldparticles_23',['foldParticles',['../d0/d33/power_8cu.html#a987c68ca36b003c733161e4039f3a7f5',1,'power.cu']]],
+  ['forward_5ffft_24',['forward_fft',['../d1/d3f/namespaceHACCGPM_1_1parallel.html#ab6fb9d3fbd0ac120db603cad0fe58b40',1,'HACCGPM::parallel::forward_fft()'],['../d5/d07/namespaceHACCGPM_1_1serial.html#a33ccdffdab832aa754528e05d4255b7c',1,'HACCGPM::serial::forward_fft(deviceFFT_t *data, deviceFFT_t *out, int ng, int calls=0)'],['../d5/d07/namespaceHACCGPM_1_1serial.html#af7528d9faa62dea23e52934a46ff118b',1,'HACCGPM::serial::forward_fft(deviceFFT_t *data, int ng, int calls=0)']]],
+  ['forward_5ffft_5fcalls_25',['FORWARD_FFT_CALLS',['../d4/df7/swfftmanager_8cpp.html#a9c343dbee29f4a84fea2a139215aaf3b',1,'swfftmanager.cpp']]],
+  ['forward_5ffft_5ftime_26',['FORWARD_FFT_TIME',['../d4/df7/swfftmanager_8cpp.html#a7409c91becef23e50d820551897fbd93',1,'swfftmanager.cpp']]],
+  ['frac_27',['frac',['../d5/de1/structHACCGPM_1_1Params.html#a8aa635cdca8d48b92f7a9a7d4c1e5f83',1,'HACCGPM::Params']]],
+  ['fscal_28',['fscal',['../db/df0/classHACCGPM_1_1Timestepper.html#a0bd90d6926912b009519e60d43f4b81a',1,'HACCGPM::Timestepper']]]
 ];

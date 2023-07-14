@@ -6,6 +6,8 @@ var structHACCGPM_1_1Params =
     [ "blockSize", "d5/de1/structHACCGPM_1_1Params.html#a571a4ce79600b587e0a89620683fc00d", null ],
     [ "deltaT", "d5/de1/structHACCGPM_1_1Params.html#adb192165bd73752f57fc45e4408def98", null ],
     [ "do_analysis", "d5/de1/structHACCGPM_1_1Params.html#a1b09f5b755c4e4424d101ecdfacd220c", null ],
+    [ "dump_final", "d5/de1/structHACCGPM_1_1Params.html#ac2ce9da8fc53ca0e90512094b22d1ae4", null ],
+    [ "dump_init", "d5/de1/structHACCGPM_1_1Params.html#a56cbeb1a74eed73b4017696e7d59c902", null ],
     [ "dumps", "d5/de1/structHACCGPM_1_1Params.html#a70363c73ad041000f02b7deac5bda56f", null ],
     [ "frac", "d5/de1/structHACCGPM_1_1Params.html#a8aa635cdca8d48b92f7a9a7d4c1e5f83", null ],
     [ "grid_coords", "d5/de1/structHACCGPM_1_1Params.html#afa3eed6c5e54ad99c399ce531fa62168", null ],

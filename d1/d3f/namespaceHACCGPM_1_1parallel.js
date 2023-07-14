@@ -11,12 +11,13 @@ var namespaceHACCGPM_1_1parallel =
     [ "get_local_index", "d1/d3f/namespaceHACCGPM_1_1parallel.html#abcddbac52c4da4a8a55b5b9dbb3940ce", null ],
     [ "gridExchange", "d1/d3f/namespaceHACCGPM_1_1parallel.html#ac66d632437a71d40e49ac15c25b5a26f", null ],
     [ "init_swfft", "d1/d3f/namespaceHACCGPM_1_1parallel.html#acac1f2241bc62f1bf39dce1c0d2f637e", null ],
+    [ "initLoadIntoBuffers", "d1/d3f/namespaceHACCGPM_1_1parallel.html#a732c4638e4b8fc8959263d43cc8cccdf", null ],
+    [ "initTransferParticles", "d1/d3f/namespaceHACCGPM_1_1parallel.html#ab67a1d4d424d75f9fd6046323ae44ec1", null ],
     [ "insertParticles", "d1/d3f/namespaceHACCGPM_1_1parallel.html#ada405e83d092ec5f01435cb23d1e2927", null ],
     [ "loadGridBuffers", "d1/d3f/namespaceHACCGPM_1_1parallel.html#a31a4b3e867d91495908cb284b049c610", null ],
-    [ "loadIntoBuffers", "d1/d3f/namespaceHACCGPM_1_1parallel.html#ade8a96dc38016b00be23ba4c1fc2b3e6", null ],
+    [ "printCICTimes", "d1/d3f/namespaceHACCGPM_1_1parallel.html#aafb47a3e84785288897c7c4c20d7c39f", null ],
     [ "printFFTStats", "d1/d3f/namespaceHACCGPM_1_1parallel.html#a123085a590cbc09148ef1558564afe8d", null ],
     [ "printTransferBytes", "d1/d3f/namespaceHACCGPM_1_1parallel.html#a709934c2ca1db4459e610dc7f7441d7d", null ],
     [ "printTransferTimes", "d1/d3f/namespaceHACCGPM_1_1parallel.html#a3be1b15261819bb255780e9c34d6ad31", null ],
-    [ "timing_stats", "d1/d3f/namespaceHACCGPM_1_1parallel.html#a988a5e3e292fca5fb93bd5c754ff9e3c", null ],
-    [ "transferParticles", "d1/d3f/namespaceHACCGPM_1_1parallel.html#a63680cefed0f7a301de2aa49779afcf6", null ]
+    [ "timing_stats", "d1/d3f/namespaceHACCGPM_1_1parallel.html#a988a5e3e292fca5fb93bd5c754ff9e3c", null ]
 ];

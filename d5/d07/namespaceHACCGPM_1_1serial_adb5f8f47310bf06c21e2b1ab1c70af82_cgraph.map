@@ -1,0 +1,9 @@
+<map id="HACCGPM::serial::CIC" name="HACCGPM::serial::CIC">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,168,80"/>
+<area shape="rect" id="Node000002" href="$d6/dce/cic_8cu.html#adc0dd2818da8e0af8703197df0746abe" title=" " alt="" coords="226,5,309,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,52,212,30,213,35,134,57"/>
+<area shape="rect" id="Node000003" href="$da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6" title=" " alt="" coords="225,55,309,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="168,65,211,65,211,70,168,70"/>
+<area shape="rect" id="Node000004" href="$d6/dce/cic_8cu.html#a11805ab253d9f29ccccf0395c5bd08da" title=" " alt="" coords="216,104,319,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="134,77,208,98,207,103,132,83"/>
+</map>

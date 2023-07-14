@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>HACC_GPM: /home/hqureshi/HACC_GPM/solver.cu Source File</title>
+<title>HACC_GPM: /home/hqureshi/HACC_GPM/src/solver.cu Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('d8/d93/solver_8cu_source.html','../../
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">/home/hqureshi/HACC_GPM/solver.cu</div></div>
+  <div class="headertitle"><div class="title">solver.cu</div></div>
 </div><!--header-->
 <div class="contents">
 <a href="../../d8/d93/solver_8cu.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
@@ -260,8 +260,8 @@ $(document).ready(function(){initNavTree('d8/d93/solver_8cu_source.html','../../
 <div class="ttc" id="anamespaceHACCGPM_1_1serial_html_a33ccdffdab832aa754528e05d4255b7c"><div class="ttname"><a href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a33ccdffdab832aa754528e05d4255b7c">HACCGPM::serial::forward_fft</a></div><div class="ttdeci">void forward_fft(deviceFFT_t *data, deviceFFT_t *out, int ng, int calls=0)</div><div class="ttdef"><b>Definition</b> <a href="../../d2/df9/ffts_8cu_source.html#l00081">ffts.cu:81</a></div></div>
 <div class="ttc" id="anamespaceHACCGPM_1_1serial_html_a3ad482d1daabaede6890859e0934d75a"><div class="ttname"><a href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a3ad482d1daabaede6890859e0934d75a">HACCGPM::serial::Solve</a></div><div class="ttdeci">void Solve(deviceFFT_t *d_rho, hostFFT_t *d_greens, int ng, int blockSize, int calls=0)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d93/solver_8cu_source.html#l00071">solver.cu:71</a></div></div>
 <div class="ttc" id="anamespaceHACCGPM_1_1serial_html_aa38be02d5fae626750b7f03b40a40dab"><div class="ttname"><a href="../../d5/d07/namespaceHACCGPM_1_1serial.html#aa38be02d5fae626750b7f03b40a40dab">HACCGPM::serial::SolveGradient</a></div><div class="ttdeci">void SolveGradient(float4 *d_grad, deviceFFT_t *d_rho, hostFFT_t *d_greens, int ng, int blockSize, int calls=0)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d93/solver_8cu_source.html#l00096">solver.cu:96</a></div></div>
-<div class="ttc" id="anamespaceHACCGPM_1_1serial_html_ad9fb99027bd0e8c4666c28a5b85d419e"><div class="ttname"><a href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ad9fb99027bd0e8c4666c28a5b85d419e">HACCGPM::serial::get_index</a></div><div class="ttdeci">__device__ __forceinline__ int3 get_index(int idx, int ng)</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00217">haccgpm.hpp:217</a></div></div>
-<div class="ttc" id="anamespaceHACCGPM_1_1serial_html_adebf563a2ff1ace956181e3a26ea6cb2"><div class="ttname"><a href="../../d5/d07/namespaceHACCGPM_1_1serial.html#adebf563a2ff1ace956181e3a26ea6cb2">HACCGPM::serial::get_kmodes</a></div><div class="ttdeci">__device__ __forceinline__ float3 get_kmodes(int3 idx3d, int ng, double d)</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00225">haccgpm.hpp:225</a></div></div>
+<div class="ttc" id="anamespaceHACCGPM_1_1serial_html_ad9fb99027bd0e8c4666c28a5b85d419e"><div class="ttname"><a href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ad9fb99027bd0e8c4666c28a5b85d419e">HACCGPM::serial::get_index</a></div><div class="ttdeci">__device__ __forceinline__ int3 get_index(int idx, int ng)</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00220">haccgpm.hpp:220</a></div></div>
+<div class="ttc" id="anamespaceHACCGPM_1_1serial_html_adebf563a2ff1ace956181e3a26ea6cb2"><div class="ttname"><a href="../../d5/d07/namespaceHACCGPM_1_1serial.html#adebf563a2ff1ace956181e3a26ea6cb2">HACCGPM::serial::get_kmodes</a></div><div class="ttdeci">__device__ __forceinline__ float3 get_kmodes(int3 idx3d, int ng, double d)</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00228">haccgpm.hpp:228</a></div></div>
 <div class="ttc" id="anamespaceHACCGPM_1_1serial_html_af8d988b0ca5106d342dc9591708ff789"><div class="ttname"><a href="../../d5/d07/namespaceHACCGPM_1_1serial.html#af8d988b0ca5106d342dc9591708ff789">HACCGPM::serial::backward_fft</a></div><div class="ttdeci">void backward_fft(deviceFFT_t *data, deviceFFT_t *out, int ng, int calls=0)</div><div class="ttdef"><b>Definition</b> <a href="../../d2/df9/ffts_8cu_source.html#l00169">ffts.cu:169</a></div></div>
 <div class="ttc" id="asolver_8cu_html_a1f0dcdf9546948280cdbc0f9a95fdb8a"><div class="ttname"><a href="../../d8/d93/solver_8cu.html#a1f0dcdf9546948280cdbc0f9a95fdb8a">get_gradient</a></div><div class="ttdeci">__device__ __forceinline__ float get_gradient(float kmode)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d93/solver_8cu_source.html#l00007">solver.cu:7</a></div></div>
 <div class="ttc" id="asolver_8cu_html_a2d3738cb7bfa385764cf2f74712ec4e7"><div class="ttname"><a href="../../d8/d93/solver_8cu.html#a2d3738cb7bfa385764cf2f74712ec4e7">kspace_solve</a></div><div class="ttdeci">__global__ void kspace_solve(deviceFFT_t *__restrict d_rho, const hostFFT_t *__restrict d_greens)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d93/solver_8cu_source.html#l00011">solver.cu:11</a></div></div>
@@ -272,7 +272,7 @@ $(document).ready(function(){initNavTree('d8/d93/solver_8cu_source.html','../../
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d8/d93/solver_8cu.html">solver.cu</a></li>
+    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../d8/d93/solver_8cu.html">solver.cu</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

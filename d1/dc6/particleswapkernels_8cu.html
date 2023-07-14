@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>HACC_GPM: /home/hqureshi/HACC_GPM/particleswapkernels.cu File Reference</title>
+<title>HACC_GPM: /home/hqureshi/HACC_GPM/src/particleswapkernels.cu File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -98,27 +98,27 @@ $(document).ready(function(){initNavTree('d1/dc6/particleswapkernels_8cu.html','
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">/home/hqureshi/HACC_GPM/particleswapkernels.cu File Reference</div></div>
+  <div class="headertitle"><div class="title">particleswapkernels.cu File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="../../da/d0d/haccgpm_8hpp_source.html">haccgpm.hpp</a>&quot;</code><br />
-<code>#include &quot;bdwgc/include/gc.h&quot;</code><br />
+<code>#include &quot;../bdwgc/include/gc.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for particleswapkernels.cu:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d9/dac/particleswapkernels_8cu__incl.png" border="0" usemap="#a_2home_2hqureshi_2HACC__GPM_2particleswapkernels_8cu" alt=""/></div>
-<map name="a_2home_2hqureshi_2HACC__GPM_2particleswapkernels_8cu" id="a_2home_2hqureshi_2HACC__GPM_2particleswapkernels_8cu">
-<area shape="rect" title=" " alt="" coords="114,5,310,45"/>
+<div class="center"><img src="../../d9/dac/particleswapkernels_8cu__incl.png" border="0" usemap="#a_2home_2hqureshi_2HACC__GPM_2src_2particleswapkernels_8cu" alt=""/></div>
+<map name="a_2home_2hqureshi_2HACC__GPM_2src_2particleswapkernels_8cu" id="a_2home_2hqureshi_2HACC__GPM_2src_2particleswapkernels_8cu">
+<area shape="rect" title=" " alt="" coords="103,5,321,45"/>
 <area shape="rect" title=" " alt="" coords="67,93,131,119"/>
 <area shape="poly" title=" " alt="" coords="185,48,129,88,126,83,182,44"/>
 <area shape="rect" title=" " alt="" coords="5,167,67,192"/>
 <area shape="poly" title=" " alt="" coords="203,47,178,83,144,121,112,144,79,163,77,158,110,140,141,117,174,80,198,44"/>
 <area shape="rect" href="../../da/d0d/haccgpm_8hpp.html" title=" " alt="" coords="206,93,306,119"/>
 <area shape="poly" title=" " alt="" coords="225,44,245,80,240,83,221,47"/>
-<area shape="rect" title=" " alt="" coords="330,93,465,119"/>
-<area shape="poly" title=" " alt="" coords="259,43,356,85,354,90,257,48"/>
+<area shape="rect" title=" " alt="" coords="331,93,477,119"/>
+<area shape="poly" title=" " alt="" coords="261,43,362,85,360,90,259,48"/>
 <area shape="poly" title=" " alt="" coords="219,121,81,167,79,162,217,116"/>
 <area shape="rect" title=" " alt="" coords="91,167,202,192"/>
 <area shape="poly" title=" " alt="" coords="238,121,179,161,176,157,235,117"/>
@@ -146,10 +146,10 @@ Functions</h2></td></tr>
 <tr class="separator:abec6dfb3c242f73e827f5b91bde54edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ace1b44eb57b3ce75b5c54575963da5"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc6/particleswapkernels_8cu.html#a5ace1b44eb57b3ce75b5c54575963da5">copy</a> (float4 *__restrict dest1, const float4 *__restrict source1, float4 *__restrict dest2, const float4 *__restrict source2, int n)</td></tr>
 <tr class="separator:a5ace1b44eb57b3ce75b5c54575963da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3bed3ff133b95fc27995b3aa9ea7df3"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc6/particleswapkernels_8cu.html#af3bed3ff133b95fc27995b3aa9ea7df3">count_buffer</a> (int *ns, const float4 *__restrict d_pos, int n_particles, int3 local_grid_size)</td></tr>
-<tr class="separator:af3bed3ff133b95fc27995b3aa9ea7df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c89f3ae6b38a60e280f47fa11e6ff82"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc6/particleswapkernels_8cu.html#a6c89f3ae6b38a60e280f47fa11e6ff82">load_buffer</a> (float4 *__restrict d_pos, float4 *__restrict d_vel, float4 *__restrict d_pos_swap, float4 *__restrict d_vel_swap, int *count, int *starts, const float4 *__restrict d_tmppos, const float4 *__restrict d_tmpvel, int3 local_grid_size, int n_particles, int <a class="el" href="../../d1/dc2/ccamb_8c.html#a0be0ed3102aab1d72782301d75cf570b">world_rank</a>)</td></tr>
-<tr class="separator:a6c89f3ae6b38a60e280f47fa11e6ff82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1438ea4370678803976db719c911095b"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc6/particleswapkernels_8cu.html#a1438ea4370678803976db719c911095b">init_count_buffer</a> (int *ns, const float4 *__restrict d_pos, int n_particles, int3 local_grid_size)</td></tr>
+<tr class="separator:a1438ea4370678803976db719c911095b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97414e10cc908d8a0a9a2538300df2d6"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc6/particleswapkernels_8cu.html#a97414e10cc908d8a0a9a2538300df2d6">init_load_buffer</a> (float4 *__restrict d_pos, float4 *__restrict d_vel, float4 *__restrict d_pos_swap, float4 *__restrict d_vel_swap, int *count, int *starts, const float4 *__restrict d_tmppos, const float4 *__restrict d_tmpvel, int3 local_grid_size, int n_particles, int <a class="el" href="../../d1/dc2/ccamb_8c.html#a0be0ed3102aab1d72782301d75cf570b">world_rank</a>)</td></tr>
+<tr class="separator:a97414e10cc908d8a0a9a2538300df2d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fd26c484a73cd812fb32787ed77c52c"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc6/particleswapkernels_8cu.html#a7fd26c484a73cd812fb32787ed77c52c">findDuplicates</a> (const float4 *__restrict d_pos, float4 *__restrict new_particles, int n_new, int n_particles)</td></tr>
 <tr class="separator:a7fd26c484a73cd812fb32787ed77c52c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf4ea5aaed50b7025e1370de8c2414ae"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc6/particleswapkernels_8cu.html#adf4ea5aaed50b7025e1370de8c2414ae">combineParticles</a> (float4 *__restrict d_pos, float4 *__restrict d_vel, const float4 *__restrict new_pos, const float4 *__restrict new_vel, int n_new, int remaining, int n_particles)</td></tr>
@@ -301,73 +301,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   20</span>    dest2[idx] = my_vel;</div>
 <div class="line"><span class="lineno">   21</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html#l00232">HACCGPM::parallel::loadIntoBuffers()</a>.</p>
-
-</div>
-</div>
-<a id="af3bed3ff133b95fc27995b3aa9ea7df3" name="af3bed3ff133b95fc27995b3aa9ea7df3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3bed3ff133b95fc27995b3aa9ea7df3">&#9670;&#160;</a></span>count_buffer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__global__ void count_buffer </td>
-          <td>(</td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>ns</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const float4 *__restrict&#160;</td>
-          <td class="paramname"><em>d_pos</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>n_particles</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int3&#160;</td>
-          <td class="paramname"><em>local_grid_size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html#l00023">23</a> of file <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html">particleswapkernels.cu</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   23</span>                                                                                                            {</div>
-<div class="line"><span class="lineno">   24</span>    <span class="keywordtype">int</span> idx = threadIdx.x+blockDim.x*blockIdx.x;</div>
-<div class="line"><span class="lineno">   25</span>    <span class="keywordflow">if</span> (idx &gt;= n_particles)<span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   26</span>    float4 my_particle = __ldg(&amp;d_pos[idx]);</div>
-<div class="line"><span class="lineno">   27</span>    <span class="keywordflow">if</span> (my_particle.w &lt; -1)<span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   28</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 27; i++){</div>
-<div class="line"><span class="lineno">   29</span>        <span class="keywordtype">int</span> x = (i/3)/3;</div>
-<div class="line"><span class="lineno">   30</span>        <span class="keywordtype">int</span> y = (i - x*3*3)/3;</div>
-<div class="line"><span class="lineno">   31</span>        <span class="keywordtype">int</span> z = i - x*3*3 - y*3;</div>
-<div class="line"><span class="lineno">   32</span>        x = (x-1)*local_grid_size.x;</div>
-<div class="line"><span class="lineno">   33</span>        y = (y-1)*local_grid_size.y;</div>
-<div class="line"><span class="lineno">   34</span>        z = (z-1)*local_grid_size.z;</div>
-<div class="line"><span class="lineno">   35</span>        float3 tmp_particle = make_float3(my_particle.x - x, my_particle.y - y, my_particle.z - z);</div>
-<div class="line"><span class="lineno">   36</span>        <span class="keywordflow">if</span> ((tmp_particle.x &gt;= 0.0f &amp;&amp; tmp_particle.x &lt; local_grid_size.x) &amp;&amp; </div>
-<div class="line"><span class="lineno">   37</span>            (tmp_particle.y &gt;= 0.0f &amp;&amp; tmp_particle.y &lt; local_grid_size.y) &amp;&amp;</div>
-<div class="line"><span class="lineno">   38</span>            (tmp_particle.z &gt;= 0.0f &amp;&amp; tmp_particle.z &lt; local_grid_size.z)){</div>
-<div class="line"><span class="lineno">   39</span>                <span class="comment">//printf(&quot;Particle %g %g %g %g going to idx %d\n&quot;,my_particle.x,my_particle.y,my_particle.z,my_particle.w,i);</span></div>
-<div class="line"><span class="lineno">   40</span>                atomicAdd(&amp;ns[i],1);</div>
-<div class="line"><span class="lineno">   41</span>            }</div>
-<div class="line"><span class="lineno">   42</span> </div>
-<div class="line"><span class="lineno">   43</span>    }</div>
-<div class="line"><span class="lineno">   44</span>}</div>
-</div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html#l00232">HACCGPM::parallel::loadIntoBuffers()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html#l00232">HACCGPM::parallel::initLoadIntoBuffers()</a>.</p>
 
 </div>
 </div>
@@ -426,14 +360,80 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a6c89f3ae6b38a60e280f47fa11e6ff82" name="a6c89f3ae6b38a60e280f47fa11e6ff82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c89f3ae6b38a60e280f47fa11e6ff82">&#9670;&#160;</a></span>load_buffer()</h2>
+<a id="a1438ea4370678803976db719c911095b" name="a1438ea4370678803976db719c911095b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1438ea4370678803976db719c911095b">&#9670;&#160;</a></span>init_count_buffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">__global__ void load_buffer </td>
+          <td class="memname">__global__ void init_count_buffer </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>ns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float4 *__restrict&#160;</td>
+          <td class="paramname"><em>d_pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n_particles</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int3&#160;</td>
+          <td class="paramname"><em>local_grid_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html#l00023">23</a> of file <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html">particleswapkernels.cu</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   23</span>                                                                                                                 {</div>
+<div class="line"><span class="lineno">   24</span>    <span class="keywordtype">int</span> idx = threadIdx.x+blockDim.x*blockIdx.x;</div>
+<div class="line"><span class="lineno">   25</span>    <span class="keywordflow">if</span> (idx &gt;= n_particles)<span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   26</span>    float4 my_particle = __ldg(&amp;d_pos[idx]);</div>
+<div class="line"><span class="lineno">   27</span>    <span class="keywordflow">if</span> (my_particle.w &lt; -1)<span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   28</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 27; i++){</div>
+<div class="line"><span class="lineno">   29</span>        <span class="keywordtype">int</span> x = (i/3)/3;</div>
+<div class="line"><span class="lineno">   30</span>        <span class="keywordtype">int</span> y = (i - x*3*3)/3;</div>
+<div class="line"><span class="lineno">   31</span>        <span class="keywordtype">int</span> z = i - x*3*3 - y*3;</div>
+<div class="line"><span class="lineno">   32</span>        x = (x-1)*local_grid_size.x;</div>
+<div class="line"><span class="lineno">   33</span>        y = (y-1)*local_grid_size.y;</div>
+<div class="line"><span class="lineno">   34</span>        z = (z-1)*local_grid_size.z;</div>
+<div class="line"><span class="lineno">   35</span>        float3 tmp_particle = make_float3(my_particle.x - x, my_particle.y - y, my_particle.z - z);</div>
+<div class="line"><span class="lineno">   36</span>        <span class="keywordflow">if</span> ((tmp_particle.x &gt; -1.0f &amp;&amp; tmp_particle.x &lt; local_grid_size.x) &amp;&amp; </div>
+<div class="line"><span class="lineno">   37</span>            (tmp_particle.y &gt; -1.0f &amp;&amp; tmp_particle.y &lt; local_grid_size.y) &amp;&amp;</div>
+<div class="line"><span class="lineno">   38</span>            (tmp_particle.z &gt; -1.0f &amp;&amp; tmp_particle.z &lt; local_grid_size.z)){</div>
+<div class="line"><span class="lineno">   39</span>                <span class="comment">//printf(&quot;Particle %g %g %g %g going to idx %d\n&quot;,my_particle.x,my_particle.y,my_particle.z,my_particle.w,i);</span></div>
+<div class="line"><span class="lineno">   40</span>                atomicAdd(&amp;ns[i],1);</div>
+<div class="line"><span class="lineno">   41</span>            }</div>
+<div class="line"><span class="lineno">   42</span> </div>
+<div class="line"><span class="lineno">   43</span>    }</div>
+<div class="line"><span class="lineno">   44</span>}</div>
+</div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html#l00232">HACCGPM::parallel::initLoadIntoBuffers()</a>.</p>
+
+</div>
+</div>
+<a id="a97414e10cc908d8a0a9a2538300df2d6" name="a97414e10cc908d8a0a9a2538300df2d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97414e10cc908d8a0a9a2538300df2d6">&#9670;&#160;</a></span>init_load_buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__global__ void init_load_buffer </td>
           <td>(</td>
           <td class="paramtype">float4 *__restrict&#160;</td>
           <td class="paramname"><em>d_pos</em>, </td>
@@ -507,7 +507,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html#l00046">46</a> of file <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html">particleswapkernels.cu</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   46</span>                                                                                                                                                                                                                                                                                                   {</div>
+<div class="fragment"><div class="line"><span class="lineno">   46</span>                                                                                                                                                                                                                                                                                                        {</div>
 <div class="line"><span class="lineno">   47</span>    <span class="keywordtype">int</span> idx = threadIdx.x+blockDim.x*blockIdx.x;</div>
 <div class="line"><span class="lineno">   48</span>    <span class="keywordflow">if</span> (idx &gt;= n_particles)<span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">   49</span>    float4 my_particle = __ldg(&amp;d_tmppos[idx]);</div>
@@ -521,9 +521,9 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   57</span>        y = (y-1)*local_grid_size.y;</div>
 <div class="line"><span class="lineno">   58</span>        z = (z-1)*local_grid_size.z;</div>
 <div class="line"><span class="lineno">   59</span>        float4 tmp_particle = make_float4(my_particle.x - x, my_particle.y - y, my_particle.z - z, my_particle.w);</div>
-<div class="line"><span class="lineno">   60</span>        <span class="keywordflow">if</span> ((tmp_particle.x &gt;= 0.0f &amp;&amp; tmp_particle.x &lt; local_grid_size.x) &amp;&amp; </div>
-<div class="line"><span class="lineno">   61</span>            (tmp_particle.y &gt;= 0.0f &amp;&amp; tmp_particle.y &lt; local_grid_size.y) &amp;&amp;</div>
-<div class="line"><span class="lineno">   62</span>            (tmp_particle.z &gt;= 0.0f &amp;&amp; tmp_particle.z &lt; local_grid_size.z)){</div>
+<div class="line"><span class="lineno">   60</span>        <span class="keywordflow">if</span> ((tmp_particle.x &gt; -1.0f &amp;&amp; tmp_particle.x &lt; local_grid_size.x) &amp;&amp; </div>
+<div class="line"><span class="lineno">   61</span>            (tmp_particle.y &gt; -1.0f &amp;&amp; tmp_particle.y &lt; local_grid_size.y) &amp;&amp;</div>
+<div class="line"><span class="lineno">   62</span>            (tmp_particle.z &gt; -1.0f &amp;&amp; tmp_particle.z &lt; local_grid_size.z)){</div>
 <div class="line"><span class="lineno">   63</span>                <span class="comment">//printf(&quot;Particle %g %g %g %g going to idx %d\n&quot;,my_particle.x,my_particle.y,my_particle.z,my_particle.w,i);</span></div>
 <div class="line"><span class="lineno">   64</span>                float4* pos_dest;</div>
 <div class="line"><span class="lineno">   65</span>                float4* vel_dest;</div>
@@ -547,7 +547,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   83</span>    }</div>
 <div class="line"><span class="lineno">   84</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html#l00232">HACCGPM::parallel::loadIntoBuffers()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html#l00232">HACCGPM::parallel::initLoadIntoBuffers()</a>.</p>
 
 </div>
 </div>
@@ -705,7 +705,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   11</span>    d_pos[idx] = make_float4(0,0,0,-10);</div>
 <div class="line"><span class="lineno">   12</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html#l00232">HACCGPM::parallel::loadIntoBuffers()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html#l00232">HACCGPM::parallel::initLoadIntoBuffers()</a>.</p>
 
 </div>
 </div>
@@ -714,7 +714,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d1/dc6/particleswapkernels_8cu.html">particleswapkernels.cu</a></li>
+    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../d1/dc6/particleswapkernels_8cu.html">particleswapkernels.cu</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

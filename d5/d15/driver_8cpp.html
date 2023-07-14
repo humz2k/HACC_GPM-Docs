@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>HACC_GPM: /home/hqureshi/HACC_GPM/driver.cpp File Reference</title>
+<title>HACC_GPM: /home/hqureshi/HACC_GPM/src/driver.cpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -98,21 +98,21 @@ $(document).ready(function(){initNavTree('d5/d15/driver_8cpp.html','../../'); in
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">/home/hqureshi/HACC_GPM/driver.cpp File Reference</div></div>
+  <div class="headertitle"><div class="title">driver.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="../../da/d0d/haccgpm_8hpp_source.html">haccgpm.hpp</a>&quot;</code><br />
 <code>#include &lt;mpi.h&gt;</code><br />
-<code>#include &quot;swfft-all-to-all/include/swfft.hpp&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d9/dd1/ccamb_8h_source.html">cambTools/ccamb.h</a>&quot;</code><br />
-<code>#include &quot;bdwgc/include/gc.h&quot;</code><br />
+<code>#include &quot;../swfft-all-to-all/include/swfft.hpp&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d9/dd1/ccamb_8h_source.html">../cambTools/ccamb.h</a>&quot;</code><br />
+<code>#include &quot;../bdwgc/include/gc.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for driver.cpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d5/de3/driver_8cpp__incl.png" border="0" usemap="#a_2home_2hqureshi_2HACC__GPM_2driver_8cpp" alt=""/></div>
-<map name="a_2home_2hqureshi_2HACC__GPM_2driver_8cpp" id="a_2home_2hqureshi_2HACC__GPM_2driver_8cpp">
+<div class="center"><img src="../../d5/de3/driver_8cpp__incl.png" border="0" usemap="#a_2home_2hqureshi_2HACC__GPM_2src_2driver_8cpp" alt=""/></div>
+<map name="a_2home_2hqureshi_2HACC__GPM_2src_2driver_8cpp" id="a_2home_2hqureshi_2HACC__GPM_2src_2driver_8cpp">
 <area shape="rect" title=" " alt="" coords="280,5,435,45"/>
 <area shape="rect" title=" " alt="" coords="67,101,131,126"/>
 <area shape="poly" title=" " alt="" coords="293,48,150,96,144,98,142,93,148,91,291,43"/>
@@ -122,12 +122,12 @@ Include dependency graph for driver.cpp:</div>
 <area shape="poly" title=" " alt="" coords="336,48,283,93,279,89,332,44"/>
 <area shape="rect" title=" " alt="" coords="330,101,385,126"/>
 <area shape="poly" title=" " alt="" coords="360,46,360,87,355,87,355,46"/>
-<area shape="rect" title=" " alt="" coords="409,93,554,133"/>
-<area shape="poly" title=" " alt="" coords="388,44,443,83,440,87,385,48"/>
-<area shape="rect" href="../../d9/dd1/ccamb_8h.html" title=" " alt="" coords="578,101,718,126"/>
-<area shape="poly" title=" " alt="" coords="424,43,594,94,592,99,423,48"/>
-<area shape="rect" title=" " alt="" coords="742,101,877,126"/>
-<area shape="poly" title=" " alt="" coords="435,35,574,59,731,91,749,95,748,100,730,96,573,65,434,40"/>
+<area shape="rect" title=" " alt="" coords="409,93,535,133"/>
+<area shape="poly" title=" " alt="" coords="386,44,436,83,433,87,382,48"/>
+<area shape="rect" href="../../d9/dd1/ccamb_8h.html" title=" " alt="" coords="559,101,711,126"/>
+<area shape="poly" title=" " alt="" coords="421,43,582,94,581,99,420,48"/>
+<area shape="rect" title=" " alt="" coords="735,101,881,126"/>
+<area shape="poly" title=" " alt="" coords="435,36,723,91,743,95,741,100,722,96,434,41"/>
 <area shape="poly" title=" " alt="" coords="222,129,80,181,79,176,220,124"/>
 <area shape="rect" title=" " alt="" coords="91,181,202,207"/>
 <area shape="poly" title=" " alt="" coords="240,128,177,175,174,171,237,124"/>
@@ -220,174 +220,175 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d15/driver_8cpp_source.html#l00189">189</a> of file <a class="el" href="../../d5/d15/driver_8cpp_source.html">driver.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  189</span>                               {</div>
-<div class="line"><span class="lineno">  190</span> </div>
-<div class="line"><span class="lineno">  191</span>    MPI_Init(NULL,NULL);</div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d15/driver_8cpp_source.html#l00191">191</a> of file <a class="el" href="../../d5/d15/driver_8cpp_source.html">driver.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  191</span>                               {</div>
 <div class="line"><span class="lineno">  192</span> </div>
-<div class="line"><span class="lineno">  193</span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="../../d1/dc2/ccamb_8c.html#a0be0ed3102aab1d72782301d75cf570b">world_rank</a>;</div>
-<div class="line"><span class="lineno">  194</span>    <span class="keywordtype">int</span> world_size;</div>
-<div class="line"><span class="lineno">  195</span> </div>
-<div class="line"><span class="lineno">  196</span>    MPI_Comm_rank(MPI_COMM_WORLD,&amp;<a class="code hl_variable" href="../../d1/dc2/ccamb_8c.html#a0be0ed3102aab1d72782301d75cf570b">world_rank</a>);</div>
-<div class="line"><span class="lineno">  197</span>    MPI_Comm_size(MPI_COMM_WORLD,&amp;world_size);</div>
-<div class="line"><span class="lineno">  198</span> </div>
-<div class="line"><span class="lineno">  199</span>    <span class="keywordflow">if</span> (argc != 2){</div>
-<div class="line"><span class="lineno">  200</span>        printf(<span class="stringliteral">&quot;USAGE: main params\n&quot;</span>);</div>
-<div class="line"><span class="lineno">  201</span>        <span class="keywordflow">return</span> 1;</div>
-<div class="line"><span class="lineno">  202</span>    }</div>
-<div class="line"><span class="lineno">  203</span>    <span class="keywordtype">int</span> out = 1;</div>
-<div class="line"><span class="lineno">  204</span> </div>
-<div class="line"><span class="lineno">  205</span>    <span class="keywordflow">if</span> (world_size == 1){</div>
-<div class="line"><span class="lineno">  206</span>        printf(<span class="stringliteral">&quot;\n=========\nRUNNING IN SERIAL MODE\n=========\n&quot;</span>);</div>
-<div class="line"><span class="lineno">  207</span>        out = <a class="code hl_function" href="../../d5/d15/driver_8cpp.html#a89aac19f49069ba0dc8393e283784112">serial</a>(argv[1]);</div>
-<div class="line"><span class="lineno">  208</span>    } <span class="keywordflow">else</span>{</div>
-<div class="line"><span class="lineno">  209</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d1/dc2/ccamb_8c.html#a0be0ed3102aab1d72782301d75cf570b">world_rank</a> == 0){</div>
-<div class="line"><span class="lineno">  210</span>            printf(<span class="stringliteral">&quot;\n=========\nRUNNING IN PARLLEL MODE\n=========\n&quot;</span>);</div>
-<div class="line"><span class="lineno">  211</span>        }</div>
-<div class="line"><span class="lineno">  212</span>        out = <a class="code hl_function" href="../../d5/d15/driver_8cpp.html#aa3f472f1ca752b97ec41b62c5afa64b1">parallel</a>(argv[1]);</div>
-<div class="line"><span class="lineno">  213</span>    }</div>
-<div class="line"><span class="lineno">  214</span> </div>
-<div class="line"><span class="lineno">  215</span>    MPI_Finalize();</div>
+<div class="line"><span class="lineno">  193</span>    MPI_Init(NULL,NULL);</div>
+<div class="line"><span class="lineno">  194</span> </div>
+<div class="line"><span class="lineno">  195</span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="../../d1/dc2/ccamb_8c.html#a0be0ed3102aab1d72782301d75cf570b">world_rank</a>;</div>
+<div class="line"><span class="lineno">  196</span>    <span class="keywordtype">int</span> world_size;</div>
+<div class="line"><span class="lineno">  197</span> </div>
+<div class="line"><span class="lineno">  198</span>    MPI_Comm_rank(MPI_COMM_WORLD,&amp;<a class="code hl_variable" href="../../d1/dc2/ccamb_8c.html#a0be0ed3102aab1d72782301d75cf570b">world_rank</a>);</div>
+<div class="line"><span class="lineno">  199</span>    MPI_Comm_size(MPI_COMM_WORLD,&amp;world_size);</div>
+<div class="line"><span class="lineno">  200</span> </div>
+<div class="line"><span class="lineno">  201</span>    <span class="keywordflow">if</span> (argc != 2){</div>
+<div class="line"><span class="lineno">  202</span>        printf(<span class="stringliteral">&quot;USAGE: main params\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  203</span>        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><span class="lineno">  204</span>    }</div>
+<div class="line"><span class="lineno">  205</span>    <span class="keywordtype">int</span> out = 1;</div>
+<div class="line"><span class="lineno">  206</span> </div>
+<div class="line"><span class="lineno">  207</span>    <span class="keywordflow">if</span> (world_size == 1){</div>
+<div class="line"><span class="lineno">  208</span>        printf(<span class="stringliteral">&quot;\n=========\nRUNNING IN SERIAL MODE\n=========\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  209</span>        out = <a class="code hl_function" href="../../d5/d15/driver_8cpp.html#a89aac19f49069ba0dc8393e283784112">serial</a>(argv[1]);</div>
+<div class="line"><span class="lineno">  210</span>    } <span class="keywordflow">else</span>{</div>
+<div class="line"><span class="lineno">  211</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d1/dc2/ccamb_8c.html#a0be0ed3102aab1d72782301d75cf570b">world_rank</a> == 0){</div>
+<div class="line"><span class="lineno">  212</span>            printf(<span class="stringliteral">&quot;\n=========\nRUNNING IN PARLLEL MODE\n=========\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  213</span>        }</div>
+<div class="line"><span class="lineno">  214</span>        out = <a class="code hl_function" href="../../d5/d15/driver_8cpp.html#aa3f472f1ca752b97ec41b62c5afa64b1">parallel</a>(argv[1]);</div>
+<div class="line"><span class="lineno">  215</span>    }</div>
 <div class="line"><span class="lineno">  216</span> </div>
-<div class="line"><span class="lineno">  217</span>    <span class="keywordflow">return</span> out;</div>
-<div class="line"><span class="lineno">  218</span>}</div>
+<div class="line"><span class="lineno">  217</span>    MPI_Finalize();</div>
+<div class="line"><span class="lineno">  218</span> </div>
+<div class="line"><span class="lineno">  219</span>    <span class="keywordflow">return</span> out;</div>
+<div class="line"><span class="lineno">  220</span>}</div>
 <div class="ttc" id="accamb_8c_html_a0be0ed3102aab1d72782301d75cf570b"><div class="ttname"><a href="../../d1/dc2/ccamb_8c.html#a0be0ed3102aab1d72782301d75cf570b">world_rank</a></div><div class="ttdeci">int world_rank</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dc2/ccamb_8c_source.html#l00020">ccamb.c:20</a></div></div>
 <div class="ttc" id="adriver_8cpp_html_a89aac19f49069ba0dc8393e283784112"><div class="ttname"><a href="../../d5/d15/driver_8cpp.html#a89aac19f49069ba0dc8393e283784112">serial</a></div><div class="ttdeci">int serial(const char *params_file)</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d15/driver_8cpp_source.html#l00012">driver.cpp:12</a></div></div>
-<div class="ttc" id="adriver_8cpp_html_aa3f472f1ca752b97ec41b62c5afa64b1"><div class="ttname"><a href="../../d5/d15/driver_8cpp.html#aa3f472f1ca752b97ec41b62c5afa64b1">parallel</a></div><div class="ttdeci">int parallel(const char *params_file)</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d15/driver_8cpp_source.html#l00119">driver.cpp:119</a></div></div>
+<div class="ttc" id="adriver_8cpp_html_aa3f472f1ca752b97ec41b62c5afa64b1"><div class="ttname"><a href="../../d5/d15/driver_8cpp.html#aa3f472f1ca752b97ec41b62c5afa64b1">parallel</a></div><div class="ttdeci">int parallel(const char *params_file)</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d15/driver_8cpp_source.html#l00123">driver.cpp:123</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d5/d15/driver_8cpp_source.html#l00119">parallel()</a>, <a class="el" href="../../d5/d15/driver_8cpp_source.html#l00012">serial()</a>, and <a class="el" href="../../d1/dc2/ccamb_8c_source.html#l00020">world_rank</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d15/driver_8cpp_source.html#l00123">parallel()</a>, <a class="el" href="../../d5/d15/driver_8cpp_source.html#l00012">serial()</a>, and <a class="el" href="../../d1/dc2/ccamb_8c_source.html#l00020">world_rank</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d5/d15/driver_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph.png" border="0" usemap="#ad5/d15/driver_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph" alt=""/></div>
 <map name="ad5/d15/driver_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph" id="ad5/d15/driver_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph">
-<area shape="rect" title=" " alt="" coords="5,1016,56,1041"/>
-<area shape="rect" href="../../d5/d15/driver_8cpp.html#aa3f472f1ca752b97ec41b62c5afa64b1" title=" " alt="" coords="104,645,167,671"/>
-<area shape="poly" title=" " alt="" coords="32,1015,125,683,131,685,37,1017"/>
-<area shape="rect" href="../../d5/d15/driver_8cpp.html#a89aac19f49069ba0dc8393e283784112" title=" " alt="" coords="109,1359,162,1384"/>
-<area shape="poly" title=" " alt="" coords="37,1041,130,1345,125,1346,32,1042"/>
-<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a02e404ddd45f930637353436ca2ad1da" title=" " alt="" coords="240,252,412,277"/>
-<area shape="poly" title=" " alt="" coords="134,645,141,572,155,464,179,358,194,317,213,288,226,278,229,282,217,292,199,319,184,360,161,465,146,572,139,645"/>
-<area shape="rect" href="../../da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6" title=" " alt="" coords="771,993,855,1019"/>
-<area shape="poly" title=" " alt="" coords="167,657,481,679,644,694,698,702,724,709,740,729,755,758,780,833,799,914,811,979,806,980,794,916,775,835,750,760,736,732,721,714,697,707,643,699,481,684,167,663"/>
-<area shape="rect" href="../../d1/dc2/ccamb_8c.html#a5ab88a74581ba806512989a18ab0da32" title=" " alt="" coords="271,788,381,813"/>
-<area shape="poly" title=" " alt="" coords="143,670,169,721,190,749,216,773,236,784,259,791,257,796,234,789,213,778,186,753,164,724,138,672"/>
-<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#ac91e913d79581a70c40b74ad21ed968d" title=" " alt="" coords="252,302,400,342"/>
-<area shape="poly" title=" " alt="" coords="134,645,143,583,160,496,183,410,197,376,213,352,238,335,241,339,217,356,202,378,188,411,165,497,149,584,140,646"/>
-<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#af10a44b19c6bfe6e4edd7776b4a0df5c" title=" " alt="" coords="241,723,411,763"/>
-<area shape="poly" title=" " alt="" coords="156,669,216,702,249,716,247,721,214,707,154,673"/>
-<area shape="rect" href="../../d1/dc2/ccamb_8c.html#acede3def4aca9816e9ed0d9f91a67567" title=" " alt="" coords="283,837,369,863"/>
-<area shape="poly" title=" " alt="" coords="140,670,147,702,161,744,184,788,199,807,216,824,242,838,270,845,269,850,240,843,213,828,195,811,179,790,156,746,142,704,135,672"/>
-<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#acac1f2241bc62f1bf39dce1c0d2f637e" title=" " alt="" coords="252,430,400,470"/>
-<area shape="poly" title=" " alt="" coords="135,645,142,612,156,567,179,521,195,499,213,480,238,464,241,469,216,484,199,502,184,523,161,569,147,613,140,646"/>
-<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a123085a590cbc09148ef1558564afe8d" title=" " alt="" coords="252,494,400,534"/>
-<area shape="poly" title=" " alt="" coords="140,644,167,599,188,573,213,551,238,536,240,541,216,555,192,577,172,602,144,646"/>
-<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a988a5e3e292fca5fb93bd5c754ff9e3c" title=" " alt="" coords="530,551,678,591"/>
-<area shape="poly" title=" " alt="" coords="146,643,175,617,214,594,291,572,372,561,449,558,516,560,516,565,449,564,372,567,292,578,216,599,178,621,149,647"/>
-<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a709934c2ca1db4459e610dc7f7441d7d" title=" " alt="" coords="252,609,400,649"/>
-<area shape="poly" title=" " alt="" coords="166,651,238,640,239,645,167,656"/>
-<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a3be1b15261819bb255780e9c34d6ad31" title=" " alt="" coords="252,366,400,406"/>
-<area shape="poly" title=" " alt="" coords="135,645,164,526,187,460,200,434,213,416,238,399,241,404,217,420,204,437,192,462,169,528,140,646"/>
-<area shape="rect" href="../../d5/d1c/namespaceHACCGPM.html#a3693eae7739d13e58be7ba8865e563f7" title=" " alt="" coords="239,887,413,912"/>
-<area shape="poly" title=" " alt="" coords="139,671,143,711,155,766,178,824,195,851,216,873,228,882,225,886,213,877,191,854,174,827,150,768,138,712,133,671"/>
-<area shape="rect" href="../../db/df0/classHACCGPM_1_1Timestepper.html#a27407a8033a031a536cdcf76f882b440" title=" " alt="" coords="241,1001,411,1041"/>
-<area shape="poly" title=" " alt="" coords="139,670,148,736,163,832,187,926,201,962,217,987,230,998,227,1002,213,990,196,965,182,927,158,833,142,737,134,671"/>
-<area shape="rect" href="../../db/df0/classHACCGPM_1_1Timestepper.html#a6155f2c22c7bc7ceb485685c3a82ba6e" title=" " alt="" coords="241,1065,411,1105"/>
-<area shape="poly" title=" " alt="" coords="139,671,145,748,160,863,183,977,199,1021,217,1051,230,1062,227,1067,213,1054,194,1023,178,978,154,864,140,749,134,671"/>
-<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a63680cefed0f7a301de2aa49779afcf6" title=" " alt="" coords="252,175,400,215"/>
-<area shape="poly" title=" " alt="" coords="133,645,140,564,154,442,178,320,194,272,213,238,238,217,241,221,217,241,199,274,183,322,160,443,145,564,139,645"/>
-<area shape="rect" href="../../d6/dce/cic_8cu.html#aadea9eea5f5984f3f9792f4f4b1c8cbe" title=" " alt="" coords="541,451,667,476"/>
-<area shape="poly" title=" " alt="" coords="413,272,439,288,454,307,462,326,464,364,466,401,473,419,487,436,506,449,528,456,526,462,504,453,484,440,468,422,461,402,459,364,457,327,450,309,436,292,411,277"/>
-<area shape="poly" title=" " alt="" coords="414,272,439,288,458,313,466,338,466,364,464,389,461,414,462,438,470,462,487,485,516,506,545,514,574,514,604,510,635,506,665,507,695,516,725,538,746,572,765,622,779,683,791,749,807,882,814,979,809,980,801,882,786,750,774,684,759,623,742,574,721,541,693,520,664,512,635,511,605,515,575,519,544,519,513,510,483,489,465,465,457,439,456,414,459,388,461,364,460,339,453,315,436,292,411,276"/>
-<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#ac66d632437a71d40e49ac15c25b5a26f" title=" " alt="" coords="530,386,678,426"/>
-<area shape="poly" title=" " alt="" coords="414,274,439,288,457,309,464,330,471,351,487,371,518,388,515,392,484,375,466,354,459,332,452,311,436,292,411,279"/>
-<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#add12ee925b08f1eca77ec3d4c2b94aed" title=" " alt="" coords="530,787,678,827"/>
-<area shape="poly" title=" " alt="" coords="412,760,517,785,516,790,410,765"/>
-<area shape="rect" href="../../de/d3b/initializer_8cu.html#a8d1235c9dcec22662164f05aca0fe102" title=" " alt="" coords="514,723,694,763"/>
-<area shape="poly" title=" " alt="" coords="411,741,500,741,500,746,411,746"/>
-<area shape="rect" href="../../d1/dc2/ccamb_8c.html#ac0e00d8b9c96e56e190e4c04d30fb237" title=" " alt="" coords="525,901,683,927"/>
-<area shape="poly" title=" " alt="" coords="413,758,439,775,452,789,459,804,463,834,468,862,475,875,487,888,513,902,510,907,484,892,471,878,463,864,458,834,454,806,447,792,436,779,410,762"/>
-<area shape="rect" href="../../de/d3b/initializer_8cu.html#a2fe476c02dd57a3bf0adeed08604e935" title=" " alt="" coords="552,951,656,976"/>
-<area shape="poly" title=" " alt="" coords="412,756,439,775,455,796,462,817,463,859,464,899,472,919,487,937,511,952,539,960,537,965,509,957,484,941,467,921,459,900,458,859,457,818,450,798,435,779,409,761"/>
-<area shape="rect" href="../../de/d3b/initializer_8cu.html#a0ff351b62d308a913e30708b2ce6952e" title=" " alt="" coords="565,1000,643,1025"/>
-<area shape="poly" title=" " alt="" coords="412,756,439,775,458,802,466,830,466,857,463,884,460,911,461,937,469,962,487,987,501,997,517,1004,551,1012,550,1017,515,1009,498,1002,483,991,464,964,455,937,455,910,458,884,461,857,460,830,453,804,435,779,409,760"/>
-<area shape="rect" href="../../de/d3b/initializer_8cu.html#ac29241f3695227eb88a70b902a8b3cdb" title=" " alt="" coords="529,852,679,877"/>
-<area shape="poly" title=" " alt="" coords="412,760,439,775,455,791,463,807,472,823,487,837,516,851,514,855,484,842,467,826,459,810,451,794,436,779,409,765"/>
-<area shape="poly" title=" " alt="" coords="679,816,703,825,724,839,755,871,779,909,797,947,808,979,803,981,792,949,775,912,751,874,721,843,700,830,677,821"/>
-<area shape="poly" title=" " alt="" coords="401,527,517,551,516,556,400,532"/>
-<area shape="poly" title=" " alt="" coords="401,395,421,404,439,416,452,430,459,445,464,475,469,503,476,517,487,531,518,551,516,555,484,535,471,520,464,505,459,476,454,447,447,433,436,420,419,408,399,400"/>
-<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ae31040d68a45a644d5e079616e99061c" title=" " alt="" coords="510,1061,698,1087"/>
-<area shape="poly" title=" " alt="" coords="412,1034,525,1056,524,1061,411,1040"/>
-<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ab791cb661ee56bd0e61992d605b9dd80" title=" " alt="" coords="526,1111,682,1151"/>
-<area shape="poly" title=" " alt="" coords="413,1038,439,1050,454,1062,463,1074,472,1086,487,1097,514,1109,512,1114,484,1102,469,1090,459,1078,450,1066,436,1055,411,1043"/>
-<area shape="poly" title=" " alt="" coords="412,1079,496,1075,496,1081,412,1084"/>
-<area shape="poly" title=" " alt="" coords="412,1096,513,1113,512,1119,411,1102"/>
-<area shape="poly" title=" " alt="" coords="400,184,487,178,583,176,668,184,701,193,725,207,736,224,746,251,763,333,778,441,790,565,806,811,814,980,809,980,801,811,784,565,772,442,758,334,740,253,731,226,721,211,699,198,667,189,583,181,487,183,400,189"/>
-<area shape="rect" href="../../d9/dec/transfers_8cpp.html#a9b07afb81e6ca51846ebbbdc77ec0ad2" title=" " alt="" coords="547,5,661,31"/>
-<area shape="poly" title=" " alt="" coords="339,173,397,107,438,71,484,41,532,24,534,29,487,46,442,75,401,111,343,177"/>
-<area shape="rect" href="../../d9/dec/transfers_8cpp.html#a623988a859e51c0c16684d10bd07df87" title=" " alt="" coords="789,63,836,88"/>
-<area shape="poly" title=" " alt="" coords="400,179,549,148,722,105,776,87,777,92,723,110,550,153,401,184"/>
-<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#ada405e83d092ec5f01435cb23d1e2927" title=" " alt="" coords="530,55,678,95"/>
-<area shape="poly" title=" " alt="" coords="360,173,418,142,484,112,522,97,524,102,486,116,420,147,363,178"/>
-<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#ade8a96dc38016b00be23ba4c1fc2b3e6" title=" " alt="" coords="530,271,678,311"/>
-<area shape="poly" title=" " alt="" coords="378,213,486,255,517,265,516,270,484,261,376,218"/>
-<area shape="rect" href="../../d9/dec/transfers_8cpp.html#a2050db7321dcbcdaf8a7e1e90b766dd2" title=" " alt="" coords="547,336,661,361"/>
-<area shape="poly" title=" " alt="" coords="399,213,439,237,456,260,463,282,470,302,487,321,509,333,534,341,532,346,507,338,484,325,465,305,458,283,451,262,436,241,396,218"/>
-<area shape="rect" href="../../d9/dec/transfers_8cpp.html#ad971c19126de159d299c18cf57af6877" title=" " alt="" coords="547,221,661,247"/>
-<area shape="poly" title=" " alt="" coords="401,203,533,221,533,227,400,208"/>
-<area shape="poly" title=" " alt="" coords="662,26,723,41,777,59,776,64,722,46,660,31"/>
-<area shape="poly" title=" " alt="" coords="680,295,704,305,725,322,741,360,757,430,783,625,802,833,814,979,808,980,797,834,778,626,751,431,736,362,721,325,701,310,678,300"/>
-<area shape="poly" title=" " alt="" coords="662,345,695,353,711,361,725,372,741,407,756,471,782,651,802,843,813,980,808,980,797,844,777,652,750,472,736,409,721,376,708,365,694,358,661,350"/>
-<area shape="poly" title=" " alt="" coords="162,1371,266,1373,338,1368,417,1359,499,1341,580,1313,655,1274,689,1250,721,1222,755,1175,780,1123,796,1073,806,1032,811,1033,802,1074,785,1125,760,1178,725,1225,693,1254,658,1279,582,1318,500,1346,418,1364,338,1374,266,1378,162,1376"/>
-<area shape="poly" title=" " alt="" coords="134,1358,161,1078,185,915,198,856,213,824,233,809,256,801,258,806,235,814,217,828,203,858,190,916,166,1078,139,1359"/>
-<area shape="poly" title=" " alt="" coords="133,1358,136,1263,147,1117,157,1041,171,971,189,913,200,891,213,873,239,856,269,848,270,853,241,861,217,877,205,893,194,915,176,972,163,1042,153,1118,141,1263,138,1358"/>
-<area shape="poly" title=" " alt="" coords="133,1358,138,1271,150,1141,161,1072,174,1010,191,958,213,923,225,913,228,917,217,926,196,960,179,1011,166,1073,156,1141,143,1272,138,1359"/>
-<area shape="poly" title=" " alt="" coords="134,1358,143,1294,159,1202,182,1111,197,1075,213,1051,227,1039,230,1044,217,1054,201,1078,187,1113,164,1203,148,1295,139,1359"/>
-<area shape="poly" title=" " alt="" coords="135,1358,163,1233,186,1162,199,1134,213,1115,227,1104,230,1108,217,1119,204,1137,191,1164,168,1234,140,1359"/>
-<area shape="rect" href="../../db/df0/classHACCGPM_1_1Timestepper.html#acace7c026894818656a9eb261b07f27d" title=" " alt="" coords="241,1129,411,1169"/>
-<area shape="poly" title=" " alt="" coords="135,1358,142,1324,156,1278,179,1229,194,1206,213,1185,229,1173,232,1178,216,1189,199,1209,184,1231,161,1280,147,1325,140,1359"/>
-<area shape="rect" href="../../d1/dc2/ccamb_8c.html#a576627afa312ae70b90539c51856778e" title=" " alt="" coords="277,1244,375,1269"/>
-<area shape="poly" title=" " alt="" coords="141,1356,169,1318,190,1297,213,1280,238,1269,263,1261,265,1266,239,1274,216,1284,193,1301,174,1322,145,1360"/>
-<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ac8b4ba312818288e4c808753bc322702" title=" " alt="" coords="523,1787,685,1812"/>
-<area shape="poly" title=" " alt="" coords="138,1384,143,1464,156,1582,166,1643,180,1699,196,1743,216,1772,236,1784,265,1793,340,1803,426,1806,509,1803,509,1809,426,1811,339,1808,264,1798,234,1789,213,1776,192,1746,175,1700,161,1644,151,1583,138,1464,133,1384"/>
-<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a61abf058f64a8c48cb425ba0aa3cd3d8" title=" " alt="" coords="251,1294,401,1334"/>
-<area shape="poly" title=" " alt="" coords="161,1361,245,1335,247,1341,163,1366"/>
-<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a4fae33fb8958064c643b8fe76740ee0a" title=" " alt="" coords="231,937,421,977"/>
-<area shape="poly" title=" " alt="" coords="134,1358,140,1283,155,1171,179,1061,194,1017,213,987,218,982,222,986,217,990,199,1019,184,1062,160,1172,146,1283,139,1359"/>
-<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#aa89c1764f5268d9a5780657b7a25f780" title=" " alt="" coords="228,1837,424,1877"/>
-<area shape="poly" title=" " alt="" coords="139,1384,144,1470,157,1600,168,1668,181,1730,197,1781,217,1816,228,1827,225,1831,213,1820,192,1784,176,1731,162,1669,152,1601,139,1470,133,1384"/>
-<area shape="rect" href="../../d1/dc2/ccamb_8c.html#aee95d0d053b7343a23cc8ca9176ce73c" title=" " alt="" coords="245,1409,407,1435"/>
-<area shape="poly" title=" " alt="" coords="163,1376,266,1403,265,1408,162,1381"/>
-<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#aba96f26caa0971a861e23d251bdca488" title=" " alt="" coords="227,1459,425,1484"/>
-<area shape="poly" title=" " alt="" coords="147,1383,176,1414,195,1431,216,1445,230,1452,228,1456,213,1450,192,1435,172,1418,143,1386"/>
-<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a873c8a9f36dff354099861a9cc5a7da2" title=" " alt="" coords="215,1508,437,1533"/>
-<area shape="poly" title=" " alt="" coords="142,1383,168,1438,189,1469,216,1495,225,1500,222,1504,213,1499,185,1472,163,1441,137,1386"/>
-<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a1e499b679db21f46e02946401a4ed44f" title=" " alt="" coords="215,1557,437,1583"/>
-<area shape="poly" title=" " alt="" coords="140,1384,147,1417,161,1460,183,1506,198,1526,216,1544,223,1549,220,1553,213,1548,194,1530,179,1509,156,1462,142,1418,135,1385"/>
-<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a7e7cdba1605fe8248b3f1306667c5d5c" title=" " alt="" coords="225,1607,427,1647"/>
-<area shape="poly" title=" " alt="" coords="139,1384,143,1424,155,1481,178,1541,195,1569,217,1593,221,1597,218,1601,213,1597,191,1572,174,1544,150,1482,138,1425,133,1384"/>
-<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a233115e291533b87d96cc0baeadc74cd" title=" " alt="" coords="226,1671,426,1711"/>
-<area shape="poly" title=" " alt="" coords="140,1384,166,1525,189,1605,202,1637,217,1658,220,1661,217,1665,213,1661,198,1639,184,1607,161,1526,135,1385"/>
-<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#aa38be02d5fae626750b7f03b40a40dab" title=" " alt="" coords="216,1736,436,1761"/>
-<area shape="poly" title=" " alt="" coords="139,1384,146,1454,161,1556,185,1657,200,1696,217,1722,222,1726,218,1730,213,1725,195,1698,180,1658,156,1557,141,1455,134,1384"/>
-<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#afc7b5439a4f273a0b5136c983988630c" title=" " alt="" coords="487,1893,721,1919"/>
-<area shape="poly" title=" " alt="" coords="139,1384,148,1490,166,1652,189,1805,203,1859,217,1887,254,1913,296,1930,340,1939,387,1942,433,1941,476,1935,551,1920,552,1925,477,1941,433,1946,387,1948,340,1944,294,1935,251,1917,213,1890,198,1861,184,1806,161,1652,143,1491,134,1384"/>
-<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a2e294634a2863de32ac3943d827c68c8" title=" " alt="" coords="485,1949,723,1975"/>
-<area shape="poly" title=" " alt="" coords="139,1384,147,1501,164,1681,188,1853,202,1913,209,1933,217,1944,254,1970,295,1987,340,1997,387,2000,433,1998,477,1992,551,1976,552,1981,478,1997,433,2003,387,2005,340,2002,294,1992,251,1975,213,1948,204,1935,197,1915,182,1854,159,1682,142,1502,133,1385"/>
-<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a56967323163b51e64180118159a654c2" title=" " alt="" coords="501,1185,707,1211"/>
-<area shape="poly" title=" " alt="" coords="136,1358,144,1330,159,1295,182,1259,213,1230,234,1221,261,1213,330,1202,409,1196,487,1194,487,1199,410,1201,331,1207,263,1218,236,1226,216,1235,186,1263,164,1298,149,1332,141,1359"/>
-<area shape="poly" title=" " alt="" coords="398,1126,436,1114,485,1097,523,1087,524,1092,486,1102,438,1119,399,1131"/>
-<area shape="poly" title=" " alt="" coords="412,1141,512,1134,512,1140,412,1146"/>
-<area shape="poly" title=" " alt="" coords="605,1786,653,1627,720,1389,770,1184,804,1032,810,1033,775,1185,725,1391,658,1629,611,1787"/>
-<area shape="poly" title=" " alt="" coords="421,939,511,926,511,931,422,945"/>
-<area shape="poly" title=" " alt="" coords="422,956,539,959,538,964,422,962"/>
-<area shape="poly" title=" " alt="" coords="422,973,552,999,551,1005,421,979"/>
-<area shape="poly" title=" " alt="" coords="407,934,436,922,460,905,484,888,514,877,516,882,487,892,463,909,439,927,409,939"/>
-<area shape="poly" title=" " alt="" coords="424,1860,509,1861,597,1857,673,1845,701,1835,721,1823,731,1807,740,1779,758,1695,772,1584,784,1458,801,1205,809,1032,814,1033,807,1205,790,1458,778,1585,763,1696,746,1781,736,1809,725,1827,703,1840,674,1850,597,1863,509,1866,424,1865"/>
-<area shape="poly" title=" " alt="" coords="423,1834,529,1812,530,1817,424,1839"/>
-<area shape="poly" title=" " alt="" coords="689,1891,706,1881,721,1868,730,1850,739,1820,756,1730,771,1612,783,1478,800,1212,809,1032,814,1033,806,1212,788,1478,776,1613,761,1731,745,1821,735,1852,725,1872,709,1886,691,1896"/>
-<area shape="poly" title=" " alt="" coords="698,1947,721,1930,731,1910,741,1878,759,1781,773,1654,785,1509,802,1224,809,1032,815,1033,807,1224,791,1510,779,1654,764,1782,746,1879,736,1912,725,1933,701,1951"/>
-<area shape="poly" title=" " alt="" coords="679,1183,701,1174,721,1161,750,1131,773,1096,802,1030,807,1033,778,1099,754,1135,724,1165,703,1178,681,1188"/>
+<area shape="rect" title=" " alt="" coords="5,948,56,973"/>
+<area shape="rect" href="../../d5/d15/driver_8cpp.html#aa3f472f1ca752b97ec41b62c5afa64b1" title=" " alt="" coords="104,576,167,601"/>
+<area shape="poly" title=" " alt="" coords="32,947,125,614,131,615,37,949"/>
+<area shape="rect" href="../../d5/d15/driver_8cpp.html#a89aac19f49069ba0dc8393e283784112" title=" " alt="" coords="109,1319,162,1344"/>
+<area shape="poly" title=" " alt="" coords="37,973,131,1305,125,1306,32,974"/>
+<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a02e404ddd45f930637353436ca2ad1da" title=" " alt="" coords="240,633,412,659"/>
+<area shape="poly" title=" " alt="" coords="165,599,215,618,249,628,248,633,214,623,163,604"/>
+<area shape="rect" href="../../da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6" title=" " alt="" coords="771,951,855,976"/>
+<area shape="poly" title=" " alt="" coords="134,576,162,333,186,195,199,147,213,120,277,71,341,35,405,12,470,3,534,9,597,28,661,63,725,112,736,130,747,159,765,247,780,363,792,495,808,758,815,937,809,937,802,758,787,495,775,363,760,248,742,161,732,132,721,116,658,67,595,33,533,14,470,9,407,17,343,40,280,75,217,124,204,149,191,196,168,334,139,576"/>
+<area shape="rect" href="../../d1/dc2/ccamb_8c.html#a5ab88a74581ba806512989a18ab0da32" title=" " alt="" coords="271,797,381,823"/>
+<area shape="poly" title=" " alt="" coords="139,601,145,638,157,688,181,740,197,764,216,784,236,796,258,804,257,809,234,801,213,788,193,767,176,743,152,690,139,639,134,602"/>
+<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#ac91e913d79581a70c40b74ad21ed968d" title=" " alt="" coords="252,198,400,238"/>
+<area shape="poly" title=" " alt="" coords="134,575,142,508,158,410,181,313,196,275,213,248,237,231,240,235,217,252,201,277,186,314,163,411,147,508,139,576"/>
+<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#af10a44b19c6bfe6e4edd7776b4a0df5c" title=" " alt="" coords="241,683,411,723"/>
+<area shape="poly" title=" " alt="" coords="147,600,175,635,195,653,216,669,230,677,228,681,213,674,191,658,171,639,142,604"/>
+<area shape="rect" href="../../d1/dc2/ccamb_8c.html#acede3def4aca9816e9ed0d9f91a67567" title=" " alt="" coords="283,847,369,872"/>
+<area shape="poly" title=" " alt="" coords="140,601,169,723,191,791,204,817,216,833,242,849,271,856,269,861,240,853,213,837,199,819,186,793,163,725,135,603"/>
+<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#acac1f2241bc62f1bf39dce1c0d2f637e" title=" " alt="" coords="252,262,400,302"/>
+<area shape="poly" title=" " alt="" coords="135,575,163,444,186,369,199,340,213,319,238,301,241,305,217,323,204,342,191,371,168,445,140,577"/>
+<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#ab67a1d4d424d75f9fd6046323ae44ec1" title=" " alt="" coords="252,134,400,174"/>
+<area shape="poly" title=" " alt="" coords="133,576,140,497,154,380,177,263,193,216,213,184,238,166,241,171,217,188,198,218,183,264,159,380,145,497,139,576"/>
+<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#aafb47a3e84785288897c7c4c20d7c39f" title=" " alt="" coords="252,569,400,609"/>
+<area shape="poly" title=" " alt="" coords="167,586,238,586,238,591,167,591"/>
+<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a988a5e3e292fca5fb93bd5c754ff9e3c" title=" " alt="" coords="530,455,678,495"/>
+<area shape="poly" title=" " alt="" coords="135,575,163,463,186,401,199,378,213,363,243,344,270,332,297,325,324,323,350,327,378,335,439,363,457,379,465,398,472,417,487,435,519,453,516,457,484,439,467,420,460,400,453,382,436,367,376,340,349,332,323,329,298,330,272,337,245,349,216,367,203,381,191,404,169,464,140,577"/>
+<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a123085a590cbc09148ef1558564afe8d" title=" " alt="" coords="252,377,400,417"/>
+<area shape="poly" title=" " alt="" coords="135,575,144,545,158,505,181,463,213,427,237,412,240,416,216,431,186,466,163,507,149,546,141,576"/>
+<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a709934c2ca1db4459e610dc7f7441d7d" title=" " alt="" coords="252,505,400,545"/>
+<area shape="poly" title=" " alt="" coords="164,574,214,554,238,546,240,551,216,559,166,579"/>
+<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a3be1b15261819bb255780e9c34d6ad31" title=" " alt="" coords="252,441,400,481"/>
+<area shape="poly" title=" " alt="" coords="141,574,169,533,189,510,213,491,238,478,240,482,216,495,193,514,173,536,145,577"/>
+<area shape="rect" href="../../d5/d1c/namespaceHACCGPM.html#a3693eae7739d13e58be7ba8865e563f7" title=" " alt="" coords="239,748,413,773"/>
+<area shape="poly" title=" " alt="" coords="141,601,150,629,165,665,186,702,216,733,227,741,225,745,213,738,182,705,160,668,145,631,136,603"/>
+<area shape="rect" href="../../db/df0/classHACCGPM_1_1Timestepper.html#a27407a8033a031a536cdcf76f882b440" title=" " alt="" coords="241,961,411,1001"/>
+<area shape="poly" title=" " alt="" coords="139,602,147,673,162,777,185,880,200,920,217,947,230,958,226,962,213,951,195,922,180,881,156,778,141,674,134,602"/>
+<area shape="rect" href="../../db/df0/classHACCGPM_1_1Timestepper.html#a6155f2c22c7bc7ceb485685c3a82ba6e" title=" " alt="" coords="241,1025,411,1065"/>
+<area shape="poly" title=" " alt="" coords="139,601,144,684,158,807,168,871,181,930,197,979,217,1011,230,1023,227,1027,213,1015,193,981,176,932,163,872,152,808,139,684,133,602"/>
+<area shape="rect" href="../../d6/dce/cic_8cu.html#aadea9eea5f5984f3f9792f4f4b1c8cbe" title=" " alt="" coords="541,580,667,605"/>
+<area shape="poly" title=" " alt="" coords="392,631,527,605,528,610,393,636"/>
+<area shape="poly" title=" " alt="" coords="412,637,497,634,589,636,669,646,701,654,724,667,741,686,755,715,780,790,799,872,811,937,806,938,794,873,775,792,750,717,736,689,721,671,699,659,668,651,588,641,497,640,412,643"/>
+<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#add12ee925b08f1eca77ec3d4c2b94aed" title=" " alt="" coords="530,745,678,785"/>
+<area shape="poly" title=" " alt="" coords="411,720,517,743,516,748,410,725"/>
+<area shape="rect" href="../../de/d3b/initializer_8cu.html#a8d1235c9dcec22662164f05aca0fe102" title=" " alt="" coords="514,681,694,721"/>
+<area shape="poly" title=" " alt="" coords="411,700,500,699,500,704,411,705"/>
+<area shape="rect" href="../../d1/dc2/ccamb_8c.html#ac0e00d8b9c96e56e190e4c04d30fb237" title=" " alt="" coords="525,809,683,835"/>
+<area shape="poly" title=" " alt="" coords="412,721,439,735,455,750,463,766,472,781,487,795,513,807,511,812,484,799,467,784,459,769,451,753,436,739,410,725"/>
+<area shape="rect" href="../../de/d3b/initializer_8cu.html#a2fe476c02dd57a3bf0adeed08604e935" title=" " alt="" coords="552,859,656,884"/>
+<area shape="poly" title=" " alt="" coords="412,718,439,735,451,749,458,764,463,792,468,820,475,833,487,845,511,859,539,867,537,872,509,864,484,850,471,836,463,822,458,793,453,765,447,752,436,739,410,722"/>
+<area shape="rect" href="../../de/d3b/initializer_8cu.html#a0ff351b62d308a913e30708b2ce6952e" title=" " alt="" coords="565,908,643,933"/>
+<area shape="poly" title=" " alt="" coords="412,717,439,735,455,755,462,776,463,818,465,858,472,876,487,895,517,912,551,919,550,924,515,917,484,899,467,879,459,859,458,818,457,777,450,758,435,739,409,721"/>
+<area shape="rect" href="../../de/d3b/initializer_8cu.html#ac29241f3695227eb88a70b902a8b3cdb" title=" " alt="" coords="529,957,679,983"/>
+<area shape="poly" title=" " alt="" coords="413,716,439,735,458,762,465,789,466,816,463,843,460,869,461,895,469,920,487,944,501,954,516,962,514,967,498,959,483,948,464,922,456,896,455,869,458,842,461,816,460,790,453,764,435,739,410,721"/>
+<area shape="poly" title=" " alt="" coords="679,773,703,783,724,796,755,829,779,867,797,905,808,937,803,939,792,907,775,869,751,832,721,800,700,787,677,778"/>
+<area shape="poly" title=" " alt="" coords="402,161,422,171,439,184,458,211,465,237,466,264,463,290,461,316,461,341,469,365,487,390,516,410,545,418,574,418,604,414,635,410,665,410,695,420,725,442,749,480,768,537,783,605,794,681,809,829,815,936,809,937,803,829,789,681,778,606,763,538,744,482,721,445,693,424,664,416,635,415,605,419,575,423,544,423,513,415,483,393,464,368,456,342,455,315,458,289,461,263,460,238,453,213,435,188,419,175,399,166"/>
+<area shape="rect" href="../../d9/dec/transfers_8cpp.html#a9b07afb81e6ca51846ebbbdc77ec0ad2" title=" " alt="" coords="547,127,661,152"/>
+<area shape="poly" title=" " alt="" coords="400,148,534,141,534,146,400,153"/>
+<area shape="rect" href="../../d9/dec/transfers_8cpp.html#a623988a859e51c0c16684d10bd07df87" title=" " alt="" coords="789,101,836,127"/>
+<area shape="poly" title=" " alt="" coords="390,132,436,120,485,111,566,105,647,104,776,109,776,114,647,109,566,110,486,117,437,125,391,137"/>
+<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a732c4638e4b8fc8959263d43cc8cccdf" title=" " alt="" coords="530,241,678,281"/>
+<area shape="poly" title=" " alt="" coords="401,168,439,184,454,195,463,206,473,216,487,226,518,240,516,245,484,231,469,220,459,209,450,199,436,188,399,173"/>
+<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#ada405e83d092ec5f01435cb23d1e2927" title=" " alt="" coords="530,177,678,217"/>
+<area shape="poly" title=" " alt="" coords="401,163,517,181,516,186,400,168"/>
+<area shape="rect" href="../../d9/dec/transfers_8cpp.html#a2050db7321dcbcdaf8a7e1e90b766dd2" title=" " alt="" coords="547,355,661,380"/>
+<area shape="poly" title=" " alt="" coords="402,162,422,171,439,184,454,204,462,225,463,265,465,304,472,322,487,340,509,354,534,362,532,367,507,359,484,344,468,325,460,305,458,265,457,226,450,207,435,188,419,176,399,167"/>
+<area shape="rect" href="../../d9/dec/transfers_8cpp.html#ad971c19126de159d299c18cf57af6877" title=" " alt="" coords="547,305,661,331"/>
+<area shape="poly" title=" " alt="" coords="401,163,421,172,439,184,451,198,458,212,464,239,469,266,475,279,487,291,509,304,534,311,532,317,507,308,484,295,471,282,464,268,458,240,453,213,447,201,436,188,418,177,399,168"/>
+<area shape="poly" title=" " alt="" coords="661,130,775,116,776,121,661,135"/>
+<area shape="poly" title=" " alt="" coords="680,265,704,275,725,291,741,329,756,397,783,589,802,794,814,937,808,937,797,794,777,590,751,398,736,331,721,294,701,279,678,269"/>
+<area shape="poly" title=" " alt="" coords="662,367,696,377,725,398,738,416,750,441,770,503,785,578,796,660,810,822,815,937,809,937,805,822,791,661,780,579,764,504,745,443,733,419,721,401,693,382,661,373"/>
+<area shape="poly" title=" " alt="" coords="399,567,436,554,498,528,554,500,556,504,500,532,438,559,401,572"/>
+<area shape="poly" title=" " alt="" coords="398,414,521,449,519,454,396,419"/>
+<area shape="poly" title=" " alt="" coords="400,462,516,468,516,473,400,467"/>
+<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ae31040d68a45a644d5e079616e99061c" title=" " alt="" coords="510,1020,698,1045"/>
+<area shape="poly" title=" " alt="" coords="412,994,523,1015,522,1020,411,999"/>
+<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ab791cb661ee56bd0e61992d605b9dd80" title=" " alt="" coords="526,1070,682,1110"/>
+<area shape="poly" title=" " alt="" coords="413,998,439,1011,454,1022,463,1034,472,1045,487,1056,514,1068,512,1073,484,1060,469,1049,459,1037,450,1026,436,1015,410,1003"/>
+<area shape="poly" title=" " alt="" coords="412,1038,496,1035,496,1040,412,1044"/>
+<area shape="poly" title=" " alt="" coords="412,1056,513,1073,512,1078,411,1061"/>
+<area shape="poly" title=" " alt="" coords="138,1344,143,1424,155,1543,166,1604,179,1660,196,1704,217,1732,244,1752,270,1765,296,1772,322,1773,348,1769,376,1760,436,1732,488,1699,535,1659,577,1615,615,1566,648,1513,678,1458,726,1345,761,1234,785,1133,800,1048,808,990,813,990,805,1049,790,1134,766,1235,731,1347,683,1461,653,1516,619,1569,581,1618,539,1663,491,1703,439,1736,378,1765,349,1774,322,1778,295,1777,269,1770,241,1756,213,1736,191,1707,174,1661,160,1605,150,1544,138,1425,133,1344"/>
+<area shape="poly" title=" " alt="" coords="133,1318,136,1223,147,1077,157,1001,171,931,189,873,200,851,213,834,233,819,257,810,258,815,236,823,217,837,205,853,194,875,176,932,163,1002,153,1078,141,1224,138,1319"/>
+<area shape="poly" title=" " alt="" coords="133,1318,138,1232,150,1101,161,1033,174,970,191,918,213,883,239,866,269,857,270,863,241,870,217,887,196,920,179,971,166,1033,156,1101,143,1232,138,1319"/>
+<area shape="poly" title=" " alt="" coords="134,1318,161,1038,185,875,198,817,213,785,225,774,228,778,217,788,203,818,190,876,166,1038,139,1319"/>
+<area shape="poly" title=" " alt="" coords="134,1318,143,1254,159,1162,182,1071,197,1036,213,1011,227,1000,230,1004,217,1015,201,1038,187,1073,164,1163,148,1255,139,1319"/>
+<area shape="poly" title=" " alt="" coords="135,1318,163,1193,186,1122,199,1094,213,1075,227,1064,230,1068,217,1079,204,1097,191,1124,168,1194,140,1319"/>
+<area shape="rect" href="../../db/df0/classHACCGPM_1_1Timestepper.html#acace7c026894818656a9eb261b07f27d" title=" " alt="" coords="241,1089,411,1129"/>
+<area shape="poly" title=" " alt="" coords="135,1318,142,1284,156,1238,179,1189,194,1166,213,1145,229,1133,232,1138,216,1149,199,1169,184,1191,161,1240,147,1286,140,1319"/>
+<area shape="rect" href="../../d1/dc2/ccamb_8c.html#a576627afa312ae70b90539c51856778e" title=" " alt="" coords="277,1204,375,1229"/>
+<area shape="poly" title=" " alt="" coords="141,1317,169,1278,190,1257,213,1240,238,1229,263,1221,265,1226,239,1234,216,1244,193,1261,174,1282,145,1320"/>
+<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ac8b4ba312818288e4c808753bc322702" title=" " alt="" coords="523,1797,685,1823"/>
+<area shape="poly" title=" " alt="" coords="138,1344,142,1431,153,1563,164,1631,177,1693,195,1744,205,1763,216,1776,236,1788,264,1798,339,1809,426,1813,508,1812,508,1818,426,1819,339,1815,263,1803,234,1793,213,1780,201,1766,190,1746,172,1695,158,1632,148,1564,137,1432,133,1344"/>
+<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a61abf058f64a8c48cb425ba0aa3cd3d8" title=" " alt="" coords="251,1254,401,1294"/>
+<area shape="poly" title=" " alt="" coords="161,1321,245,1296,247,1301,163,1326"/>
+<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a4fae33fb8958064c643b8fe76740ee0a" title=" " alt="" coords="231,897,421,937"/>
+<area shape="poly" title=" " alt="" coords="134,1318,140,1243,155,1131,179,1021,194,977,213,947,218,942,222,946,217,950,199,979,184,1022,160,1132,146,1243,139,1319"/>
+<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#aa89c1764f5268d9a5780657b7a25f780" title=" " alt="" coords="228,1847,424,1887"/>
+<area shape="poly" title=" " alt="" coords="138,1344,142,1439,154,1584,165,1660,178,1730,195,1788,217,1827,228,1838,224,1842,213,1830,190,1790,173,1731,159,1661,149,1584,137,1439,133,1344"/>
+<area shape="rect" href="../../d1/dc2/ccamb_8c.html#aee95d0d053b7343a23cc8ca9176ce73c" title=" " alt="" coords="245,1369,407,1395"/>
+<area shape="poly" title=" " alt="" coords="163,1336,266,1363,265,1369,162,1341"/>
+<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#aba96f26caa0971a861e23d251bdca488" title=" " alt="" coords="227,1419,425,1444"/>
+<area shape="poly" title=" " alt="" coords="147,1343,176,1375,195,1391,216,1405,230,1412,228,1417,213,1410,192,1396,172,1378,143,1346"/>
+<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a873c8a9f36dff354099861a9cc5a7da2" title=" " alt="" coords="215,1468,437,1493"/>
+<area shape="poly" title=" " alt="" coords="142,1343,168,1398,189,1429,216,1455,225,1460,222,1465,213,1459,185,1433,163,1401,137,1346"/>
+<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a1e499b679db21f46e02946401a4ed44f" title=" " alt="" coords="215,1517,437,1543"/>
+<area shape="poly" title=" " alt="" coords="140,1344,147,1377,161,1420,183,1466,198,1486,216,1504,223,1509,220,1513,213,1508,194,1490,179,1469,156,1422,142,1378,135,1345"/>
+<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a7e7cdba1605fe8248b3f1306667c5d5c" title=" " alt="" coords="225,1567,427,1607"/>
+<area shape="poly" title=" " alt="" coords="139,1344,143,1385,155,1441,178,1501,195,1529,217,1554,221,1558,218,1562,213,1557,191,1532,174,1504,150,1443,138,1385,133,1345"/>
+<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a233115e291533b87d96cc0baeadc74cd" title=" " alt="" coords="226,1631,426,1671"/>
+<area shape="poly" title=" " alt="" coords="140,1344,166,1485,189,1565,202,1597,217,1618,220,1621,217,1625,213,1621,198,1599,184,1567,161,1486,135,1345"/>
+<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#aa38be02d5fae626750b7f03b40a40dab" title=" " alt="" coords="216,1696,436,1721"/>
+<area shape="poly" title=" " alt="" coords="139,1344,146,1414,161,1516,185,1617,200,1656,217,1682,222,1686,218,1690,213,1685,195,1658,180,1618,156,1517,141,1415,134,1345"/>
+<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#afc7b5439a4f273a0b5136c983988630c" title=" " alt="" coords="487,1908,721,1933"/>
+<area shape="poly" title=" " alt="" coords="139,1344,147,1460,164,1637,188,1807,202,1867,217,1898,253,1924,294,1941,339,1951,385,1955,430,1954,474,1949,549,1934,550,1940,475,1955,431,1959,385,1960,338,1956,293,1946,250,1928,213,1901,197,1869,183,1808,159,1638,142,1460,134,1345"/>
+<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a2e294634a2863de32ac3943d827c68c8" title=" " alt="" coords="485,1144,723,1169"/>
+<area shape="poly" title=" " alt="" coords="136,1318,144,1290,159,1255,182,1219,213,1191,258,1174,322,1163,397,1156,471,1154,472,1159,397,1162,323,1168,260,1179,216,1195,186,1223,164,1258,149,1292,141,1320"/>
+<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a56967323163b51e64180118159a654c2" title=" " alt="" coords="501,1256,707,1281"/>
+<area shape="poly" title=" " alt="" coords="162,1328,282,1321,437,1303,542,1282,543,1287,438,1309,282,1326,162,1333"/>
+<area shape="poly" title=" " alt="" coords="399,1086,436,1074,485,1056,521,1046,523,1051,486,1061,438,1079,400,1091"/>
+<area shape="poly" title=" " alt="" coords="411,1100,512,1094,512,1099,412,1106"/>
+<area shape="poly" title=" " alt="" coords="684,1800,704,1790,721,1776,730,1760,739,1731,755,1647,770,1537,782,1411,800,1161,809,990,814,990,805,1161,787,1411,775,1537,760,1648,744,1733,735,1762,725,1780,707,1795,687,1804"/>
+<area shape="poly" title=" " alt="" coords="408,894,436,882,450,873,459,864,469,854,484,845,510,835,512,840,487,850,473,858,463,868,453,877,439,887,410,899"/>
+<area shape="poly" title=" " alt="" coords="421,899,538,880,539,885,422,904"/>
+<area shape="poly" title=" " alt="" coords="422,916,551,917,551,923,422,921"/>
+<area shape="poly" title=" " alt="" coords="422,933,525,952,524,958,421,938"/>
+<area shape="poly" title=" " alt="" coords="424,1871,509,1872,597,1868,673,1856,701,1846,721,1834,731,1816,742,1787,760,1697,774,1578,786,1443,802,1173,809,990,815,990,808,1173,792,1443,780,1579,765,1698,747,1788,736,1819,725,1837,704,1851,674,1861,597,1873,509,1877,424,1876"/>
+<area shape="poly" title=" " alt="" coords="423,1845,529,1823,530,1828,424,1850"/>
+<area shape="poly" title=" " alt="" coords="685,1906,704,1895,721,1881,731,1861,740,1828,757,1732,772,1606,784,1462,801,1179,809,990,814,990,806,1179,790,1463,777,1606,763,1733,745,1830,736,1863,725,1884,708,1900,687,1910"/>
+<area shape="poly" title=" " alt="" coords="679,1142,701,1133,721,1120,750,1090,774,1055,802,988,807,990,778,1057,755,1093,724,1124,703,1137,681,1147"/>
+<area shape="poly" title=" " alt="" coords="628,1254,674,1224,699,1204,721,1180,752,1132,776,1079,804,989,809,991,781,1081,757,1134,725,1184,703,1207,678,1228,630,1258"/>
 </map>
 </div>
 
@@ -409,221 +410,217 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d15/driver_8cpp_source.html#l00119">119</a> of file <a class="el" href="../../d5/d15/driver_8cpp_source.html">driver.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  119</span>                                     {</div>
-<div class="line"><span class="lineno">  120</span> </div>
-<div class="line"><span class="lineno">  121</span>    GC_INIT();</div>
-<div class="line"><span class="lineno">  122</span> </div>
-<div class="line"><span class="lineno">  123</span>    cudaFree(0);</div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d15/driver_8cpp_source.html#l00123">123</a> of file <a class="el" href="../../d5/d15/driver_8cpp_source.html">driver.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  123</span>                                     {</div>
 <div class="line"><span class="lineno">  124</span> </div>
-<div class="line"><span class="lineno">  125</span>    <a class="code hl_typedef" href="../../da/d0d/haccgpm_8hpp.html#aa790b6767cf9152c32b179d29c46e3ef">CPUTimer_t</a> start = <a class="code hl_function" href="../../da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6">CPUTimer</a>();</div>
+<div class="line"><span class="lineno">  125</span>    GC_INIT();</div>
 <div class="line"><span class="lineno">  126</span> </div>
-<div class="line"><span class="lineno">  127</span>    <a class="code hl_struct" href="../../d5/de1/structHACCGPM_1_1Params.html">HACCGPM::Params</a> params = <a class="code hl_function" href="../../d5/d1c/namespaceHACCGPM.html#a3693eae7739d13e58be7ba8865e563f7">HACCGPM::read_params</a>(params_file);</div>
+<div class="line"><span class="lineno">  127</span>    cudaFree(0);</div>
 <div class="line"><span class="lineno">  128</span> </div>
-<div class="line"><span class="lineno">  129</span>    <a class="code hl_function" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#acac1f2241bc62f1bf39dce1c0d2f637e">HACCGPM::parallel::init_swfft</a>(params);</div>
+<div class="line"><span class="lineno">  129</span>    <a class="code hl_typedef" href="../../da/d0d/haccgpm_8hpp.html#aa790b6767cf9152c32b179d29c46e3ef">CPUTimer_t</a> start = <a class="code hl_function" href="../../da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6">CPUTimer</a>();</div>
 <div class="line"><span class="lineno">  130</span> </div>
-<div class="line"><span class="lineno">  131</span>    <span class="keywordflow">if</span> (params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#abadfe590c1eee74fb0e6706a2538eba4">world_rank</a> == 0){</div>
-<div class="line"><span class="lineno">  132</span>        printf(<span class="stringliteral">&quot;GLOBAL_GRID_SIZE: [%d %d %d]\n&quot;</span>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a9a23dda8505b9d130900a65f487ef008">grid_dims</a>[0],params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a9a23dda8505b9d130900a65f487ef008">grid_dims</a>[1],params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a9a23dda8505b9d130900a65f487ef008">grid_dims</a>[2]);</div>
-<div class="line"><span class="lineno">  133</span>        printf(<span class="stringliteral">&quot;LOCAL_GRID_SIZE: [%d %d %d]\n&quot;</span>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a36eb38d8a633ba0f7d968c99b42bac83">local_grid_size</a>[0],params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a36eb38d8a633ba0f7d968c99b42bac83">local_grid_size</a>[1],params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a36eb38d8a633ba0f7d968c99b42bac83">local_grid_size</a>[2]);</div>
-<div class="line"><span class="lineno">  134</span>    }</div>
-<div class="line"><span class="lineno">  135</span> </div>
-<div class="line"><span class="lineno">  136</span>    <a class="code hl_class" href="../../db/da8/classHACCGPM_1_1parallel_1_1MemoryManager.html">HACCGPM::parallel::MemoryManager</a> mem(params);</div>
-<div class="line"><span class="lineno">  137</span> </div>
-<div class="line"><span class="lineno">  138</span>    <a class="code hl_class" href="../../db/df0/classHACCGPM_1_1Timestepper.html">HACCGPM::Timestepper</a> ts(params);</div>
-<div class="line"><span class="lineno">  139</span>    ts.setInitialZ(params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a9d2183dbb238250747c77ed30de4f35e">z_ini</a>);</div>
-<div class="line"><span class="lineno">  140</span>    ts.reverseHalfStep();</div>
+<div class="line"><span class="lineno">  131</span>    <a class="code hl_struct" href="../../d5/de1/structHACCGPM_1_1Params.html">HACCGPM::Params</a> params = <a class="code hl_function" href="../../d5/d1c/namespaceHACCGPM.html#a3693eae7739d13e58be7ba8865e563f7">HACCGPM::read_params</a>(params_file);</div>
+<div class="line"><span class="lineno">  132</span> </div>
+<div class="line"><span class="lineno">  133</span>    <a class="code hl_function" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#acac1f2241bc62f1bf39dce1c0d2f637e">HACCGPM::parallel::init_swfft</a>(params);</div>
+<div class="line"><span class="lineno">  134</span> </div>
+<div class="line"><span class="lineno">  135</span>    <span class="keywordflow">if</span> (params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#abadfe590c1eee74fb0e6706a2538eba4">world_rank</a> == 0){</div>
+<div class="line"><span class="lineno">  136</span>        printf(<span class="stringliteral">&quot;GLOBAL_GRID_SIZE: [%d %d %d]\n&quot;</span>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a9a23dda8505b9d130900a65f487ef008">grid_dims</a>[0],params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a9a23dda8505b9d130900a65f487ef008">grid_dims</a>[1],params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a9a23dda8505b9d130900a65f487ef008">grid_dims</a>[2]);</div>
+<div class="line"><span class="lineno">  137</span>        printf(<span class="stringliteral">&quot;LOCAL_GRID_SIZE: [%d %d %d]\n&quot;</span>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a36eb38d8a633ba0f7d968c99b42bac83">local_grid_size</a>[0],params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a36eb38d8a633ba0f7d968c99b42bac83">local_grid_size</a>[1],params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a36eb38d8a633ba0f7d968c99b42bac83">local_grid_size</a>[2]);</div>
+<div class="line"><span class="lineno">  138</span>    }</div>
+<div class="line"><span class="lineno">  139</span> </div>
+<div class="line"><span class="lineno">  140</span>    <a class="code hl_class" href="../../db/da8/classHACCGPM_1_1parallel_1_1MemoryManager.html">HACCGPM::parallel::MemoryManager</a> mem(params);</div>
 <div class="line"><span class="lineno">  141</span> </div>
-<div class="line"><span class="lineno">  142</span>    <a class="code hl_function" href="../../d1/dc2/ccamb_8c.html#acede3def4aca9816e9ed0d9f91a67567">init_python</a>(0,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#abadfe590c1eee74fb0e6706a2538eba4">world_rank</a>);</div>
-<div class="line"><span class="lineno">  143</span>    </div>
-<div class="line"><span class="lineno">  144</span>    <a class="code hl_typedef" href="../../da/d0d/haccgpm_8hpp.html#aa790b6767cf9152c32b179d29c46e3ef">CPUTimer_t</a> start_init = <a class="code hl_function" href="../../da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6">CPUTimer</a>();</div>
+<div class="line"><span class="lineno">  142</span>    <a class="code hl_class" href="../../db/df0/classHACCGPM_1_1Timestepper.html">HACCGPM::Timestepper</a> ts(params);</div>
+<div class="line"><span class="lineno">  143</span>    ts.setInitialZ(params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a9d2183dbb238250747c77ed30de4f35e">z_ini</a>);</div>
+<div class="line"><span class="lineno">  144</span>    ts.reverseHalfStep();</div>
 <div class="line"><span class="lineno">  145</span> </div>
-<div class="line"><span class="lineno">  146</span>    <a class="code hl_function" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#af10a44b19c6bfe6e4edd7776b4a0df5c">HACCGPM::parallel::GenerateDisplacementIC</a>(params_file,&amp;mem,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#af74f0b126b4bdc8db5c20964d6871715">rl</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a9d2183dbb238250747c77ed30de4f35e">z_ini</a>,ts.deltaT,ts.fscal,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a5eb7af8e1361d248d111fbfdb33813d5">seed</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a571a4ce79600b587e0a89620683fc00d">blockSize</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#abadfe590c1eee74fb0e6706a2538eba4">world_rank</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#acb2ba048d9a5776f65843bc184c5d6f0">world_size</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a58f805768e0a0e28e25a3acc63fea57b">nlocal</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a36eb38d8a633ba0f7d968c99b42bac83">local_grid_size</a>);</div>
-<div class="line"><span class="lineno">  147</span> </div>
-<div class="line"><span class="lineno">  148</span>    <a class="code hl_typedef" href="../../da/d0d/haccgpm_8hpp.html#aa790b6767cf9152c32b179d29c46e3ef">CPUTimer_t</a> end_init = <a class="code hl_function" href="../../da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6">CPUTimer</a>();</div>
-<div class="line"><span class="lineno">  149</span>    <a class="code hl_typedef" href="../../da/d0d/haccgpm_8hpp.html#aa790b6767cf9152c32b179d29c46e3ef">CPUTimer_t</a> init_time = end_init - start_init;</div>
-<div class="line"><span class="lineno">  150</span> </div>
-<div class="line"><span class="lineno">  151</span>    <a class="code hl_function" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a63680cefed0f7a301de2aa49779afcf6">HACCGPM::parallel::transferParticles</a>(params,mem);</div>
-<div class="line"><span class="lineno">  152</span> </div>
-<div class="line"><span class="lineno">  153</span>    MPI_Barrier(MPI_COMM_WORLD);</div>
+<div class="line"><span class="lineno">  146</span>    <a class="code hl_function" href="../../d1/dc2/ccamb_8c.html#acede3def4aca9816e9ed0d9f91a67567">init_python</a>(0,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#abadfe590c1eee74fb0e6706a2538eba4">world_rank</a>);</div>
+<div class="line"><span class="lineno">  147</span>    </div>
+<div class="line"><span class="lineno">  148</span>    <a class="code hl_typedef" href="../../da/d0d/haccgpm_8hpp.html#aa790b6767cf9152c32b179d29c46e3ef">CPUTimer_t</a> start_init = <a class="code hl_function" href="../../da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6">CPUTimer</a>();</div>
+<div class="line"><span class="lineno">  149</span> </div>
+<div class="line"><span class="lineno">  150</span>    <a class="code hl_function" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#af10a44b19c6bfe6e4edd7776b4a0df5c">HACCGPM::parallel::GenerateDisplacementIC</a>(params_file,&amp;mem,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#af74f0b126b4bdc8db5c20964d6871715">rl</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a9d2183dbb238250747c77ed30de4f35e">z_ini</a>,ts.deltaT,ts.fscal,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a5eb7af8e1361d248d111fbfdb33813d5">seed</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a571a4ce79600b587e0a89620683fc00d">blockSize</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#abadfe590c1eee74fb0e6706a2538eba4">world_rank</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#acb2ba048d9a5776f65843bc184c5d6f0">world_size</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a58f805768e0a0e28e25a3acc63fea57b">nlocal</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a36eb38d8a633ba0f7d968c99b42bac83">local_grid_size</a>);</div>
+<div class="line"><span class="lineno">  151</span>    <a class="code hl_function" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#ab67a1d4d424d75f9fd6046323ae44ec1">HACCGPM::parallel::initTransferParticles</a>(params,mem);</div>
+<div class="line"><span class="lineno">  152</span>    <a class="code hl_typedef" href="../../da/d0d/haccgpm_8hpp.html#aa790b6767cf9152c32b179d29c46e3ef">CPUTimer_t</a> end_init = <a class="code hl_function" href="../../da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6">CPUTimer</a>();</div>
+<div class="line"><span class="lineno">  153</span>    <a class="code hl_typedef" href="../../da/d0d/haccgpm_8hpp.html#aa790b6767cf9152c32b179d29c46e3ef">CPUTimer_t</a> init_time = end_init - start_init;</div>
 <div class="line"><span class="lineno">  154</span> </div>
-<div class="line"><span class="lineno">  155</span>    <span class="comment">//printf(&quot;NP: %d\n&quot;,params.n_particles);</span></div>
-<div class="line"><span class="lineno">  156</span>    </div>
-<div class="line"><span class="lineno">  157</span>    <a class="code hl_function" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a02e404ddd45f930637353436ca2ad1da">HACCGPM::parallel::CIC</a>(mem.d_grid,mem.d_extragrid,mem.d_pos,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a363928a721d27c766c0882a38d0d6e9a">n_particles</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a36eb38d8a633ba0f7d968c99b42bac83">local_grid_size</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a571a4ce79600b587e0a89620683fc00d">blockSize</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#abadfe590c1eee74fb0e6706a2538eba4">world_rank</a>, params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#acb2ba048d9a5776f65843bc184c5d6f0">world_size</a>);</div>
-<div class="line"><span class="lineno">  158</span> </div>
-<div class="line"><span class="lineno">  159</span>    <span class="comment">//HACCGPM::parallel::transferParticles(params,mem);</span></div>
-<div class="line"><span class="lineno">  160</span> </div>
-<div class="line"><span class="lineno">  161</span>    <a class="code hl_function" href="../../d1/dc2/ccamb_8c.html#a5ab88a74581ba806512989a18ab0da32">finalize_python</a>(0);</div>
-<div class="line"><span class="lineno">  162</span> </div>
-<div class="line"><span class="lineno">  163</span>    <a class="code hl_function" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#ac91e913d79581a70c40b74ad21ed968d">HACCGPM::parallel::finalize_swfft</a>();</div>
-<div class="line"><span class="lineno">  164</span> </div>
-<div class="line"><span class="lineno">  165</span>    MPI_Barrier(MPI_COMM_WORLD);</div>
-<div class="line"><span class="lineno">  166</span> </div>
-<div class="line"><span class="lineno">  167</span>    <a class="code hl_typedef" href="../../da/d0d/haccgpm_8hpp.html#aa790b6767cf9152c32b179d29c46e3ef">CPUTimer_t</a> end = <a class="code hl_function" href="../../da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6">CPUTimer</a>();</div>
-<div class="line"><span class="lineno">  168</span> </div>
-<div class="line"><span class="lineno">  169</span>    <a class="code hl_typedef" href="../../da/d0d/haccgpm_8hpp.html#aa790b6767cf9152c32b179d29c46e3ef">CPUTimer_t</a> init_mean, init_max, init_min;</div>
-<div class="line"><span class="lineno">  170</span>    <a class="code hl_function" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a988a5e3e292fca5fb93bd5c754ff9e3c">HACCGPM::parallel::timing_stats</a>(init_time,&amp;init_min,&amp;init_max,&amp;init_mean);</div>
-<div class="line"><span class="lineno">  171</span> </div>
-<div class="line"><span class="lineno">  172</span>    <span class="keywordflow">if</span> (params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#abadfe590c1eee74fb0e6706a2538eba4">world_rank</a> == 0)printf(<span class="stringliteral">&quot;\n\n=========\nMPI Stats:\n&quot;</span>);</div>
-<div class="line"><span class="lineno">  173</span>    <a class="code hl_function" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a709934c2ca1db4459e610dc7f7441d7d">HACCGPM::parallel::printTransferBytes</a>(params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#abadfe590c1eee74fb0e6706a2538eba4">world_rank</a>);</div>
-<div class="line"><span class="lineno">  174</span>    <span class="keywordflow">if</span> (params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#abadfe590c1eee74fb0e6706a2538eba4">world_rank</a> == 0)printf(<span class="stringliteral">&quot;=========\n\n&quot;</span>);</div>
-<div class="line"><span class="lineno">  175</span> </div>
-<div class="line"><span class="lineno">  176</span>    <span class="comment">//if (params.world_rank == 0){</span></div>
-<div class="line"><span class="lineno">  177</span>    <span class="keywordflow">if</span> (params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#abadfe590c1eee74fb0e6706a2538eba4">world_rank</a> == 0)printf(<span class="stringliteral">&quot;\n\n=========\nTimers:\n&quot;</span>);</div>
-<div class="line"><span class="lineno">  178</span>    <a class="code hl_function" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a3be1b15261819bb255780e9c34d6ad31">HACCGPM::parallel::printTransferTimes</a>(params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#abadfe590c1eee74fb0e6706a2538eba4">world_rank</a>);</div>
-<div class="line"><span class="lineno">  179</span>    <a class="code hl_function" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a123085a590cbc09148ef1558564afe8d">HACCGPM::parallel::printFFTStats</a>(params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#abadfe590c1eee74fb0e6706a2538eba4">world_rank</a>);</div>
-<div class="line"><span class="lineno">  180</span>    <span class="keywordflow">if</span> (params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#abadfe590c1eee74fb0e6706a2538eba4">world_rank</a> == 0)printf(<span class="stringliteral">&quot;   Initialization: mean %llu us, min %llu us, max %llu us (%5.2g minutes)\n&quot;</span>,init_mean,init_min,init_max,((<span class="keywordtype">double</span>)(init_mean)) * 1.66667e-8);</div>
-<div class="line"><span class="lineno">  181</span>    <span class="keywordflow">if</span> (params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#abadfe590c1eee74fb0e6706a2538eba4">world_rank</a> == 0)printf(<span class="stringliteral">&quot;   Total: %5.2g minutes\n&quot;</span>,((<span class="keywordtype">double</span>)(end-start)) * 1.66667e-8);</div>
-<div class="line"><span class="lineno">  182</span>    <span class="keywordflow">if</span> (params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#abadfe590c1eee74fb0e6706a2538eba4">world_rank</a> == 0)printf(<span class="stringliteral">&quot;=========\n\n&quot;</span>);</div>
-<div class="line"><span class="lineno">  183</span>    <span class="comment">//}</span></div>
-<div class="line"><span class="lineno">  184</span> </div>
-<div class="line"><span class="lineno">  185</span> </div>
-<div class="line"><span class="lineno">  186</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  187</span>}</div>
+<div class="line"><span class="lineno">  155</span>    MPI_Barrier(MPI_COMM_WORLD);</div>
+<div class="line"><span class="lineno">  156</span> </div>
+<div class="line"><span class="lineno">  157</span>    <span class="comment">//printf(&quot;NP: %d\n&quot;,params.n_particles);</span></div>
+<div class="line"><span class="lineno">  158</span>    </div>
+<div class="line"><span class="lineno">  159</span>    <a class="code hl_function" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a02e404ddd45f930637353436ca2ad1da">HACCGPM::parallel::CIC</a>(mem.d_grid,mem.d_tempgrid,mem.d_pos,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a363928a721d27c766c0882a38d0d6e9a">n_particles</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a36eb38d8a633ba0f7d968c99b42bac83">local_grid_size</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a571a4ce79600b587e0a89620683fc00d">blockSize</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#abadfe590c1eee74fb0e6706a2538eba4">world_rank</a>, params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#acb2ba048d9a5776f65843bc184c5d6f0">world_size</a>);</div>
+<div class="line"><span class="lineno">  160</span>    <span class="comment">//HACCGPM::parallel::transferParticles(params,mem);</span></div>
+<div class="line"><span class="lineno">  161</span> </div>
+<div class="line"><span class="lineno">  162</span>    <a class="code hl_function" href="../../d1/dc2/ccamb_8c.html#a5ab88a74581ba806512989a18ab0da32">finalize_python</a>(0);</div>
+<div class="line"><span class="lineno">  163</span> </div>
+<div class="line"><span class="lineno">  164</span>    <a class="code hl_function" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#ac91e913d79581a70c40b74ad21ed968d">HACCGPM::parallel::finalize_swfft</a>();</div>
+<div class="line"><span class="lineno">  165</span> </div>
+<div class="line"><span class="lineno">  166</span>    MPI_Barrier(MPI_COMM_WORLD);</div>
+<div class="line"><span class="lineno">  167</span> </div>
+<div class="line"><span class="lineno">  168</span>    <a class="code hl_typedef" href="../../da/d0d/haccgpm_8hpp.html#aa790b6767cf9152c32b179d29c46e3ef">CPUTimer_t</a> end = <a class="code hl_function" href="../../da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6">CPUTimer</a>();</div>
+<div class="line"><span class="lineno">  169</span> </div>
+<div class="line"><span class="lineno">  170</span>    <a class="code hl_typedef" href="../../da/d0d/haccgpm_8hpp.html#aa790b6767cf9152c32b179d29c46e3ef">CPUTimer_t</a> init_mean, init_max, init_min;</div>
+<div class="line"><span class="lineno">  171</span>    <a class="code hl_function" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a988a5e3e292fca5fb93bd5c754ff9e3c">HACCGPM::parallel::timing_stats</a>(init_time,&amp;init_min,&amp;init_max,&amp;init_mean);</div>
+<div class="line"><span class="lineno">  172</span> </div>
+<div class="line"><span class="lineno">  173</span>    <span class="keywordflow">if</span> (params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#abadfe590c1eee74fb0e6706a2538eba4">world_rank</a> == 0)printf(<span class="stringliteral">&quot;\n\n=========\nMPI Stats:\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  174</span>    <a class="code hl_function" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a709934c2ca1db4459e610dc7f7441d7d">HACCGPM::parallel::printTransferBytes</a>(params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#abadfe590c1eee74fb0e6706a2538eba4">world_rank</a>);</div>
+<div class="line"><span class="lineno">  175</span>    <span class="keywordflow">if</span> (params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#abadfe590c1eee74fb0e6706a2538eba4">world_rank</a> == 0)printf(<span class="stringliteral">&quot;=========\n\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  176</span> </div>
+<div class="line"><span class="lineno">  177</span>    <span class="comment">//if (params.world_rank == 0){</span></div>
+<div class="line"><span class="lineno">  178</span>    <span class="keywordflow">if</span> (params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#abadfe590c1eee74fb0e6706a2538eba4">world_rank</a> == 0)printf(<span class="stringliteral">&quot;\n\n=========\nTimers:\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  179</span>    <a class="code hl_function" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a3be1b15261819bb255780e9c34d6ad31">HACCGPM::parallel::printTransferTimes</a>(params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#abadfe590c1eee74fb0e6706a2538eba4">world_rank</a>);</div>
+<div class="line"><span class="lineno">  180</span>    <a class="code hl_function" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a123085a590cbc09148ef1558564afe8d">HACCGPM::parallel::printFFTStats</a>(params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#abadfe590c1eee74fb0e6706a2538eba4">world_rank</a>);</div>
+<div class="line"><span class="lineno">  181</span>    <a class="code hl_function" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#aafb47a3e84785288897c7c4c20d7c39f">HACCGPM::parallel::printCICTimes</a>(params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#abadfe590c1eee74fb0e6706a2538eba4">world_rank</a>);</div>
+<div class="line"><span class="lineno">  182</span>    <span class="keywordflow">if</span> (params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#abadfe590c1eee74fb0e6706a2538eba4">world_rank</a> == 0)printf(<span class="stringliteral">&quot;   Initialization: mean %llu us, min %llu us, max %llu us (%5.2g minutes)\n&quot;</span>,init_mean,init_min,init_max,((<span class="keywordtype">double</span>)(init_mean)) * 1.66667e-8);</div>
+<div class="line"><span class="lineno">  183</span>    <span class="keywordflow">if</span> (params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#abadfe590c1eee74fb0e6706a2538eba4">world_rank</a> == 0)printf(<span class="stringliteral">&quot;   Total: %5.2g minutes\n&quot;</span>,((<span class="keywordtype">double</span>)(end-start)) * 1.66667e-8);</div>
+<div class="line"><span class="lineno">  184</span>    <span class="keywordflow">if</span> (params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#abadfe590c1eee74fb0e6706a2538eba4">world_rank</a> == 0)printf(<span class="stringliteral">&quot;=========\n\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  185</span>    <span class="comment">//}</span></div>
+<div class="line"><span class="lineno">  186</span> </div>
+<div class="line"><span class="lineno">  187</span> </div>
+<div class="line"><span class="lineno">  188</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  189</span>}</div>
 <div class="ttc" id="accamb_8c_html_a5ab88a74581ba806512989a18ab0da32"><div class="ttname"><a href="../../d1/dc2/ccamb_8c.html#a5ab88a74581ba806512989a18ab0da32">finalize_python</a></div><div class="ttdeci">void finalize_python(int calls)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dc2/ccamb_8c_source.html#l00117">ccamb.c:117</a></div></div>
 <div class="ttc" id="accamb_8c_html_acede3def4aca9816e9ed0d9f91a67567"><div class="ttname"><a href="../../d1/dc2/ccamb_8c.html#acede3def4aca9816e9ed0d9f91a67567">init_python</a></div><div class="ttdeci">void init_python(int calls, int world_rank_)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dc2/ccamb_8c_source.html#l00069">ccamb.c:69</a></div></div>
-<div class="ttc" id="aclassHACCGPM_1_1Timestepper_html"><div class="ttname"><a href="../../db/df0/classHACCGPM_1_1Timestepper.html">HACCGPM::Timestepper</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00099">haccgpm.hpp:99</a></div></div>
-<div class="ttc" id="aclassHACCGPM_1_1parallel_1_1MemoryManager_html"><div class="ttname"><a href="../../db/da8/classHACCGPM_1_1parallel_1_1MemoryManager.html">HACCGPM::parallel::MemoryManager</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00121">haccgpm.hpp:121</a></div></div>
+<div class="ttc" id="aclassHACCGPM_1_1Timestepper_html"><div class="ttname"><a href="../../db/df0/classHACCGPM_1_1Timestepper.html">HACCGPM::Timestepper</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00100">haccgpm.hpp:100</a></div></div>
+<div class="ttc" id="aclassHACCGPM_1_1parallel_1_1MemoryManager_html"><div class="ttname"><a href="../../db/da8/classHACCGPM_1_1parallel_1_1MemoryManager.html">HACCGPM::parallel::MemoryManager</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00122">haccgpm.hpp:122</a></div></div>
 <div class="ttc" id="ahaccgpm_8hpp_html_a78588985bccaffcba4aa40467d7961d6"><div class="ttname"><a href="../../da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6">CPUTimer</a></div><div class="ttdeci">unsigned long long CPUTimer(unsigned long long start=0)</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00014">haccgpm.hpp:14</a></div></div>
 <div class="ttc" id="ahaccgpm_8hpp_html_aa790b6767cf9152c32b179d29c46e3ef"><div class="ttname"><a href="../../da/d0d/haccgpm_8hpp.html#aa790b6767cf9152c32b179d29c46e3ef">CPUTimer_t</a></div><div class="ttdeci">unsigned long long CPUTimer_t</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00012">haccgpm.hpp:12</a></div></div>
-<div class="ttc" id="anamespaceHACCGPM_1_1parallel_html_a02e404ddd45f930637353436ca2ad1da"><div class="ttname"><a href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a02e404ddd45f930637353436ca2ad1da">HACCGPM::parallel::CIC</a></div><div class="ttdeci">void CIC(deviceFFT_t *d_grid, float *d_extragrid, float4 *d_pos, int ng, int n_particles, int *local_grid_size, int blockSize, int world_rank, int world_size, int calls=0)</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dce/cic_8cu_source.html#l00178">cic.cu:178</a></div></div>
+<div class="ttc" id="anamespaceHACCGPM_1_1parallel_html_a02e404ddd45f930637353436ca2ad1da"><div class="ttname"><a href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a02e404ddd45f930637353436ca2ad1da">HACCGPM::parallel::CIC</a></div><div class="ttdeci">void CIC(deviceFFT_t *d_grid, float *d_extragrid, float4 *d_pos, int ng, int n_particles, int *local_grid_size, int blockSize, int world_rank, int world_size, int calls=0)</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dce/cic_8cu_source.html#l00228">cic.cu:228</a></div></div>
 <div class="ttc" id="anamespaceHACCGPM_1_1parallel_html_a123085a590cbc09148ef1558564afe8d"><div class="ttname"><a href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a123085a590cbc09148ef1558564afe8d">HACCGPM::parallel::printFFTStats</a></div><div class="ttdeci">void printFFTStats(int world_rank)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/df7/swfftmanager_8cpp_source.html#l00088">swfftmanager.cpp:88</a></div></div>
-<div class="ttc" id="anamespaceHACCGPM_1_1parallel_html_a3be1b15261819bb255780e9c34d6ad31"><div class="ttname"><a href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a3be1b15261819bb255780e9c34d6ad31">HACCGPM::parallel::printTransferTimes</a></div><div class="ttdeci">void printTransferTimes(int world_rank)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/dec/transfers_8cpp_source.html#l00290">transfers.cpp:290</a></div></div>
-<div class="ttc" id="anamespaceHACCGPM_1_1parallel_html_a63680cefed0f7a301de2aa49779afcf6"><div class="ttname"><a href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a63680cefed0f7a301de2aa49779afcf6">HACCGPM::parallel::transferParticles</a></div><div class="ttdeci">void transferParticles(HACCGPM::Params &amp;params, HACCGPM::parallel::MemoryManager &amp;mem, int calls=0)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/dec/transfers_8cpp_source.html#l00180">transfers.cpp:180</a></div></div>
-<div class="ttc" id="anamespaceHACCGPM_1_1parallel_html_a709934c2ca1db4459e610dc7f7441d7d"><div class="ttname"><a href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a709934c2ca1db4459e610dc7f7441d7d">HACCGPM::parallel::printTransferBytes</a></div><div class="ttdeci">void printTransferBytes(int world_rank)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/dec/transfers_8cpp_source.html#l00281">transfers.cpp:281</a></div></div>
+<div class="ttc" id="anamespaceHACCGPM_1_1parallel_html_a3be1b15261819bb255780e9c34d6ad31"><div class="ttname"><a href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a3be1b15261819bb255780e9c34d6ad31">HACCGPM::parallel::printTransferTimes</a></div><div class="ttdeci">void printTransferTimes(int world_rank)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/dec/transfers_8cpp_source.html#l00305">transfers.cpp:305</a></div></div>
+<div class="ttc" id="anamespaceHACCGPM_1_1parallel_html_a709934c2ca1db4459e610dc7f7441d7d"><div class="ttname"><a href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a709934c2ca1db4459e610dc7f7441d7d">HACCGPM::parallel::printTransferBytes</a></div><div class="ttdeci">void printTransferBytes(int world_rank)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/dec/transfers_8cpp_source.html#l00296">transfers.cpp:296</a></div></div>
 <div class="ttc" id="anamespaceHACCGPM_1_1parallel_html_a988a5e3e292fca5fb93bd5c754ff9e3c"><div class="ttname"><a href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a988a5e3e292fca5fb93bd5c754ff9e3c">HACCGPM::parallel::timing_stats</a></div><div class="ttdeci">void timing_stats(CPUTimer_t t, CPUTimer_t *mint, CPUTimer_t *maxt, CPUTimer_t *meant)</div><div class="ttdef"><b>Definition</b> <a href="../../d2/db4/timers_8cpp_source.html#l00006">timers.cpp:6</a></div></div>
+<div class="ttc" id="anamespaceHACCGPM_1_1parallel_html_aafb47a3e84785288897c7c4c20d7c39f"><div class="ttname"><a href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#aafb47a3e84785288897c7c4c20d7c39f">HACCGPM::parallel::printCICTimes</a></div><div class="ttdeci">void printCICTimes(int world_rank)</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dce/cic_8cu_source.html#l00248">cic.cu:248</a></div></div>
+<div class="ttc" id="anamespaceHACCGPM_1_1parallel_html_ab67a1d4d424d75f9fd6046323ae44ec1"><div class="ttname"><a href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#ab67a1d4d424d75f9fd6046323ae44ec1">HACCGPM::parallel::initTransferParticles</a></div><div class="ttdeci">void initTransferParticles(HACCGPM::Params &amp;params, HACCGPM::parallel::MemoryManager &amp;mem, int calls=0)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/dec/transfers_8cpp_source.html#l00195">transfers.cpp:195</a></div></div>
 <div class="ttc" id="anamespaceHACCGPM_1_1parallel_html_ac91e913d79581a70c40b74ad21ed968d"><div class="ttname"><a href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#ac91e913d79581a70c40b74ad21ed968d">HACCGPM::parallel::finalize_swfft</a></div><div class="ttdeci">void finalize_swfft()</div><div class="ttdef"><b>Definition</b> <a href="../../d4/df7/swfftmanager_8cpp_source.html#l00058">swfftmanager.cpp:58</a></div></div>
 <div class="ttc" id="anamespaceHACCGPM_1_1parallel_html_acac1f2241bc62f1bf39dce1c0d2f637e"><div class="ttname"><a href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#acac1f2241bc62f1bf39dce1c0d2f637e">HACCGPM::parallel::init_swfft</a></div><div class="ttdeci">void init_swfft(HACCGPM::Params &amp;params)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/df7/swfftmanager_8cpp_source.html#l00053">swfftmanager.cpp:53</a></div></div>
 <div class="ttc" id="anamespaceHACCGPM_1_1parallel_html_af10a44b19c6bfe6e4edd7776b4a0df5c"><div class="ttname"><a href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#af10a44b19c6bfe6e4edd7776b4a0df5c">HACCGPM::parallel::GenerateDisplacementIC</a></div><div class="ttdeci">void GenerateDisplacementIC(const char *params_file, HACCGPM::parallel::MemoryManager *mem, int ng, double rl, double z, double deltaT, double fscal, int seed, int blockSize, int world_rank, int world_size, int nlocal, int *local_grid_size, int calls=0)</div><div class="ttdef"><b>Definition</b> <a href="../../de/d3b/initializer_8cu_source.html#l00414">initializer.cu:414</a></div></div>
 <div class="ttc" id="anamespaceHACCGPM_html_a3693eae7739d13e58be7ba8865e563f7"><div class="ttname"><a href="../../d5/d1c/namespaceHACCGPM.html#a3693eae7739d13e58be7ba8865e563f7">HACCGPM::read_params</a></div><div class="ttdeci">Params read_params(const char *fname)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d07/params_8cu_source.html#l00005">params.cu:5</a></div></div>
-<div class="ttc" id="astructHACCGPM_1_1Params_html"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html">HACCGPM::Params</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00051">haccgpm.hpp:51</a></div></div>
-<div class="ttc" id="astructHACCGPM_1_1Params_html_a363928a721d27c766c0882a38d0d6e9a"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#a363928a721d27c766c0882a38d0d6e9a">HACCGPM::Params::n_particles</a></div><div class="ttdeci">int n_particles</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00094">haccgpm.hpp:94</a></div></div>
-<div class="ttc" id="astructHACCGPM_1_1Params_html_a36eb38d8a633ba0f7d968c99b42bac83"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#a36eb38d8a633ba0f7d968c99b42bac83">HACCGPM::Params::local_grid_size</a></div><div class="ttdeci">int local_grid_size[3]</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00091">haccgpm.hpp:91</a></div></div>
-<div class="ttc" id="astructHACCGPM_1_1Params_html_a39d115ed45dabd61aa1b3528d0a0fd0f"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">HACCGPM::Params::ng</a></div><div class="ttdeci">int ng</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00052">haccgpm.hpp:52</a></div></div>
-<div class="ttc" id="astructHACCGPM_1_1Params_html_a571a4ce79600b587e0a89620683fc00d"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#a571a4ce79600b587e0a89620683fc00d">HACCGPM::Params::blockSize</a></div><div class="ttdeci">int blockSize</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00054">haccgpm.hpp:54</a></div></div>
-<div class="ttc" id="astructHACCGPM_1_1Params_html_a58f805768e0a0e28e25a3acc63fea57b"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#a58f805768e0a0e28e25a3acc63fea57b">HACCGPM::Params::nlocal</a></div><div class="ttdeci">int nlocal</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00086">haccgpm.hpp:86</a></div></div>
-<div class="ttc" id="astructHACCGPM_1_1Params_html_a5eb7af8e1361d248d111fbfdb33813d5"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#a5eb7af8e1361d248d111fbfdb33813d5">HACCGPM::Params::seed</a></div><div class="ttdeci">int seed</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00055">haccgpm.hpp:55</a></div></div>
-<div class="ttc" id="astructHACCGPM_1_1Params_html_a9a23dda8505b9d130900a65f487ef008"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#a9a23dda8505b9d130900a65f487ef008">HACCGPM::Params::grid_dims</a></div><div class="ttdeci">int grid_dims[3]</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00092">haccgpm.hpp:92</a></div></div>
-<div class="ttc" id="astructHACCGPM_1_1Params_html_a9d2183dbb238250747c77ed30de4f35e"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#a9d2183dbb238250747c77ed30de4f35e">HACCGPM::Params::z_ini</a></div><div class="ttdeci">double z_ini</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00056">haccgpm.hpp:56</a></div></div>
-<div class="ttc" id="astructHACCGPM_1_1Params_html_abadfe590c1eee74fb0e6706a2538eba4"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#abadfe590c1eee74fb0e6706a2538eba4">HACCGPM::Params::world_rank</a></div><div class="ttdeci">int world_rank</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00088">haccgpm.hpp:88</a></div></div>
-<div class="ttc" id="astructHACCGPM_1_1Params_html_acb2ba048d9a5776f65843bc184c5d6f0"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#acb2ba048d9a5776f65843bc184c5d6f0">HACCGPM::Params::world_size</a></div><div class="ttdeci">int world_size</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00089">haccgpm.hpp:89</a></div></div>
-<div class="ttc" id="astructHACCGPM_1_1Params_html_af74f0b126b4bdc8db5c20964d6871715"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#af74f0b126b4bdc8db5c20964d6871715">HACCGPM::Params::rl</a></div><div class="ttdeci">double rl</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00053">haccgpm.hpp:53</a></div></div>
+<div class="ttc" id="astructHACCGPM_1_1Params_html"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html">HACCGPM::Params</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00050">haccgpm.hpp:50</a></div></div>
+<div class="ttc" id="astructHACCGPM_1_1Params_html_a363928a721d27c766c0882a38d0d6e9a"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#a363928a721d27c766c0882a38d0d6e9a">HACCGPM::Params::n_particles</a></div><div class="ttdeci">int n_particles</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00093">haccgpm.hpp:93</a></div></div>
+<div class="ttc" id="astructHACCGPM_1_1Params_html_a36eb38d8a633ba0f7d968c99b42bac83"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#a36eb38d8a633ba0f7d968c99b42bac83">HACCGPM::Params::local_grid_size</a></div><div class="ttdeci">int local_grid_size[3]</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00090">haccgpm.hpp:90</a></div></div>
+<div class="ttc" id="astructHACCGPM_1_1Params_html_a39d115ed45dabd61aa1b3528d0a0fd0f"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">HACCGPM::Params::ng</a></div><div class="ttdeci">int ng</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00051">haccgpm.hpp:51</a></div></div>
+<div class="ttc" id="astructHACCGPM_1_1Params_html_a571a4ce79600b587e0a89620683fc00d"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#a571a4ce79600b587e0a89620683fc00d">HACCGPM::Params::blockSize</a></div><div class="ttdeci">int blockSize</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00053">haccgpm.hpp:53</a></div></div>
+<div class="ttc" id="astructHACCGPM_1_1Params_html_a58f805768e0a0e28e25a3acc63fea57b"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#a58f805768e0a0e28e25a3acc63fea57b">HACCGPM::Params::nlocal</a></div><div class="ttdeci">int nlocal</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00085">haccgpm.hpp:85</a></div></div>
+<div class="ttc" id="astructHACCGPM_1_1Params_html_a5eb7af8e1361d248d111fbfdb33813d5"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#a5eb7af8e1361d248d111fbfdb33813d5">HACCGPM::Params::seed</a></div><div class="ttdeci">int seed</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00054">haccgpm.hpp:54</a></div></div>
+<div class="ttc" id="astructHACCGPM_1_1Params_html_a9a23dda8505b9d130900a65f487ef008"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#a9a23dda8505b9d130900a65f487ef008">HACCGPM::Params::grid_dims</a></div><div class="ttdeci">int grid_dims[3]</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00091">haccgpm.hpp:91</a></div></div>
+<div class="ttc" id="astructHACCGPM_1_1Params_html_a9d2183dbb238250747c77ed30de4f35e"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#a9d2183dbb238250747c77ed30de4f35e">HACCGPM::Params::z_ini</a></div><div class="ttdeci">double z_ini</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00055">haccgpm.hpp:55</a></div></div>
+<div class="ttc" id="astructHACCGPM_1_1Params_html_abadfe590c1eee74fb0e6706a2538eba4"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#abadfe590c1eee74fb0e6706a2538eba4">HACCGPM::Params::world_rank</a></div><div class="ttdeci">int world_rank</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00087">haccgpm.hpp:87</a></div></div>
+<div class="ttc" id="astructHACCGPM_1_1Params_html_acb2ba048d9a5776f65843bc184c5d6f0"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#acb2ba048d9a5776f65843bc184c5d6f0">HACCGPM::Params::world_size</a></div><div class="ttdeci">int world_size</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00088">haccgpm.hpp:88</a></div></div>
+<div class="ttc" id="astructHACCGPM_1_1Params_html_af74f0b126b4bdc8db5c20964d6871715"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#af74f0b126b4bdc8db5c20964d6871715">HACCGPM::Params::rl</a></div><div class="ttdeci">double rl</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00052">haccgpm.hpp:52</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00054">HACCGPM::Params::blockSize</a>, <a class="el" href="../../d6/dce/cic_8cu_source.html#l00178">HACCGPM::parallel::CIC()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00014">CPUTimer()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00129">HACCGPM::parallel::MemoryManager::d_extragrid</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00128">HACCGPM::parallel::MemoryManager::d_grid</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00124">HACCGPM::parallel::MemoryManager::d_pos</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00104">HACCGPM::Timestepper::deltaT</a>, <a class="el" href="../../d1/dc2/ccamb_8c_source.html#l00117">finalize_python()</a>, <a class="el" href="../../d4/df7/swfftmanager_8cpp_source.html#l00058">HACCGPM::parallel::finalize_swfft()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00106">HACCGPM::Timestepper::fscal</a>, <a class="el" href="../../de/d3b/initializer_8cu_source.html#l00414">HACCGPM::parallel::GenerateDisplacementIC()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00092">HACCGPM::Params::grid_dims</a>, <a class="el" href="../../d1/dc2/ccamb_8c_source.html#l00069">init_python()</a>, <a class="el" href="../../d4/df7/swfftmanager_8cpp_source.html#l00053">HACCGPM::parallel::init_swfft()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00091">HACCGPM::Params::local_grid_size</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00094">HACCGPM::Params::n_particles</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00052">HACCGPM::Params::ng</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00086">HACCGPM::Params::nlocal</a>, <a class="el" href="../../d4/df7/swfftmanager_8cpp_source.html#l00088">HACCGPM::parallel::printFFTStats()</a>, <a class="el" href="../../d9/dec/transfers_8cpp_source.html#l00281">HACCGPM::parallel::printTransferBytes()</a>, <a class="el" href="../../d9/dec/transfers_8cpp_source.html#l00290">HACCGPM::parallel::printTransferTimes()</a>, <a class="el" href="../../d1/d07/params_8cu_source.html#l00005">HACCGPM::read_params()</a>, <a class="el" href="../../d4/d48/timestepper_8cu_source.html#l00058">HACCGPM::Timestepper::reverseHalfStep()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00053">HACCGPM::Params::rl</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00055">HACCGPM::Params::seed</a>, <a class="el" href="../../d4/d48/timestepper_8cu_source.html#l00042">HACCGPM::Timestepper::setInitialZ()</a>, <a class="el" href="../../d2/db4/timers_8cpp_source.html#l00006">HACCGPM::parallel::timing_stats()</a>, <a class="el" href="../../d9/dec/transfers_8cpp_source.html#l00180">HACCGPM::parallel::transferParticles()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00088">HACCGPM::Params::world_rank</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00089">HACCGPM::Params::world_size</a>, and <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00056">HACCGPM::Params::z_ini</a>.</p>
+<p class="reference">References <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00053">HACCGPM::Params::blockSize</a>, <a class="el" href="../../d6/dce/cic_8cu_source.html#l00228">HACCGPM::parallel::CIC()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00014">CPUTimer()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00129">HACCGPM::parallel::MemoryManager::d_grid</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00125">HACCGPM::parallel::MemoryManager::d_pos</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00130">HACCGPM::parallel::MemoryManager::d_tempgrid</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00105">HACCGPM::Timestepper::deltaT</a>, <a class="el" href="../../d1/dc2/ccamb_8c_source.html#l00117">finalize_python()</a>, <a class="el" href="../../d4/df7/swfftmanager_8cpp_source.html#l00058">HACCGPM::parallel::finalize_swfft()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00107">HACCGPM::Timestepper::fscal</a>, <a class="el" href="../../de/d3b/initializer_8cu_source.html#l00414">HACCGPM::parallel::GenerateDisplacementIC()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00091">HACCGPM::Params::grid_dims</a>, <a class="el" href="../../d1/dc2/ccamb_8c_source.html#l00069">init_python()</a>, <a class="el" href="../../d4/df7/swfftmanager_8cpp_source.html#l00053">HACCGPM::parallel::init_swfft()</a>, <a class="el" href="../../d9/dec/transfers_8cpp_source.html#l00195">HACCGPM::parallel::initTransferParticles()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00090">HACCGPM::Params::local_grid_size</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00093">HACCGPM::Params::n_particles</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00051">HACCGPM::Params::ng</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00085">HACCGPM::Params::nlocal</a>, <a class="el" href="../../d6/dce/cic_8cu_source.html#l00248">HACCGPM::parallel::printCICTimes()</a>, <a class="el" href="../../d4/df7/swfftmanager_8cpp_source.html#l00088">HACCGPM::parallel::printFFTStats()</a>, <a class="el" href="../../d9/dec/transfers_8cpp_source.html#l00296">HACCGPM::parallel::printTransferBytes()</a>, <a class="el" href="../../d9/dec/transfers_8cpp_source.html#l00305">HACCGPM::parallel::printTransferTimes()</a>, <a class="el" href="../../d1/d07/params_8cu_source.html#l00005">HACCGPM::read_params()</a>, <a class="el" href="../../d4/d48/timestepper_8cu_source.html#l00058">HACCGPM::Timestepper::reverseHalfStep()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00052">HACCGPM::Params::rl</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00054">HACCGPM::Params::seed</a>, <a class="el" href="../../d4/d48/timestepper_8cu_source.html#l00042">HACCGPM::Timestepper::setInitialZ()</a>, <a class="el" href="../../d2/db4/timers_8cpp_source.html#l00006">HACCGPM::parallel::timing_stats()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00087">HACCGPM::Params::world_rank</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00088">HACCGPM::Params::world_size</a>, and <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00055">HACCGPM::Params::z_ini</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d5/d15/driver_8cpp_source.html#l00189">main()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d5/d15/driver_8cpp_source.html#l00191">main()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d5/d15/driver_8cpp_aa3f472f1ca752b97ec41b62c5afa64b1_cgraph.png" border="0" usemap="#ad5/d15/driver_8cpp_aa3f472f1ca752b97ec41b62c5afa64b1_cgraph" alt=""/></div>
 <map name="ad5/d15/driver_8cpp_aa3f472f1ca752b97ec41b62c5afa64b1_cgraph" id="ad5/d15/driver_8cpp_aa3f472f1ca752b97ec41b62c5afa64b1_cgraph">
-<area shape="rect" title=" " alt="" coords="5,933,68,959"/>
-<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a02e404ddd45f930637353436ca2ad1da" title=" " alt="" coords="117,515,289,540"/>
-<area shape="poly" title=" " alt="" coords="37,932,64,828,86,756,114,684,150,610,185,550,190,553,155,612,118,686,91,758,69,830,42,934"/>
-<area shape="rect" href="../../da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6" title=" " alt="" coords="811,385,895,411"/>
-<area shape="poly" title=" " alt="" coords="35,933,40,847,53,717,63,650,76,587,93,536,114,500,135,482,164,466,238,440,330,422,432,409,638,396,798,394,798,400,638,401,432,414,331,427,239,446,166,471,138,486,118,504,98,538,81,589,68,651,58,718,45,848,40,933"/>
-<area shape="rect" href="../../d1/dc2/ccamb_8c.html#a5ab88a74581ba806512989a18ab0da32" title=" " alt="" coords="149,761,258,787"/>
-<area shape="poly" title=" " alt="" coords="37,932,62,868,84,830,114,797,134,785,137,790,118,801,88,833,66,870,42,934"/>
-<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#ac91e913d79581a70c40b74ad21ed968d" title=" " alt="" coords="129,811,277,851"/>
-<area shape="poly" title=" " alt="" coords="44,931,73,897,114,861,125,855,127,860,118,865,77,901,48,935"/>
-<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#af10a44b19c6bfe6e4edd7776b4a0df5c" title=" " alt="" coords="119,697,288,737"/>
-<area shape="poly" title=" " alt="" coords="36,932,42,896,56,847,79,794,95,769,114,747,119,743,122,747,118,751,99,772,84,796,61,849,47,897,41,933"/>
-<area shape="rect" href="../../d1/dc2/ccamb_8c.html#acede3def4aca9816e9ed0d9f91a67567" title=" " alt="" coords="161,876,246,901"/>
-<area shape="poly" title=" " alt="" coords="65,931,115,911,147,901,148,907,117,917,67,936"/>
-<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#acac1f2241bc62f1bf39dce1c0d2f637e" title=" " alt="" coords="129,926,277,966"/>
-<area shape="poly" title=" " alt="" coords="68,943,116,943,116,949,68,949"/>
-<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a123085a590cbc09148ef1558564afe8d" title=" " alt="" coords="129,1041,277,1081"/>
-<area shape="poly" title=" " alt="" coords="49,957,79,988,118,1020,139,1032,137,1037,114,1024,75,992,45,961"/>
-<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a988a5e3e292fca5fb93bd5c754ff9e3c" title=" " alt="" coords="359,1041,507,1081"/>
-<area shape="poly" title=" " alt="" coords="67,956,117,975,236,1011,346,1038,344,1044,234,1016,115,981,65,961"/>
-<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a709934c2ca1db4459e610dc7f7441d7d" title=" " alt="" coords="129,1169,277,1209"/>
-<area shape="poly" title=" " alt="" coords="40,958,46,996,59,1049,82,1105,98,1132,118,1155,122,1159,119,1163,114,1159,94,1135,77,1108,54,1051,41,998,35,959"/>
-<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a3be1b15261819bb255780e9c34d6ad31" title=" " alt="" coords="129,1105,277,1145"/>
-<area shape="poly" title=" " alt="" coords="43,958,67,1021,89,1058,118,1091,123,1095,120,1099,114,1095,85,1061,63,1023,38,960"/>
-<area shape="rect" href="../../d5/d1c/namespaceHACCGPM.html#a3693eae7739d13e58be7ba8865e563f7" title=" " alt="" coords="116,1233,291,1259"/>
-<area shape="poly" title=" " alt="" coords="41,958,69,1093,91,1169,104,1199,118,1219,124,1224,120,1228,114,1222,100,1202,86,1171,63,1094,36,959"/>
-<area shape="rect" href="../../db/df0/classHACCGPM_1_1Timestepper.html#a27407a8033a031a536cdcf76f882b440" title=" " alt="" coords="118,1347,289,1387"/>
-<area shape="poly" title=" " alt="" coords="40,959,47,1035,62,1147,86,1259,101,1304,118,1334,121,1337,117,1340,114,1337,96,1306,80,1261,57,1148,42,1035,35,959"/>
-<area shape="rect" href="../../db/df0/classHACCGPM_1_1Timestepper.html#a6155f2c22c7bc7ceb485685c3a82ba6e" title=" " alt="" coords="118,1283,289,1323"/>
-<area shape="poly" title=" " alt="" coords="41,958,50,1023,66,1116,89,1208,103,1244,118,1268,123,1273,119,1277,114,1272,98,1246,84,1209,61,1117,45,1024,36,959"/>
-<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a63680cefed0f7a301de2aa49779afcf6" title=" " alt="" coords="359,187,507,227"/>
-<area shape="poly" title=" " alt="" coords="34,933,38,828,50,663,60,576,74,494,91,426,114,378,136,350,163,324,222,282,285,251,345,228,347,233,287,256,225,287,166,329,140,353,118,381,96,428,79,495,65,576,55,663,44,828,40,933"/>
-<area shape="rect" href="../../d6/dce/cic_8cu.html#aadea9eea5f5984f3f9792f4f4b1c8cbe" title=" " alt="" coords="369,487,496,512"/>
-<area shape="poly" title=" " alt="" coords="289,514,355,506,356,511,290,519"/>
-<area shape="poly" title=" " alt="" coords="229,512,279,491,338,471,447,447,533,435,620,428,730,414,798,404,798,409,731,419,620,433,533,441,448,452,339,477,281,496,231,517"/>
-<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#ac66d632437a71d40e49ac15c25b5a26f" title=" " alt="" coords="359,537,507,577"/>
-<area shape="poly" title=" " alt="" coords="290,536,345,543,345,548,289,541"/>
-<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a31a4b3e867d91495908cb284b049c610" title=" " alt="" coords="579,537,727,577"/>
-<area shape="poly" title=" " alt="" coords="507,554,565,554,565,559,507,559"/>
-<area shape="rect" href="../../d1/dc6/particleswapkernels_8cu.html#aaf2d833243661c8b0d95bb5091d3382e" title=" " alt="" coords="779,544,928,569"/>
-<area shape="poly" title=" " alt="" coords="727,554,765,554,765,559,727,559"/>
-<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#add12ee925b08f1eca77ec3d4c2b94aed" title=" " alt="" coords="359,611,507,651"/>
-<area shape="poly" title=" " alt="" coords="256,694,365,654,367,659,258,699"/>
-<area shape="rect" href="../../de/d3b/initializer_8cu.html#a8d1235c9dcec22662164f05aca0fe102" title=" " alt="" coords="343,697,523,737"/>
-<area shape="poly" title=" " alt="" coords="288,714,329,714,329,719,288,719"/>
-<area shape="rect" href="../../d1/dc2/ccamb_8c.html#ac0e00d8b9c96e56e190e4c04d30fb237" title=" " alt="" coords="353,860,512,885"/>
-<area shape="poly" title=" " alt="" coords="275,735,292,747,304,760,311,773,317,798,323,822,329,834,340,845,349,851,346,856,337,849,325,837,318,824,312,799,306,774,299,763,289,751,272,739"/>
-<area shape="rect" href="../../de/d3b/initializer_8cu.html#a2fe476c02dd57a3bf0adeed08604e935" title=" " alt="" coords="381,811,485,836"/>
-<area shape="poly" title=" " alt="" coords="270,734,292,746,307,759,317,772,326,784,340,796,368,808,366,813,337,800,322,788,312,775,303,763,289,751,267,739"/>
-<area shape="rect" href="../../de/d3b/initializer_8cu.html#a0ff351b62d308a913e30708b2ce6952e" title=" " alt="" coords="393,909,472,935"/>
-<area shape="poly" title=" " alt="" coords="277,735,293,747,307,766,314,786,317,823,319,860,326,877,340,895,359,907,381,915,379,920,357,912,337,899,322,880,314,861,311,824,309,787,302,769,289,751,274,739"/>
-<area shape="rect" href="../../de/d3b/initializer_8cu.html#ac29241f3695227eb88a70b902a8b3cdb" title=" " alt="" coords="357,761,508,787"/>
-<area shape="poly" title=" " alt="" coords="284,734,370,755,368,761,283,739"/>
-<area shape="poly" title=" " alt="" coords="488,609,525,587,540,571,548,555,557,539,573,523,614,499,649,489,686,481,730,465,820,415,823,420,732,470,687,486,650,494,616,504,576,527,561,542,553,558,544,574,528,591,490,614"/>
-<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#ab6fb9d3fbd0ac120db603cad0fe58b40" title=" " alt="" coords="579,601,727,641"/>
-<area shape="poly" title=" " alt="" coords="476,694,574,650,589,643,592,648,576,655,478,699"/>
-<area shape="rect" href="../../de/d3b/initializer_8cu.html#a3a6a489ebcb9da12e9b3f57b08ac6396" title=" " alt="" coords="577,813,728,839"/>
-<area shape="poly" title=" " alt="" coords="506,734,528,746,544,760,553,773,562,786,576,798,589,806,587,810,573,803,558,790,548,776,540,763,525,751,503,739"/>
-<area shape="rect" href="../../d1/dc2/ccamb_8c.html#aadc2b7f3bee3c7dd72f6f6b40f2f80b7" title=" " alt="" coords="598,665,707,691"/>
-<area shape="poly" title=" " alt="" coords="522,698,584,687,585,693,523,703"/>
-<area shape="rect" href="../../de/d3b/initializer_8cu.html#a174a7dfb28cda0d682d3532053a673af" title=" " alt="" coords="618,715,687,740"/>
-<area shape="poly" title=" " alt="" coords="523,718,605,722,604,728,523,724"/>
-<area shape="rect" href="../../de/d3b/initializer_8cu.html#a5886c0bfc1e8bc6577b1f33c8e24cd5b" title=" " alt="" coords="593,764,713,789"/>
-<area shape="poly" title=" " alt="" coords="507,734,594,758,592,763,506,739"/>
-<area shape="poly" title=" " alt="" coords="711,598,729,587,754,557,784,513,837,422,842,425,789,516,758,561,732,591,714,603"/>
-<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ad9fb99027bd0e8c4666c28a5b85d419e" title=" " alt="" coords="575,927,731,967"/>
-<area shape="poly" title=" " alt="" coords="486,827,508,834,528,845,545,862,554,879,561,896,576,913,583,918,580,922,573,917,557,899,549,882,541,865,525,849,505,839,484,832"/>
-<area shape="poly" title=" " alt="" coords="510,784,528,796,541,811,549,825,554,855,559,885,565,899,577,914,581,917,577,921,573,917,561,902,554,886,549,856,544,827,537,814,525,800,507,789"/>
-<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#adebf563a2ff1ace956181e3a26ea6cb2" title=" " alt="" coords="575,863,731,903"/>
-<area shape="poly" title=" " alt="" coords="503,784,528,796,544,809,553,822,562,835,576,848,587,855,584,859,573,852,558,838,549,825,540,812,525,800,501,789"/>
-<area shape="poly" title=" " alt="" coords="278,1058,345,1058,345,1063,278,1063"/>
-<area shape="poly" title=" " alt="" coords="275,1102,347,1082,349,1087,276,1107"/>
-<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ae31040d68a45a644d5e079616e99061c" title=" " alt="" coords="339,1293,527,1319"/>
-<area shape="poly" title=" " alt="" coords="278,1345,371,1320,373,1325,279,1350"/>
-<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ab791cb661ee56bd0e61992d605b9dd80" title=" " alt="" coords="355,1345,511,1385"/>
-<area shape="poly" title=" " alt="" coords="289,1364,341,1363,341,1368,289,1369"/>
-<area shape="rect" href="../../d4/d48/timestepper_8cu.html#aa212987f3df0db02b305c7bf57dba992" title=" " alt="" coords="583,1293,722,1319"/>
-<area shape="poly" title=" " alt="" coords="527,1303,569,1303,569,1309,527,1309"/>
-<area shape="poly" title=" " alt="" coords="289,1302,325,1302,325,1307,289,1307"/>
-<area shape="poly" title=" " alt="" coords="279,1321,345,1338,344,1344,278,1326"/>
-<area shape="poly" title=" " alt="" coords="454,226,507,272,540,297,576,318,633,343,693,362,799,387,797,392,691,368,631,348,573,323,537,301,503,276,451,230"/>
-<area shape="rect" href="../../d9/dec/transfers_8cpp.html#a9b07afb81e6ca51846ebbbdc77ec0ad2" title=" " alt="" coords="596,55,709,80"/>
-<area shape="poly" title=" " alt="" coords="454,185,507,142,573,97,602,83,604,88,576,102,510,146,457,189"/>
-<area shape="rect" href="../../d9/dec/transfers_8cpp.html#a623988a859e51c0c16684d10bd07df87" title=" " alt="" coords="830,67,877,92"/>
-<area shape="poly" title=" " alt="" coords="470,185,519,162,574,141,707,105,816,83,817,88,708,110,576,146,521,167,473,190"/>
-<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#ada405e83d092ec5f01435cb23d1e2927" title=" " alt="" coords="579,155,727,195"/>
-<area shape="poly" title=" " alt="" coords="507,194,565,185,565,191,508,199"/>
-<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#ade8a96dc38016b00be23ba4c1fc2b3e6" title=" " alt="" coords="579,219,727,259"/>
-<area shape="poly" title=" " alt="" coords="508,216,565,224,565,229,507,221"/>
-<area shape="rect" href="../../d9/dec/transfers_8cpp.html#a2050db7321dcbcdaf8a7e1e90b766dd2" title=" " alt="" coords="595,284,710,309"/>
-<area shape="poly" title=" " alt="" coords="475,225,576,269,599,277,597,282,574,274,473,230"/>
-<area shape="rect" href="../../d9/dec/transfers_8cpp.html#ad971c19126de159d299c18cf57af6877" title=" " alt="" coords="595,5,710,31"/>
-<area shape="poly" title=" " alt="" coords="443,185,493,114,530,74,573,40,584,34,586,39,576,44,534,78,498,118,447,188"/>
-<area shape="rect" href="../../d9/dec/transfers_8cpp.html#ab693f043882d2b52f64f69058b50dd10" title=" " alt="" coords="807,12,900,37"/>
-<area shape="poly" title=" " alt="" coords="709,53,792,35,794,40,710,58"/>
-<area shape="poly" title=" " alt="" coords="710,68,817,74,816,80,709,73"/>
-<area shape="rect" href="../../d1/dc6/particleswapkernels_8cu.html#adf4ea5aaed50b7025e1370de8c2414ae" title=" " alt="" coords="792,128,915,153"/>
-<area shape="poly" title=" " alt="" coords="726,160,778,151,779,156,727,165"/>
-<area shape="poly" title=" " alt="" coords="715,257,733,269,750,293,758,315,764,338,781,360,805,377,802,382,777,364,760,340,752,317,745,295,729,273,712,262"/>
-<area shape="rect" href="../../d1/dc6/particleswapkernels_8cu.html#a5ace1b44eb57b3ce75b5c54575963da5" title=" " alt="" coords="828,227,879,252"/>
-<area shape="poly" title=" " alt="" coords="727,237,814,237,814,242,727,242"/>
-<area shape="rect" href="../../d1/dc6/particleswapkernels_8cu.html#af3bed3ff133b95fc27995b3aa9ea7df3" title=" " alt="" coords="806,276,901,301"/>
-<area shape="poly" title=" " alt="" coords="727,255,793,271,792,276,726,260"/>
-<area shape="rect" href="../../d1/dc6/particleswapkernels_8cu.html#a6c89f3ae6b38a60e280f47fa11e6ff82" title=" " alt="" coords="810,325,897,351"/>
-<area shape="poly" title=" " alt="" coords="709,257,732,269,756,290,780,310,798,319,796,324,777,315,753,294,729,274,707,262"/>
-<area shape="rect" href="../../d1/dc6/particleswapkernels_8cu.html#abec6dfb3c242f73e827f5b91bde54edf" title=" " alt="" coords="792,177,915,203"/>
-<area shape="poly" title=" " alt="" coords="726,219,788,203,789,209,727,224"/>
-<area shape="poly" title=" " alt="" coords="689,307,732,326,756,343,780,360,813,377,810,382,777,364,753,347,729,331,687,312"/>
-<area shape="poly" title=" " alt="" coords="710,17,793,20,793,25,710,23"/>
+<area shape="rect" title=" " alt="" coords="5,803,68,828"/>
+<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a02e404ddd45f930637353436ca2ad1da" title=" " alt="" coords="117,379,289,404"/>
+<area shape="poly" title=" " alt="" coords="35,802,42,726,57,612,80,498,96,453,114,422,129,408,133,413,118,425,101,455,85,500,62,613,47,726,40,803"/>
+<area shape="rect" href="../../da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6" title=" " alt="" coords="798,379,882,404"/>
+<area shape="poly" title=" " alt="" coords="36,802,45,743,62,659,85,577,99,545,114,523,136,506,165,490,238,463,328,442,428,424,628,402,784,391,784,396,629,407,429,430,329,447,240,468,167,495,139,510,118,526,104,547,90,579,67,660,50,744,41,803"/>
+<area shape="rect" href="../../d1/dc2/ccamb_8c.html#a5ab88a74581ba806512989a18ab0da32" title=" " alt="" coords="149,601,258,627"/>
+<area shape="poly" title=" " alt="" coords="36,802,43,769,58,725,81,678,96,656,114,637,134,625,137,629,118,641,100,660,85,681,63,727,48,770,41,803"/>
+<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#ac91e913d79581a70c40b74ad21ed968d" title=" " alt="" coords="129,651,277,691"/>
+<area shape="poly" title=" " alt="" coords="40,801,68,753,89,725,114,701,122,696,125,700,118,705,93,729,72,756,45,804"/>
+<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#af10a44b19c6bfe6e4edd7776b4a0df5c" title=" " alt="" coords="119,537,288,577"/>
+<area shape="poly" title=" " alt="" coords="35,802,40,762,52,704,76,642,93,613,114,587,119,583,122,586,118,590,97,616,80,644,57,706,45,762,40,803"/>
+<area shape="rect" href="../../d1/dc2/ccamb_8c.html#acede3def4aca9816e9ed0d9f91a67567" title=" " alt="" coords="161,716,246,741"/>
+<area shape="poly" title=" " alt="" coords="48,800,78,776,115,752,146,739,148,744,117,756,81,780,52,804"/>
+<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#acac1f2241bc62f1bf39dce1c0d2f637e" title=" " alt="" coords="129,766,277,806"/>
+<area shape="poly" title=" " alt="" coords="68,807,116,799,117,804,68,812"/>
+<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#ab67a1d4d424d75f9fd6046323ae44ec1" title=" " alt="" coords="359,181,507,221"/>
+<area shape="poly" title=" " alt="" coords="35,802,41,717,56,587,79,455,95,402,114,365,137,337,163,313,223,272,286,242,345,220,347,225,288,247,226,277,167,317,141,341,118,367,100,404,84,456,61,587,47,717,40,803"/>
+<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#aafb47a3e84785288897c7c4c20d7c39f" title=" " alt="" coords="129,881,277,921"/>
+<area shape="poly" title=" " alt="" coords="59,826,117,860,144,873,142,877,115,864,56,831"/>
+<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a988a5e3e292fca5fb93bd5c754ff9e3c" title=" " alt="" coords="359,913,507,953"/>
+<area shape="poly" title=" " alt="" coords="69,817,169,835,292,866,383,904,381,909,290,871,168,840,68,822"/>
+<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a123085a590cbc09148ef1558564afe8d" title=" " alt="" coords="129,945,277,985"/>
+<area shape="poly" title=" " alt="" coords="44,827,71,877,92,906,118,931,125,936,122,940,114,935,88,909,67,880,40,829"/>
+<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a709934c2ca1db4459e610dc7f7441d7d" title=" " alt="" coords="129,1073,277,1113"/>
+<area shape="poly" title=" " alt="" coords="42,828,71,948,94,1015,106,1041,118,1059,122,1062,118,1066,114,1062,101,1044,89,1017,66,949,37,829"/>
+<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a3be1b15261819bb255780e9c34d6ad31" title=" " alt="" coords="129,1009,277,1049"/>
+<area shape="poly" title=" " alt="" coords="41,828,49,861,63,906,85,953,100,975,118,995,122,999,119,1003,114,999,96,979,81,956,58,908,44,862,36,829"/>
+<area shape="rect" href="../../d5/d1c/namespaceHACCGPM.html#a3693eae7739d13e58be7ba8865e563f7" title=" " alt="" coords="116,1137,291,1163"/>
+<area shape="poly" title=" " alt="" coords="41,828,50,890,66,979,89,1066,103,1100,118,1123,124,1128,120,1132,114,1126,98,1103,84,1068,61,980,45,891,36,829"/>
+<area shape="rect" href="../../db/df0/classHACCGPM_1_1Timestepper.html#a27407a8033a031a536cdcf76f882b440" title=" " alt="" coords="118,1187,289,1227"/>
+<area shape="poly" title=" " alt="" coords="41,828,49,899,64,1002,87,1105,102,1145,118,1172,123,1177,119,1181,114,1176,97,1147,82,1106,59,1003,43,899,35,829"/>
+<area shape="rect" href="../../db/df0/classHACCGPM_1_1Timestepper.html#a6155f2c22c7bc7ceb485685c3a82ba6e" title=" " alt="" coords="118,1251,289,1291"/>
+<area shape="poly" title=" " alt="" coords="40,828,46,910,60,1033,84,1156,99,1205,118,1238,121,1241,117,1244,114,1241,95,1207,79,1157,55,1034,41,911,35,829"/>
+<area shape="rect" href="../../d6/dce/cic_8cu.html#aadea9eea5f5984f3f9792f4f4b1c8cbe" title=" " alt="" coords="369,328,496,353"/>
+<area shape="poly" title=" " alt="" coords="261,376,362,354,363,359,262,381"/>
+<area shape="poly" title=" " alt="" coords="290,389,784,389,784,394,290,394"/>
+<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#add12ee925b08f1eca77ec3d4c2b94aed" title=" " alt="" coords="359,479,507,519"/>
+<area shape="poly" title=" " alt="" coords="283,534,345,519,346,524,284,539"/>
+<area shape="rect" href="../../de/d3b/initializer_8cu.html#a8d1235c9dcec22662164f05aca0fe102" title=" " alt="" coords="343,675,523,715"/>
+<area shape="poly" title=" " alt="" coords="268,574,292,586,317,606,340,628,392,665,389,670,337,632,314,610,289,591,265,579"/>
+<area shape="rect" href="../../d1/dc2/ccamb_8c.html#ac0e00d8b9c96e56e190e4c04d30fb237" title=" " alt="" coords="353,789,512,815"/>
+<area shape="poly" title=" " alt="" coords="278,575,293,587,309,611,317,636,316,684,315,707,316,730,324,752,341,775,347,780,343,784,337,778,319,755,311,731,309,707,311,684,311,637,304,614,289,590,275,579"/>
+<area shape="rect" href="../../de/d3b/initializer_8cu.html#a2fe476c02dd57a3bf0adeed08604e935" title=" " alt="" coords="381,544,485,569"/>
+<area shape="poly" title=" " alt="" coords="288,554,367,554,367,559,288,559"/>
+<area shape="rect" href="../../de/d3b/initializer_8cu.html#a0ff351b62d308a913e30708b2ce6952e" title=" " alt="" coords="393,740,472,765"/>
+<area shape="poly" title=" " alt="" coords="277,575,293,587,306,605,313,623,317,659,320,693,327,709,340,725,359,738,380,745,379,750,357,742,337,729,323,712,315,694,311,659,308,624,302,607,289,591,274,579"/>
+<area shape="rect" href="../../de/d3b/initializer_8cu.html#ac29241f3695227eb88a70b902a8b3cdb" title=" " alt="" coords="357,593,508,619"/>
+<area shape="poly" title=" " alt="" coords="289,572,361,588,360,593,288,578"/>
+<area shape="poly" title=" " alt="" coords="507,496,614,486,673,475,730,458,775,436,813,410,816,414,778,441,732,463,674,480,615,491,507,501"/>
+<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#ab6fb9d3fbd0ac120db603cad0fe58b40" title=" " alt="" coords="579,857,727,897"/>
+<area shape="poly" title=" " alt="" coords="512,713,528,725,541,740,548,755,554,784,559,813,565,827,577,842,583,847,579,851,573,845,561,830,554,815,549,785,543,757,537,743,525,729,509,718"/>
+<area shape="rect" href="../../de/d3b/initializer_8cu.html#a3a6a489ebcb9da12e9b3f57b08ac6396" title=" " alt="" coords="577,708,728,733"/>
+<area shape="poly" title=" " alt="" coords="523,703,564,708,563,713,522,708"/>
+<area shape="rect" href="../../d1/dc2/ccamb_8c.html#aadc2b7f3bee3c7dd72f6f6b40f2f80b7" title=" " alt="" coords="598,757,707,783"/>
+<area shape="poly" title=" " alt="" coords="493,713,528,725,576,742,600,750,599,756,574,747,526,730,492,718"/>
+<area shape="rect" href="../../de/d3b/initializer_8cu.html#a174a7dfb28cda0d682d3532053a673af" title=" " alt="" coords="618,807,687,832"/>
+<area shape="poly" title=" " alt="" coords="508,713,528,725,545,742,553,760,561,776,576,792,606,807,604,812,573,796,557,779,548,762,540,745,525,729,505,718"/>
+<area shape="rect" href="../../de/d3b/initializer_8cu.html#a5886c0bfc1e8bc6577b1f33c8e24cd5b" title=" " alt="" coords="593,659,713,684"/>
+<area shape="poly" title=" " alt="" coords="522,683,579,677,579,682,523,688"/>
+<area shape="poly" title=" " alt="" coords="713,855,729,842,748,808,767,760,798,638,821,511,834,417,839,418,826,512,803,639,772,762,753,811,733,845,717,859"/>
+<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ad9fb99027bd0e8c4666c28a5b85d419e" title=" " alt="" coords="575,530,731,570"/>
+<area shape="poly" title=" " alt="" coords="485,552,561,550,561,555,485,558"/>
+<area shape="poly" title=" " alt="" coords="482,591,561,571,562,576,483,596"/>
+<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#adebf563a2ff1ace956181e3a26ea6cb2" title=" " alt="" coords="575,594,731,634"/>
+<area shape="poly" title=" " alt="" coords="508,606,561,608,561,613,508,611"/>
+<area shape="poly" title=" " alt="" coords="475,218,576,262,619,276,655,284,690,294,732,313,757,332,780,353,806,369,803,374,777,357,754,336,729,318,688,299,654,289,618,281,574,267,473,223"/>
+<area shape="rect" href="../../d9/dec/transfers_8cpp.html#a9b07afb81e6ca51846ebbbdc77ec0ad2" title=" " alt="" coords="596,49,709,75"/>
+<area shape="poly" title=" " alt="" coords="451,178,503,131,537,106,573,84,587,77,590,82,576,88,540,110,507,135,454,182"/>
+<area shape="rect" href="../../d9/dec/transfers_8cpp.html#a623988a859e51c0c16684d10bd07df87" title=" " alt="" coords="817,5,863,31"/>
+<area shape="poly" title=" " alt="" coords="441,179,461,146,490,105,528,66,573,34,603,22,634,14,696,5,755,5,803,9,803,15,755,11,697,11,635,19,604,27,576,39,531,70,494,109,465,149,445,182"/>
+<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a732c4638e4b8fc8959263d43cc8cccdf" title=" " alt="" coords="579,213,727,253"/>
+<area shape="poly" title=" " alt="" coords="508,209,565,217,565,223,507,214"/>
+<area shape="rect" href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#ada405e83d092ec5f01435cb23d1e2927" title=" " alt="" coords="579,149,727,189"/>
+<area shape="poly" title=" " alt="" coords="507,187,565,179,565,184,508,192"/>
+<area shape="rect" href="../../d9/dec/transfers_8cpp.html#a2050db7321dcbcdaf8a7e1e90b766dd2" title=" " alt="" coords="595,328,710,353"/>
+<area shape="poly" title=" " alt="" coords="457,219,510,262,576,306,604,320,602,325,573,311,507,266,454,223"/>
+<area shape="rect" href="../../d9/dec/transfers_8cpp.html#ad971c19126de159d299c18cf57af6877" title=" " alt="" coords="595,99,710,124"/>
+<area shape="poly" title=" " alt="" coords="473,178,574,134,597,126,599,131,576,139,475,183"/>
+<area shape="rect" href="../../d9/dec/transfers_8cpp.html#ab693f043882d2b52f64f69058b50dd10" title=" " alt="" coords="793,61,887,87"/>
+<area shape="poly" title=" " alt="" coords="710,63,780,67,779,73,709,68"/>
+<area shape="poly" title=" " alt="" coords="706,47,803,24,804,29,707,52"/>
+<area shape="poly" title=" " alt="" coords="706,251,733,269,749,291,758,312,765,332,781,353,801,370,798,374,777,357,760,335,753,314,745,294,729,273,703,255"/>
+<area shape="rect" href="../../d1/dc6/particleswapkernels_8cu.html#a5ace1b44eb57b3ce75b5c54575963da5" title=" " alt="" coords="815,319,865,344"/>
+<area shape="poly" title=" " alt="" coords="698,250,732,269,756,287,780,304,803,315,800,320,777,308,753,291,729,274,695,255"/>
+<area shape="rect" href="../../d1/dc6/particleswapkernels_8cu.html#a1438ea4370678803976db719c911095b" title=" " alt="" coords="781,171,899,196"/>
+<area shape="poly" title=" " alt="" coords="726,211,778,197,779,202,727,216"/>
+<area shape="rect" href="../../d1/dc6/particleswapkernels_8cu.html#a97414e10cc908d8a0a9a2538300df2d6" title=" " alt="" coords="785,220,895,245"/>
+<area shape="poly" title=" " alt="" coords="727,230,771,230,771,235,727,235"/>
+<area shape="rect" href="../../d1/dc6/particleswapkernels_8cu.html#abec6dfb3c242f73e827f5b91bde54edf" title=" " alt="" coords="779,269,901,295"/>
+<area shape="poly" title=" " alt="" coords="727,250,779,263,778,268,726,255"/>
+<area shape="rect" href="../../d1/dc6/particleswapkernels_8cu.html#adf4ea5aaed50b7025e1370de8c2414ae" title=" " alt="" coords="779,121,901,147"/>
+<area shape="poly" title=" " alt="" coords="726,152,765,145,766,150,727,158"/>
+<area shape="poly" title=" " alt="" coords="701,351,785,374,784,379,699,356"/>
+<area shape="poly" title=" " alt="" coords="710,97,779,83,780,89,711,102"/>
+<area shape="poly" title=" " alt="" coords="278,908,345,918,345,923,277,914"/>
+<area shape="poly" title=" " alt="" coords="277,952,345,942,345,948,278,957"/>
+<area shape="poly" title=" " alt="" coords="259,1006,290,994,377,956,379,961,292,999,261,1011"/>
+<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ae31040d68a45a644d5e079616e99061c" title=" " alt="" coords="339,1256,527,1281"/>
+<area shape="poly" title=" " alt="" coords="279,1225,373,1250,371,1255,278,1230"/>
+<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ab791cb661ee56bd0e61992d605b9dd80" title=" " alt="" coords="355,1190,511,1230"/>
+<area shape="poly" title=" " alt="" coords="289,1206,341,1206,341,1212,289,1211"/>
+<area shape="rect" href="../../d4/d48/timestepper_8cu.html#aa212987f3df0db02b305c7bf57dba992" title=" " alt="" coords="583,1256,722,1281"/>
+<area shape="poly" title=" " alt="" coords="527,1266,569,1266,569,1271,527,1271"/>
+<area shape="poly" title=" " alt="" coords="289,1268,325,1267,325,1273,289,1273"/>
+<area shape="poly" title=" " alt="" coords="278,1249,344,1231,345,1236,279,1254"/>
 </map>
 </div>
 
@@ -682,106 +679,112 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   45</span> </div>
 <div class="line"><span class="lineno">   46</span>    <span class="keywordtype">char</span> stepstr[400];</div>
 <div class="line"><span class="lineno">   47</span>    sprintf(stepstr, <span class="stringliteral">&quot;%s.pk.ini&quot;</span>, params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a988c07dadaef27f0a7b140272c6e3040">prefix</a>);</div>
-<div class="line"><span class="lineno">   48</span>    <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#aa89c1764f5268d9a5780657b7a25f780">HACCGPM::serial::GetPowerSpectrum</a>(mem.d_pos,mem.d_grid,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#af74f0b126b4bdc8db5c20964d6871715">rl</a>,221,stepstr,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#ad32d81f2067e9572e6a0706c02ddd319">pkFolds</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a571a4ce79600b587e0a89620683fc00d">blockSize</a>);</div>
+<div class="line"><span class="lineno">   48</span>    <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#aa89c1764f5268d9a5780657b7a25f780">HACCGPM::serial::GetPowerSpectrum</a>(mem.d_pos,mem.d_grid,mem.d_tempgrid,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#af74f0b126b4bdc8db5c20964d6871715">rl</a>,221,stepstr,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#ad32d81f2067e9572e6a0706c02ddd319">pkFolds</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a571a4ce79600b587e0a89620683fc00d">blockSize</a>);</div>
 <div class="line"><span class="lineno">   49</span> </div>
-<div class="line"><span class="lineno">   50</span>    sprintf(stepstr, <span class="stringliteral">&quot;%s.particles.ini&quot;</span>, params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a988c07dadaef27f0a7b140272c6e3040">prefix</a>);</div>
-<div class="line"><span class="lineno">   51</span>    <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a56967323163b51e64180118159a654c2">HACCGPM::serial::writeOutput</a>(stepstr,mem.d_pos,mem.d_vel,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>);</div>
-<div class="line"><span class="lineno">   52</span> </div>
-<div class="line"><span class="lineno">   53</span>    ts.advanceHalfStep();</div>
+<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">if</span> (params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a56cbeb1a74eed73b4017696e7d59c902">dump_init</a>){</div>
+<div class="line"><span class="lineno">   51</span>        sprintf(stepstr, <span class="stringliteral">&quot;%s.particles.ini&quot;</span>, params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a988c07dadaef27f0a7b140272c6e3040">prefix</a>);</div>
+<div class="line"><span class="lineno">   52</span>        <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a56967323163b51e64180118159a654c2">HACCGPM::serial::writeOutput</a>(stepstr,mem.d_pos,mem.d_vel,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>);</div>
+<div class="line"><span class="lineno">   53</span>    }</div>
 <div class="line"><span class="lineno">   54</span> </div>
-<div class="line"><span class="lineno">   55</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> step = 0; step &lt; params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a91708a6e0b3c3bcf919e335dee548a36">lastStep</a>; step++){</div>
+<div class="line"><span class="lineno">   55</span>    ts.advanceHalfStep();</div>
 <div class="line"><span class="lineno">   56</span> </div>
-<div class="line"><span class="lineno">   57</span>        printf(<span class="stringliteral">&quot;\n=========\nSTEP %d\n&quot;</span>,step);</div>
+<div class="line"><span class="lineno">   57</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> step = 0; step &lt; params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a91708a6e0b3c3bcf919e335dee548a36">lastStep</a>; step++){</div>
 <div class="line"><span class="lineno">   58</span> </div>
-<div class="line"><span class="lineno">   59</span>        <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#afc7b5439a4f273a0b5136c983988630c">HACCGPM::serial::UpdatePositions</a>(mem.d_pos,mem.d_vel,ts,0.5,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a571a4ce79600b587e0a89620683fc00d">blockSize</a>);</div>
+<div class="line"><span class="lineno">   59</span>        printf(<span class="stringliteral">&quot;\n=========\nSTEP %d\n&quot;</span>,step);</div>
 <div class="line"><span class="lineno">   60</span> </div>
-<div class="line"><span class="lineno">   61</span>        <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ac8b4ba312818288e4c808753bc322702">HACCGPM::serial::CIC</a>(mem.d_grid,mem.d_pos,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a571a4ce79600b587e0a89620683fc00d">blockSize</a>);</div>
-<div class="line"><span class="lineno">   62</span>        <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#aa38be02d5fae626750b7f03b40a40dab">HACCGPM::serial::SolveGradient</a>(mem.d_grad,mem.d_grid,mem.d_greens,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a571a4ce79600b587e0a89620683fc00d">blockSize</a>);</div>
-<div class="line"><span class="lineno">   63</span> </div>
-<div class="line"><span class="lineno">   64</span>        ts.advanceHalfStep();</div>
+<div class="line"><span class="lineno">   61</span>        <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#afc7b5439a4f273a0b5136c983988630c">HACCGPM::serial::UpdatePositions</a>(mem.d_pos,mem.d_vel,ts,0.5,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a571a4ce79600b587e0a89620683fc00d">blockSize</a>);</div>
+<div class="line"><span class="lineno">   62</span> </div>
+<div class="line"><span class="lineno">   63</span>        <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ac8b4ba312818288e4c808753bc322702">HACCGPM::serial::CIC</a>(mem.d_grid,mem.d_tempgrid,mem.d_pos,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a571a4ce79600b587e0a89620683fc00d">blockSize</a>);</div>
+<div class="line"><span class="lineno">   64</span>        <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#aa38be02d5fae626750b7f03b40a40dab">HACCGPM::serial::SolveGradient</a>(mem.d_grad,mem.d_grid,mem.d_greens,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a571a4ce79600b587e0a89620683fc00d">blockSize</a>);</div>
 <div class="line"><span class="lineno">   65</span> </div>
-<div class="line"><span class="lineno">   66</span>        <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a2e294634a2863de32ac3943d827c68c8">HACCGPM::serial::UpdateVelocities</a>(mem.d_vel,mem.d_grad,mem.d_pos,ts,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a571a4ce79600b587e0a89620683fc00d">blockSize</a>);</div>
+<div class="line"><span class="lineno">   66</span>        ts.advanceHalfStep();</div>
 <div class="line"><span class="lineno">   67</span> </div>
-<div class="line"><span class="lineno">   68</span>        ts.advanceHalfStep();</div>
+<div class="line"><span class="lineno">   68</span>        <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a2e294634a2863de32ac3943d827c68c8">HACCGPM::serial::UpdateVelocities</a>(mem.d_vel,mem.d_grad,mem.d_pos,ts,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a571a4ce79600b587e0a89620683fc00d">blockSize</a>);</div>
 <div class="line"><span class="lineno">   69</span> </div>
-<div class="line"><span class="lineno">   70</span>        <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#afc7b5439a4f273a0b5136c983988630c">HACCGPM::serial::UpdatePositions</a>(mem.d_pos,mem.d_vel,ts,0.5,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a571a4ce79600b587e0a89620683fc00d">blockSize</a>);</div>
+<div class="line"><span class="lineno">   70</span>        ts.advanceHalfStep();</div>
 <div class="line"><span class="lineno">   71</span> </div>
-<div class="line"><span class="lineno">   72</span>        <span class="keywordflow">if</span> (params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a9b739a1b9a73a0d46d74c9d6da44c0df">pks</a>[step]){</div>
-<div class="line"><span class="lineno">   73</span>            sprintf(stepstr, <span class="stringliteral">&quot;%s.pk.%d&quot;</span>, params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a988c07dadaef27f0a7b140272c6e3040">prefix</a>,step);</div>
-<div class="line"><span class="lineno">   74</span>            <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#aa89c1764f5268d9a5780657b7a25f780">HACCGPM::serial::GetPowerSpectrum</a>(mem.d_pos,mem.d_grid,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#af74f0b126b4bdc8db5c20964d6871715">rl</a>,221,stepstr,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#ad32d81f2067e9572e6a0706c02ddd319">pkFolds</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a571a4ce79600b587e0a89620683fc00d">blockSize</a>);</div>
-<div class="line"><span class="lineno">   75</span>        }</div>
-<div class="line"><span class="lineno">   76</span> </div>
-<div class="line"><span class="lineno">   77</span>        <span class="keywordflow">if</span> (params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a70363c73ad041000f02b7deac5bda56f">dumps</a>[step]){</div>
-<div class="line"><span class="lineno">   78</span>            sprintf(stepstr, <span class="stringliteral">&quot;%s.particles.%d&quot;</span>, params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a988c07dadaef27f0a7b140272c6e3040">prefix</a>,step);</div>
-<div class="line"><span class="lineno">   79</span>            <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a56967323163b51e64180118159a654c2">HACCGPM::serial::writeOutput</a>(stepstr,mem.d_pos,mem.d_vel,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>);</div>
-<div class="line"><span class="lineno">   80</span>        }</div>
-<div class="line"><span class="lineno">   81</span> </div>
-<div class="line"><span class="lineno">   82</span>        <span class="keywordflow">if</span> (params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a1b09f5b755c4e4424d101ecdfacd220c">do_analysis</a>){</div>
-<div class="line"><span class="lineno">   83</span>            <span class="keywordflow">if</span> (params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a984c7d22123b4a1aa6a22edc96d21338">analysis</a>[step]){</div>
-<div class="line"><span class="lineno">   84</span>                printf(<span class="stringliteral">&quot;Doing Python Analysis Step\n&quot;</span>);</div>
-<div class="line"><span class="lineno">   85</span>                <span class="keywordtype">float</span>* particles = (<span class="keywordtype">float</span>*)malloc(<span class="keyword">sizeof</span>(<span class="keywordtype">float</span>)*params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>*params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>*params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>*4);</div>
-<div class="line"><span class="lineno">   86</span>                <a class="code hl_define" href="../../da/d0d/haccgpm_8hpp.html#a28fb452217abf040d6df7890f94a54b9">cudaCall</a>(cudaMemcpy, particles, mem.d_pos, <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>)*params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>*params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>*params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>*4, cudaMemcpyDeviceToHost);</div>
-<div class="line"><span class="lineno">   87</span>                <a class="code hl_function" href="../../d1/dc2/ccamb_8c.html#a576627afa312ae70b90539c51856778e">call_analysis</a>(step,ts.z,ts.aa,particles,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>*params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>*params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#af74f0b126b4bdc8db5c20964d6871715">rl</a>);</div>
-<div class="line"><span class="lineno">   88</span>                free(particles);</div>
-<div class="line"><span class="lineno">   89</span>                printf(<span class="stringliteral">&quot;   Done Python Analysis Step\n&quot;</span>);</div>
-<div class="line"><span class="lineno">   90</span>                <a class="code hl_define" href="../../da/d0d/haccgpm_8hpp.html#a28fb452217abf040d6df7890f94a54b9">cudaCall</a>(cudaDeviceSynchronize);</div>
-<div class="line"><span class="lineno">   91</span>            }</div>
-<div class="line"><span class="lineno">   92</span>        }</div>
-<div class="line"><span class="lineno">   93</span>    }</div>
-<div class="line"><span class="lineno">   94</span> </div>
-<div class="line"><span class="lineno">   95</span>    sprintf(stepstr, <span class="stringliteral">&quot;%s.pk.fin&quot;</span>, params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a988c07dadaef27f0a7b140272c6e3040">prefix</a>);</div>
-<div class="line"><span class="lineno">   96</span>    <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#aa89c1764f5268d9a5780657b7a25f780">HACCGPM::serial::GetPowerSpectrum</a>(mem.d_pos,mem.d_grid,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#af74f0b126b4bdc8db5c20964d6871715">rl</a>,221,stepstr,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#ad32d81f2067e9572e6a0706c02ddd319">pkFolds</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a571a4ce79600b587e0a89620683fc00d">blockSize</a>);</div>
-<div class="line"><span class="lineno">   97</span> </div>
-<div class="line"><span class="lineno">   98</span>    sprintf(stepstr, <span class="stringliteral">&quot;%s.particles.fin&quot;</span>, params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a988c07dadaef27f0a7b140272c6e3040">prefix</a>);</div>
-<div class="line"><span class="lineno">   99</span>    <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a56967323163b51e64180118159a654c2">HACCGPM::serial::writeOutput</a>(stepstr,mem.d_pos,mem.d_vel,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>);</div>
-<div class="line"><span class="lineno">  100</span> </div>
-<div class="line"><span class="lineno">  101</span>    <span class="keywordflow">if</span> (params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a1b09f5b755c4e4424d101ecdfacd220c">do_analysis</a>){</div>
-<div class="line"><span class="lineno">  102</span>        <a class="code hl_function" href="../../d1/dc2/ccamb_8c.html#a5ab88a74581ba806512989a18ab0da32">finalize_python</a>(0);</div>
+<div class="line"><span class="lineno">   72</span>        <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#afc7b5439a4f273a0b5136c983988630c">HACCGPM::serial::UpdatePositions</a>(mem.d_pos,mem.d_vel,ts,0.5,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a571a4ce79600b587e0a89620683fc00d">blockSize</a>);</div>
+<div class="line"><span class="lineno">   73</span> </div>
+<div class="line"><span class="lineno">   74</span>        <span class="keywordflow">if</span> (params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a9b739a1b9a73a0d46d74c9d6da44c0df">pks</a>[step]){</div>
+<div class="line"><span class="lineno">   75</span>            sprintf(stepstr, <span class="stringliteral">&quot;%s.pk.%d&quot;</span>, params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a988c07dadaef27f0a7b140272c6e3040">prefix</a>,step);</div>
+<div class="line"><span class="lineno">   76</span>            <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#aa89c1764f5268d9a5780657b7a25f780">HACCGPM::serial::GetPowerSpectrum</a>(mem.d_pos,mem.d_grid,mem.d_tempgrid,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#af74f0b126b4bdc8db5c20964d6871715">rl</a>,221,stepstr,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#ad32d81f2067e9572e6a0706c02ddd319">pkFolds</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a571a4ce79600b587e0a89620683fc00d">blockSize</a>);</div>
+<div class="line"><span class="lineno">   77</span>        }</div>
+<div class="line"><span class="lineno">   78</span> </div>
+<div class="line"><span class="lineno">   79</span>        <span class="keywordflow">if</span> (params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a70363c73ad041000f02b7deac5bda56f">dumps</a>[step]){</div>
+<div class="line"><span class="lineno">   80</span>            sprintf(stepstr, <span class="stringliteral">&quot;%s.particles.%d&quot;</span>, params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a988c07dadaef27f0a7b140272c6e3040">prefix</a>,step);</div>
+<div class="line"><span class="lineno">   81</span>            <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a56967323163b51e64180118159a654c2">HACCGPM::serial::writeOutput</a>(stepstr,mem.d_pos,mem.d_vel,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>);</div>
+<div class="line"><span class="lineno">   82</span>        }</div>
+<div class="line"><span class="lineno">   83</span> </div>
+<div class="line"><span class="lineno">   84</span>        <span class="keywordflow">if</span> (params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a1b09f5b755c4e4424d101ecdfacd220c">do_analysis</a>){</div>
+<div class="line"><span class="lineno">   85</span>            <span class="keywordflow">if</span> (params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a984c7d22123b4a1aa6a22edc96d21338">analysis</a>[step]){</div>
+<div class="line"><span class="lineno">   86</span>                printf(<span class="stringliteral">&quot;Doing Python Analysis Step\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   87</span>                <span class="keywordtype">float</span>* particles = (<span class="keywordtype">float</span>*)malloc(<span class="keyword">sizeof</span>(<span class="keywordtype">float</span>)*params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>*params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>*params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>*4);</div>
+<div class="line"><span class="lineno">   88</span>                <a class="code hl_define" href="../../da/d0d/haccgpm_8hpp.html#a28fb452217abf040d6df7890f94a54b9">cudaCall</a>(cudaMemcpy, particles, mem.d_pos, <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>)*params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>*params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>*params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>*4, cudaMemcpyDeviceToHost);</div>
+<div class="line"><span class="lineno">   89</span>                <a class="code hl_function" href="../../d1/dc2/ccamb_8c.html#a576627afa312ae70b90539c51856778e">call_analysis</a>(step,ts.z,ts.aa,particles,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>*params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>*params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#af74f0b126b4bdc8db5c20964d6871715">rl</a>);</div>
+<div class="line"><span class="lineno">   90</span>                free(particles);</div>
+<div class="line"><span class="lineno">   91</span>                printf(<span class="stringliteral">&quot;   Done Python Analysis Step\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   92</span>                <a class="code hl_define" href="../../da/d0d/haccgpm_8hpp.html#a28fb452217abf040d6df7890f94a54b9">cudaCall</a>(cudaDeviceSynchronize);</div>
+<div class="line"><span class="lineno">   93</span>            }</div>
+<div class="line"><span class="lineno">   94</span>        }</div>
+<div class="line"><span class="lineno">   95</span>    }</div>
+<div class="line"><span class="lineno">   96</span> </div>
+<div class="line"><span class="lineno">   97</span>    sprintf(stepstr, <span class="stringliteral">&quot;%s.pk.fin&quot;</span>, params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a988c07dadaef27f0a7b140272c6e3040">prefix</a>);</div>
+<div class="line"><span class="lineno">   98</span>    <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#aa89c1764f5268d9a5780657b7a25f780">HACCGPM::serial::GetPowerSpectrum</a>(mem.d_pos,mem.d_grid,mem.d_tempgrid,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#af74f0b126b4bdc8db5c20964d6871715">rl</a>,221,stepstr,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#ad32d81f2067e9572e6a0706c02ddd319">pkFolds</a>,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a571a4ce79600b587e0a89620683fc00d">blockSize</a>);</div>
+<div class="line"><span class="lineno">   99</span> </div>
+<div class="line"><span class="lineno">  100</span>    <span class="keywordflow">if</span>(params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#ac2ce9da8fc53ca0e90512094b22d1ae4">dump_final</a>){</div>
+<div class="line"><span class="lineno">  101</span>        sprintf(stepstr, <span class="stringliteral">&quot;%s.particles.fin&quot;</span>, params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a988c07dadaef27f0a7b140272c6e3040">prefix</a>);</div>
+<div class="line"><span class="lineno">  102</span>        <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a56967323163b51e64180118159a654c2">HACCGPM::serial::writeOutput</a>(stepstr,mem.d_pos,mem.d_vel,params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f">ng</a>);</div>
 <div class="line"><span class="lineno">  103</span>    }</div>
 <div class="line"><span class="lineno">  104</span> </div>
-<div class="line"><span class="lineno">  105</span>    <a class="code hl_typedef" href="../../da/d0d/haccgpm_8hpp.html#aa790b6767cf9152c32b179d29c46e3ef">CPUTimer_t</a> end = <a class="code hl_function" href="../../da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6">CPUTimer</a>();</div>
-<div class="line"><span class="lineno">  106</span> </div>
-<div class="line"><span class="lineno">  107</span>    printf(<span class="stringliteral">&quot;\n\n=========\nTimers:\n&quot;</span>);</div>
-<div class="line"><span class="lineno">  108</span>    <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a873c8a9f36dff354099861a9cc5a7da2">HACCGPM::serial::printCICTimes</a>();</div>
-<div class="line"><span class="lineno">  109</span>    <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a1e499b679db21f46e02946401a4ed44f">HACCGPM::serial::printFFTTimes</a>();</div>
-<div class="line"><span class="lineno">  110</span>    <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a233115e291533b87d96cc0baeadc74cd">HACCGPM::serial::printPowerTimes</a>();</div>
-<div class="line"><span class="lineno">  111</span>    <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a7e7cdba1605fe8248b3f1306667c5d5c">HACCGPM::serial::printOutputTimes</a>();</div>
-<div class="line"><span class="lineno">  112</span>    printf(<span class="stringliteral">&quot;   Initialization: %llu us (%5.2g minutes)\n&quot;</span>,init_time,((<span class="keywordtype">double</span>)(init_time)) * 1.66667e-8);</div>
-<div class="line"><span class="lineno">  113</span>    printf(<span class="stringliteral">&quot;   Total: %5.2g minutes\n&quot;</span>,((<span class="keywordtype">double</span>)(end-start)) * 1.66667e-8);</div>
-<div class="line"><span class="lineno">  114</span>    printf(<span class="stringliteral">&quot;=========\n\n&quot;</span>);</div>
-<div class="line"><span class="lineno">  115</span> </div>
-<div class="line"><span class="lineno">  116</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  117</span>}</div>
+<div class="line"><span class="lineno">  105</span>    <span class="keywordflow">if</span> (params.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a1b09f5b755c4e4424d101ecdfacd220c">do_analysis</a>){</div>
+<div class="line"><span class="lineno">  106</span>        <a class="code hl_function" href="../../d1/dc2/ccamb_8c.html#a5ab88a74581ba806512989a18ab0da32">finalize_python</a>(0);</div>
+<div class="line"><span class="lineno">  107</span>    }</div>
+<div class="line"><span class="lineno">  108</span> </div>
+<div class="line"><span class="lineno">  109</span>    <a class="code hl_typedef" href="../../da/d0d/haccgpm_8hpp.html#aa790b6767cf9152c32b179d29c46e3ef">CPUTimer_t</a> end = <a class="code hl_function" href="../../da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6">CPUTimer</a>();</div>
+<div class="line"><span class="lineno">  110</span> </div>
+<div class="line"><span class="lineno">  111</span>    printf(<span class="stringliteral">&quot;\n\n=========\nTimers:\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  112</span>    <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a873c8a9f36dff354099861a9cc5a7da2">HACCGPM::serial::printCICTimes</a>();</div>
+<div class="line"><span class="lineno">  113</span>    <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a1e499b679db21f46e02946401a4ed44f">HACCGPM::serial::printFFTTimes</a>();</div>
+<div class="line"><span class="lineno">  114</span>    <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a233115e291533b87d96cc0baeadc74cd">HACCGPM::serial::printPowerTimes</a>();</div>
+<div class="line"><span class="lineno">  115</span>    <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a7e7cdba1605fe8248b3f1306667c5d5c">HACCGPM::serial::printOutputTimes</a>();</div>
+<div class="line"><span class="lineno">  116</span>    printf(<span class="stringliteral">&quot;   Initialization: %llu us (%5.2g minutes)\n&quot;</span>,init_time,((<span class="keywordtype">double</span>)(init_time)) * 1.66667e-8);</div>
+<div class="line"><span class="lineno">  117</span>    printf(<span class="stringliteral">&quot;   Total: %5.2g minutes\n&quot;</span>,((<span class="keywordtype">double</span>)(end-start)) * 1.66667e-8);</div>
+<div class="line"><span class="lineno">  118</span>    printf(<span class="stringliteral">&quot;=========\n\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  119</span> </div>
+<div class="line"><span class="lineno">  120</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  121</span>}</div>
 <div class="ttc" id="accamb_8c_html_a576627afa312ae70b90539c51856778e"><div class="ttname"><a href="../../d1/dc2/ccamb_8c.html#a576627afa312ae70b90539c51856778e">call_analysis</a></div><div class="ttdeci">void call_analysis(int step, double z, double a, float *particles, int n_particles, int ng, double rl)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dc2/ccamb_8c_source.html#l00043">ccamb.c:43</a></div></div>
 <div class="ttc" id="accamb_8c_html_aee95d0d053b7343a23cc8ca9176ce73c"><div class="ttname"><a href="../../d1/dc2/ccamb_8c.html#aee95d0d053b7343a23cc8ca9176ce73c">import_analysis_module</a></div><div class="ttdeci">void import_analysis_module(const char *path, const char *name)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dc2/ccamb_8c_source.html#l00026">ccamb.c:26</a></div></div>
-<div class="ttc" id="aclassHACCGPM_1_1serial_1_1MemoryManager_html"><div class="ttname"><a href="../../d0/d2c/classHACCGPM_1_1serial_1_1MemoryManager.html">HACCGPM::serial::MemoryManager</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00204">haccgpm.hpp:204</a></div></div>
+<div class="ttc" id="aclassHACCGPM_1_1serial_1_1MemoryManager_html"><div class="ttname"><a href="../../d0/d2c/classHACCGPM_1_1serial_1_1MemoryManager.html">HACCGPM::serial::MemoryManager</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00206">haccgpm.hpp:206</a></div></div>
 <div class="ttc" id="ahaccgpm_8hpp_html_a28fb452217abf040d6df7890f94a54b9"><div class="ttname"><a href="../../da/d0d/haccgpm_8hpp.html#a28fb452217abf040d6df7890f94a54b9">cudaCall</a></div><div class="ttdeci">#define cudaCall(func,...)</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00037">haccgpm.hpp:37</a></div></div>
 <div class="ttc" id="anamespaceHACCGPM_1_1serial_html_a1e499b679db21f46e02946401a4ed44f"><div class="ttname"><a href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a1e499b679db21f46e02946401a4ed44f">HACCGPM::serial::printFFTTimes</a></div><div class="ttdeci">void printFFTTimes()</div><div class="ttdef"><b>Definition</b> <a href="../../d2/df9/ffts_8cu_source.html#l00253">ffts.cu:253</a></div></div>
-<div class="ttc" id="anamespaceHACCGPM_1_1serial_html_a233115e291533b87d96cc0baeadc74cd"><div class="ttname"><a href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a233115e291533b87d96cc0baeadc74cd">HACCGPM::serial::printPowerTimes</a></div><div class="ttdeci">void printPowerTimes()</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d33/power_8cu_source.html#l00405">power.cu:405</a></div></div>
-<div class="ttc" id="anamespaceHACCGPM_1_1serial_html_a2e294634a2863de32ac3943d827c68c8"><div class="ttname"><a href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a2e294634a2863de32ac3943d827c68c8">HACCGPM::serial::UpdateVelocities</a></div><div class="ttdeci">void UpdateVelocities(float4 *d_vel, float4 *d_grad, float4 *d_pos, HACCGPM::Timestepper ts, int ng, int blockSize, int calls=0)</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dce/cic_8cu_source.html#l00214">cic.cu:214</a></div></div>
+<div class="ttc" id="anamespaceHACCGPM_1_1serial_html_a233115e291533b87d96cc0baeadc74cd"><div class="ttname"><a href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a233115e291533b87d96cc0baeadc74cd">HACCGPM::serial::printPowerTimes</a></div><div class="ttdeci">void printPowerTimes()</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d33/power_8cu_source.html#l00511">power.cu:511</a></div></div>
+<div class="ttc" id="anamespaceHACCGPM_1_1serial_html_a2e294634a2863de32ac3943d827c68c8"><div class="ttname"><a href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a2e294634a2863de32ac3943d827c68c8">HACCGPM::serial::UpdateVelocities</a></div><div class="ttdeci">void UpdateVelocities(float4 *d_vel, float4 *d_grad, float4 *d_pos, HACCGPM::Timestepper ts, int ng, int blockSize, int calls=0)</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dce/cic_8cu_source.html#l00312">cic.cu:312</a></div></div>
 <div class="ttc" id="anamespaceHACCGPM_1_1serial_html_a4fae33fb8958064c643b8fe76740ee0a"><div class="ttname"><a href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a4fae33fb8958064c643b8fe76740ee0a">HACCGPM::serial::GenerateDisplacementIC</a></div><div class="ttdeci">void GenerateDisplacementIC(const char *params_file, HACCGPM::serial::MemoryManager *mem, int ng, double rl, double z, double deltaT, double fscal, int seed, int blockSize, int calls=0)</div><div class="ttdef"><b>Definition</b> <a href="../../de/d3b/initializer_8cu_source.html#l00267">initializer.cu:267</a></div></div>
 <div class="ttc" id="anamespaceHACCGPM_1_1serial_html_a56967323163b51e64180118159a654c2"><div class="ttname"><a href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a56967323163b51e64180118159a654c2">HACCGPM::serial::writeOutput</a></div><div class="ttdeci">void writeOutput(char *fname, float4 *d_pos, float4 *d_vel, int ng, int calls=0)</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d85/io_8cu_source.html#l00008">io.cu:8</a></div></div>
 <div class="ttc" id="anamespaceHACCGPM_1_1serial_html_a61abf058f64a8c48cb425ba0aa3cd3d8"><div class="ttname"><a href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a61abf058f64a8c48cb425ba0aa3cd3d8">HACCGPM::serial::fft_cache_plan</a></div><div class="ttdeci">void fft_cache_plan(int ng)</div><div class="ttdef"><b>Definition</b> <a href="../../d2/df9/ffts_8cu_source.html#l00075">ffts.cu:75</a></div></div>
 <div class="ttc" id="anamespaceHACCGPM_1_1serial_html_a7e7cdba1605fe8248b3f1306667c5d5c"><div class="ttname"><a href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a7e7cdba1605fe8248b3f1306667c5d5c">HACCGPM::serial::printOutputTimes</a></div><div class="ttdeci">void printOutputTimes()</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d85/io_8cu_source.html#l00041">io.cu:41</a></div></div>
-<div class="ttc" id="anamespaceHACCGPM_1_1serial_html_a873c8a9f36dff354099861a9cc5a7da2"><div class="ttname"><a href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a873c8a9f36dff354099861a9cc5a7da2">HACCGPM::serial::printCICTimes</a></div><div class="ttdeci">void printCICTimes()</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dce/cic_8cu_source.html#l00245">cic.cu:245</a></div></div>
+<div class="ttc" id="anamespaceHACCGPM_1_1serial_html_a873c8a9f36dff354099861a9cc5a7da2"><div class="ttname"><a href="../../d5/d07/namespaceHACCGPM_1_1serial.html#a873c8a9f36dff354099861a9cc5a7da2">HACCGPM::serial::printCICTimes</a></div><div class="ttdeci">void printCICTimes()</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dce/cic_8cu_source.html#l00343">cic.cu:343</a></div></div>
 <div class="ttc" id="anamespaceHACCGPM_1_1serial_html_aa38be02d5fae626750b7f03b40a40dab"><div class="ttname"><a href="../../d5/d07/namespaceHACCGPM_1_1serial.html#aa38be02d5fae626750b7f03b40a40dab">HACCGPM::serial::SolveGradient</a></div><div class="ttdeci">void SolveGradient(float4 *d_grad, deviceFFT_t *d_rho, hostFFT_t *d_greens, int ng, int blockSize, int calls=0)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d93/solver_8cu_source.html#l00096">solver.cu:96</a></div></div>
 <div class="ttc" id="anamespaceHACCGPM_1_1serial_html_aa89c1764f5268d9a5780657b7a25f780"><div class="ttname"><a href="../../d5/d07/namespaceHACCGPM_1_1serial.html#aa89c1764f5268d9a5780657b7a25f780">HACCGPM::serial::GetPowerSpectrum</a></div><div class="ttdeci">void GetPowerSpectrum(float4 *d_pos, deviceFFT_t *d_grid, int ng, double rl, int nbins, const char *fname, int nfolds, int blockSize, int calls=0)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d33/power_8cu_source.html#l00299">power.cu:299</a></div></div>
 <div class="ttc" id="anamespaceHACCGPM_1_1serial_html_aba96f26caa0971a861e23d251bdca488"><div class="ttname"><a href="../../d5/d07/namespaceHACCGPM_1_1serial.html#aba96f26caa0971a861e23d251bdca488">HACCGPM::serial::InitGreens</a></div><div class="ttdeci">void InitGreens(hostFFT_t *d_greens, int ng, int blockSize, int calls=0)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d77/greens_8cu_source.html#l00061">greens.cu:61</a></div></div>
-<div class="ttc" id="anamespaceHACCGPM_1_1serial_html_ac8b4ba312818288e4c808753bc322702"><div class="ttname"><a href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ac8b4ba312818288e4c808753bc322702">HACCGPM::serial::CIC</a></div><div class="ttdeci">void CIC(deviceFFT_t *d_grid, float4 *d_pos, int ng, int blockSize, int calls=0)</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dce/cic_8cu_source.html#l00198">cic.cu:198</a></div></div>
-<div class="ttc" id="anamespaceHACCGPM_1_1serial_html_afc7b5439a4f273a0b5136c983988630c"><div class="ttname"><a href="../../d5/d07/namespaceHACCGPM_1_1serial.html#afc7b5439a4f273a0b5136c983988630c">HACCGPM::serial::UpdatePositions</a></div><div class="ttdeci">void UpdatePositions(float4 *d_pos, float4 *d_vel, HACCGPM::Timestepper ts, float frac, int ng, int blockSize, int calls=0)</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dce/cic_8cu_source.html#l00229">cic.cu:229</a></div></div>
-<div class="ttc" id="astructHACCGPM_1_1Params_html_a1b09f5b755c4e4424d101ecdfacd220c"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#a1b09f5b755c4e4424d101ecdfacd220c">HACCGPM::Params::do_analysis</a></div><div class="ttdeci">bool do_analysis</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00083">haccgpm.hpp:83</a></div></div>
-<div class="ttc" id="astructHACCGPM_1_1Params_html_a65e735b904f406547b3cc56d2b191990"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#a65e735b904f406547b3cc56d2b191990">HACCGPM::Params::analysis_py</a></div><div class="ttdeci">char analysis_py[300]</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00082">haccgpm.hpp:82</a></div></div>
-<div class="ttc" id="astructHACCGPM_1_1Params_html_a70363c73ad041000f02b7deac5bda56f"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#a70363c73ad041000f02b7deac5bda56f">HACCGPM::Params::dumps</a></div><div class="ttdeci">bool dumps[MAX_STEPS]</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00079">haccgpm.hpp:79</a></div></div>
-<div class="ttc" id="astructHACCGPM_1_1Params_html_a70df05816ae9cecbd322c36bcc377751"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#a70df05816ae9cecbd322c36bcc377751">HACCGPM::Params::analysis_dir</a></div><div class="ttdeci">char analysis_dir[300]</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00081">haccgpm.hpp:81</a></div></div>
-<div class="ttc" id="astructHACCGPM_1_1Params_html_a91708a6e0b3c3bcf919e335dee548a36"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#a91708a6e0b3c3bcf919e335dee548a36">HACCGPM::Params::lastStep</a></div><div class="ttdeci">int lastStep</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00084">haccgpm.hpp:84</a></div></div>
-<div class="ttc" id="astructHACCGPM_1_1Params_html_a984c7d22123b4a1aa6a22edc96d21338"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#a984c7d22123b4a1aa6a22edc96d21338">HACCGPM::Params::analysis</a></div><div class="ttdeci">bool analysis[MAX_STEPS]</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00080">haccgpm.hpp:80</a></div></div>
-<div class="ttc" id="astructHACCGPM_1_1Params_html_a988c07dadaef27f0a7b140272c6e3040"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#a988c07dadaef27f0a7b140272c6e3040">HACCGPM::Params::prefix</a></div><div class="ttdeci">char prefix[300]</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00060">haccgpm.hpp:60</a></div></div>
-<div class="ttc" id="astructHACCGPM_1_1Params_html_a9b739a1b9a73a0d46d74c9d6da44c0df"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#a9b739a1b9a73a0d46d74c9d6da44c0df">HACCGPM::Params::pks</a></div><div class="ttdeci">bool pks[MAX_STEPS]</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00078">haccgpm.hpp:78</a></div></div>
-<div class="ttc" id="astructHACCGPM_1_1Params_html_ad32d81f2067e9572e6a0706c02ddd319"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#ad32d81f2067e9572e6a0706c02ddd319">HACCGPM::Params::pkFolds</a></div><div class="ttdeci">int pkFolds</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00085">haccgpm.hpp:85</a></div></div>
+<div class="ttc" id="anamespaceHACCGPM_1_1serial_html_ac8b4ba312818288e4c808753bc322702"><div class="ttname"><a href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ac8b4ba312818288e4c808753bc322702">HACCGPM::serial::CIC</a></div><div class="ttdeci">void CIC(deviceFFT_t *d_grid, float4 *d_pos, int ng, int blockSize, int calls=0)</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dce/cic_8cu_source.html#l00263">cic.cu:263</a></div></div>
+<div class="ttc" id="anamespaceHACCGPM_1_1serial_html_afc7b5439a4f273a0b5136c983988630c"><div class="ttname"><a href="../../d5/d07/namespaceHACCGPM_1_1serial.html#afc7b5439a4f273a0b5136c983988630c">HACCGPM::serial::UpdatePositions</a></div><div class="ttdeci">void UpdatePositions(float4 *d_pos, float4 *d_vel, HACCGPM::Timestepper ts, float frac, int ng, int blockSize, int calls=0)</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dce/cic_8cu_source.html#l00327">cic.cu:327</a></div></div>
+<div class="ttc" id="astructHACCGPM_1_1Params_html_a1b09f5b755c4e4424d101ecdfacd220c"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#a1b09f5b755c4e4424d101ecdfacd220c">HACCGPM::Params::do_analysis</a></div><div class="ttdeci">bool do_analysis</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00082">haccgpm.hpp:82</a></div></div>
+<div class="ttc" id="astructHACCGPM_1_1Params_html_a56cbeb1a74eed73b4017696e7d59c902"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#a56cbeb1a74eed73b4017696e7d59c902">HACCGPM::Params::dump_init</a></div><div class="ttdeci">bool dump_init</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00094">haccgpm.hpp:94</a></div></div>
+<div class="ttc" id="astructHACCGPM_1_1Params_html_a65e735b904f406547b3cc56d2b191990"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#a65e735b904f406547b3cc56d2b191990">HACCGPM::Params::analysis_py</a></div><div class="ttdeci">char analysis_py[300]</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00081">haccgpm.hpp:81</a></div></div>
+<div class="ttc" id="astructHACCGPM_1_1Params_html_a70363c73ad041000f02b7deac5bda56f"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#a70363c73ad041000f02b7deac5bda56f">HACCGPM::Params::dumps</a></div><div class="ttdeci">bool dumps[MAX_STEPS]</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00078">haccgpm.hpp:78</a></div></div>
+<div class="ttc" id="astructHACCGPM_1_1Params_html_a70df05816ae9cecbd322c36bcc377751"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#a70df05816ae9cecbd322c36bcc377751">HACCGPM::Params::analysis_dir</a></div><div class="ttdeci">char analysis_dir[300]</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00080">haccgpm.hpp:80</a></div></div>
+<div class="ttc" id="astructHACCGPM_1_1Params_html_a91708a6e0b3c3bcf919e335dee548a36"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#a91708a6e0b3c3bcf919e335dee548a36">HACCGPM::Params::lastStep</a></div><div class="ttdeci">int lastStep</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00083">haccgpm.hpp:83</a></div></div>
+<div class="ttc" id="astructHACCGPM_1_1Params_html_a984c7d22123b4a1aa6a22edc96d21338"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#a984c7d22123b4a1aa6a22edc96d21338">HACCGPM::Params::analysis</a></div><div class="ttdeci">bool analysis[MAX_STEPS]</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00079">haccgpm.hpp:79</a></div></div>
+<div class="ttc" id="astructHACCGPM_1_1Params_html_a988c07dadaef27f0a7b140272c6e3040"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#a988c07dadaef27f0a7b140272c6e3040">HACCGPM::Params::prefix</a></div><div class="ttdeci">char prefix[300]</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00059">haccgpm.hpp:59</a></div></div>
+<div class="ttc" id="astructHACCGPM_1_1Params_html_a9b739a1b9a73a0d46d74c9d6da44c0df"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#a9b739a1b9a73a0d46d74c9d6da44c0df">HACCGPM::Params::pks</a></div><div class="ttdeci">bool pks[MAX_STEPS]</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00077">haccgpm.hpp:77</a></div></div>
+<div class="ttc" id="astructHACCGPM_1_1Params_html_ac2ce9da8fc53ca0e90512094b22d1ae4"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#ac2ce9da8fc53ca0e90512094b22d1ae4">HACCGPM::Params::dump_final</a></div><div class="ttdeci">bool dump_final</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00095">haccgpm.hpp:95</a></div></div>
+<div class="ttc" id="astructHACCGPM_1_1Params_html_ad32d81f2067e9572e6a0706c02ddd319"><div class="ttname"><a href="../../d5/de1/structHACCGPM_1_1Params.html#ad32d81f2067e9572e6a0706c02ddd319">HACCGPM::Params::pkFolds</a></div><div class="ttdeci">int pkFolds</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00084">haccgpm.hpp:84</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00102">HACCGPM::Timestepper::aa</a>, <a class="el" href="../../d4/d48/timestepper_8cu_source.html#l00050">HACCGPM::Timestepper::advanceHalfStep()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00080">HACCGPM::Params::analysis</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00081">HACCGPM::Params::analysis_dir</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00082">HACCGPM::Params::analysis_py</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00054">HACCGPM::Params::blockSize</a>, <a class="el" href="../../d1/dc2/ccamb_8c_source.html#l00043">call_analysis()</a>, <a class="el" href="../../d6/dce/cic_8cu_source.html#l00198">HACCGPM::serial::CIC()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00014">CPUTimer()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00037">cudaCall</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00208">HACCGPM::serial::MemoryManager::d_grad</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00209">HACCGPM::serial::MemoryManager::d_greens</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00210">HACCGPM::serial::MemoryManager::d_grid</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00206">HACCGPM::serial::MemoryManager::d_pos</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00207">HACCGPM::serial::MemoryManager::d_vel</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00104">HACCGPM::Timestepper::deltaT</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00083">HACCGPM::Params::do_analysis</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00079">HACCGPM::Params::dumps</a>, <a class="el" href="../../d2/df9/ffts_8cu_source.html#l00075">HACCGPM::serial::fft_cache_plan()</a>, <a class="el" href="../../d1/dc2/ccamb_8c_source.html#l00117">finalize_python()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00106">HACCGPM::Timestepper::fscal</a>, <a class="el" href="../../de/d3b/initializer_8cu_source.html#l00267">HACCGPM::serial::GenerateDisplacementIC()</a>, <a class="el" href="../../d0/d33/power_8cu_source.html#l00299">HACCGPM::serial::GetPowerSpectrum()</a>, <a class="el" href="../../d1/dc2/ccamb_8c_source.html#l00026">import_analysis_module()</a>, <a class="el" href="../../d1/dc2/ccamb_8c_source.html#l00069">init_python()</a>, <a class="el" href="../../d4/d77/greens_8cu_source.html#l00061">HACCGPM::serial::InitGreens()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00084">HACCGPM::Params::lastStep</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00052">HACCGPM::Params::ng</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00085">HACCGPM::Params::pkFolds</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00078">HACCGPM::Params::pks</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00060">HACCGPM::Params::prefix</a>, <a class="el" href="../../d6/dce/cic_8cu_source.html#l00245">HACCGPM::serial::printCICTimes()</a>, <a class="el" href="../../d2/df9/ffts_8cu_source.html#l00253">HACCGPM::serial::printFFTTimes()</a>, <a class="el" href="../../dd/d85/io_8cu_source.html#l00041">HACCGPM::serial::printOutputTimes()</a>, <a class="el" href="../../d0/d33/power_8cu_source.html#l00405">HACCGPM::serial::printPowerTimes()</a>, <a class="el" href="../../d1/d07/params_8cu_source.html#l00005">HACCGPM::read_params()</a>, <a class="el" href="../../d4/d48/timestepper_8cu_source.html#l00058">HACCGPM::Timestepper::reverseHalfStep()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00053">HACCGPM::Params::rl</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00055">HACCGPM::Params::seed</a>, <a class="el" href="../../d4/d48/timestepper_8cu_source.html#l00042">HACCGPM::Timestepper::setInitialZ()</a>, <a class="el" href="../../d8/d93/solver_8cu_source.html#l00096">HACCGPM::serial::SolveGradient()</a>, <a class="el" href="../../d6/dce/cic_8cu_source.html#l00229">HACCGPM::serial::UpdatePositions()</a>, <a class="el" href="../../d6/dce/cic_8cu_source.html#l00214">HACCGPM::serial::UpdateVelocities()</a>, <a class="el" href="../../dd/d85/io_8cu_source.html#l00008">HACCGPM::serial::writeOutput()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00103">HACCGPM::Timestepper::z</a>, and <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00056">HACCGPM::Params::z_ini</a>.</p>
+<p class="reference">References <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00103">HACCGPM::Timestepper::aa</a>, <a class="el" href="../../d4/d48/timestepper_8cu_source.html#l00050">HACCGPM::Timestepper::advanceHalfStep()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00079">HACCGPM::Params::analysis</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00080">HACCGPM::Params::analysis_dir</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00081">HACCGPM::Params::analysis_py</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00053">HACCGPM::Params::blockSize</a>, <a class="el" href="../../d1/dc2/ccamb_8c_source.html#l00043">call_analysis()</a>, <a class="el" href="../../d6/dce/cic_8cu_source.html#l00263">HACCGPM::serial::CIC()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00014">CPUTimer()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00037">cudaCall</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00210">HACCGPM::serial::MemoryManager::d_grad</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00211">HACCGPM::serial::MemoryManager::d_greens</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00212">HACCGPM::serial::MemoryManager::d_grid</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00208">HACCGPM::serial::MemoryManager::d_pos</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00213">HACCGPM::serial::MemoryManager::d_tempgrid</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00209">HACCGPM::serial::MemoryManager::d_vel</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00105">HACCGPM::Timestepper::deltaT</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00082">HACCGPM::Params::do_analysis</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00095">HACCGPM::Params::dump_final</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00094">HACCGPM::Params::dump_init</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00078">HACCGPM::Params::dumps</a>, <a class="el" href="../../d2/df9/ffts_8cu_source.html#l00075">HACCGPM::serial::fft_cache_plan()</a>, <a class="el" href="../../d1/dc2/ccamb_8c_source.html#l00117">finalize_python()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00107">HACCGPM::Timestepper::fscal</a>, <a class="el" href="../../de/d3b/initializer_8cu_source.html#l00267">HACCGPM::serial::GenerateDisplacementIC()</a>, <a class="el" href="../../d0/d33/power_8cu_source.html#l00299">HACCGPM::serial::GetPowerSpectrum()</a>, <a class="el" href="../../d1/dc2/ccamb_8c_source.html#l00026">import_analysis_module()</a>, <a class="el" href="../../d1/dc2/ccamb_8c_source.html#l00069">init_python()</a>, <a class="el" href="../../d4/d77/greens_8cu_source.html#l00061">HACCGPM::serial::InitGreens()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00083">HACCGPM::Params::lastStep</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00051">HACCGPM::Params::ng</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00084">HACCGPM::Params::pkFolds</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00077">HACCGPM::Params::pks</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00059">HACCGPM::Params::prefix</a>, <a class="el" href="../../d6/dce/cic_8cu_source.html#l00343">HACCGPM::serial::printCICTimes()</a>, <a class="el" href="../../d2/df9/ffts_8cu_source.html#l00253">HACCGPM::serial::printFFTTimes()</a>, <a class="el" href="../../dd/d85/io_8cu_source.html#l00041">HACCGPM::serial::printOutputTimes()</a>, <a class="el" href="../../d0/d33/power_8cu_source.html#l00511">HACCGPM::serial::printPowerTimes()</a>, <a class="el" href="../../d1/d07/params_8cu_source.html#l00005">HACCGPM::read_params()</a>, <a class="el" href="../../d4/d48/timestepper_8cu_source.html#l00058">HACCGPM::Timestepper::reverseHalfStep()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00052">HACCGPM::Params::rl</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00054">HACCGPM::Params::seed</a>, <a class="el" href="../../d4/d48/timestepper_8cu_source.html#l00042">HACCGPM::Timestepper::setInitialZ()</a>, <a class="el" href="../../d8/d93/solver_8cu_source.html#l00096">HACCGPM::serial::SolveGradient()</a>, <a class="el" href="../../d6/dce/cic_8cu_source.html#l00327">HACCGPM::serial::UpdatePositions()</a>, <a class="el" href="../../d6/dce/cic_8cu_source.html#l00312">HACCGPM::serial::UpdateVelocities()</a>, <a class="el" href="../../dd/d85/io_8cu_source.html#l00008">HACCGPM::serial::writeOutput()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00104">HACCGPM::Timestepper::z</a>, and <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00055">HACCGPM::Params::z_ini</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d5/d15/driver_8cpp_source.html#l00189">main()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d5/d15/driver_8cpp_source.html#l00191">main()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -918,7 +921,7 @@ Here is the call graph for this function:</div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d5/d15/driver_8cpp.html">driver.cpp</a></li>
+    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../d5/d15/driver_8cpp.html">driver.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

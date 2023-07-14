@@ -18,7 +18,7 @@ var searchData=
   ['getfinerpowerspectrum_15',['GetFinerPowerSpectrum',['../d5/d07/namespaceHACCGPM_1_1serial.html#a2c364758c8fc90a0a3d8ac62168c2e4c',1,'HACCGPM::serial']]],
   ['getgreens_16',['getGreens',['../d4/d77/greens_8cu.html#ac57b5d2e3828609345a4862eb07de73d',1,'greens.cu']]],
   ['getindent_17',['getIndent',['../d1/dc2/ccamb_8c.html#aede6a850e442b96dd236d1bed8bf19e5',1,'getIndent:&#160;ccamb.c'],['../da/d0d/haccgpm_8hpp.html#aede6a850e442b96dd236d1bed8bf19e5',1,'getIndent:&#160;haccgpm.hpp']]],
-  ['getpowerspectrum_18',['GetPowerSpectrum',['../d5/d07/namespaceHACCGPM_1_1serial.html#aa89c1764f5268d9a5780657b7a25f780',1,'HACCGPM::serial']]],
+  ['getpowerspectrum_18',['GetPowerSpectrum',['../d5/d07/namespaceHACCGPM_1_1serial.html#aa89c1764f5268d9a5780657b7a25f780',1,'HACCGPM::serial::GetPowerSpectrum(float4 *d_pos, deviceFFT_t *d_grid, int ng, double rl, int nbins, const char *fname, int nfolds, int blockSize, int calls=0)'],['../d5/d07/namespaceHACCGPM_1_1serial.html#ae6589925655fac8894f3c1d0e0e6c0db',1,'HACCGPM::serial::GetPowerSpectrum(float4 *d_pos, deviceFFT_t *d_grid, float *d_tempgrid, int ng, double rl, int nbins, const char *fname, int nfolds, int blockSize, int calls=0)']]],
   ['global_5fon_5fboundary_19',['global_on_boundary',['../d4/de2/namespaceboundaries.html#a9ef6478cc9fd6a1b63b09de2ff4a0d54',1,'boundaries']]],
   ['global_5franks_20',['global_ranks',['../d4/de2/namespaceboundaries.html#a363db14cf8302f7c58d36a8134e1b87c',1,'boundaries']]],
   ['gpu_21',['GPU',['../d5/d15/driver_8cpp.html#a39cb9803524b6f3b783344b2f89867b4',1,'GPU:&#160;driver.cpp'],['../d4/df7/swfftmanager_8cpp.html#a39cb9803524b6f3b783344b2f89867b4',1,'GPU:&#160;swfftmanager.cpp']]],

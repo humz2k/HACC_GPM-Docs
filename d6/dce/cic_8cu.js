@@ -2,7 +2,9 @@ var cic_8cu =
 [
     [ "VerboseUpdate", "d6/dce/cic_8cu.html#a5ee4a95c37c59bde272c98a5dbc8d42f", null ],
     [ "CICKernel", "d6/dce/cic_8cu.html#adc0dd2818da8e0af8703197df0746abe", null ],
+    [ "CICKernel", "d6/dce/cic_8cu.html#a227be3f0408dd2add1c6a7db646cb528", null ],
     [ "CICKernelParallel", "d6/dce/cic_8cu.html#aadea9eea5f5984f3f9792f4f4b1c8cbe", null ],
+    [ "float2complex", "d6/dce/cic_8cu.html#a11805ab253d9f29ccccf0395c5bd08da", null ],
     [ "ICICKernel", "d6/dce/cic_8cu.html#a7c201279a51dea9ece4f7613fd5787dd", null ],
     [ "UpdatePosKernel", "d6/dce/cic_8cu.html#aa574c845e54a29eb9a143efa0ed493b2", null ],
     [ "CIC_CALLS", "d6/dce/cic_8cu.html#a793ccc2e7f39360df20ee3f323e3fb8d", null ],

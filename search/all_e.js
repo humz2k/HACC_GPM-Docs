@@ -26,7 +26,7 @@ var searchData=
   ['power_5ftime_23',['POWER_TIME',['../d0/d33/power_8cu.html#ae785a8ef144f17d04541e43d2b9a492b',1,'power.cu']]],
   ['prefix_24',['prefix',['../d5/de1/structHACCGPM_1_1Params.html#a988c07dadaef27f0a7b140272c6e3040',1,'HACCGPM::Params']]],
   ['print_5fparams_25',['print_params',['../d1/d07/params_8cu.html#a82f5b257e29f9a9656eea67e799f0654',1,'params.cu']]],
-  ['printcictimes_26',['printCICTimes',['../d5/d07/namespaceHACCGPM_1_1serial.html#a873c8a9f36dff354099861a9cc5a7da2',1,'HACCGPM::serial']]],
+  ['printcictimes_26',['printCICTimes',['../d1/d3f/namespaceHACCGPM_1_1parallel.html#aafb47a3e84785288897c7c4c20d7c39f',1,'HACCGPM::parallel::printCICTimes()'],['../d5/d07/namespaceHACCGPM_1_1serial.html#a873c8a9f36dff354099861a9cc5a7da2',1,'HACCGPM::serial::printCICTimes()']]],
   ['printfftstats_27',['printFFTStats',['../d1/d3f/namespaceHACCGPM_1_1parallel.html#a123085a590cbc09148ef1558564afe8d',1,'HACCGPM::parallel']]],
   ['printffttimes_28',['printFFTTimes',['../d5/d07/namespaceHACCGPM_1_1serial.html#a1e499b679db21f46e02946401a4ed44f',1,'HACCGPM::serial']]],
   ['printoutputtimes_29',['printOutputTimes',['../d5/d07/namespaceHACCGPM_1_1serial.html#a7e7cdba1605fe8248b3f1306667c5d5c',1,'HACCGPM::serial']]],
