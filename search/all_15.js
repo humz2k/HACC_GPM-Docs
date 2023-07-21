@@ -1,13 +1,9 @@
 var searchData=
 [
-  ['verboseccamb_0',['VerboseCCamb',['../d1/dc2/ccamb_8c.html#ad5ba3d626f494dc28183766a9a7e9f7e',1,'ccamb.c']]],
-  ['verbosefft_1',['VerboseFFT',['../d2/df9/ffts_8cu.html#a40b86402b9d00a5949347e0575359a22',1,'VerboseFFT:&#160;ffts.cu'],['../d4/df7/swfftmanager_8cpp.html#a40b86402b9d00a5949347e0575359a22',1,'VerboseFFT:&#160;swfftmanager.cpp']]],
-  ['verbosegreens_2',['VerboseGreens',['../d4/d77/greens_8cu.html#ab6d29b29f965fc21546e82bba1e79643',1,'greens.cu']]],
-  ['verboseinitializer_3',['VerboseInitializer',['../de/d3b/initializer_8cu.html#a39578fccf051a174d0d58923fa122629',1,'initializer.cu']]],
-  ['verbosepower_4',['VerbosePower',['../d0/d33/power_8cu.html#a4c405c95194e8feab7119dff58e88521',1,'power.cu']]],
-  ['verboseresolve_5',['VerboseResolve',['../d1/dbf/gridexchange_8cpp.html#a2934fb196296fab0a66b040ed3393751',1,'gridexchange.cpp']]],
-  ['verbosesolver_6',['VerboseSolver',['../d8/d93/solver_8cu.html#a50ad1154d9c39d7920b0bd9f33d6904c',1,'solver.cu']]],
-  ['verboseswap_7',['VerboseSwap',['../d1/dc6/particleswapkernels_8cu.html#a51cb63373849320bbfaa6b8e8a8412cb',1,'particleswapkernels.cu']]],
-  ['verbosetransfer_8',['VerboseTransfer',['../d9/dec/transfers_8cpp.html#a4022ca93a25a71ab7d34e1f60335c2d3',1,'transfers.cpp']]],
-  ['verboseupdate_9',['VerboseUpdate',['../d2/df6/pm__actions_8cu.html#a5ee4a95c37c59bde272c98a5dbc8d42f',1,'pm_actions.cu']]]
+  ['w_5fde_0',['w_de',['../d6/d11/classHACCGPM_1_1CosmoClass.html#a178ff17c0a6779bb0b3f7b4bcbd4a82a',1,'HACCGPM::CosmoClass']]],
+  ['wa_5fde_1',['wa_de',['../d6/d11/classHACCGPM_1_1CosmoClass.html#ab582bc526c9ebce3c602968f97d7199f',1,'HACCGPM::CosmoClass']]],
+  ['world_5frank_2',['world_rank',['../d5/de1/structHACCGPM_1_1Params.html#abadfe590c1eee74fb0e6706a2538eba4',1,'HACCGPM::Params::world_rank'],['../db/df0/classHACCGPM_1_1Timestepper.html#a7f5653ab5447f696c0be50d2abe483a3',1,'HACCGPM::Timestepper::world_rank'],['../db/da8/classHACCGPM_1_1parallel_1_1MemoryManager.html#ae82b4c70ae9060ee706f1287055601d6',1,'HACCGPM::parallel::MemoryManager::world_rank'],['../d2/df8/classHACCGPM_1_1parallel_1_1GridExchange.html#ad76e3e8a4109eb3ef3ed3e0c53b030f9',1,'HACCGPM::parallel::GridExchange::world_rank'],['../d1/dc2/ccamb_8c.html#a0be0ed3102aab1d72782301d75cf570b',1,'world_rank:&#160;ccamb.c']]],
+  ['world_5fsize_3',['world_size',['../d5/de1/structHACCGPM_1_1Params.html#acb2ba048d9a5776f65843bc184c5d6f0',1,'HACCGPM::Params::world_size'],['../d2/df8/classHACCGPM_1_1parallel_1_1GridExchange.html#a69493838f3890a2b33bc4f3f3dcdfd0f',1,'HACCGPM::parallel::GridExchange::world_size']]],
+  ['writeoutput_4',['writeOutput',['../d5/d07/namespaceHACCGPM_1_1serial.html#a20316c4404a0651fd66d3c1a7ef9afa1',1,'HACCGPM::serial::writeOutput(HACCGPM::Params &amp;params, HACCGPM::serial::MemoryManager &amp;mem, char *fname, int calls=0)'],['../d5/d07/namespaceHACCGPM_1_1serial.html#a56967323163b51e64180118159a654c2',1,'HACCGPM::serial::writeOutput(char *fname, float4 *d_pos, float4 *d_vel, int ng, int calls=0)']]],
+  ['writepkoutput_5',['writePkOutput',['../d0/d33/power_8cu.html#ad8018b5e35e0deec61baef9ed33b5bf8',1,'power.cu']]]
 ];

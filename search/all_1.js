@@ -1,13 +1,9 @@
 var searchData=
 [
-  ['a2z_0',['a2z',['../d6/d11/classHACCGPM_1_1CosmoClass.html#a7e5b9a5d4a3b4fe76dc0287ec2dfebad',1,'HACCGPM::CosmoClass::a2z()'],['../d1/d99/namespacecambpy.html#a418aef80c2028247c7bb8d2ad65ba73a',1,'cambpy.a2z()'],['../d3/dc3/namespacegenerate__ipk.html#a98b799d65426d804f827a45a1431f019',1,'generate_ipk.a2z()']]],
-  ['aa_1',['aa',['../db/df0/classHACCGPM_1_1Timestepper.html#aa27100376a4cba8759eb071259df0174',1,'HACCGPM::Timestepper']]],
-  ['adot_2',['adot',['../db/df0/classHACCGPM_1_1Timestepper.html#a86c7011d1168ac217c82747ce8624fca',1,'HACCGPM::Timestepper']]],
-  ['advancehalfstep_3',['advanceHalfStep',['../db/df0/classHACCGPM_1_1Timestepper.html#acace7c026894818656a9eb261b07f27d',1,'HACCGPM::Timestepper']]],
-  ['alltoall_4',['alltoall',['../da/d8b/driver__pm_8cpp.html#a18f63f6475d9829997e5eee5b2e34495',1,'alltoall:&#160;driver_pm.cpp'],['../d4/df7/swfftmanager_8cpp.html#a18f63f6475d9829997e5eee5b2e34495',1,'alltoall:&#160;swfftmanager.cpp']]],
-  ['analysis_5',['analysis',['../d5/de1/structHACCGPM_1_1Params.html#a984c7d22123b4a1aa6a22edc96d21338',1,'HACCGPM::Params']]],
-  ['analysis_5fdir_6',['analysis_dir',['../d5/de1/structHACCGPM_1_1Params.html#a70df05816ae9cecbd322c36bcc377751',1,'HACCGPM::Params']]],
-  ['analysis_5fpy_7',['analysis_py',['../d5/de1/structHACCGPM_1_1Params.html#a65e735b904f406547b3cc56d2b191990',1,'HACCGPM::Params']]],
-  ['animation_8',['animation',['../d3/d39/namespaceanimation.html',1,'']]],
-  ['animation_2epy_9',['animation.py',['../df/ddc/animation_8py.html',1,'']]]
+  ['backward_5ffft_0',['backward_fft',['../d1/d3f/namespaceHACCGPM_1_1parallel.html#add12ee925b08f1eca77ec3d4c2b94aed',1,'HACCGPM::parallel::backward_fft()'],['../d5/d07/namespaceHACCGPM_1_1serial.html#af8d988b0ca5106d342dc9591708ff789',1,'HACCGPM::serial::backward_fft(deviceFFT_t *data, deviceFFT_t *out, int ng, int calls=0)'],['../d5/d07/namespaceHACCGPM_1_1serial.html#a91270d38401a52dacf6e8e04acc903da',1,'HACCGPM::serial::backward_fft(deviceFFT_t *data, int ng, int calls=0)']]],
+  ['backward_5ffft_5fcalls_1',['BACKWARD_FFT_CALLS',['../d4/df7/swfftmanager_8cpp.html#a98af84effc7fdd349e43f89c9667ce36',1,'swfftmanager.cpp']]],
+  ['backward_5ffft_5ftime_2',['BACKWARD_FFT_TIME',['../d4/df7/swfftmanager_8cpp.html#af5b9e09cdd707cf65cb5b5613fe5b7d7',1,'swfftmanager.cpp']]],
+  ['bin_5fpower_2ecu_3',['bin_power.cu',['../d8/da9/bin__power_8cu.html',1,'']]],
+  ['binpower_4',['BinPower',['../d8/da9/bin__power_8cu.html#a72fd8eac69d23435bd6d1842b70115b9',1,'BinPower(const deviceFFT_t *__restrict d_grid, double *__restrict d_binVals, int *__restrict d_binCounts, double minK, double binDelta, double rl, int ng):&#160;bin_power.cu'],['../d8/da9/bin__power_8cu.html#a96bedc93f140ec0c01d947d956e16eb6',1,'BinPower(const deviceFFT_t *__restrict d_grid, double *__restrict d_binVals, int *__restrict d_binCounts, double minK, double binDelta, double rl, int ng, int nlocal, int world_rank, int3 local_grid_size, int3 local_coords, int3 dims):&#160;bin_power.cu'],['../d6/d81/power__kernels_8hpp.html#a72fd8eac69d23435bd6d1842b70115b9',1,'BinPower(const deviceFFT_t *__restrict d_grid, double *__restrict d_binVals, int *__restrict d_binCounts, double minK, double binDelta, double rl, int ng):&#160;bin_power.cu'],['../d6/d81/power__kernels_8hpp.html#a96bedc93f140ec0c01d947d956e16eb6',1,'BinPower(const deviceFFT_t *__restrict d_grid, double *__restrict d_binVals, int *__restrict d_binCounts, double minK, double binDelta, double rl, int ng, int nlocal, int world_rank, int3 local_grid_size, int3 local_coords, int3 dims):&#160;bin_power.cu']]],
+  ['blocksize_5',['blockSize',['../d5/de1/structHACCGPM_1_1Params.html#a571a4ce79600b587e0a89620683fc00d',1,'HACCGPM::Params::blockSize'],['../d2/df8/classHACCGPM_1_1parallel_1_1GridExchange.html#a576446049efe74536c6e71c2bb886a3e',1,'HACCGPM::parallel::GridExchange::blockSize']]]
 ];

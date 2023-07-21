@@ -1,18 +1,5 @@
 var namespaces_dup =
 [
-    [ "animation", "d3/d39/namespaceanimation.html", [
-      [ "onAnalysisStep", "d3/d39/namespaceanimation.html#a3e41e8ef3a750740bf43fc230d841216", null ]
-    ] ],
-    [ "basic", "de/dbb/namespacebasic.html", "de/dbb/namespacebasic" ],
-    [ "boundaries", "d4/de2/namespaceboundaries.html", [
-      [ "onAnalysisStep", "d4/de2/namespaceboundaries.html#ac8d5c9bd7a7fe6f5479656d5a8356c29", null ],
-      [ "boundaries", "d4/de2/namespaceboundaries.html#aa3170bb9634416f4affaae82bfee8c0b", null ],
-      [ "exits", "d4/de2/namespaceboundaries.html#aca33a3ea7fbc045c7c2954eac55690fb", null ],
-      [ "global_on_boundary", "d4/de2/namespaceboundaries.html#a9ef6478cc9fd6a1b63b09de2ff4a0d54", null ],
-      [ "global_ranks", "d4/de2/namespaceboundaries.html#a363db14cf8302f7c58d36a8134e1b87c", null ],
-      [ "returns", "d4/de2/namespaceboundaries.html#a9ce3b03ae206298c6de1c4b0b1483bc7", null ],
-      [ "steps", "d4/de2/namespaceboundaries.html#a575dc3bbacc62ce33752311bb85e496b", null ]
-    ] ],
     [ "cambpy", "d1/d99/namespacecambpy.html", [
       [ "a2z", "d1/d99/namespacecambpy.html#a418aef80c2028247c7bb8d2ad65ba73a", null ],
       [ "D_plus", "d1/d99/namespacecambpy.html#a35f78c03939c3f848f43e7dd49906a92", null ],
@@ -31,13 +18,6 @@ var namespaces_dup =
       [ "z2a", "d1/d99/namespacecambpy.html#ab8110986119c68e3a2221ee1c7a2a62a", null ],
       [ "context", "d1/d99/namespacecambpy.html#a17ba5b3d88a5555b2d518f944ca0b605", null ],
       [ "test_context_module", "d1/d99/namespacecambpy.html#a32c4bceab65f710fa81504483186f6a0", null ]
-    ] ],
-    [ "example", "d3/daf/namespaceexample.html", [
-      [ "onAnalysisStep", "d3/daf/namespaceexample.html#a840bbc15bea890a6d169a297f8b89a18", null ],
-      [ "initial", "d3/daf/namespaceexample.html#a426a5e1167b1d9f7678fd3064926667f", null ],
-      [ "maxs", "d3/daf/namespaceexample.html#a67bfc29ce76bc0d4773f5034eb32c975", null ],
-      [ "means", "d3/daf/namespaceexample.html#a7f7d1cd26feb2e1b5e099652551196e4", null ],
-      [ "steps", "d3/daf/namespaceexample.html#a512869508a5a5dd54ebe8b3ddabc5a0e", null ]
     ] ],
     [ "generate_ipk", "d3/dc3/namespacegenerate__ipk.html", [
       [ "a2z", "d3/dc3/namespacegenerate__ipk.html#a98b799d65426d804f827a45a1431f019", null ],
@@ -72,12 +52,5 @@ var namespaces_dup =
     [ "package_cambpy", "dc/dce/namespacepackage__cambpy.html", [
       [ "path", "dc/dce/namespacepackage__cambpy.html#ac51f6d16910737baf62bf01169e27519", null ],
       [ "raw", "dc/dce/namespacepackage__cambpy.html#a433a8aa6c4a88e28aaf40e66ea132867", null ]
-    ] ],
-    [ "trajectory", "db/d99/namespacetrajectory.html", [
-      [ "onAnalysisStep", "db/d99/namespacetrajectory.html#af028671439282f59740b8e095c296289", null ],
-      [ "ps", "db/d99/namespacetrajectory.html#a5c535932375ac9f48729ca0f055759a2", null ],
-      [ "xs", "db/d99/namespacetrajectory.html#a07a73f284477885fff6a4c85867b8de8", null ],
-      [ "ys", "db/d99/namespacetrajectory.html#a50c9b23e297fee45669827d126f7f93d", null ],
-      [ "zs", "db/d99/namespacetrajectory.html#ae1bade01a0e57e1f9f9046c62eeda68f", null ]
     ] ]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['example_0',['example',['../d3/daf/namespaceexample.html',1,'']]]
+  ['package_5fcambpy_0',['package_cambpy',['../dc/dce/namespacepackage__cambpy.html',1,'']]]
 ];

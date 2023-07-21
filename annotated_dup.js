@@ -1,8 +1,5 @@
 var annotated_dup =
 [
-    [ "basic", "de/dbb/namespacebasic.html", [
-      [ "myAnalysis", "d8/d4e/classbasic_1_1myAnalysis.html", "d8/d4e/classbasic_1_1myAnalysis" ]
-    ] ],
     [ "HACCGPM", "d5/d1c/namespaceHACCGPM.html", [
       [ "parallel", "d1/d3f/namespaceHACCGPM_1_1parallel.html", [
         [ "GridExchange", "d2/df8/classHACCGPM_1_1parallel_1_1GridExchange.html", "d2/df8/classHACCGPM_1_1parallel_1_1GridExchange" ],

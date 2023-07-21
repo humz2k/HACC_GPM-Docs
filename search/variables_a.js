@@ -1,9 +1,24 @@
 var searchData=
 [
-  ['laststep_0',['lastStep',['../d5/de1/structHACCGPM_1_1Params.html#a91708a6e0b3c3bcf919e335dee548a36',1,'HACCGPM::Params']]],
-  ['local_5fcoords_1',['local_coords',['../d8/d4e/classbasic_1_1myAnalysis.html#abf40817d21c43420baeb851e0a5d6fec',1,'basic.myAnalysis.local_coords'],['../d2/df8/classHACCGPM_1_1parallel_1_1GridExchange.html#a0621efc1cd2c1c31ab7b1dc8ee549210',1,'HACCGPM::parallel::GridExchange::local_coords']]],
-  ['local_5fgrid_5fsize_2',['local_grid_size',['../d8/d4e/classbasic_1_1myAnalysis.html#a1446cc850032daeddedea7d881787f27',1,'basic.myAnalysis.local_grid_size'],['../d5/de1/structHACCGPM_1_1Params.html#a36eb38d8a633ba0f7d968c99b42bac83',1,'HACCGPM::Params::local_grid_size'],['../d2/df8/classHACCGPM_1_1parallel_1_1GridExchange.html#a929d1c650a4dd02207ba3656e2229d7e',1,'HACCGPM::parallel::GridExchange::local_grid_size']]],
-  ['local_5fgrid_5fsize_5fvec_3',['local_grid_size_vec',['../d5/de1/structHACCGPM_1_1Params.html#adac2aa1860f1a0bfde305a3e59750ac1',1,'HACCGPM::Params']]],
-  ['local_5fgrid_5fstart_4',['local_grid_start',['../d5/de1/structHACCGPM_1_1Params.html#a793380e9232cab92495da981698b62f7',1,'HACCGPM::Params']]],
-  ['local_5fgrid_5fstart_5fvec_5',['local_grid_start_vec',['../d5/de1/structHACCGPM_1_1Params.html#a4c9280a2ae02f64401a9db9398ec72d3',1,'HACCGPM::Params']]]
+  ['m_5fdeut_0',['m_deut',['../d5/de1/structHACCGPM_1_1Params.html#a52ca5350030d9019b047a40e71ec1f49',1,'HACCGPM::Params']]],
+  ['m_5ff_5fnu_5fmassive_1',['m_f_nu_massive',['../d5/de1/structHACCGPM_1_1Params.html#a2b816e28ca8560c0b68461d3ac166804',1,'HACCGPM::Params']]],
+  ['m_5ff_5fnu_5fmassless_2',['m_f_nu_massless',['../d5/de1/structHACCGPM_1_1Params.html#a83479de82a2d7a144ec3a179a022e2c9',1,'HACCGPM::Params']]],
+  ['m_5fhubble_3',['m_hubble',['../d5/de1/structHACCGPM_1_1Params.html#a872d9bf268fe12e404aab1a24f503b52',1,'HACCGPM::Params']]],
+  ['m_5fneff_5fmassive_4',['m_neff_massive',['../d5/de1/structHACCGPM_1_1Params.html#af70a50e9efe8244b4e9b9eebb1f48643',1,'HACCGPM::Params']]],
+  ['m_5fneff_5fmassless_5',['m_neff_massless',['../d5/de1/structHACCGPM_1_1Params.html#a7a88333e7bea841646a00b620c737562',1,'HACCGPM::Params']]],
+  ['m_5fns_6',['m_ns',['../d5/de1/structHACCGPM_1_1Params.html#aa32159f2ceaa9ecc466a2b1b31b61629',1,'HACCGPM::Params']]],
+  ['m_5fomega_5fbaryon_7',['m_omega_baryon',['../d5/de1/structHACCGPM_1_1Params.html#aafe8b881471fb7068c2ca372bac1e560',1,'HACCGPM::Params']]],
+  ['m_5fomega_5fcb_8',['m_omega_cb',['../d5/de1/structHACCGPM_1_1Params.html#a46b39e0393483157f70173122b36c7f1',1,'HACCGPM::Params']]],
+  ['m_5fomega_5fcdm_9',['m_omega_cdm',['../d5/de1/structHACCGPM_1_1Params.html#aa32c48d388a56417a102ecc81d660d93',1,'HACCGPM::Params']]],
+  ['m_5fomega_5fmatter_10',['m_omega_matter',['../d5/de1/structHACCGPM_1_1Params.html#aeca45b0690c51bcd2d1ed4653f4f59c1',1,'HACCGPM::Params']]],
+  ['m_5fomega_5fnu_11',['m_omega_nu',['../d5/de1/structHACCGPM_1_1Params.html#a8987d99c0564ee988f3a6ffee157b70e',1,'HACCGPM::Params']]],
+  ['m_5fomega_5fradiation_12',['m_omega_radiation',['../d5/de1/structHACCGPM_1_1Params.html#afa42d982a25eb7454cd48b9215d9af04',1,'HACCGPM::Params']]],
+  ['m_5fss8_13',['m_ss8',['../d5/de1/structHACCGPM_1_1Params.html#a92392f1faf533a884e4b466cf001260e',1,'HACCGPM::Params']]],
+  ['m_5ftcmb_14',['m_Tcmb',['../d5/de1/structHACCGPM_1_1Params.html#ab2779b136a1530371695a7d8f8ed6649',1,'HACCGPM::Params']]],
+  ['m_5fw_5fde_15',['m_w_de',['../d5/de1/structHACCGPM_1_1Params.html#a6c52655235a8b890381fe234ff330d6a',1,'HACCGPM::Params']]],
+  ['m_5fwa_5fde_16',['m_wa_de',['../d5/de1/structHACCGPM_1_1Params.html#a45c3151dc78e0cb9e9fc3755db21b2b4',1,'HACCGPM::Params']]],
+  ['maxarg1_17',['maxarg1',['../da/dcb/cosmo_8cpp.html#a85cb6f9d189d8032d20ce3f7dcc28d3c',1,'cosmo.cpp']]],
+  ['maxarg2_18',['maxarg2',['../da/dcb/cosmo_8cpp.html#ac8e3cf3cd6ae7b008566e865da40ed95',1,'cosmo.cpp']]],
+  ['minarg1_19',['minarg1',['../da/dcb/cosmo_8cpp.html#a2261c531b8255043109a1f3387abdfce',1,'cosmo.cpp']]],
+  ['minarg2_20',['minarg2',['../da/dcb/cosmo_8cpp.html#a209d2f3e34a127f58efd94e32782a0a7',1,'cosmo.cpp']]]
 ];

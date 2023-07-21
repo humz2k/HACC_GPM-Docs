@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['initial_0',['initial',['../d3/daf/namespaceexample.html#a426a5e1167b1d9f7678fd3064926667f',1,'example']]],
-  ['ipk_1',['ipk',['../d5/de1/structHACCGPM_1_1Params.html#a650d2eb293e4f9c4e248091116243a0b',1,'HACCGPM::Params::ipk'],['../d6/d11/classHACCGPM_1_1CosmoClass.html#a02855c29f00a191105445122f11a4dae',1,'HACCGPM::CosmoClass::ipk']]]
+  ['k_5fbins_0',['k_bins',['../d3/dc3/namespacegenerate__ipk.html#a48b8a8becac99303497d202725caa06d',1,'generate_ipk']]],
+  ['k_5fmax_1',['k_max',['../d3/dc3/namespacegenerate__ipk.html#aac2d9bda614884928626dae0e106cf77',1,'generate_ipk']]],
+  ['k_5fmin_2',['k_min',['../d3/dc3/namespacegenerate__ipk.html#a7c54e9eff1cd2bfdf40c2099a88c1058',1,'generate_ipk']]],
+  ['ks_3',['ks',['../d3/dc3/namespacegenerate__ipk.html#aaac45ee98fca526c4e66899dda776ed9',1,'generate_ipk']]]
 ];

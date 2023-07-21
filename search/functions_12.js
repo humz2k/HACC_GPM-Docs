@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['writeoutput_0',['writeOutput',['../d5/d07/namespaceHACCGPM_1_1serial.html#a20316c4404a0651fd66d3c1a7ef9afa1',1,'HACCGPM::serial::writeOutput(HACCGPM::Params &amp;params, HACCGPM::serial::MemoryManager &amp;mem, char *fname, int calls=0)'],['../d5/d07/namespaceHACCGPM_1_1serial.html#a56967323163b51e64180118159a654c2',1,'HACCGPM::serial::writeOutput(char *fname, float4 *d_pos, float4 *d_vel, int ng, int calls=0)']]],
-  ['writepkoutput_1',['writePkOutput',['../d0/d33/power_8cu.html#ad8018b5e35e0deec61baef9ed33b5bf8',1,'power.cu']]]
+  ['z2a_0',['z2a',['../d6/d11/classHACCGPM_1_1CosmoClass.html#ab91423b89ef9974bcbc22335d956012e',1,'HACCGPM::CosmoClass::z2a()'],['../d1/d99/namespacecambpy.html#ab8110986119c68e3a2221ee1c7a2a62a',1,'cambpy.z2a()'],['../d3/dc3/namespacegenerate__ipk.html#aa41fefe75129d7220c488afe70ad597b',1,'generate_ipk.z2a()']]]
 ];
