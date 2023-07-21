@@ -98,28 +98,23 @@ $(document).ready(function(){initNavTree('d7/d5b/md__2home_2hqureshi_2HACC__GPM_
   <div class="headertitle"><div class="title">HACC_GPM</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md0"></a> </p>
-<h2><a class="anchor" id="autotoc_md1"></a>
+<div class="textblock"><p><a class="anchor" id="autotoc_md20"></a> </p>
+<h2><a class="anchor" id="autotoc_md21"></a>
 Building From Source</h2>
 <p>These are the steps to build from source: </p>
-<h3><a class="anchor" id="autotoc_md2"></a>
+<h3><a class="anchor" id="autotoc_md22"></a>
 Cloning Repo</h3>
 <div class="fragment"><div class="line">git clone https://github.com/humz2k/HACC_GPM.git</div>
 <div class="line">cd HACC_GPM</div>
-</div><!-- fragment --> <h3><a class="anchor" id="autotoc_md3"></a>
+</div><!-- fragment --> <h3><a class="anchor" id="autotoc_md23"></a>
 Init Submodules</h3>
 <div class="fragment"><div class="line">git submodule init</div>
 <div class="line">git submodule update</div>
-</div><!-- fragment --> <h3><a class="anchor" id="autotoc_md4"></a>
-Building GC</h3>
-<div class="fragment"><div class="line">cd bdwgc</div>
-<div class="line">git clone https://github.com/ivmai/libatomic_ops.git</div>
-<div class="line">make -f Makefile.direct check</div>
-<div class="line">cd ..</div>
-</div><!-- fragment --> <h3><a class="anchor" id="autotoc_md5"></a>
+</div><!-- fragment --> <h3><a class="anchor" id="autotoc_md24"></a>
 Building HACC_GPM</h3>
-<div class="fragment"><div class="line">make main</div>
-</div><!-- fragment --><p>Needs <code>python3</code> with <code>camb</code> and <code>numpy</code> installed. To link to a specific version of python, build with <code>make main PY_LIB=-lpython3.xx[m]</code>.</p>
+<div class="fragment"><div class="line">make</div>
+</div><!-- fragment --><p><code>haccgpm</code> needs <code>python3</code> with <code>camb</code> and <code>numpy</code> installed. To link to a specific version of python, build with <code>make PY_LIB=-lpython3.xx[m]</code>.</p>
+<p>To build without python, use <code>make nopython</code>.</p>
 <p><a href="https://humz2k.github.io/HACC_GPM-Docs/">Docs</a> </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

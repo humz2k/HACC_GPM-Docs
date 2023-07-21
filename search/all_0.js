@@ -1,13 +1,8 @@
 var searchData=
 [
-  ['a2z_0',['a2z',['../d1/d99/namespacecambpy.html#a418aef80c2028247c7bb8d2ad65ba73a',1,'cambpy']]],
-  ['aa_1',['aa',['../db/df0/classHACCGPM_1_1Timestepper.html#aa27100376a4cba8759eb071259df0174',1,'HACCGPM::Timestepper']]],
-  ['adot_2',['adot',['../db/df0/classHACCGPM_1_1Timestepper.html#a86c7011d1168ac217c82747ce8624fca',1,'HACCGPM::Timestepper']]],
-  ['advancehalfstep_3',['advanceHalfStep',['../db/df0/classHACCGPM_1_1Timestepper.html#acace7c026894818656a9eb261b07f27d',1,'HACCGPM::Timestepper']]],
-  ['alltoall_4',['alltoall',['../d5/d15/driver_8cpp.html#a18f63f6475d9829997e5eee5b2e34495',1,'alltoall:&#160;driver.cpp'],['../d4/df7/swfftmanager_8cpp.html#a18f63f6475d9829997e5eee5b2e34495',1,'alltoall:&#160;swfftmanager.cpp']]],
-  ['analysis_5',['analysis',['../d5/de1/structHACCGPM_1_1Params.html#a984c7d22123b4a1aa6a22edc96d21338',1,'HACCGPM::Params']]],
-  ['analysis_5fdir_6',['analysis_dir',['../d5/de1/structHACCGPM_1_1Params.html#a70df05816ae9cecbd322c36bcc377751',1,'HACCGPM::Params']]],
-  ['analysis_5fpy_7',['analysis_py',['../d5/de1/structHACCGPM_1_1Params.html#a65e735b904f406547b3cc56d2b191990',1,'HACCGPM::Params']]],
-  ['animation_8',['animation',['../d3/d39/namespaceanimation.html',1,'']]],
-  ['animation_2epy_9',['animation.py',['../df/ddc/animation_8py.html',1,'']]]
+  ['_5f_5finit_5f_5f_0',['__init__',['../d8/d4e/classbasic_1_1myAnalysis.html#af94ac180c3ef41d7f8975322ff4c31af',1,'basic.myAnalysis.__init__()'],['../d8/da0/classanalysis1_1_1myAnalysis.html#a6b6d11dde64f87254a2e34cada9866c7',1,'analysis1.myAnalysis.__init__()'],['../d9/d99/classpycosmo_1_1analysistools_1_1PyCosmoAnalysis.html#ad0bfd7ad3761bc3aa0ed0187950a8dc5',1,'pycosmo.analysistools.PyCosmoAnalysis.__init__()']]],
+  ['_5f_5finit_5f_5f_2epy_1',['__init__.py',['../d3/d9a/____init_____8py.html',1,'']]],
+  ['_5f_5fset_5fparticles_5f_5f_2',['__set_particles__',['../d9/d99/classpycosmo_1_1analysistools_1_1PyCosmoAnalysis.html#ac9f5cde8428e5abf57dd7d6abd5498f0',1,'pycosmo::analysistools::PyCosmoAnalysis']]],
+  ['_5f_5fset_5fpower_5fspectrum_5f_5f_3',['__set_power_spectrum__',['../d9/d99/classpycosmo_1_1analysistools_1_1PyCosmoAnalysis.html#a5c4165e8e31085ea7824d30fe6388314',1,'pycosmo::analysistools::PyCosmoAnalysis']]],
+  ['_5f_5fset_5ftime_5f_5f_4',['__set_time__',['../d9/d99/classpycosmo_1_1analysistools_1_1PyCosmoAnalysis.html#a74cd43f99a2929f177d275baa020971e',1,'pycosmo::analysistools::PyCosmoAnalysis']]]
 ];

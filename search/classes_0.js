@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fftmanager_0',['FFTManager',['../d0/d55/classFFTManager.html',1,'']]]
+  ['cosmoclass_0',['CosmoClass',['../d6/d11/classHACCGPM_1_1CosmoClass.html',1,'HACCGPM']]]
 ];

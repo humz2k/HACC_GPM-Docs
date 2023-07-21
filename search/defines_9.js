@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['stringify_0',['STRINGIFY',['../da/d0d/haccgpm_8hpp.html#a6df1d22fb5f09eccc23b9f399670cfd7',1,'haccgpm.hpp']]]
+  ['npy_5fno_5fdeprecated_5fapi_0',['NPY_NO_DEPRECATED_API',['../d1/dc2/ccamb_8c.html#ab6e6ee86736f9ebb56e74ae21bf3ff8a',1,'NPY_NO_DEPRECATED_API:&#160;ccamb.c'],['../d5/d13/pycosmotools_8c.html#ab6e6ee86736f9ebb56e74ae21bf3ff8a',1,'NPY_NO_DEPRECATED_API:&#160;pycosmotools.c']]]
 ];

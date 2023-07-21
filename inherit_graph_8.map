@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$d9/d99/classpycosmo_1_1analysistools_1_1PyCosmoAnalysis.html" title=" " alt="" coords="5,47,180,87"/>
+<area shape="rect" id="Node000001" href="$d8/da0/classanalysis1_1_1myAnalysis.html" title=" " alt="" coords="231,5,381,31"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="192,42,251,28,252,33,193,47"/>
+<area shape="rect" id="Node000002" href="$dc/da4/classanalysis2_1_1myAnalysis2.html" title=" " alt="" coords="228,55,384,80"/>
+<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="194,65,228,65,228,70,194,70"/>
+<area shape="rect" id="Node000003" href="$d8/d4e/classbasic_1_1myAnalysis.html" title=" " alt="" coords="243,104,369,129"/>
+<area shape="poly" id="edge3_Node000000_Node000003" title=" " alt="" coords="193,88,252,101,251,107,192,93"/>
+</map>

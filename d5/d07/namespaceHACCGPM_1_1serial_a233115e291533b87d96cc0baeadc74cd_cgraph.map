@@ -1,0 +1,8 @@
+<map id="HACCGPM::serial::printPowerTimes" name="HACCGPM::serial::printPowerTimes">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,205,45"/>
+<area shape="rect" id="Node000002" href="$d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf" title=" " alt="" coords="253,13,329,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,23,240,23,240,28,205,28"/>
+<area shape="rect" id="Node000003" href="$da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6" title=" " alt="" coords="377,13,461,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="329,31,364,32,364,37,329,36"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="377,19,343,19,343,14,377,14"/>
+</map>

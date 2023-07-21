@@ -1,0 +1,9 @@
+<map id="pycosmo.analysistools.PyCosmoAnalysis" name="pycosmo.analysistools.PyCosmoAnalysis">
+<area shape="rect" id="Node000001" title=" " alt="" coords="170,5,345,45"/>
+<area shape="rect" id="Node000002" href="$d8/da0/classanalysis1_1_1myAnalysis.html" title=" " alt="" coords="5,93,155,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,54,109,96,107,91,200,49"/>
+<area shape="rect" id="Node000003" href="$dc/da4/classanalysis2_1_1myAnalysis2.html" title=" " alt="" coords="179,93,335,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="260,59,260,93,255,93,255,59"/>
+<area shape="rect" id="Node000004" href="$d8/d4e/classbasic_1_1myAnalysis.html" title=" " alt="" coords="360,93,485,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="312,49,398,91,395,96,310,54"/>
+</map>

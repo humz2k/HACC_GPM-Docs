@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['n_5fparticles_0',['n_particles',['../d5/de1/structHACCGPM_1_1Params.html#a363928a721d27c766c0882a38d0d6e9a',1,'HACCGPM::Params']]],
-  ['ng_1',['ng',['../d5/de1/structHACCGPM_1_1Params.html#a39d115ed45dabd61aa1b3528d0a0fd0f',1,'HACCGPM::Params']]],
-  ['ngs_2',['ngs',['../d4/d83/classPlanManager.html#a89205b3b94a34c74ed8390f3fdde7fbc',1,'PlanManager']]],
-  ['nlocal_3',['nlocal',['../d5/de1/structHACCGPM_1_1Params.html#a58f805768e0a0e28e25a3acc63fea57b',1,'HACCGPM::Params']]],
-  ['nsteps_4',['nsteps',['../d5/de1/structHACCGPM_1_1Params.html#a97019e73f66f42e12ace168088727dae',1,'HACCGPM::Params']]]
+  ['laststep_0',['lastStep',['../d5/de1/structHACCGPM_1_1Params.html#a91708a6e0b3c3bcf919e335dee548a36',1,'HACCGPM::Params']]],
+  ['local_5fcoords_1',['local_coords',['../d8/d4e/classbasic_1_1myAnalysis.html#abf40817d21c43420baeb851e0a5d6fec',1,'basic.myAnalysis.local_coords'],['../d8/da0/classanalysis1_1_1myAnalysis.html#a7dd81f7ff51b57560ef99184324963ce',1,'analysis1.myAnalysis.local_coords'],['../d1/dd4/classPyCosmoTools.html#a7c2e1f1884f7f7f5e42efbf4d24e4ba2',1,'PyCosmoTools::local_coords'],['../d9/d99/classpycosmo_1_1analysistools_1_1PyCosmoAnalysis.html#ae02f089de3698fc826ecbdb6e53f55c5',1,'pycosmo.analysistools.PyCosmoAnalysis.local_coords'],['../d2/df8/classHACCGPM_1_1parallel_1_1GridExchange.html#a0621efc1cd2c1c31ab7b1dc8ee549210',1,'HACCGPM::parallel::GridExchange::local_coords']]],
+  ['local_5fgrid_5fsize_2',['local_grid_size',['../d8/d4e/classbasic_1_1myAnalysis.html#a1446cc850032daeddedea7d881787f27',1,'basic.myAnalysis.local_grid_size'],['../d8/da0/classanalysis1_1_1myAnalysis.html#ab40dfb30dd60c93db0f44fc1b88770f7',1,'analysis1.myAnalysis.local_grid_size'],['../d1/dd4/classPyCosmoTools.html#a6ee47ecae742164408d405e23aa9eed9',1,'PyCosmoTools::local_grid_size'],['../d9/d99/classpycosmo_1_1analysistools_1_1PyCosmoAnalysis.html#a73e59fc879e29797ecd8aca3b7dc0a7c',1,'pycosmo.analysistools.PyCosmoAnalysis.local_grid_size'],['../d5/de1/structHACCGPM_1_1Params.html#a36eb38d8a633ba0f7d968c99b42bac83',1,'HACCGPM::Params::local_grid_size'],['../d2/df8/classHACCGPM_1_1parallel_1_1GridExchange.html#a929d1c650a4dd02207ba3656e2229d7e',1,'HACCGPM::parallel::GridExchange::local_grid_size']]],
+  ['local_5fgrid_5fsize_5fvec_3',['local_grid_size_vec',['../d5/de1/structHACCGPM_1_1Params.html#adac2aa1860f1a0bfde305a3e59750ac1',1,'HACCGPM::Params']]],
+  ['local_5fgrid_5fstart_4',['local_grid_start',['../d5/de1/structHACCGPM_1_1Params.html#a793380e9232cab92495da981698b62f7',1,'HACCGPM::Params']]],
+  ['local_5fgrid_5fstart_5fvec_5',['local_grid_start_vec',['../d5/de1/structHACCGPM_1_1Params.html#a4c9280a2ae02f64401a9db9398ec72d3',1,'HACCGPM::Params']]]
 ];

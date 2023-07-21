@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['solver_2ecu_0',['solver.cu',['../d8/d93/solver_8cu.html',1,'']]],
-  ['swfftmanager_2ecpp_1',['swfftmanager.cpp',['../d4/df7/swfftmanager_8cpp.html',1,'']]]
+  ['readme_2emd_0',['README.md',['../da/dcd/pycosmotools_2README_8md.html',1,'(Global Namespace)'],['../da/ddd/README_8md.html',1,'(Global Namespace)']]],
+  ['rng_5finitializer_2ecu_1',['rng_initializer.cu',['../d6/d17/rng__initializer_8cu.html',1,'']]]
 ];

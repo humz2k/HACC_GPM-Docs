@@ -1,0 +1,20 @@
+<map id="BinPower" name="BinPower">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,85,84,110"/>
+<area shape="rect" id="Node000002" href="$d8/da9/bin__power_8cu.html#a02aa01bbb043f7af43d44192a877b885" title=" " alt="" coords="147,34,265,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,83,152,61,153,66,85,88"/>
+<area shape="rect" id="Node000003" href="$d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf" title=" " alt="" coords="547,85,623,110"/>
+<area shape="poly" id="edge7_Node000001_Node000003" title=" " alt="" coords="84,95,533,95,533,100,84,100"/>
+<area shape="rect" id="Node000006" href="$d1/d3f/namespaceHACCGPM_1_1parallel.html#a4bd825592e67337ba3718aaa3503827a" title=" " alt="" coords="132,135,280,175"/>
+<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="81,108,138,128,136,133,80,113"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="241,32,293,17,358,6,430,4,465,9,500,19,520,30,539,43,569,73,565,76,535,47,517,34,498,24,464,15,429,10,359,11,294,23,242,37"/>
+<area shape="rect" id="Node000005" href="$d5/d1c/namespaceHACCGPM.html#acccb2a9f88cb15d894d9b865b991ef8d" title=" " alt="" coords="328,34,499,60"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="265,44,314,44,314,50,265,50"/>
+<area shape="rect" id="Node000004" href="$da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6" title=" " alt="" coords="671,85,755,110"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="623,103,657,104,657,109,623,109"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="670,92,636,92,636,86,671,87"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="457,57,534,80,532,85,456,62"/>
+<area shape="poly" id="edge9_Node000006_Node000003" title=" " alt="" coords="280,144,498,114,532,107,533,112,499,119,281,150"/>
+<area shape="rect" id="Node000007" href="$d1/d3f/namespaceHACCGPM_1_1parallel.html#abcddbac52c4da4a8a55b5b9dbb3940ce" title=" " alt="" coords="339,186,487,226"/>
+<area shape="poly" id="edge10_Node000006_Node000007" title=" " alt="" coords="281,171,327,182,325,187,280,176"/>
+<area shape="poly" id="edge11_Node000007_Node000003" title=" " alt="" coords="462,183,497,165,559,118,562,122,500,169,464,188"/>
+</map>

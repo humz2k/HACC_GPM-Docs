@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('d3/d39/namespaceanimation.html','../..
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3e41e8ef3a750740bf43fc230d841216"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d39/namespaceanimation.html#a3e41e8ef3a750740bf43fc230d841216">onAnalysisStep</a> (**kwargs)</td></tr>
+<tr class="memitem:a3e41e8ef3a750740bf43fc230d841216"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d39/namespaceanimation.html#a3e41e8ef3a750740bf43fc230d841216">onAnalysisStep</a> (**<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">kwargs</a>)</td></tr>
 <tr class="separator:a3e41e8ef3a750740bf43fc230d841216"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -133,25 +133,26 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   10</span>    ng = kwargs[<span class="stringliteral">&quot;ng&quot;</span>]</div>
 <div class="line"><span class="lineno">   11</span>    rl = kwargs[<span class="stringliteral">&quot;rl&quot;</span>]</div>
 <div class="line"><span class="lineno">   12</span> </div>
-<div class="line"><span class="lineno">   13</span>    center = np.array([ng/2,ng/2,ng/2])</div>
+<div class="line"><span class="lineno">   13</span>    center = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">np.array</a>([ng/2,ng/2,ng/2])</div>
 <div class="line"><span class="lineno">   14</span>    radius = 5</div>
 <div class="line"><span class="lineno">   15</span> </div>
 <div class="line"><span class="lineno">   16</span>    particles = particles[:,[0,1,2]]</div>
-<div class="line"><span class="lineno">   17</span>    dists = np.linalg.norm(particles - center,axis=1)</div>
-<div class="line"><span class="lineno">   18</span>    print(dists)</div>
+<div class="line"><span class="lineno">   17</span>    dists = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">np.linalg.norm</a>(particles - center,axis=1)</div>
+<div class="line"><span class="lineno">   18</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">print</a>(dists)</div>
 <div class="line"><span class="lineno">   19</span>    particles = particles[dists &lt; radius]</div>
 <div class="line"><span class="lineno">   20</span>    particles -= center</div>
 <div class="line"><span class="lineno">   21</span> </div>
-<div class="line"><span class="lineno">   22</span>    fig = plt.figure()</div>
-<div class="line"><span class="lineno">   23</span>    ax = plt.axes(projection=<span class="stringliteral">&#39;3d&#39;</span>)</div>
-<div class="line"><span class="lineno">   24</span>    ax.scatter(particles[:,0],particles[:,1],particles[:,2])</div>
-<div class="line"><span class="lineno">   25</span>    ax.set_xlim(-radius,radius)</div>
-<div class="line"><span class="lineno">   26</span>    ax.set_ylim(-radius,radius)</div>
-<div class="line"><span class="lineno">   27</span>    ax.set_zlim(-radius,radius)</div>
-<div class="line"><span class="lineno">   28</span>    plt.tight_layout()</div>
-<div class="line"><span class="lineno">   29</span>    plt.savefig(<span class="stringliteral">&quot;frames/step&quot;</span> + str(step) + <span class="stringliteral">&quot;.jpg&quot;</span>)</div>
-<div class="line"><span class="lineno">   30</span>    plt.close()</div>
+<div class="line"><span class="lineno">   22</span>    fig = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">plt.figure</a>()</div>
+<div class="line"><span class="lineno">   23</span>    ax = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">plt.axes</a>(projection=<span class="stringliteral">&#39;3d&#39;</span>)</div>
+<div class="line"><span class="lineno">   24</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">ax.scatter</a>(particles[:,0],particles[:,1],particles[:,2])</div>
+<div class="line"><span class="lineno">   25</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">ax.set_xlim</a>(-radius,radius)</div>
+<div class="line"><span class="lineno">   26</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">ax.set_ylim</a>(-radius,radius)</div>
+<div class="line"><span class="lineno">   27</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">ax.set_zlim</a>(-radius,radius)</div>
+<div class="line"><span class="lineno">   28</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">plt.tight_layout</a>()</div>
+<div class="line"><span class="lineno">   29</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">plt.savefig</a>(<span class="stringliteral">&quot;frames/step&quot;</span> + <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">str</a>(step) + <span class="stringliteral">&quot;.jpg&quot;</span>)</div>
+<div class="line"><span class="lineno">   30</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">plt.close</a>()</div>
 <div class="line"><span class="lineno">   31</span> </div>
+<div class="ttc" id="agridexchange_8cpp_html_aee62b8f3ede200a395ed04dc3531efcf"><div class="ttname"><a href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">do_return</a></div><div class="ttdeci">void do_return(float4 *grad, int left_rank, int right_rank, int size, int3 local_grid_size, int3 local_coords, int3 total_grid_dims, int overload, int world_rank, size_t *bytes, CPUTimer_t *mpi_time, int blockSize, int calls)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">gridexchange.cpp:31</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

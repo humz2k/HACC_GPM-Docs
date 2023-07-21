@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>HACC_GPM: /home/hqureshi/HACC_GPM/src/particleswapkernels.cu File Reference</title>
+<title>HACC_GPM: /home/hqureshi/HACC_GPM/src/particle_transfer/particleswapkernels.cu File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -104,32 +104,31 @@ $(document).ready(function(){initNavTree('d1/dc6/particleswapkernels_8cu.html','
 <div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="../../da/d0d/haccgpm_8hpp_source.html">haccgpm.hpp</a>&quot;</code><br />
-<code>#include &quot;../bdwgc/include/gc.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for particleswapkernels.cu:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d9/dac/particleswapkernels_8cu__incl.png" border="0" usemap="#a_2home_2hqureshi_2HACC__GPM_2src_2particleswapkernels_8cu" alt=""/></div>
-<map name="a_2home_2hqureshi_2HACC__GPM_2src_2particleswapkernels_8cu" id="a_2home_2hqureshi_2HACC__GPM_2src_2particleswapkernels_8cu">
-<area shape="rect" title=" " alt="" coords="103,5,321,45"/>
-<area shape="rect" title=" " alt="" coords="67,93,131,119"/>
-<area shape="poly" title=" " alt="" coords="185,48,129,88,126,83,182,44"/>
-<area shape="rect" title=" " alt="" coords="5,167,67,192"/>
-<area shape="poly" title=" " alt="" coords="203,47,178,83,144,121,112,144,79,163,77,158,110,140,141,117,174,80,198,44"/>
-<area shape="rect" href="../../da/d0d/haccgpm_8hpp.html" title=" " alt="" coords="206,93,306,119"/>
-<area shape="poly" title=" " alt="" coords="225,44,245,80,240,83,221,47"/>
-<area shape="rect" title=" " alt="" coords="331,93,477,119"/>
-<area shape="poly" title=" " alt="" coords="261,43,362,85,360,90,259,48"/>
-<area shape="poly" title=" " alt="" coords="219,121,81,167,79,162,217,116"/>
-<area shape="rect" title=" " alt="" coords="91,167,202,192"/>
-<area shape="poly" title=" " alt="" coords="238,121,179,161,176,157,235,117"/>
-<area shape="rect" title=" " alt="" coords="227,167,285,192"/>
-<area shape="poly" title=" " alt="" coords="259,119,259,153,253,153,253,119"/>
-<area shape="rect" title=" " alt="" coords="309,167,368,192"/>
-<area shape="poly" title=" " alt="" coords="272,117,316,155,312,159,269,121"/>
-<area shape="rect" title=" " alt="" coords="392,167,475,192"/>
-<area shape="poly" title=" " alt="" coords="288,116,391,159,389,164,286,121"/>
-<area shape="rect" title=" " alt="" coords="499,167,560,192"/>
-<area shape="poly" title=" " alt="" coords="307,116,486,164,485,169,305,121"/>
+<div class="center"><img src="../../d9/dac/particleswapkernels_8cu__incl.png" border="0" usemap="#a_2home_2hqureshi_2HACC__GPM_2src_2particle__transfer_2particleswapkernels_8cu" alt=""/></div>
+<map name="a_2home_2hqureshi_2HACC__GPM_2src_2particle__transfer_2particleswapkernels_8cu" id="a_2home_2hqureshi_2HACC__GPM_2src_2particle__transfer_2particleswapkernels_8cu">
+<area shape="rect" title=" " alt="" coords="17,5,196,60"/>
+<area shape="rect" title=" " alt="" coords="5,108,69,133"/>
+<area shape="poly" title=" " alt="" coords="87,62,58,99,54,96,83,58"/>
+<area shape="rect" title=" " alt="" coords="11,181,72,207"/>
+<area shape="poly" title=" " alt="" coords="105,61,97,97,84,134,62,172,57,169,79,132,92,95,100,60"/>
+<area shape="rect" href="../../da/d0d/haccgpm_8hpp.html" title=" " alt="" coords="253,108,353,133"/>
+<area shape="poly" title=" " alt="" coords="169,58,263,100,261,105,167,62"/>
+<area shape="poly" title=" " alt="" coords="256,136,86,184,84,179,255,131"/>
+<area shape="rect" title=" " alt="" coords="97,181,207,207"/>
+<area shape="poly" title=" " alt="" coords="278,136,192,178,189,173,275,131"/>
+<area shape="rect" title=" " alt="" coords="232,181,291,207"/>
+<area shape="poly" title=" " alt="" coords="298,135,278,170,273,168,293,132"/>
+<area shape="rect" title=" " alt="" coords="315,181,373,207"/>
+<area shape="poly" title=" " alt="" coords="312,132,332,168,328,170,308,135"/>
+<area shape="rect" title=" " alt="" coords="397,181,480,207"/>
+<area shape="poly" title=" " alt="" coords="328,131,404,172,402,177,325,136"/>
+<area shape="rect" title=" " alt="" coords="504,181,565,207"/>
+<area shape="poly" title=" " alt="" coords="344,131,492,178,490,183,342,136"/>
+<area shape="rect" href="../../d9/da2/pycosmotools_8hpp.html" title=" " alt="" coords="589,181,717,207"/>
+<area shape="poly" title=" " alt="" coords="353,129,580,176,579,181,352,134"/>
 </map>
 </div>
 </div>
@@ -137,25 +136,23 @@ Include dependency graph for particleswapkernels.cu:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a51cb63373849320bbfaa6b8e8a8412cb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc6/particleswapkernels_8cu.html#a51cb63373849320bbfaa6b8e8a8412cb">VerboseSwap</a></td></tr>
+<tr class="memitem:a51cb63373849320bbfaa6b8e8a8412cb"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc6/particleswapkernels_8cu.html#a51cb63373849320bbfaa6b8e8a8412cb">VerboseSwap</a></td></tr>
 <tr class="separator:a51cb63373849320bbfaa6b8e8a8412cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:abec6dfb3c242f73e827f5b91bde54edf"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc6/particleswapkernels_8cu.html#abec6dfb3c242f73e827f5b91bde54edf">swap_set_invalid</a> (float4 *__restrict d_pos, int mem_frac)</td></tr>
+<tr class="memitem:abec6dfb3c242f73e827f5b91bde54edf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__global__</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc6/particleswapkernels_8cu.html#abec6dfb3c242f73e827f5b91bde54edf">swap_set_invalid</a> (<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a> d_pos, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">mem_frac</a>)</td></tr>
 <tr class="separator:abec6dfb3c242f73e827f5b91bde54edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ace1b44eb57b3ce75b5c54575963da5"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc6/particleswapkernels_8cu.html#a5ace1b44eb57b3ce75b5c54575963da5">copy</a> (float4 *__restrict dest1, const float4 *__restrict source1, float4 *__restrict dest2, const float4 *__restrict source2, int n)</td></tr>
+<tr class="memitem:a5ace1b44eb57b3ce75b5c54575963da5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__global__</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc6/particleswapkernels_8cu.html#a5ace1b44eb57b3ce75b5c54575963da5">copy</a> (<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">dest1</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">const</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">source1</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">dest2</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">const</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">source2</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">n</a>)</td></tr>
 <tr class="separator:a5ace1b44eb57b3ce75b5c54575963da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1438ea4370678803976db719c911095b"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc6/particleswapkernels_8cu.html#a1438ea4370678803976db719c911095b">init_count_buffer</a> (int *ns, const float4 *__restrict d_pos, int n_particles, int3 local_grid_size)</td></tr>
-<tr class="separator:a1438ea4370678803976db719c911095b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97414e10cc908d8a0a9a2538300df2d6"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc6/particleswapkernels_8cu.html#a97414e10cc908d8a0a9a2538300df2d6">init_load_buffer</a> (float4 *__restrict d_pos, float4 *__restrict d_vel, float4 *__restrict d_pos_swap, float4 *__restrict d_vel_swap, int *count, int *starts, const float4 *__restrict d_tmppos, const float4 *__restrict d_tmpvel, int3 local_grid_size, int n_particles, int <a class="el" href="../../d1/dc2/ccamb_8c.html#a0be0ed3102aab1d72782301d75cf570b">world_rank</a>)</td></tr>
-<tr class="separator:a97414e10cc908d8a0a9a2538300df2d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fd26c484a73cd812fb32787ed77c52c"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc6/particleswapkernels_8cu.html#a7fd26c484a73cd812fb32787ed77c52c">findDuplicates</a> (const float4 *__restrict d_pos, float4 *__restrict new_particles, int n_new, int n_particles)</td></tr>
+<tr class="memitem:ac442dbd8f657d4bdae11fa4b9b7154ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__global__</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc6/particleswapkernels_8cu.html#ac442dbd8f657d4bdae11fa4b9b7154ef">init_count_buffer</a> (<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">ns</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">const</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a> d_pos, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> n_particles, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> ng, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int3</a> local_grid_size, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int3</a> local_coords, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int3</a> dims)</td></tr>
+<tr class="separator:ac442dbd8f657d4bdae11fa4b9b7154ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0c43d399db3db48b28198edc28dbf48"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__global__</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc6/particleswapkernels_8cu.html#ae0c43d399db3db48b28198edc28dbf48">init_load_buffer</a> (<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">d_swap</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">ns</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">counts</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a> d_pos, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a> d_vel, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> n_particles, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> ng, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int3</a> local_grid_size, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int3</a> local_coords, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int3</a> dims, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> <a class="el" href="../../d1/dc2/ccamb_8c.html#a0be0ed3102aab1d72782301d75cf570b">world_rank</a>)</td></tr>
+<tr class="separator:ae0c43d399db3db48b28198edc28dbf48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fd26c484a73cd812fb32787ed77c52c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__global__</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc6/particleswapkernels_8cu.html#a7fd26c484a73cd812fb32787ed77c52c">findDuplicates</a> (<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">const</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a> d_pos, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">new_particles</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">n_new</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> n_particles)</td></tr>
 <tr class="separator:a7fd26c484a73cd812fb32787ed77c52c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf4ea5aaed50b7025e1370de8c2414ae"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc6/particleswapkernels_8cu.html#adf4ea5aaed50b7025e1370de8c2414ae">combineParticles</a> (float4 *__restrict d_pos, float4 *__restrict d_vel, const float4 *__restrict new_pos, const float4 *__restrict new_vel, int n_new, int remaining, int n_particles)</td></tr>
-<tr class="separator:adf4ea5aaed50b7025e1370de8c2414ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf2d833243661c8b0d95bb5091d3382e"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc6/particleswapkernels_8cu.html#aaf2d833243661c8b0d95bb5091d3382e">loadGridBuffersKernel</a> (float *__restrict d_out, const float *__restrict d_grid, int3 local_grid_size, int n_extra)</td></tr>
-<tr class="separator:aaf2d833243661c8b0d95bb5091d3382e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71f6ae8b4acb6ccfcc9cc653be5845ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__global__</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc6/particleswapkernels_8cu.html#a71f6ae8b4acb6ccfcc9cc653be5845ac">combineParticles</a> (<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a> d_pos, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a> d_vel, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">const</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">d_swap</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">d_count</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">n_new</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> n_particles)</td></tr>
+<tr class="separator:a71f6ae8b4acb6ccfcc9cc653be5845ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a51cb63373849320bbfaa6b8e8a8412cb" name="a51cb63373849320bbfaa6b8e8a8412cb"></a>
@@ -165,62 +162,56 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define VerboseSwap</td>
+          <td class="memname">#<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">define</a> VerboseSwap</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html#l00006">6</a> of file <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html">particleswapkernels.cu</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html#l00005">5</a> of file <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html">particleswapkernels.cu</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="adf4ea5aaed50b7025e1370de8c2414ae" name="adf4ea5aaed50b7025e1370de8c2414ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf4ea5aaed50b7025e1370de8c2414ae">&#9670;&#160;</a></span>combineParticles()</h2>
+<a id="a71f6ae8b4acb6ccfcc9cc653be5845ac" name="a71f6ae8b4acb6ccfcc9cc653be5845ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71f6ae8b4acb6ccfcc9cc653be5845ac">&#9670;&#160;</a></span>combineParticles()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">__global__ void combineParticles </td>
+          <td class="memname"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__global__</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">void</a> combineParticles </td>
           <td>(</td>
-          <td class="paramtype">float4 *__restrict&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a>&#160;</td>
           <td class="paramname"><em>d_pos</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float4 *__restrict&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a>&#160;</td>
           <td class="paramname"><em>d_vel</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float4 *__restrict&#160;</td>
-          <td class="paramname"><em>new_pos</em>, </td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">const</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a>&#160;</td>
+          <td class="paramname"><em>d_swap</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float4 *__restrict&#160;</td>
-          <td class="paramname"><em>new_vel</em>, </td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> *&#160;</td>
+          <td class="paramname"><em>d_count</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
           <td class="paramname"><em>n_new</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>remaining</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
           <td class="paramname"><em>n_particles</em>&#160;</td>
         </tr>
         <tr>
@@ -231,19 +222,38 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html#l00100">100</a> of file <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html">particleswapkernels.cu</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  100</span>                                                                                                                                                                                                   {</div>
-<div class="line"><span class="lineno">  101</span>    <span class="keywordtype">int</span> idx = threadIdx.x+blockDim.x*blockIdx.x;</div>
-<div class="line"><span class="lineno">  102</span>    <span class="keywordflow">if</span> (idx &gt;= n_new)<span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  103</span>    float4 my_particle = __ldg(&amp;new_pos[idx]);</div>
-<div class="line"><span class="lineno">  104</span>    <span class="keywordflow">if</span> (my_particle.w &lt; -1)<span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  105</span>    float4 my_vel = __ldg(&amp;new_vel[idx]);</div>
-<div class="line"><span class="lineno">  106</span>    <span class="keywordtype">int</span> dest = idx + remaining;</div>
-<div class="line"><span class="lineno">  107</span>    d_pos[dest] = my_particle;</div>
-<div class="line"><span class="lineno">  108</span>    d_vel[dest] = my_vel;</div>
-<div class="line"><span class="lineno">  109</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html#l00106">106</a> of file <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html">particleswapkernels.cu</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  106</span>                                                                                                                                                               {</div>
+<div class="line"><span class="lineno">  107</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a> = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">threadIdx</a>.x+<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">blockDim</a>.x*<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">blockIdx</a>.x;</div>
+<div class="line"><span class="lineno">  108</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a> &gt;= n_particles)<span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  109</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a> = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__ldg</a>(&amp;d_pos[<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a>]);</div>
+<div class="line"><span class="lineno">  110</span>    <span class="keywordflow">if</span> (!(<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.w &lt; -1))<span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  111</span>    </div>
+<div class="line"><span class="lineno">  112</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_idx</a> = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">atomicAdd</a>(<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">d_count</a>,1);</div>
+<div class="line"><span class="lineno">  113</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_idx</a> &gt;= <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">n_new</a>)<span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  114</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">new_pos</a> = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__ldg</a>(&amp;<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">d_swap</a>[<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_idx</a>*2]);</div>
+<div class="line"><span class="lineno">  115</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">new_vel</a> = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__ldg</a>(&amp;<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">d_swap</a>[(<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_idx</a>*2) + 1]);</div>
+<div class="line"><span class="lineno">  116</span>    d_pos[<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a>] = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">new_pos</a>;</div>
+<div class="line"><span class="lineno">  117</span>    d_vel[<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a>] = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">new_vel</a>;</div>
+<div class="line"><span class="lineno">  118</span>}</div>
+<div class="ttc" id="agridexchange_8cpp_html_aee62b8f3ede200a395ed04dc3531efcf"><div class="ttname"><a href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">do_return</a></div><div class="ttdeci">void do_return(float4 *grad, int left_rank, int right_rank, int size, int3 local_grid_size, int3 local_coords, int3 total_grid_dims, int overload, int world_rank, size_t *bytes, CPUTimer_t *mpi_time, int blockSize, int calls)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">gridexchange.cpp:31</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html#l00210">HACCGPM::parallel::insertParticles()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">do_return()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html#l00120">HACCGPM::parallel::insertParticles()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/dc6/particleswapkernels_8cu_a71f6ae8b4acb6ccfcc9cc653be5845ac_cgraph.png" border="0" usemap="#ad1/dc6/particleswapkernels_8cu_a71f6ae8b4acb6ccfcc9cc653be5845ac_cgraph" alt=""/></div>
+<map name="ad1/dc6/particleswapkernels_8cu_a71f6ae8b4acb6ccfcc9cc653be5845ac_cgraph" id="ad1/dc6/particleswapkernels_8cu_a71f6ae8b4acb6ccfcc9cc653be5845ac_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,128,31"/>
+<area shape="rect" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf" title=" " alt="" coords="176,5,252,31"/>
+<area shape="poly" title=" " alt="" coords="128,15,162,15,162,21,128,21"/>
+<area shape="rect" href="../../da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6" title=" " alt="" coords="300,5,384,31"/>
+<area shape="poly" title=" " alt="" coords="252,24,287,24,286,30,252,29"/>
+<area shape="poly" title=" " alt="" coords="300,12,266,12,266,6,300,7"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -254,33 +264,33 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">__global__ void copy </td>
+          <td class="memname"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__global__</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">void</a> copy </td>
           <td>(</td>
-          <td class="paramtype">float4 *__restrict&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a>&#160;</td>
           <td class="paramname"><em>dest1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float4 *__restrict&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">const</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a>&#160;</td>
           <td class="paramname"><em>source1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float4 *__restrict&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a>&#160;</td>
           <td class="paramname"><em>dest2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float4 *__restrict&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">const</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a>&#160;</td>
           <td class="paramname"><em>source2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
           <td class="paramname"><em>n</em>&#160;</td>
         </tr>
         <tr>
@@ -293,15 +303,28 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html#l00014">14</a> of file <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html">particleswapkernels.cu</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   14</span>                                                                                                                                                   {</div>
-<div class="line"><span class="lineno">   15</span>    <span class="keywordtype">int</span> idx = threadIdx.x+blockDim.x*blockIdx.x;</div>
-<div class="line"><span class="lineno">   16</span>    <span class="keywordflow">if</span> (idx &gt;= n)<span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   17</span>    float4 my_particle = __ldg(&amp;source1[idx]);</div>
-<div class="line"><span class="lineno">   18</span>    float4 my_vel = __ldg(&amp;source2[idx]);</div>
-<div class="line"><span class="lineno">   19</span>    dest1[idx] = my_particle;</div>
-<div class="line"><span class="lineno">   20</span>    dest2[idx] = my_vel;</div>
+<div class="line"><span class="lineno">   15</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a> = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">threadIdx</a>.x+<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">blockDim</a>.x*<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">blockIdx</a>.x;</div>
+<div class="line"><span class="lineno">   16</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a> &gt;= <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">n</a>)<span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   17</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a> = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__ldg</a>(&amp;<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">source1</a>[<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a>]);</div>
+<div class="line"><span class="lineno">   18</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_vel</a> = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__ldg</a>(&amp;<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">source2</a>[<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a>]);</div>
+<div class="line"><span class="lineno">   19</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">dest1</a>[<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a>] = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>;</div>
+<div class="line"><span class="lineno">   20</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">dest2</a>[<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a>] = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_vel</a>;</div>
 <div class="line"><span class="lineno">   21</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html#l00232">HACCGPM::parallel::initLoadIntoBuffers()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">do_return()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/dc6/particleswapkernels_8cu_a5ace1b44eb57b3ce75b5c54575963da5_cgraph.png" border="0" usemap="#ad1/dc6/particleswapkernels_8cu_a5ace1b44eb57b3ce75b5c54575963da5_cgraph" alt=""/></div>
+<map name="ad1/dc6/particleswapkernels_8cu_a5ace1b44eb57b3ce75b5c54575963da5_cgraph" id="ad1/dc6/particleswapkernels_8cu_a5ace1b44eb57b3ce75b5c54575963da5_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,56,31"/>
+<area shape="rect" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf" title=" " alt="" coords="104,5,180,31"/>
+<area shape="poly" title=" " alt="" coords="56,15,90,15,90,21,56,21"/>
+<area shape="rect" href="../../da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6" title=" " alt="" coords="228,5,312,31"/>
+<area shape="poly" title=" " alt="" coords="180,24,215,24,214,30,180,29"/>
+<area shape="poly" title=" " alt="" coords="228,12,194,12,194,6,228,7"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -312,27 +335,27 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">__global__ void findDuplicates </td>
+          <td class="memname"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__global__</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">void</a> findDuplicates </td>
           <td>(</td>
-          <td class="paramtype">const float4 *__restrict&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">const</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a>&#160;</td>
           <td class="paramname"><em>d_pos</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float4 *__restrict&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a>&#160;</td>
           <td class="paramname"><em>new_particles</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
           <td class="paramname"><em>n_new</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
           <td class="paramname"><em>n_particles</em>&#160;</td>
         </tr>
         <tr>
@@ -343,52 +366,85 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html#l00086">86</a> of file <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html">particleswapkernels.cu</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   86</span>                                                                                                                            {</div>
-<div class="line"><span class="lineno">   87</span>    <span class="keywordtype">int</span> idx = threadIdx.x+blockDim.x*blockIdx.x;</div>
-<div class="line"><span class="lineno">   88</span>    <span class="keywordflow">if</span> (idx &gt;= n_particles)<span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   89</span>    float4 my_particle = __ldg(&amp;d_pos[idx]);</div>
-<div class="line"><span class="lineno">   90</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n_new; i++){</div>
-<div class="line"><span class="lineno">   91</span>        float4 other_particle = __ldg(&amp;new_particles[i]);</div>
-<div class="line"><span class="lineno">   92</span>        <span class="keywordflow">if</span> (my_particle.w == other_particle.w){</div>
-<div class="line"><span class="lineno">   93</span>            <span class="comment">//printf(&quot;DUPLICATE!!!\n&quot;);</span></div>
-<div class="line"><span class="lineno">   94</span>            new_particles[i] = make_float4(0,0,0,-10);</div>
-<div class="line"><span class="lineno">   95</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   96</span>        }</div>
-<div class="line"><span class="lineno">   97</span>    }</div>
-<div class="line"><span class="lineno">   98</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html#l00092">92</a> of file <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html">particleswapkernels.cu</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   92</span>                                                                                                                            {</div>
+<div class="line"><span class="lineno">   93</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a> = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">threadIdx</a>.x+<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">blockDim</a>.x*<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">blockIdx</a>.x;</div>
+<div class="line"><span class="lineno">   94</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a> &gt;= n_particles)<span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   95</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a> = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__ldg</a>(&amp;d_pos[<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a>]);</div>
+<div class="line"><span class="lineno">   96</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">i</a> = 0; <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">i</a> &lt; <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">n_new</a>; <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">i</a>++){</div>
+<div class="line"><span class="lineno">   97</span>        <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">other_particle</a> = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__ldg</a>(&amp;<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">new_particles</a>[<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">i</a>]);</div>
+<div class="line"><span class="lineno">   98</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.w == <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">other_particle</a>.w){</div>
+<div class="line"><span class="lineno">   99</span>            <span class="comment">//printf(&quot;DUPLICATE!!!\n&quot;);</span></div>
+<div class="line"><span class="lineno">  100</span>            <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">new_particles</a>[<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">i</a>] = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">make_float4</a>(0,0,0,-10);</div>
+<div class="line"><span class="lineno">  101</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  102</span>        }</div>
+<div class="line"><span class="lineno">  103</span>    }</div>
+<div class="line"><span class="lineno">  104</span>}</div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">do_return()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/dc6/particleswapkernels_8cu_a7fd26c484a73cd812fb32787ed77c52c_cgraph.png" border="0" usemap="#ad1/dc6/particleswapkernels_8cu_a7fd26c484a73cd812fb32787ed77c52c_cgraph" alt=""/></div>
+<map name="ad1/dc6/particleswapkernels_8cu_a7fd26c484a73cd812fb32787ed77c52c_cgraph" id="ad1/dc6/particleswapkernels_8cu_a7fd26c484a73cd812fb32787ed77c52c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,111,31"/>
+<area shape="rect" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf" title=" " alt="" coords="159,5,235,31"/>
+<area shape="poly" title=" " alt="" coords="111,15,145,15,145,21,111,21"/>
+<area shape="rect" href="../../da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6" title=" " alt="" coords="283,5,367,31"/>
+<area shape="poly" title=" " alt="" coords="235,24,269,24,269,30,235,29"/>
+<area shape="poly" title=" " alt="" coords="282,12,248,12,248,6,283,7"/>
+</map>
+</div>
+
 </div>
 </div>
-<a id="a1438ea4370678803976db719c911095b" name="a1438ea4370678803976db719c911095b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1438ea4370678803976db719c911095b">&#9670;&#160;</a></span>init_count_buffer()</h2>
+<a id="ac442dbd8f657d4bdae11fa4b9b7154ef" name="ac442dbd8f657d4bdae11fa4b9b7154ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac442dbd8f657d4bdae11fa4b9b7154ef">&#9670;&#160;</a></span>init_count_buffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">__global__ void init_count_buffer </td>
+          <td class="memname"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__global__</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">void</a> init_count_buffer </td>
           <td>(</td>
-          <td class="paramtype">int *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> *&#160;</td>
           <td class="paramname"><em>ns</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float4 *__restrict&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">const</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a>&#160;</td>
           <td class="paramname"><em>d_pos</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
           <td class="paramname"><em>n_particles</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int3&#160;</td>
-          <td class="paramname"><em>local_grid_size</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
+          <td class="paramname"><em>ng</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int3</a>&#160;</td>
+          <td class="paramname"><em>local_grid_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int3</a>&#160;</td>
+          <td class="paramname"><em>local_coords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int3</a>&#160;</td>
+          <td class="paramname"><em>dims</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -399,103 +455,120 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html#l00023">23</a> of file <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html">particleswapkernels.cu</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   23</span>                                                                                                                 {</div>
-<div class="line"><span class="lineno">   24</span>    <span class="keywordtype">int</span> idx = threadIdx.x+blockDim.x*blockIdx.x;</div>
-<div class="line"><span class="lineno">   25</span>    <span class="keywordflow">if</span> (idx &gt;= n_particles)<span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   26</span>    float4 my_particle = __ldg(&amp;d_pos[idx]);</div>
-<div class="line"><span class="lineno">   27</span>    <span class="keywordflow">if</span> (my_particle.w &lt; -1)<span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   28</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 27; i++){</div>
-<div class="line"><span class="lineno">   29</span>        <span class="keywordtype">int</span> x = (i/3)/3;</div>
-<div class="line"><span class="lineno">   30</span>        <span class="keywordtype">int</span> y = (i - x*3*3)/3;</div>
-<div class="line"><span class="lineno">   31</span>        <span class="keywordtype">int</span> z = i - x*3*3 - y*3;</div>
-<div class="line"><span class="lineno">   32</span>        x = (x-1)*local_grid_size.x;</div>
-<div class="line"><span class="lineno">   33</span>        y = (y-1)*local_grid_size.y;</div>
-<div class="line"><span class="lineno">   34</span>        z = (z-1)*local_grid_size.z;</div>
-<div class="line"><span class="lineno">   35</span>        float3 tmp_particle = make_float3(my_particle.x - x, my_particle.y - y, my_particle.z - z);</div>
-<div class="line"><span class="lineno">   36</span>        <span class="keywordflow">if</span> ((tmp_particle.x &gt; -1.0f &amp;&amp; tmp_particle.x &lt; local_grid_size.x) &amp;&amp; </div>
-<div class="line"><span class="lineno">   37</span>            (tmp_particle.y &gt; -1.0f &amp;&amp; tmp_particle.y &lt; local_grid_size.y) &amp;&amp;</div>
-<div class="line"><span class="lineno">   38</span>            (tmp_particle.z &gt; -1.0f &amp;&amp; tmp_particle.z &lt; local_grid_size.z)){</div>
-<div class="line"><span class="lineno">   39</span>                <span class="comment">//printf(&quot;Particle %g %g %g %g going to idx %d\n&quot;,my_particle.x,my_particle.y,my_particle.z,my_particle.w,i);</span></div>
-<div class="line"><span class="lineno">   40</span>                atomicAdd(&amp;ns[i],1);</div>
-<div class="line"><span class="lineno">   41</span>            }</div>
+<div class="fragment"><div class="line"><span class="lineno">   23</span>                                                                                                                                                       {</div>
+<div class="line"><span class="lineno">   24</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a> = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">threadIdx</a>.x+<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">blockDim</a>.x*<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">blockIdx</a>.x;</div>
+<div class="line"><span class="lineno">   25</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a> &gt;= n_particles)<span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   26</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a> = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__ldg</a>(&amp;d_pos[<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a>]);</div>
+<div class="line"><span class="lineno">   27</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.w &lt; -1)<span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   28</span> </div>
+<div class="line"><span class="lineno">   29</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.x += (<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float</a>)(local_grid_size.x * local_coords.x);</div>
+<div class="line"><span class="lineno">   30</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.y += (<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float</a>)(local_grid_size.y * local_coords.y);</div>
+<div class="line"><span class="lineno">   31</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.z += (<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float</a>)(local_grid_size.z * local_coords.z);</div>
+<div class="line"><span class="lineno">   32</span> </div>
+<div class="line"><span class="lineno">   33</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.x += (<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float</a>)ng;</div>
+<div class="line"><span class="lineno">   34</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.y += (<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float</a>)ng;</div>
+<div class="line"><span class="lineno">   35</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.z += (<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float</a>)ng;</div>
+<div class="line"><span class="lineno">   36</span> </div>
+<div class="line"><span class="lineno">   37</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.x = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">fmod</a>(<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.x,(<span class="keywordtype">float</span>)ng);</div>
+<div class="line"><span class="lineno">   38</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.y = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">fmod</a>(<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.y,(<span class="keywordtype">float</span>)ng);</div>
+<div class="line"><span class="lineno">   39</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.z = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">fmod</a>(<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.z,(<span class="keywordtype">float</span>)ng);</div>
+<div class="line"><span class="lineno">   40</span> </div>
+<div class="line"><span class="lineno">   41</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int3</a> <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">dest_coords</a> = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">make_int3</a>(<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.x / local_grid_size.x,<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.y / local_grid_size.y,<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.z / local_grid_size.z);</div>
 <div class="line"><span class="lineno">   42</span> </div>
-<div class="line"><span class="lineno">   43</span>    }</div>
-<div class="line"><span class="lineno">   44</span>}</div>
+<div class="line"><span class="lineno">   43</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">dest_rank</a> = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">dest_coords</a>.x * dims.y * dims.z + <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">dest_coords</a>.y * dims.z + <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">dest_coords</a>.z;</div>
+<div class="line"><span class="lineno">   44</span> </div>
+<div class="line"><span class="lineno">   45</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">atomicAdd</a>(&amp;<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">ns</a>[<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">dest_rank</a>],1);</div>
+<div class="line"><span class="lineno">   46</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html#l00232">HACCGPM::parallel::initLoadIntoBuffers()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">do_return()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html#l00153">HACCGPM::parallel::LoadIntoBuffers()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/dc6/particleswapkernels_8cu_ac442dbd8f657d4bdae11fa4b9b7154ef_cgraph.png" border="0" usemap="#ad1/dc6/particleswapkernels_8cu_ac442dbd8f657d4bdae11fa4b9b7154ef_cgraph" alt=""/></div>
+<map name="ad1/dc6/particleswapkernels_8cu_ac442dbd8f657d4bdae11fa4b9b7154ef_cgraph" id="ad1/dc6/particleswapkernels_8cu_ac442dbd8f657d4bdae11fa4b9b7154ef_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,124,31"/>
+<area shape="rect" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf" title=" " alt="" coords="172,5,248,31"/>
+<area shape="poly" title=" " alt="" coords="124,15,158,15,158,21,124,21"/>
+<area shape="rect" href="../../da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6" title=" " alt="" coords="296,5,380,31"/>
+<area shape="poly" title=" " alt="" coords="248,24,283,24,282,30,248,29"/>
+<area shape="poly" title=" " alt="" coords="296,12,262,12,262,6,296,7"/>
+</map>
+</div>
 
 </div>
 </div>
-<a id="a97414e10cc908d8a0a9a2538300df2d6" name="a97414e10cc908d8a0a9a2538300df2d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97414e10cc908d8a0a9a2538300df2d6">&#9670;&#160;</a></span>init_load_buffer()</h2>
+<a id="ae0c43d399db3db48b28198edc28dbf48" name="ae0c43d399db3db48b28198edc28dbf48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0c43d399db3db48b28198edc28dbf48">&#9670;&#160;</a></span>init_load_buffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">__global__ void init_load_buffer </td>
+          <td class="memname"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__global__</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">void</a> init_load_buffer </td>
           <td>(</td>
-          <td class="paramtype">float4 *__restrict&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *&#160;</td>
+          <td class="paramname"><em>d_swap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> *&#160;</td>
+          <td class="paramname"><em>ns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> *&#160;</td>
+          <td class="paramname"><em>counts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a>&#160;</td>
           <td class="paramname"><em>d_pos</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float4 *__restrict&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a>&#160;</td>
           <td class="paramname"><em>d_vel</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float4 *__restrict&#160;</td>
-          <td class="paramname"><em>d_pos_swap</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float4 *__restrict&#160;</td>
-          <td class="paramname"><em>d_vel_swap</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>count</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>starts</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const float4 *__restrict&#160;</td>
-          <td class="paramname"><em>d_tmppos</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const float4 *__restrict&#160;</td>
-          <td class="paramname"><em>d_tmpvel</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int3&#160;</td>
-          <td class="paramname"><em>local_grid_size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
           <td class="paramname"><em>n_particles</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
+          <td class="paramname"><em>ng</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int3</a>&#160;</td>
+          <td class="paramname"><em>local_grid_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int3</a>&#160;</td>
+          <td class="paramname"><em>local_coords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int3</a>&#160;</td>
+          <td class="paramname"><em>dims</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
           <td class="paramname"><em>world_rank</em>&#160;</td>
         </tr>
         <tr>
@@ -506,169 +579,68 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html#l00046">46</a> of file <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html">particleswapkernels.cu</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   46</span>                                                                                                                                                                                                                                                                                                        {</div>
-<div class="line"><span class="lineno">   47</span>    <span class="keywordtype">int</span> idx = threadIdx.x+blockDim.x*blockIdx.x;</div>
-<div class="line"><span class="lineno">   48</span>    <span class="keywordflow">if</span> (idx &gt;= n_particles)<span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   49</span>    float4 my_particle = __ldg(&amp;d_tmppos[idx]);</div>
-<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">if</span> (my_particle.w &lt; -1)<span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   51</span>    float4 my_vel = __ldg(&amp;d_tmpvel[idx]);</div>
-<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 27; i++){</div>
-<div class="line"><span class="lineno">   53</span>        <span class="keywordtype">int</span> x = (i/3)/3;</div>
-<div class="line"><span class="lineno">   54</span>        <span class="keywordtype">int</span> y = (i - x*3*3)/3;</div>
-<div class="line"><span class="lineno">   55</span>        <span class="keywordtype">int</span> z = i - x*3*3 - y*3;</div>
-<div class="line"><span class="lineno">   56</span>        x = (x-1)*local_grid_size.x;</div>
-<div class="line"><span class="lineno">   57</span>        y = (y-1)*local_grid_size.y;</div>
-<div class="line"><span class="lineno">   58</span>        z = (z-1)*local_grid_size.z;</div>
-<div class="line"><span class="lineno">   59</span>        float4 tmp_particle = make_float4(my_particle.x - x, my_particle.y - y, my_particle.z - z, my_particle.w);</div>
-<div class="line"><span class="lineno">   60</span>        <span class="keywordflow">if</span> ((tmp_particle.x &gt; -1.0f &amp;&amp; tmp_particle.x &lt; local_grid_size.x) &amp;&amp; </div>
-<div class="line"><span class="lineno">   61</span>            (tmp_particle.y &gt; -1.0f &amp;&amp; tmp_particle.y &lt; local_grid_size.y) &amp;&amp;</div>
-<div class="line"><span class="lineno">   62</span>            (tmp_particle.z &gt; -1.0f &amp;&amp; tmp_particle.z &lt; local_grid_size.z)){</div>
-<div class="line"><span class="lineno">   63</span>                <span class="comment">//printf(&quot;Particle %g %g %g %g going to idx %d\n&quot;,my_particle.x,my_particle.y,my_particle.z,my_particle.w,i);</span></div>
-<div class="line"><span class="lineno">   64</span>                float4* pos_dest;</div>
-<div class="line"><span class="lineno">   65</span>                float4* vel_dest;</div>
-<div class="line"><span class="lineno">   66</span>                pos_dest = d_pos;</div>
-<div class="line"><span class="lineno">   67</span>                vel_dest = d_vel;</div>
-<div class="line"><span class="lineno">   68</span>                <span class="keywordflow">if</span> (i != 13){</div>
-<div class="line"><span class="lineno">   69</span>                    <span class="keywordtype">int</span> start = starts[i];</div>
-<div class="line"><span class="lineno">   70</span>                    pos_dest = &amp;d_pos_swap[start];</div>
-<div class="line"><span class="lineno">   71</span>                    vel_dest = &amp;d_vel_swap[start];</div>
-<div class="line"><span class="lineno">   72</span>                }</div>
-<div class="line"><span class="lineno">   73</span>                <span class="keywordtype">int</span> j = atomicAdd(&amp;count[i],1);</div>
-<div class="line"><span class="lineno">   74</span>                pos_dest[j] = tmp_particle;</div>
-<div class="line"><span class="lineno">   75</span>                vel_dest[j] = my_vel;</div>
-<div class="line"><span class="lineno">   76</span>                <span class="comment">/*if (i &gt; 13){</span></div>
-<div class="line"><span class="lineno">   77</span><span class="comment">                    if (world_rank == 0){</span></div>
-<div class="line"><span class="lineno">   78</span><span class="comment">                        printf(&quot;i=%d j=%d [%g %g %g %g]\n&quot;,i,j,pos_dest[j].x,pos_dest[j].y,pos_dest[j].z,pos_dest[j].w);</span></div>
-<div class="line"><span class="lineno">   79</span><span class="comment">                    }</span></div>
-<div class="line"><span class="lineno">   80</span><span class="comment">                }*/</span></div>
-<div class="line"><span class="lineno">   81</span>            }</div>
-<div class="line"><span class="lineno">   82</span> </div>
-<div class="line"><span class="lineno">   83</span>    }</div>
-<div class="line"><span class="lineno">   84</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html#l00048">48</a> of file <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html">particleswapkernels.cu</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   48</span>                                                                                                                                                                                                                       {</div>
+<div class="line"><span class="lineno">   49</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a> = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">threadIdx</a>.x+<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">blockDim</a>.x*<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">blockIdx</a>.x;</div>
+<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a> &gt;= n_particles)<span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   51</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a> = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__ldg</a>(&amp;d_pos[<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a>]);</div>
+<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.w &lt; -1)<span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   53</span> </div>
+<div class="line"><span class="lineno">   54</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.x += (<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float</a>)(local_grid_size.x * local_coords.x);</div>
+<div class="line"><span class="lineno">   55</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.y += (<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float</a>)(local_grid_size.y * local_coords.y);</div>
+<div class="line"><span class="lineno">   56</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.z += (<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float</a>)(local_grid_size.z * local_coords.z);</div>
+<div class="line"><span class="lineno">   57</span> </div>
+<div class="line"><span class="lineno">   58</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.x += (<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float</a>)ng;</div>
+<div class="line"><span class="lineno">   59</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.y += (<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float</a>)ng;</div>
+<div class="line"><span class="lineno">   60</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.z += (<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float</a>)ng;</div>
+<div class="line"><span class="lineno">   61</span> </div>
+<div class="line"><span class="lineno">   62</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.x = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">fmod</a>(<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.x,(<span class="keywordtype">float</span>)ng);</div>
+<div class="line"><span class="lineno">   63</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.y = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">fmod</a>(<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.y,(<span class="keywordtype">float</span>)ng);</div>
+<div class="line"><span class="lineno">   64</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.z = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">fmod</a>(<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.z,(<span class="keywordtype">float</span>)ng);</div>
+<div class="line"><span class="lineno">   65</span> </div>
+<div class="line"><span class="lineno">   66</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int3</a> <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">dest_coords</a> = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">make_int3</a>(<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.x / local_grid_size.x,<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.y / local_grid_size.y,<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.z / local_grid_size.z);</div>
+<div class="line"><span class="lineno">   67</span> </div>
+<div class="line"><span class="lineno">   68</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">dest_rank</a> = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">dest_coords</a>.x * dims.y * dims.z + <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">dest_coords</a>.y * dims.z + <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">dest_coords</a>.z;</div>
+<div class="line"><span class="lineno">   69</span> </div>
+<div class="line"><span class="lineno">   70</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">dest_rank</a> == <a class="code hl_variable" href="../../d1/dc2/ccamb_8c.html#a0be0ed3102aab1d72782301d75cf570b">world_rank</a>)<span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   71</span> </div>
+<div class="line"><span class="lineno">   72</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float3</a> <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">grid_start</a> = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">make_float3</a>(<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">dest_coords</a>.x * local_grid_size.x, <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">dest_coords</a>.y * local_grid_size.y, <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">dest_coords</a>.z * local_grid_size.z);</div>
+<div class="line"><span class="lineno">   73</span> </div>
+<div class="line"><span class="lineno">   74</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.x -= <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">grid_start</a>.x;</div>
+<div class="line"><span class="lineno">   75</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.y -= <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">grid_start</a>.y;</div>
+<div class="line"><span class="lineno">   76</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>.z -= <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">grid_start</a>.z;</div>
+<div class="line"><span class="lineno">   77</span> </div>
+<div class="line"><span class="lineno">   78</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">start</a> = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">ns</a>[<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">dest_rank</a>];</div>
+<div class="line"><span class="lineno">   79</span> </div>
+<div class="line"><span class="lineno">   80</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">count</a> = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">atomicAdd</a>(&amp;<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">counts</a>[<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">dest_rank</a>],1);</div>
+<div class="line"><span class="lineno">   81</span> </div>
+<div class="line"><span class="lineno">   82</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">indx</a> = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">start</a> + <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">count</a>;</div>
+<div class="line"><span class="lineno">   83</span> </div>
+<div class="line"><span class="lineno">   84</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">d_swap</a>[<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">indx</a>*2] = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>;</div>
+<div class="line"><span class="lineno">   85</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">d_swap</a>[(<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">indx</a>*2)+1] = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__ldg</a>(&amp;d_vel[<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a>]);</div>
+<div class="line"><span class="lineno">   86</span> </div>
+<div class="line"><span class="lineno">   87</span>    d_pos[<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a>] = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">make_float4</a>(0,0,0,-10);</div>
+<div class="line"><span class="lineno">   88</span>    d_vel[<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a>] = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">make_float4</a>(0,0,0,-10);</div>
+<div class="line"><span class="lineno">   89</span> </div>
+<div class="line"><span class="lineno">   90</span>}</div>
+<div class="ttc" id="accamb_8c_html_a0be0ed3102aab1d72782301d75cf570b"><div class="ttname"><a href="../../d1/dc2/ccamb_8c.html#a0be0ed3102aab1d72782301d75cf570b">world_rank</a></div><div class="ttdeci">int world_rank</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dc2/ccamb_8c_source.html#l00020">ccamb.c:20</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html#l00232">HACCGPM::parallel::initLoadIntoBuffers()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">do_return()</a>, and <a class="el" href="../../d1/dc2/ccamb_8c_source.html#l00020">world_rank</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html#l00153">HACCGPM::parallel::LoadIntoBuffers()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/dc6/particleswapkernels_8cu_ae0c43d399db3db48b28198edc28dbf48_cgraph.png" border="0" usemap="#ad1/dc6/particleswapkernels_8cu_ae0c43d399db3db48b28198edc28dbf48_cgraph" alt=""/></div>
+<map name="ad1/dc6/particleswapkernels_8cu_ae0c43d399db3db48b28198edc28dbf48_cgraph" id="ad1/dc6/particleswapkernels_8cu_ae0c43d399db3db48b28198edc28dbf48_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,116,31"/>
+<area shape="rect" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf" title=" " alt="" coords="164,5,240,31"/>
+<area shape="poly" title=" " alt="" coords="116,15,150,15,150,21,116,21"/>
+<area shape="rect" href="../../da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6" title=" " alt="" coords="288,5,372,31"/>
+<area shape="poly" title=" " alt="" coords="240,24,275,24,274,30,240,29"/>
+<area shape="poly" title=" " alt="" coords="288,12,254,12,254,6,288,7"/>
+</map>
 </div>
-</div>
-<a id="aaf2d833243661c8b0d95bb5091d3382e" name="aaf2d833243661c8b0d95bb5091d3382e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf2d833243661c8b0d95bb5091d3382e">&#9670;&#160;</a></span>loadGridBuffersKernel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__global__ void loadGridBuffersKernel </td>
-          <td>(</td>
-          <td class="paramtype">float *__restrict&#160;</td>
-          <td class="paramname"><em>d_out</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const float *__restrict&#160;</td>
-          <td class="paramname"><em>d_grid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int3&#160;</td>
-          <td class="paramname"><em>local_grid_size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>n_extra</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>THIS IS WRONG!!!! PLEASE FIX. THE INDEXES ARE NOT ALWAYS CONTIGUOUS...</p>
-
-<p class="definition">Definition at line <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html#l00111">111</a> of file <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html">particleswapkernels.cu</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  111</span>                                                                                                                                 {</div>
-<div class="line"><span class="lineno">  112</span>    <span class="keywordtype">int</span> idx = threadIdx.x+blockDim.x+blockIdx.x;</div>
-<div class="line"><span class="lineno">  113</span>    <span class="keywordflow">if</span> (idx &gt;= n_extra)<span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  114</span>    <span class="comment">//int3 start = make_int3(0,0,0);</span></div>
-<div class="line"><span class="lineno">  115</span>    <span class="keywordtype">int</span> x = local_grid_size.x;</div>
-<div class="line"><span class="lineno">  116</span>    <span class="keywordtype">int</span> y = local_grid_size.y;</div>
-<div class="line"><span class="lineno">  117</span>    <span class="keywordtype">int</span> z = local_grid_size.z;</div>
-<div class="line"><span class="lineno">  118</span>    <span class="keywordtype">int</span> tmp_idx = idx;</div>
-<div class="line"><span class="lineno">  119</span> </div>
-<div class="line"><span class="lineno">  120</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; 8; i++){</div>
-<div class="line"><span class="lineno">  121</span>        <span class="keywordtype">int</span> l = i/4;</div>
-<div class="line"><span class="lineno">  122</span>        <span class="keywordtype">int</span> m = (i - l*4)/2;</div>
-<div class="line"><span class="lineno">  123</span>        <span class="keywordtype">int</span> n = (i - l*4) - m*2;</div>
-<div class="line"><span class="lineno">  124</span> </div>
-<div class="line"><span class="lineno">  125</span>        <span class="keywordtype">int</span> l_mul = ((l+1)%2)*x;</div>
-<div class="line"><span class="lineno">  126</span>        <span class="keywordtype">int</span> m_mul = ((m+1)%2)*y;</div>
-<div class="line"><span class="lineno">  127</span>        <span class="keywordtype">int</span> n_mul = ((n+1)%2)*z;</div>
-<div class="line"><span class="lineno">  128</span>        <span class="keywordflow">if</span> (l_mul == 0){</div>
-<div class="line"><span class="lineno">  129</span>            l_mul = 1;</div>
-<div class="line"><span class="lineno">  130</span>        }</div>
-<div class="line"><span class="lineno">  131</span>        <span class="keywordflow">if</span> (m_mul == 0){</div>
-<div class="line"><span class="lineno">  132</span>            m_mul == 1;</div>
-<div class="line"><span class="lineno">  133</span>        }</div>
-<div class="line"><span class="lineno">  134</span>        <span class="keywordflow">if</span> (n_mul == 0){</div>
-<div class="line"><span class="lineno">  135</span>            n_mul == 1;</div>
-<div class="line"><span class="lineno">  136</span>        }</div>
-<div class="line"><span class="lineno">  137</span> </div>
-<div class="line"><span class="lineno">  138</span>        <span class="keywordtype">int</span> bin_size = l_mul*m_mul*n_mul;</div>
-<div class="line"><span class="lineno">  139</span> </div>
-<div class="line"><span class="lineno">  140</span>        <span class="keywordflow">if</span> (tmp_idx &lt; bin_size){</div>
-<div class="line"><span class="lineno">  142</span>            <span class="keywordtype">int</span> global_index = x * l * (y+1)*(z+1) + y * m * (z+1) + (z+1) * n + tmp_idx;</div>
-<div class="line"><span class="lineno">  143</span>            <span class="keywordtype">float</span> my_cell = __ldg(&amp;d_grid[global_index]);</div>
-<div class="line"><span class="lineno">  144</span>            d_out[idx] = my_cell;</div>
-<div class="line"><span class="lineno">  145</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  146</span>        }</div>
-<div class="line"><span class="lineno">  147</span> </div>
-<div class="line"><span class="lineno">  148</span>        tmp_idx -= bin_size;</div>
-<div class="line"><span class="lineno">  149</span> </div>
-<div class="line"><span class="lineno">  150</span>    }</div>
-<div class="line"><span class="lineno">  151</span> </div>
-<div class="line"><span class="lineno">  152</span>    <span class="comment">/*if (0 &lt;= tmp_idx &lt; z*y){</span></div>
-<div class="line"><span class="lineno">  153</span><span class="comment">        start.z = z;</span></div>
-<div class="line"><span class="lineno">  154</span><span class="comment">    } else{</span></div>
-<div class="line"><span class="lineno">  155</span><span class="comment">        tmp_idx -= z*y;</span></div>
-<div class="line"><span class="lineno">  156</span><span class="comment">        if (0 &lt;= tmp_idx &lt; y*x){</span></div>
-<div class="line"><span class="lineno">  157</span><span class="comment">            start.y = y;</span></div>
-<div class="line"><span class="lineno">  158</span><span class="comment">        } else {</span></div>
-<div class="line"><span class="lineno">  159</span><span class="comment">            tmp_idx -= y*x;</span></div>
-<div class="line"><span class="lineno">  160</span><span class="comment">            if (0 &lt;= tmp_idx &lt; y){</span></div>
-<div class="line"><span class="lineno">  161</span><span class="comment">                start.y = y;</span></div>
-<div class="line"><span class="lineno">  162</span><span class="comment">                start.z = z;</span></div>
-<div class="line"><span class="lineno">  163</span><span class="comment">            } else {</span></div>
-<div class="line"><span class="lineno">  164</span><span class="comment">                tmp_idx -= y;</span></div>
-<div class="line"><span class="lineno">  165</span><span class="comment">                if (0 &lt;= tmp_idx &lt; z*x){</span></div>
-<div class="line"><span class="lineno">  166</span><span class="comment">                    start.x = x;</span></div>
-<div class="line"><span class="lineno">  167</span><span class="comment">                } else {</span></div>
-<div class="line"><span class="lineno">  168</span><span class="comment">                    tmp_idx -= z*x;</span></div>
-<div class="line"><span class="lineno">  169</span><span class="comment">                    if (0 &lt;= tmp_idx &lt; z){</span></div>
-<div class="line"><span class="lineno">  170</span><span class="comment">                        start.x = x;</span></div>
-<div class="line"><span class="lineno">  171</span><span class="comment">                        start.z = z;</span></div>
-<div class="line"><span class="lineno">  172</span><span class="comment">                    } else {</span></div>
-<div class="line"><span class="lineno">  173</span><span class="comment">                        tmp_idx -= z;</span></div>
-<div class="line"><span class="lineno">  174</span><span class="comment">                        if (0 &lt;= tmp_idx &lt; x){</span></div>
-<div class="line"><span class="lineno">  175</span><span class="comment">                            start.x = x;</span></div>
-<div class="line"><span class="lineno">  176</span><span class="comment">                            start.y = y;</span></div>
-<div class="line"><span class="lineno">  177</span><span class="comment">                        } else{</span></div>
-<div class="line"><span class="lineno">  178</span><span class="comment">                            start.x = x;</span></div>
-<div class="line"><span class="lineno">  179</span><span class="comment">                            start.y = y;</span></div>
-<div class="line"><span class="lineno">  180</span><span class="comment">                            start.z = z;</span></div>
-<div class="line"><span class="lineno">  181</span><span class="comment">                        }}}}}}*/</span></div>
-<div class="line"><span class="lineno">  182</span> </div>
-<div class="line"><span class="lineno">  183</span>    <span class="comment">/*int global_index = start.x * (y+1)*(z+1) + start.y * (z+1) + start.z + 1 + tmp_idx;</span></div>
-<div class="line"><span class="lineno">  184</span><span class="comment">    float my_cell = __ldg(&amp;d_grid[global_index]);</span></div>
-<div class="line"><span class="lineno">  185</span><span class="comment">    d_out[idx] = my_cell;*/</span></div>
-<div class="line"><span class="lineno">  186</span> </div>
-<div class="line"><span class="lineno">  187</span>}</div>
-</div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html#l00189">HACCGPM::parallel::loadGridBuffers()</a>.</p>
 
 </div>
 </div>
@@ -679,15 +651,15 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">__global__ void swap_set_invalid </td>
+          <td class="memname"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__global__</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">void</a> swap_set_invalid </td>
           <td>(</td>
-          <td class="paramtype">float4 *__restrict&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a>&#160;</td>
           <td class="paramname"><em>d_pos</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
           <td class="paramname"><em>mem_frac</em>&#160;</td>
         </tr>
         <tr>
@@ -700,12 +672,25 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html#l00008">8</a> of file <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html">particleswapkernels.cu</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">    8</span>                                                                        {</div>
-<div class="line"><span class="lineno">    9</span>    <span class="keywordtype">int</span> idx = threadIdx.x+blockDim.x*blockIdx.x;</div>
-<div class="line"><span class="lineno">   10</span>    <span class="keywordflow">if</span> (idx &gt;= mem_frac) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   11</span>    d_pos[idx] = make_float4(0,0,0,-10);</div>
+<div class="line"><span class="lineno">    9</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a> = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">threadIdx</a>.x+<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">blockDim</a>.x*<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">blockIdx</a>.x;</div>
+<div class="line"><span class="lineno">   10</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a> &gt;= <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">mem_frac</a>) <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   11</span>    d_pos[<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a>] = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">make_float4</a>(0,0,0,-10);</div>
 <div class="line"><span class="lineno">   12</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="../../d1/dc6/particleswapkernels_8cu_source.html#l00232">HACCGPM::parallel::initLoadIntoBuffers()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">do_return()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/dc6/particleswapkernels_8cu_abec6dfb3c242f73e827f5b91bde54edf_cgraph.png" border="0" usemap="#ad1/dc6/particleswapkernels_8cu_abec6dfb3c242f73e827f5b91bde54edf_cgraph" alt=""/></div>
+<map name="ad1/dc6/particleswapkernels_8cu_abec6dfb3c242f73e827f5b91bde54edf_cgraph" id="ad1/dc6/particleswapkernels_8cu_abec6dfb3c242f73e827f5b91bde54edf_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,128,31"/>
+<area shape="rect" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf" title=" " alt="" coords="176,5,252,31"/>
+<area shape="poly" title=" " alt="" coords="128,15,162,15,162,21,128,21"/>
+<area shape="rect" href="../../da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6" title=" " alt="" coords="300,5,384,31"/>
+<area shape="poly" title=" " alt="" coords="252,24,287,24,286,30,252,29"/>
+<area shape="poly" title=" " alt="" coords="300,12,266,12,266,6,300,7"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -714,7 +699,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../d1/dc6/particleswapkernels_8cu.html">particleswapkernels.cu</a></li>
+    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_4e002e31e723241887c8084da28f850f.html">particle_transfer</a></li><li class="navelem"><a class="el" href="../../d1/dc6/particleswapkernels_8cu.html">particleswapkernels.cu</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['loadgridbuffers_0',['loadGridBuffers',['../d1/d3f/namespaceHACCGPM_1_1parallel.html#a31a4b3e867d91495908cb284b049c610',1,'HACCGPM::parallel']]],
-  ['loadgridbufferskernel_1',['loadGridBuffersKernel',['../d1/dc6/particleswapkernels_8cu.html#aaf2d833243661c8b0d95bb5091d3382e',1,'particleswapkernels.cu']]]
+  ['kspace_5fsolve_0',['kspace_solve',['../d8/d93/solver_8cu.html#a2d3738cb7bfa385764cf2f74712ec4e7',1,'solver.cu']]],
+  ['kspace_5fsolve_5fgradient_1',['kspace_solve_gradient',['../d8/d93/solver_8cu.html#a9ea24b7850f2c4b5b57254179613fb3e',1,'solver.cu']]],
+  ['kspace_5fsolve_5fgradient_5fparallel_2',['kspace_solve_gradient_parallel',['../d8/d93/solver_8cu.html#a3d45d24f387e6b40e709bc40a419e25a',1,'solver.cu']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fftcachesize_0',['FFTCacheSize',['../d2/df9/ffts_8cu.html#ab69b53cecd86e169b6c4b767162a3fdb',1,'ffts.cu']]]
+  ['errcon_0',['ERRCON',['../da/dcb/cosmo_8cpp.html#ada4f8ab78022ca1a9d61ea39155acf4d',1,'cosmo.cpp']]]
 ];

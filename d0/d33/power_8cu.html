@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>HACC_GPM: /home/hqureshi/HACC_GPM/src/power.cu File Reference</title>
+<title>HACC_GPM: /home/hqureshi/HACC_GPM/src/power_spectrum/power.cu File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -102,32 +102,36 @@ $(document).ready(function(){initNavTree('d0/d33/power_8cu.html','../../'); init
   <div class="headertitle"><div class="title">power.cu File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="../../da/d0d/haccgpm_8hpp_source.html">haccgpm.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d6/d81/power__kernels_8hpp_source.html">power_kernels.hpp</a>&quot;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for power.cu:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../df/d3e/power_8cu__incl.png" border="0" usemap="#a_2home_2hqureshi_2HACC__GPM_2src_2power_8cu" alt=""/></div>
-<map name="a_2home_2hqureshi_2HACC__GPM_2src_2power_8cu" id="a_2home_2hqureshi_2HACC__GPM_2src_2power_8cu">
-<area shape="rect" title=" " alt="" coords="179,5,333,45"/>
-<area shape="rect" href="../../da/d0d/haccgpm_8hpp.html" title=" " alt="" coords="206,93,306,119"/>
-<area shape="poly" title=" " alt="" coords="259,46,259,80,253,80,253,46"/>
-<area shape="rect" title=" " alt="" coords="5,167,67,192"/>
-<area shape="poly" title=" " alt="" coords="229,48,67,161,64,157,226,43"/>
-<area shape="rect" title=" " alt="" coords="331,93,395,119"/>
-<area shape="poly" title=" " alt="" coords="285,44,337,83,333,87,281,48"/>
-<area shape="rect" title=" " alt="" coords="91,167,202,192"/>
-<area shape="poly" title=" " alt="" coords="238,121,179,161,176,157,235,117"/>
-<area shape="rect" title=" " alt="" coords="227,167,285,192"/>
-<area shape="poly" title=" " alt="" coords="259,119,259,153,253,153,253,119"/>
-<area shape="poly" title=" " alt="" coords="219,121,81,167,79,162,217,116"/>
-<area shape="rect" title=" " alt="" coords="309,167,368,192"/>
-<area shape="poly" title=" " alt="" coords="272,117,316,155,312,159,269,121"/>
-<area shape="rect" title=" " alt="" coords="392,167,475,192"/>
-<area shape="poly" title=" " alt="" coords="288,116,391,159,389,164,286,121"/>
-<area shape="rect" title=" " alt="" coords="499,167,560,192"/>
-<area shape="poly" title=" " alt="" coords="307,116,486,164,485,169,305,121"/>
+<div class="center"><img src="../../df/d3e/power_8cu__incl.png" border="0" usemap="#a_2home_2hqureshi_2HACC__GPM_2src_2power__spectrum_2power_8cu" alt=""/></div>
+<map name="a_2home_2hqureshi_2HACC__GPM_2src_2power__spectrum_2power_8cu" id="a_2home_2hqureshi_2HACC__GPM_2src_2power__spectrum_2power_8cu">
+<area shape="rect" title=" " alt="" coords="177,5,359,60"/>
+<area shape="rect" href="../../d6/d81/power__kernels_8hpp.html" title=" " alt="" coords="203,108,333,133"/>
+<area shape="poly" title=" " alt="" coords="271,60,271,94,265,94,265,60"/>
+<area shape="rect" title=" " alt="" coords="5,255,67,280"/>
+<area shape="poly" title=" " alt="" coords="241,62,193,110,60,246,56,243,189,106,238,58"/>
+<area shape="rect" title=" " alt="" coords="357,108,421,133"/>
+<area shape="poly" title=" " alt="" coords="307,58,362,98,359,102,304,62"/>
+<area shape="rect" href="../../da/d0d/haccgpm_8hpp.html" title=" " alt="" coords="247,181,347,207"/>
+<area shape="poly" title=" " alt="" coords="276,132,289,167,285,169,271,134"/>
+<area shape="rect" title=" " alt="" coords="91,255,202,280"/>
+<area shape="poly" title=" " alt="" coords="272,209,186,251,184,246,270,204"/>
+<area shape="rect" title=" " alt="" coords="227,255,285,280"/>
+<area shape="poly" title=" " alt="" coords="292,208,272,244,268,241,288,205"/>
+<area shape="poly" title=" " alt="" coords="251,209,80,257,79,252,250,204"/>
+<area shape="rect" title=" " alt="" coords="309,255,368,280"/>
+<area shape="poly" title=" " alt="" coords="307,205,327,241,322,244,302,208"/>
+<area shape="rect" title=" " alt="" coords="392,255,475,280"/>
+<area shape="poly" title=" " alt="" coords="322,204,399,246,396,250,320,209"/>
+<area shape="rect" title=" " alt="" coords="499,255,560,280"/>
+<area shape="poly" title=" " alt="" coords="339,204,486,251,485,256,337,209"/>
+<area shape="rect" href="../../d9/da2/pycosmotools_8hpp.html" title=" " alt="" coords="584,255,712,280"/>
+<area shape="poly" title=" " alt="" coords="348,202,575,249,574,254,347,207"/>
 </map>
 </div>
 </div>
@@ -135,35 +139,19 @@ Include dependency graph for power.cu:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a4c405c95194e8feab7119dff58e88521"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d33/power_8cu.html#a4c405c95194e8feab7119dff58e88521">VerbosePower</a></td></tr>
+<tr class="memitem:a4c405c95194e8feab7119dff58e88521"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d33/power_8cu.html#a4c405c95194e8feab7119dff58e88521">VerbosePower</a></td></tr>
 <tr class="separator:a4c405c95194e8feab7119dff58e88521"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1f629b32d30e906a43f7bc9d31a95aba"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d33/power_8cu.html#a1f629b32d30e906a43f7bc9d31a95aba">scalePower</a> (const <a class="el" href="../../da/d0d/haccgpm_8hpp.html#a27d89e2a5f98ab524846b9bac59ebf44">deviceFFT_t</a> *__restrict data, <a class="el" href="../../da/d0d/haccgpm_8hpp.html#a2f67acc29a084b658dd371975fb27bd8">hostFFT_t</a> *__restrict out, double ng, double rl)</td></tr>
-<tr class="separator:a1f629b32d30e906a43f7bc9d31a95aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9424ff811a52aa36e0c35d1886e8d3de"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d33/power_8cu.html#a9424ff811a52aa36e0c35d1886e8d3de">scalePower</a> (<a class="el" href="../../da/d0d/haccgpm_8hpp.html#a27d89e2a5f98ab524846b9bac59ebf44">deviceFFT_t</a> *__restrict data, double ng, double rl)</td></tr>
-<tr class="separator:a9424ff811a52aa36e0c35d1886e8d3de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37872452600d46f9503dcc360a48adcb"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d33/power_8cu.html#a37872452600d46f9503dcc360a48adcb">PkCICFilter</a> (double *__restrict grid, int ng, int folds)</td></tr>
-<tr class="separator:a37872452600d46f9503dcc360a48adcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ed54a74165576c0d7640f5e7d4f2d06"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d33/power_8cu.html#a3ed54a74165576c0d7640f5e7d4f2d06">PkCICFilter</a> (<a class="el" href="../../da/d0d/haccgpm_8hpp.html#a27d89e2a5f98ab524846b9bac59ebf44">deviceFFT_t</a> *__restrict grid, int ng, int folds)</td></tr>
-<tr class="separator:a3ed54a74165576c0d7640f5e7d4f2d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a987c68ca36b003c733161e4039f3a7f5"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d33/power_8cu.html#a987c68ca36b003c733161e4039f3a7f5">foldParticles</a> (float4 *__restrict d_pos, double ng)</td></tr>
-<tr class="separator:a987c68ca36b003c733161e4039f3a7f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8dc8aef8fea2a2fc182b191f1e89bdc"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d33/power_8cu.html#ad8dc8aef8fea2a2fc182b191f1e89bdc">ScaleParticles</a> (float4 *__restrict d_pos, double oldNg, double newNg)</td></tr>
-<tr class="separator:ad8dc8aef8fea2a2fc182b191f1e89bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb06d3288ef0b39c8812e8cb8d6c3cc7"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d33/power_8cu.html#abb06d3288ef0b39c8812e8cb8d6c3cc7">cpy</a> (float4 *__restrict dest, const float4 *__restrict source)</td></tr>
-<tr class="separator:abb06d3288ef0b39c8812e8cb8d6c3cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6d8985f8d4e557aed24d2c7ed1b18cd"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d33/power_8cu.html#ad6d8985f8d4e557aed24d2c7ed1b18cd">BinPower</a> (const <a class="el" href="../../da/d0d/haccgpm_8hpp.html#a2f67acc29a084b658dd371975fb27bd8">hostFFT_t</a> *__restrict d_powerSpectrum, double *__restrict d_binVals, int *__restrict d_binCounts, double minK, double binDelta, double rl, int ng)</td></tr>
-<tr class="separator:ad6d8985f8d4e557aed24d2c7ed1b18cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72fd8eac69d23435bd6d1842b70115b9"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d33/power_8cu.html#a72fd8eac69d23435bd6d1842b70115b9">BinPower</a> (const <a class="el" href="../../da/d0d/haccgpm_8hpp.html#a27d89e2a5f98ab524846b9bac59ebf44">deviceFFT_t</a> *__restrict d_grid, double *__restrict d_binVals, int *__restrict d_binCounts, double minK, double binDelta, double rl, int ng)</td></tr>
-<tr class="separator:a72fd8eac69d23435bd6d1842b70115b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8018b5e35e0deec61baef9ed33b5bf8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d33/power_8cu.html#ad8018b5e35e0deec61baef9ed33b5bf8">writePkOutput</a> (<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">const</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">char</a> *fname, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">binVals</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">binCounts</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">kBins</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">nbins</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">current_fold</a>)</td></tr>
+<tr class="separator:ad8018b5e35e0deec61baef9ed33b5bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:ae785a8ef144f17d04541e43d2b9a492b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d0d/haccgpm_8hpp.html#aa790b6767cf9152c32b179d29c46e3ef">CPUTimer_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d33/power_8cu.html#ae785a8ef144f17d04541e43d2b9a492b">POWER_TIME</a> = 0</td></tr>
 <tr class="separator:ae785a8ef144f17d04541e43d2b9a492b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a698a61c0af0367d6c71a2a74ac868385"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d33/power_8cu.html#a698a61c0af0367d6c71a2a74ac868385">POWER_CALLS</a> = 0</td></tr>
+<tr class="memitem:a698a61c0af0367d6c71a2a74ac868385"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d33/power_8cu.html#a698a61c0af0367d6c71a2a74ac868385">POWER_CALLS</a> = 0</td></tr>
 <tr class="separator:a698a61c0af0367d6c71a2a74ac868385"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9983828558c24178d51fa790ae409275"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d0d/haccgpm_8hpp.html#aa790b6767cf9152c32b179d29c46e3ef">CPUTimer_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d33/power_8cu.html#a9983828558c24178d51fa790ae409275">POWER_KERNEL_TIME</a> = 0</td></tr>
 <tr class="separator:a9983828558c24178d51fa790ae409275"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,63 +164,57 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define VerbosePower</td>
+          <td class="memname">#<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">define</a> VerbosePower</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d33/power_8cu_source.html#l00005">5</a> of file <a class="el" href="../../d0/d33/power_8cu_source.html">power.cu</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d33/power_8cu_source.html#l00006">6</a> of file <a class="el" href="../../d0/d33/power_8cu_source.html">power.cu</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a72fd8eac69d23435bd6d1842b70115b9" name="a72fd8eac69d23435bd6d1842b70115b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72fd8eac69d23435bd6d1842b70115b9">&#9670;&#160;</a></span>BinPower() <span class="overload">[1/2]</span></h2>
+<a id="ad8018b5e35e0deec61baef9ed33b5bf8" name="ad8018b5e35e0deec61baef9ed33b5bf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8018b5e35e0deec61baef9ed33b5bf8">&#9670;&#160;</a></span>writePkOutput()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">__global__ void BinPower </td>
+          <td class="memname"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">void</a> writePkOutput </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../da/d0d/haccgpm_8hpp.html#a27d89e2a5f98ab524846b9bac59ebf44">deviceFFT_t</a> *__restrict&#160;</td>
-          <td class="paramname"><em>d_grid</em>, </td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">const</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">char</a> *&#160;</td>
+          <td class="paramname"><em>fname</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double *__restrict&#160;</td>
-          <td class="paramname"><em>d_binVals</em>, </td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a> *&#160;</td>
+          <td class="paramname"><em>binVals</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int *__restrict&#160;</td>
-          <td class="paramname"><em>d_binCounts</em>, </td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> *&#160;</td>
+          <td class="paramname"><em>binCounts</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>minK</em>, </td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a> *&#160;</td>
+          <td class="paramname"><em>kBins</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>binDelta</em>, </td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
+          <td class="paramname"><em>nbins</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>rl</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>ng</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
+          <td class="paramname"><em>current_fold</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -242,560 +224,41 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d33/power_8cu_source.html#l00167">167</a> of file <a class="el" href="../../d0/d33/power_8cu_source.html">power.cu</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  167</span>                                                                                                                                                                          {</div>
-<div class="line"><span class="lineno">  168</span> </div>
-<div class="line"><span class="lineno">  169</span>    <span class="keywordtype">int</span> idx = blockDim.x * blockIdx.x + threadIdx.x;</div>
-<div class="line"><span class="lineno">  170</span>    <span class="keywordflow">if</span> (idx == 0){</div>
-<div class="line"><span class="lineno">  171</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  172</span>    }</div>
-<div class="line"><span class="lineno">  173</span>    <span class="keywordflow">if</span> (idx == ((ng/2)*(ng)*(ng) + (ng/2)*ng + (ng/2))){</div>
-<div class="line"><span class="lineno">  174</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  175</span>    }</div>
-<div class="line"><span class="lineno">  176</span> </div>
-<div class="line"><span class="lineno">  177</span>    <span class="keywordtype">double</span> d = ((2*M_PI)/(((<span class="keywordtype">double</span>)(rl))));</div>
-<div class="line"><span class="lineno">  178</span> </div>
-<div class="line"><span class="lineno">  179</span>    int3 idx3d = <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ad9fb99027bd0e8c4666c28a5b85d419e">HACCGPM::serial::get_index</a>(idx,ng);</div>
-<div class="line"><span class="lineno">  180</span>    float3 kmodes = <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#adebf563a2ff1ace956181e3a26ea6cb2">HACCGPM::serial::get_kmodes</a>(idx3d,ng,d);</div>
-<div class="line"><span class="lineno">  181</span> </div>
-<div class="line"><span class="lineno">  182</span>    <a class="code hl_define" href="../../da/d0d/haccgpm_8hpp.html#a27d89e2a5f98ab524846b9bac59ebf44">deviceFFT_t</a> this_val = __ldg(&amp;d_grid[idx]);</div>
-<div class="line"><span class="lineno">  183</span> </div>
-<div class="line"><span class="lineno">  184</span>    <span class="keywordtype">float</span> kbin = sqrtf(kmodes.x*kmodes.x + kmodes.y*kmodes.y + kmodes.z*kmodes.z) - minK;</div>
-<div class="line"><span class="lineno">  185</span>    <span class="keywordtype">int</span> indx = (int)(kbin/binDelta);</div>
-<div class="line"><span class="lineno">  186</span> </div>
-<div class="line"><span class="lineno">  187</span>    atomicAdd(&amp;d_binVals[indx],this_val.x);</div>
-<div class="line"><span class="lineno">  188</span>    atomicAdd(&amp;d_binCounts[indx],1);</div>
-<div class="line"><span class="lineno">  189</span> </div>
-<div class="line"><span class="lineno">  190</span> </div>
-<div class="line"><span class="lineno">  191</span>}</div>
-<div class="ttc" id="ahaccgpm_8hpp_html_a27d89e2a5f98ab524846b9bac59ebf44"><div class="ttname"><a href="../../da/d0d/haccgpm_8hpp.html#a27d89e2a5f98ab524846b9bac59ebf44">deviceFFT_t</a></div><div class="ttdeci">#define deviceFFT_t</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00021">haccgpm.hpp:21</a></div></div>
-<div class="ttc" id="anamespaceHACCGPM_1_1serial_html_ad9fb99027bd0e8c4666c28a5b85d419e"><div class="ttname"><a href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ad9fb99027bd0e8c4666c28a5b85d419e">HACCGPM::serial::get_index</a></div><div class="ttdeci">__device__ __forceinline__ int3 get_index(int idx, int ng)</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00220">haccgpm.hpp:220</a></div></div>
-<div class="ttc" id="anamespaceHACCGPM_1_1serial_html_adebf563a2ff1ace956181e3a26ea6cb2"><div class="ttname"><a href="../../d5/d07/namespaceHACCGPM_1_1serial.html#adebf563a2ff1ace956181e3a26ea6cb2">HACCGPM::serial::get_kmodes</a></div><div class="ttdeci">__device__ __forceinline__ float3 get_kmodes(int3 idx3d, int ng, double d)</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00228">haccgpm.hpp:228</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d0/d33/power_8cu_source.html#l00012">12</a> of file <a class="el" href="../../d0/d33/power_8cu_source.html">power.cu</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   12</span>                                                                                                                  {</div>
+<div class="line"><span class="lineno">   13</span>    <span class="keywordtype">char</span> <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">fname2</a>[400];</div>
+<div class="line"><span class="lineno">   14</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">sprintf</a>(<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">fname2</a>, <span class="stringliteral">&quot;%s.fold.%d&quot;</span>, fname, <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">current_fold</a>);</div>
+<div class="line"><span class="lineno">   15</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">FILE</a> *<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">fp</a>;</div>
+<div class="line"><span class="lineno">   16</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">fp</a> = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">fopen</a>(<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">fname2</a>, <span class="stringliteral">&quot;w+&quot;</span>);</div>
+<div class="line"><span class="lineno">   17</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">i</a> = 0; <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">i</a> &lt; <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">nbins</a>; <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">i</a>++){</div>
+<div class="line"><span class="lineno">   18</span>        <span class="keywordtype">double</span> <a class="code hl_variable" href="../../d3/dc3/namespacegenerate__ipk.html#a29e02f1550c510c49839d6a253ea30cb">out</a> = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">binVals</a>[<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">i</a>]/((<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a>)<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">binCounts</a>[<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">i</a>]);</div>
+<div class="line"><span class="lineno">   19</span>        <span class="keywordflow">if</span> ((out == out) &amp;&amp; (<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">binCounts</a>[<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">i</a>] != 0) &amp;&amp; (out != 0)){</div>
+<div class="line"><span class="lineno">   20</span>            <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">fprintf</a>(<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">fp</a>,<span class="stringliteral">&quot;%g,%g,%d\n&quot;</span>,<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">kBins</a>[<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">i</a>],out,<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">binCounts</a>[<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">i</a>]);</div>
+<div class="line"><span class="lineno">   21</span>        }</div>
+<div class="line"><span class="lineno">   22</span>        <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">binVals</a>[<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">i</a>] = 0;</div>
+<div class="line"><span class="lineno">   23</span>        <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">binCounts</a>[<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">i</a>] = 0;</div>
+<div class="line"><span class="lineno">   24</span>    }</div>
+<div class="line"><span class="lineno">   25</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">fclose</a>(<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">fp</a>);</div>
+<div class="line"><span class="lineno">   26</span>}</div>
+<div class="ttc" id="agridexchange_8cpp_html_aee62b8f3ede200a395ed04dc3531efcf"><div class="ttname"><a href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">do_return</a></div><div class="ttdeci">void do_return(float4 *grad, int left_rank, int right_rank, int size, int3 local_grid_size, int3 local_coords, int3 total_grid_dims, int overload, int world_rank, size_t *bytes, CPUTimer_t *mpi_time, int blockSize, int calls)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">gridexchange.cpp:31</a></div></div>
+<div class="ttc" id="anamespacegenerate__ipk_html_a29e02f1550c510c49839d6a253ea30cb"><div class="ttname"><a href="../../d3/dc3/namespacegenerate__ipk.html#a29e02f1550c510c49839d6a253ea30cb">generate_ipk.out</a></div><div class="ttdeci">out</div><div class="ttdef"><b>Definition</b> <a href="../../df/d1f/generate__ipk_8py_source.html#l00198">generate_ipk.py:198</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00021">deviceFFT_t</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00220">HACCGPM::serial::get_index()</a>, and <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00228">HACCGPM::serial::get_kmodes()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">do_return()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/d33/power_8cu_source.html#l00028">HACCGPM::parallel::GetPowerSpectrum()</a>, and <a class="el" href="../../d0/d33/power_8cu_source.html#l00114">HACCGPM::serial::GetPowerSpectrum()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d0/d33/power_8cu_a72fd8eac69d23435bd6d1842b70115b9_cgraph.png" border="0" usemap="#ad0/d33/power_8cu_a72fd8eac69d23435bd6d1842b70115b9_cgraph" alt=""/></div>
-<map name="ad0/d33/power_8cu_a72fd8eac69d23435bd6d1842b70115b9_cgraph" id="ad0/d33/power_8cu_a72fd8eac69d23435bd6d1842b70115b9_cgraph">
-<area shape="rect" title=" " alt="" coords="5,45,84,70"/>
-<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ad9fb99027bd0e8c4666c28a5b85d419e" title=" " alt="" coords="132,5,288,45"/>
-<area shape="poly" title=" " alt="" coords="84,47,118,40,119,46,85,52"/>
-<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#adebf563a2ff1ace956181e3a26ea6cb2" title=" " alt="" coords="132,69,288,109"/>
-<area shape="poly" title=" " alt="" coords="85,62,119,69,118,74,84,68"/>
+<div class="center"><img src="../../d0/d33/power_8cu_ad8018b5e35e0deec61baef9ed33b5bf8_cgraph.png" border="0" usemap="#ad0/d33/power_8cu_ad8018b5e35e0deec61baef9ed33b5bf8_cgraph" alt=""/></div>
+<map name="ad0/d33/power_8cu_ad8018b5e35e0deec61baef9ed33b5bf8_cgraph" id="ad0/d33/power_8cu_ad8018b5e35e0deec61baef9ed33b5bf8_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,111,31"/>
+<area shape="rect" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf" title=" " alt="" coords="159,5,235,31"/>
+<area shape="poly" title=" " alt="" coords="111,15,145,15,145,21,111,21"/>
+<area shape="rect" href="../../da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6" title=" " alt="" coords="283,5,367,31"/>
+<area shape="poly" title=" " alt="" coords="235,24,269,24,269,30,235,29"/>
+<area shape="poly" title=" " alt="" coords="282,12,248,12,248,6,283,7"/>
 </map>
 </div>
-
-</div>
-</div>
-<a id="ad6d8985f8d4e557aed24d2c7ed1b18cd" name="ad6d8985f8d4e557aed24d2c7ed1b18cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6d8985f8d4e557aed24d2c7ed1b18cd">&#9670;&#160;</a></span>BinPower() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__global__ void BinPower </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../da/d0d/haccgpm_8hpp.html#a2f67acc29a084b658dd371975fb27bd8">hostFFT_t</a> *__restrict&#160;</td>
-          <td class="paramname"><em>d_powerSpectrum</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double *__restrict&#160;</td>
-          <td class="paramname"><em>d_binVals</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *__restrict&#160;</td>
-          <td class="paramname"><em>d_binCounts</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>minK</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>binDelta</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>rl</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>ng</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../d0/d33/power_8cu_source.html#l00141">141</a> of file <a class="el" href="../../d0/d33/power_8cu_source.html">power.cu</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  141</span>                                                                                                                                                                                 {</div>
-<div class="line"><span class="lineno">  142</span> </div>
-<div class="line"><span class="lineno">  143</span>    <span class="keywordtype">int</span> idx = blockDim.x * blockIdx.x + threadIdx.x;</div>
-<div class="line"><span class="lineno">  144</span>    <span class="keywordflow">if</span> (idx == 0){</div>
-<div class="line"><span class="lineno">  145</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  146</span>    }</div>
-<div class="line"><span class="lineno">  147</span>    <span class="keywordflow">if</span> (idx == ((ng/2)*(ng)*(ng) + (ng/2)*ng + (ng/2))){</div>
-<div class="line"><span class="lineno">  148</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  149</span>    }</div>
-<div class="line"><span class="lineno">  150</span> </div>
-<div class="line"><span class="lineno">  151</span>    <span class="keywordtype">double</span> d = ((2*M_PI)/(((<span class="keywordtype">double</span>)(rl))));</div>
-<div class="line"><span class="lineno">  152</span> </div>
-<div class="line"><span class="lineno">  153</span>    int3 idx3d = <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ad9fb99027bd0e8c4666c28a5b85d419e">HACCGPM::serial::get_index</a>(idx,ng);</div>
-<div class="line"><span class="lineno">  154</span>    float3 kmodes = <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#adebf563a2ff1ace956181e3a26ea6cb2">HACCGPM::serial::get_kmodes</a>(idx3d,ng,d);</div>
-<div class="line"><span class="lineno">  155</span> </div>
-<div class="line"><span class="lineno">  156</span>    <a class="code hl_define" href="../../da/d0d/haccgpm_8hpp.html#a2f67acc29a084b658dd371975fb27bd8">hostFFT_t</a> this_val = __ldg(&amp;d_powerSpectrum[idx]);</div>
-<div class="line"><span class="lineno">  157</span> </div>
-<div class="line"><span class="lineno">  158</span>    <span class="keywordtype">float</span> kbin = sqrtf(kmodes.x*kmodes.x + kmodes.y*kmodes.y + kmodes.z*kmodes.z) - minK;</div>
-<div class="line"><span class="lineno">  159</span>    <span class="keywordtype">int</span> indx = (int)(kbin/binDelta);</div>
-<div class="line"><span class="lineno">  160</span> </div>
-<div class="line"><span class="lineno">  161</span>    atomicAdd(&amp;d_binVals[indx],this_val);</div>
-<div class="line"><span class="lineno">  162</span>    atomicAdd(&amp;d_binCounts[indx],1);</div>
-<div class="line"><span class="lineno">  163</span> </div>
-<div class="line"><span class="lineno">  164</span> </div>
-<div class="line"><span class="lineno">  165</span>}</div>
-<div class="ttc" id="ahaccgpm_8hpp_html_a2f67acc29a084b658dd371975fb27bd8"><div class="ttname"><a href="../../da/d0d/haccgpm_8hpp.html#a2f67acc29a084b658dd371975fb27bd8">hostFFT_t</a></div><div class="ttdeci">#define hostFFT_t</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00022">haccgpm.hpp:22</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00220">HACCGPM::serial::get_index()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00228">HACCGPM::serial::get_kmodes()</a>, and <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00022">hostFFT_t</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d0/d33/power_8cu_source.html#l00405">HACCGPM::serial::GetPowerSpectrum()</a>, and <a class="el" href="../../d0/d33/power_8cu_source.html#l00299">HACCGPM::serial::GetPowerSpectrum()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../d0/d33/power_8cu_ad6d8985f8d4e557aed24d2c7ed1b18cd_cgraph.png" border="0" usemap="#ad0/d33/power_8cu_ad6d8985f8d4e557aed24d2c7ed1b18cd_cgraph" alt=""/></div>
-<map name="ad0/d33/power_8cu_ad6d8985f8d4e557aed24d2c7ed1b18cd_cgraph" id="ad0/d33/power_8cu_ad6d8985f8d4e557aed24d2c7ed1b18cd_cgraph">
-<area shape="rect" title=" " alt="" coords="5,45,84,70"/>
-<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ad9fb99027bd0e8c4666c28a5b85d419e" title=" " alt="" coords="132,5,288,45"/>
-<area shape="poly" title=" " alt="" coords="84,47,118,40,119,46,85,52"/>
-<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#adebf563a2ff1ace956181e3a26ea6cb2" title=" " alt="" coords="132,69,288,109"/>
-<area shape="poly" title=" " alt="" coords="85,62,119,69,118,74,84,68"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="abb06d3288ef0b39c8812e8cb8d6c3cc7" name="abb06d3288ef0b39c8812e8cb8d6c3cc7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb06d3288ef0b39c8812e8cb8d6c3cc7">&#9670;&#160;</a></span>cpy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__global__ void cpy </td>
-          <td>(</td>
-          <td class="paramtype">float4 *__restrict&#160;</td>
-          <td class="paramname"><em>dest</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const float4 *__restrict&#160;</td>
-          <td class="paramname"><em>source</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../d0/d33/power_8cu_source.html#l00135">135</a> of file <a class="el" href="../../d0/d33/power_8cu_source.html">power.cu</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  135</span>                                                                             {</div>
-<div class="line"><span class="lineno">  136</span>    <span class="keywordtype">int</span> idx = blockDim.x * blockIdx.x + threadIdx.x;</div>
-<div class="line"><span class="lineno">  137</span>    <span class="comment">//printf(&quot;%g %g %g\n&quot;,source[idx],source[idx],source[idx]);</span></div>
-<div class="line"><span class="lineno">  138</span>    dest[idx] = __ldg(&amp;source[idx]);</div>
-<div class="line"><span class="lineno">  139</span>}</div>
-</div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="../../d0/d33/power_8cu_source.html#l00405">HACCGPM::serial::GetPowerSpectrum()</a>, and <a class="el" href="../../d0/d33/power_8cu_source.html#l00299">HACCGPM::serial::GetPowerSpectrum()</a>.</p>
-
-</div>
-</div>
-<a id="a987c68ca36b003c733161e4039f3a7f5" name="a987c68ca36b003c733161e4039f3a7f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a987c68ca36b003c733161e4039f3a7f5">&#9670;&#160;</a></span>foldParticles()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__global__ void foldParticles </td>
-          <td>(</td>
-          <td class="paramtype">float4 *__restrict&#160;</td>
-          <td class="paramname"><em>d_pos</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>ng</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../d0/d33/power_8cu_source.html#l00101">101</a> of file <a class="el" href="../../d0/d33/power_8cu_source.html">power.cu</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  101</span>                                                                  {</div>
-<div class="line"><span class="lineno">  102</span>    <span class="keywordtype">int</span> idx = blockDim.x * blockIdx.x + threadIdx.x;</div>
-<div class="line"><span class="lineno">  103</span>    float4 my_particle = __ldg(&amp;d_pos[idx]);</div>
-<div class="line"><span class="lineno">  104</span>    my_particle.x /= ng;</div>
-<div class="line"><span class="lineno">  105</span>    <span class="keywordflow">if</span> (my_particle.x &gt;= 0.5){</div>
-<div class="line"><span class="lineno">  106</span>        my_particle.x -= 0.5;</div>
-<div class="line"><span class="lineno">  107</span>    }</div>
-<div class="line"><span class="lineno">  108</span>    my_particle.x *= 2 * ng;</div>
-<div class="line"><span class="lineno">  109</span> </div>
-<div class="line"><span class="lineno">  110</span>    my_particle.y /= ng;</div>
-<div class="line"><span class="lineno">  111</span>    <span class="keywordflow">if</span> (my_particle.y &gt;= 0.5){</div>
-<div class="line"><span class="lineno">  112</span>        my_particle.y -= 0.5;</div>
-<div class="line"><span class="lineno">  113</span>    }</div>
-<div class="line"><span class="lineno">  114</span>    my_particle.y *= 2 * ng;</div>
-<div class="line"><span class="lineno">  115</span> </div>
-<div class="line"><span class="lineno">  116</span>    my_particle.z /= ng;</div>
-<div class="line"><span class="lineno">  117</span>    <span class="keywordflow">if</span> (my_particle.z &gt;= 0.5){</div>
-<div class="line"><span class="lineno">  118</span>        my_particle.z -= 0.5;</div>
-<div class="line"><span class="lineno">  119</span>    }</div>
-<div class="line"><span class="lineno">  120</span>    my_particle.z *= 2 * ng;</div>
-<div class="line"><span class="lineno">  121</span> </div>
-<div class="line"><span class="lineno">  122</span>    d_pos[idx] = my_particle;</div>
-<div class="line"><span class="lineno">  123</span>}</div>
-</div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="../../d0/d33/power_8cu_source.html#l00405">HACCGPM::serial::GetPowerSpectrum()</a>, and <a class="el" href="../../d0/d33/power_8cu_source.html#l00299">HACCGPM::serial::GetPowerSpectrum()</a>.</p>
-
-</div>
-</div>
-<a id="a3ed54a74165576c0d7640f5e7d4f2d06" name="a3ed54a74165576c0d7640f5e7d4f2d06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ed54a74165576c0d7640f5e7d4f2d06">&#9670;&#160;</a></span>PkCICFilter() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__global__ void PkCICFilter </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/d0d/haccgpm_8hpp.html#a27d89e2a5f98ab524846b9bac59ebf44">deviceFFT_t</a> *__restrict&#160;</td>
-          <td class="paramname"><em>grid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>ng</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>folds</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../d0/d33/power_8cu_source.html#l00066">66</a> of file <a class="el" href="../../d0/d33/power_8cu_source.html">power.cu</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   66</span>                                                                            {</div>
-<div class="line"><span class="lineno">   67</span>    <span class="keywordtype">int</span> idx = blockDim.x * blockIdx.x + threadIdx.x;</div>
-<div class="line"><span class="lineno">   68</span>    <span class="keywordtype">double</span> d = ((2*M_PI)/(((<span class="keywordtype">double</span>)(ng))));</div>
-<div class="line"><span class="lineno">   69</span> </div>
-<div class="line"><span class="lineno">   70</span>    int3 idx3d = <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ad9fb99027bd0e8c4666c28a5b85d419e">HACCGPM::serial::get_index</a>(idx,ng);</div>
-<div class="line"><span class="lineno">   71</span>    float3 kmodes = <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#adebf563a2ff1ace956181e3a26ea6cb2">HACCGPM::serial::get_kmodes</a>(idx3d,ng,d);</div>
-<div class="line"><span class="lineno">   72</span> </div>
-<div class="line"><span class="lineno">   73</span>    <span class="keywordtype">float</span> filt1 = sinf(0.5f * kmodes.x) / (0.5 * kmodes.x);</div>
-<div class="line"><span class="lineno">   74</span>    filt1 = filt1*filt1;</div>
-<div class="line"><span class="lineno">   75</span>    filt1 = __frcp_rn(filt1 * filt1);</div>
-<div class="line"><span class="lineno">   76</span>    <span class="keywordflow">if</span> (kmodes.x == 0){</div>
-<div class="line"><span class="lineno">   77</span>        filt1 = 1.0;</div>
-<div class="line"><span class="lineno">   78</span>    }</div>
-<div class="line"><span class="lineno">   79</span> </div>
-<div class="line"><span class="lineno">   80</span>    <span class="keywordtype">float</span> filt2 = sinf(0.5f * kmodes.y) / (0.5 * kmodes.y);</div>
-<div class="line"><span class="lineno">   81</span>    filt2 = filt2*filt2;</div>
-<div class="line"><span class="lineno">   82</span>    filt2 = __frcp_rn(filt2 * filt2);</div>
-<div class="line"><span class="lineno">   83</span>    <span class="keywordflow">if</span> (kmodes.y == 0){</div>
-<div class="line"><span class="lineno">   84</span>        filt2 = 1.0;</div>
-<div class="line"><span class="lineno">   85</span>    }</div>
-<div class="line"><span class="lineno">   86</span> </div>
-<div class="line"><span class="lineno">   87</span>    <span class="keywordtype">float</span> filt3 = sinf(0.5f * kmodes.z) / (0.5 * kmodes.z);</div>
-<div class="line"><span class="lineno">   88</span>    filt3 = filt3*filt3;</div>
-<div class="line"><span class="lineno">   89</span>    filt3 = __frcp_rn(filt3 * filt3);</div>
-<div class="line"><span class="lineno">   90</span>    <span class="keywordflow">if</span> (kmodes.z == 0){</div>
-<div class="line"><span class="lineno">   91</span>        filt3 = 1.0;</div>
-<div class="line"><span class="lineno">   92</span>    }</div>
-<div class="line"><span class="lineno">   93</span>    <span class="keywordtype">double</span> filter = filt1 * filt2 * filt3;</div>
-<div class="line"><span class="lineno">   94</span> </div>
-<div class="line"><span class="lineno">   95</span>    <a class="code hl_define" href="../../da/d0d/haccgpm_8hpp.html#a27d89e2a5f98ab524846b9bac59ebf44">deviceFFT_t</a> my_grid = __ldg(&amp;grid[idx]);</div>
-<div class="line"><span class="lineno">   96</span>    my_grid.x *= filter;</div>
-<div class="line"><span class="lineno">   97</span>    grid[idx] = my_grid;</div>
-<div class="line"><span class="lineno">   98</span>    </div>
-<div class="line"><span class="lineno">   99</span>}</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00021">deviceFFT_t</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00220">HACCGPM::serial::get_index()</a>, and <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00228">HACCGPM::serial::get_kmodes()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../d0/d33/power_8cu_a3ed54a74165576c0d7640f5e7d4f2d06_cgraph.png" border="0" usemap="#ad0/d33/power_8cu_a3ed54a74165576c0d7640f5e7d4f2d06_cgraph" alt=""/></div>
-<map name="ad0/d33/power_8cu_a3ed54a74165576c0d7640f5e7d4f2d06_cgraph" id="ad0/d33/power_8cu_a3ed54a74165576c0d7640f5e7d4f2d06_cgraph">
-<area shape="rect" title=" " alt="" coords="5,45,96,70"/>
-<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ad9fb99027bd0e8c4666c28a5b85d419e" title=" " alt="" coords="144,5,300,45"/>
-<area shape="poly" title=" " alt="" coords="96,46,130,40,131,45,97,51"/>
-<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#adebf563a2ff1ace956181e3a26ea6cb2" title=" " alt="" coords="144,69,300,109"/>
-<area shape="poly" title=" " alt="" coords="97,63,131,70,130,75,96,68"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a37872452600d46f9503dcc360a48adcb" name="a37872452600d46f9503dcc360a48adcb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37872452600d46f9503dcc360a48adcb">&#9670;&#160;</a></span>PkCICFilter() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__global__ void PkCICFilter </td>
-          <td>(</td>
-          <td class="paramtype">double *__restrict&#160;</td>
-          <td class="paramname"><em>grid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>ng</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>folds</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../d0/d33/power_8cu_source.html#l00031">31</a> of file <a class="el" href="../../d0/d33/power_8cu_source.html">power.cu</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   31</span>                                                                       {</div>
-<div class="line"><span class="lineno">   32</span>    <span class="keywordtype">int</span> idx = blockDim.x * blockIdx.x + threadIdx.x;</div>
-<div class="line"><span class="lineno">   33</span>    <span class="keywordtype">double</span> d = ((2*M_PI)/(((<span class="keywordtype">double</span>)(ng))));</div>
-<div class="line"><span class="lineno">   34</span> </div>
-<div class="line"><span class="lineno">   35</span>    int3 idx3d = <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ad9fb99027bd0e8c4666c28a5b85d419e">HACCGPM::serial::get_index</a>(idx,ng);</div>
-<div class="line"><span class="lineno">   36</span>    float3 kmodes = <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#adebf563a2ff1ace956181e3a26ea6cb2">HACCGPM::serial::get_kmodes</a>(idx3d,ng,d);</div>
-<div class="line"><span class="lineno">   37</span> </div>
-<div class="line"><span class="lineno">   38</span>    <span class="keywordtype">float</span> filt1 = sinf(0.5f * kmodes.x) / (0.5 * kmodes.x);</div>
-<div class="line"><span class="lineno">   39</span>    filt1 = filt1*filt1;</div>
-<div class="line"><span class="lineno">   40</span>    filt1 = __frcp_rn(filt1 * filt1);</div>
-<div class="line"><span class="lineno">   41</span>    <span class="keywordflow">if</span> (kmodes.x == 0){</div>
-<div class="line"><span class="lineno">   42</span>        filt1 = 1.0;</div>
-<div class="line"><span class="lineno">   43</span>    }</div>
-<div class="line"><span class="lineno">   44</span> </div>
-<div class="line"><span class="lineno">   45</span>    <span class="keywordtype">float</span> filt2 = sinf(0.5f * kmodes.y) / (0.5 * kmodes.y);</div>
-<div class="line"><span class="lineno">   46</span>    filt2 = filt2*filt2;</div>
-<div class="line"><span class="lineno">   47</span>    filt2 = __frcp_rn(filt2 * filt2);</div>
-<div class="line"><span class="lineno">   48</span>    <span class="keywordflow">if</span> (kmodes.y == 0){</div>
-<div class="line"><span class="lineno">   49</span>        filt2 = 1.0;</div>
-<div class="line"><span class="lineno">   50</span>    }</div>
-<div class="line"><span class="lineno">   51</span> </div>
-<div class="line"><span class="lineno">   52</span>    <span class="keywordtype">float</span> filt3 = sinf(0.5f * kmodes.z) / (0.5 * kmodes.z);</div>
-<div class="line"><span class="lineno">   53</span>    filt3 = filt3*filt3;</div>
-<div class="line"><span class="lineno">   54</span>    filt3 = __frcp_rn(filt3 * filt3);</div>
-<div class="line"><span class="lineno">   55</span>    <span class="keywordflow">if</span> (kmodes.z == 0){</div>
-<div class="line"><span class="lineno">   56</span>        filt3 = 1.0;</div>
-<div class="line"><span class="lineno">   57</span>    }</div>
-<div class="line"><span class="lineno">   58</span>    <span class="keywordtype">double</span> filter = filt1 * filt2 * filt3;</div>
-<div class="line"><span class="lineno">   59</span> </div>
-<div class="line"><span class="lineno">   60</span>    <span class="keywordtype">double</span> my_grid = __ldg(&amp;grid[idx]);</div>
-<div class="line"><span class="lineno">   61</span>    my_grid *= filter;</div>
-<div class="line"><span class="lineno">   62</span>    grid[idx] = my_grid;</div>
-<div class="line"><span class="lineno">   63</span>    </div>
-<div class="line"><span class="lineno">   64</span>}</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00220">HACCGPM::serial::get_index()</a>, and <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00228">HACCGPM::serial::get_kmodes()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d0/d33/power_8cu_source.html#l00405">HACCGPM::serial::GetPowerSpectrum()</a>, and <a class="el" href="../../d0/d33/power_8cu_source.html#l00299">HACCGPM::serial::GetPowerSpectrum()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../d0/d33/power_8cu_a37872452600d46f9503dcc360a48adcb_cgraph.png" border="0" usemap="#ad0/d33/power_8cu_a37872452600d46f9503dcc360a48adcb_cgraph" alt=""/></div>
-<map name="ad0/d33/power_8cu_a37872452600d46f9503dcc360a48adcb_cgraph" id="ad0/d33/power_8cu_a37872452600d46f9503dcc360a48adcb_cgraph">
-<area shape="rect" title=" " alt="" coords="5,45,96,70"/>
-<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ad9fb99027bd0e8c4666c28a5b85d419e" title=" " alt="" coords="144,5,300,45"/>
-<area shape="poly" title=" " alt="" coords="96,46,130,40,131,45,97,51"/>
-<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#adebf563a2ff1ace956181e3a26ea6cb2" title=" " alt="" coords="144,69,300,109"/>
-<area shape="poly" title=" " alt="" coords="97,63,131,70,130,75,96,68"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ad8dc8aef8fea2a2fc182b191f1e89bdc" name="ad8dc8aef8fea2a2fc182b191f1e89bdc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8dc8aef8fea2a2fc182b191f1e89bdc">&#9670;&#160;</a></span>ScaleParticles()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__global__ void ScaleParticles </td>
-          <td>(</td>
-          <td class="paramtype">float4 *__restrict&#160;</td>
-          <td class="paramname"><em>d_pos</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>oldNg</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>newNg</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../d0/d33/power_8cu_source.html#l00125">125</a> of file <a class="el" href="../../d0/d33/power_8cu_source.html">power.cu</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  125</span>                                                                                    {</div>
-<div class="line"><span class="lineno">  126</span>    <span class="keywordtype">int</span> idx = blockDim.x * blockIdx.x + threadIdx.x;</div>
-<div class="line"><span class="lineno">  127</span>    float4 my_particle = __ldg(&amp;d_pos[idx]);</div>
-<div class="line"><span class="lineno">  128</span>    <span class="keywordtype">float</span> mul = newNg/oldNg;</div>
-<div class="line"><span class="lineno">  129</span>    my_particle.x *= mul;</div>
-<div class="line"><span class="lineno">  130</span>    my_particle.y *= mul;</div>
-<div class="line"><span class="lineno">  131</span>    my_particle.z *= mul;</div>
-<div class="line"><span class="lineno">  132</span>    d_pos[idx] = my_particle;</div>
-<div class="line"><span class="lineno">  133</span>}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a1f629b32d30e906a43f7bc9d31a95aba" name="a1f629b32d30e906a43f7bc9d31a95aba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f629b32d30e906a43f7bc9d31a95aba">&#9670;&#160;</a></span>scalePower() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__global__ void scalePower </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../da/d0d/haccgpm_8hpp.html#a27d89e2a5f98ab524846b9bac59ebf44">deviceFFT_t</a> *__restrict&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../da/d0d/haccgpm_8hpp.html#a2f67acc29a084b658dd371975fb27bd8">hostFFT_t</a> *__restrict&#160;</td>
-          <td class="paramname"><em>out</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>ng</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>rl</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../d0/d33/power_8cu_source.html#l00011">11</a> of file <a class="el" href="../../d0/d33/power_8cu_source.html">power.cu</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   11</span>                                                                                                               {</div>
-<div class="line"><span class="lineno">   12</span>    <span class="keywordtype">int</span> idx = blockDim.x * blockIdx.x + threadIdx.x;</div>
-<div class="line"><span class="lineno">   13</span> </div>
-<div class="line"><span class="lineno">   14</span>    <span class="keywordtype">double</span> scale = (1.0f/(ng*ng*ng)) * (rl/ng);</div>
-<div class="line"><span class="lineno">   15</span>    <a class="code hl_define" href="../../da/d0d/haccgpm_8hpp.html#a27d89e2a5f98ab524846b9bac59ebf44">deviceFFT_t</a> old = __ldg(&amp;data[idx]);</div>
-<div class="line"><span class="lineno">   16</span>    <a class="code hl_define" href="../../da/d0d/haccgpm_8hpp.html#a2f67acc29a084b658dd371975fb27bd8">hostFFT_t</a> absVal = old.x*old.x + old.y*old.y;</div>
-<div class="line"><span class="lineno">   17</span>    out[idx] = absVal * scale;</div>
-<div class="line"><span class="lineno">   18</span> </div>
-<div class="line"><span class="lineno">   19</span>}</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00021">deviceFFT_t</a>, and <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00022">hostFFT_t</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d0/d33/power_8cu_source.html#l00405">HACCGPM::serial::GetPowerSpectrum()</a>, and <a class="el" href="../../d0/d33/power_8cu_source.html#l00299">HACCGPM::serial::GetPowerSpectrum()</a>.</p>
-
-</div>
-</div>
-<a id="a9424ff811a52aa36e0c35d1886e8d3de" name="a9424ff811a52aa36e0c35d1886e8d3de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9424ff811a52aa36e0c35d1886e8d3de">&#9670;&#160;</a></span>scalePower() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__global__ void scalePower </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/d0d/haccgpm_8hpp.html#a27d89e2a5f98ab524846b9bac59ebf44">deviceFFT_t</a> *__restrict&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>ng</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>rl</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../d0/d33/power_8cu_source.html#l00021">21</a> of file <a class="el" href="../../d0/d33/power_8cu_source.html">power.cu</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   21</span>                                                                              {</div>
-<div class="line"><span class="lineno">   22</span>    <span class="keywordtype">int</span> idx = blockDim.x * blockIdx.x + threadIdx.x;</div>
-<div class="line"><span class="lineno">   23</span> </div>
-<div class="line"><span class="lineno">   24</span>    <span class="keywordtype">double</span> scale = (1.0f/(ng*ng*ng)) * (rl/ng);</div>
-<div class="line"><span class="lineno">   25</span>    <a class="code hl_define" href="../../da/d0d/haccgpm_8hpp.html#a27d89e2a5f98ab524846b9bac59ebf44">deviceFFT_t</a> old = __ldg(&amp;data[idx]);</div>
-<div class="line"><span class="lineno">   26</span>    old.x = (old.x * old.x + old.y * old.y) * scale;</div>
-<div class="line"><span class="lineno">   27</span>    data[idx] = old;</div>
-<div class="line"><span class="lineno">   28</span> </div>
-<div class="line"><span class="lineno">   29</span>}</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00021">deviceFFT_t</a>.</p>
 
 </div>
 </div>
@@ -807,14 +270,14 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int POWER_CALLS = 0</td>
+          <td class="memname"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> POWER_CALLS = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d33/power_8cu_source.html#l00008">8</a> of file <a class="el" href="../../d0/d33/power_8cu_source.html">power.cu</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d33/power_8cu_source.html#l00009">9</a> of file <a class="el" href="../../d0/d33/power_8cu_source.html">power.cu</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d33/power_8cu_source.html#l00405">HACCGPM::serial::GetPowerSpectrum()</a>, <a class="el" href="../../d0/d33/power_8cu_source.html#l00299">HACCGPM::serial::GetPowerSpectrum()</a>, and <a class="el" href="../../d0/d33/power_8cu_source.html#l00511">HACCGPM::serial::printPowerTimes()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d33/power_8cu_source.html#l00114">HACCGPM::serial::GetPowerSpectrum()</a>, and <a class="el" href="../../d0/d33/power_8cu_source.html#l00208">HACCGPM::serial::printPowerTimes()</a>.</p>
 
 </div>
 </div>
@@ -830,9 +293,9 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d33/power_8cu_source.html#l00009">9</a> of file <a class="el" href="../../d0/d33/power_8cu_source.html">power.cu</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d33/power_8cu_source.html#l00010">10</a> of file <a class="el" href="../../d0/d33/power_8cu_source.html">power.cu</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d33/power_8cu_source.html#l00405">HACCGPM::serial::GetPowerSpectrum()</a>, <a class="el" href="../../d0/d33/power_8cu_source.html#l00299">HACCGPM::serial::GetPowerSpectrum()</a>, and <a class="el" href="../../d0/d33/power_8cu_source.html#l00511">HACCGPM::serial::printPowerTimes()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d33/power_8cu_source.html#l00114">HACCGPM::serial::GetPowerSpectrum()</a>, and <a class="el" href="../../d0/d33/power_8cu_source.html#l00208">HACCGPM::serial::printPowerTimes()</a>.</p>
 
 </div>
 </div>
@@ -848,9 +311,9 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d33/power_8cu_source.html#l00007">7</a> of file <a class="el" href="../../d0/d33/power_8cu_source.html">power.cu</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d33/power_8cu_source.html#l00008">8</a> of file <a class="el" href="../../d0/d33/power_8cu_source.html">power.cu</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d33/power_8cu_source.html#l00405">HACCGPM::serial::GetPowerSpectrum()</a>, <a class="el" href="../../d0/d33/power_8cu_source.html#l00299">HACCGPM::serial::GetPowerSpectrum()</a>, and <a class="el" href="../../d0/d33/power_8cu_source.html#l00511">HACCGPM::serial::printPowerTimes()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d33/power_8cu_source.html#l00114">HACCGPM::serial::GetPowerSpectrum()</a>, and <a class="el" href="../../d0/d33/power_8cu_source.html#l00208">HACCGPM::serial::printPowerTimes()</a>.</p>
 
 </div>
 </div>
@@ -859,7 +322,7 @@ Here is the call graph for this function:</div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../d0/d33/power_8cu.html">power.cu</a></li>
+    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_d9f53075555d4d96bf65600944a3c863.html">power_spectrum</a></li><li class="navelem"><a class="el" href="../../d0/d33/power_8cu.html">power.cu</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
