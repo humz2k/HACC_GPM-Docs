@@ -243,12 +243,12 @@ $(document).ready(function(){initNavTree('d1/dc2/ccamb_8c_source.html','../../')
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="preprocessor">    #endif</span></div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <span class="comment">// pDict is a borrowed reference </span></div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    PyObject* <a class="code hl_variable" href="../../d5/d13/pycosmotools_8c.html#a4c58d8a78161ee3a083fffb212903b03">pDict</a> = PyModule_GetDict(<a class="code hl_variable" href="../../d1/dc2/ccamb_8c.html#a4dbc047c32fb0f01d244b0fc49a8d35a">pModule</a>);</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    PyObject* pDict = PyModule_GetDict(<a class="code hl_variable" href="../../d1/dc2/ccamb_8c.html#a4dbc047c32fb0f01d244b0fc49a8d35a">pModule</a>);</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <span class="comment">// pFunc is also a borrowed reference get_pk</span></div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    PyObject* pFuncInit = PyDict_GetItemString(<a class="code hl_variable" href="../../d5/d13/pycosmotools_8c.html#a4c58d8a78161ee3a083fffb212903b03">pDict</a>, <span class="stringliteral">&quot;initcambpy&quot;</span>);</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    PyObject* pFuncInit = PyDict_GetItemString(pDict, <span class="stringliteral">&quot;initcambpy&quot;</span>);</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    </div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    PyObject* pGetPk = PyDict_GetItemString(<a class="code hl_variable" href="../../d5/d13/pycosmotools_8c.html#a4c58d8a78161ee3a083fffb212903b03">pDict</a>, <span class="stringliteral">&quot;get_pk&quot;</span>);</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    PyObject* pGetPk = PyDict_GetItemString(pDict, <span class="stringliteral">&quot;get_pk&quot;</span>);</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    PyObject* presult;</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
@@ -340,12 +340,12 @@ $(document).ready(function(){initNavTree('d1/dc2/ccamb_8c_source.html','../../')
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><span class="preprocessor">    #endif</span></div>
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> </div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    <span class="comment">// pDict is a borrowed reference </span></div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    PyObject* <a class="code hl_variable" href="../../d5/d13/pycosmotools_8c.html#a4c58d8a78161ee3a083fffb212903b03">pDict</a> = PyModule_GetDict(<a class="code hl_variable" href="../../d1/dc2/ccamb_8c.html#a4dbc047c32fb0f01d244b0fc49a8d35a">pModule</a>);</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    PyObject* pDict = PyModule_GetDict(<a class="code hl_variable" href="../../d1/dc2/ccamb_8c.html#a4dbc047c32fb0f01d244b0fc49a8d35a">pModule</a>);</div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    <span class="comment">// pFunc is also a borrowed reference get_pk</span></div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    PyObject* pFuncInit = PyDict_GetItemString(<a class="code hl_variable" href="../../d5/d13/pycosmotools_8c.html#a4c58d8a78161ee3a083fffb212903b03">pDict</a>, <span class="stringliteral">&quot;initcambpy&quot;</span>);</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    PyObject* pFuncInit = PyDict_GetItemString(pDict, <span class="stringliteral">&quot;initcambpy&quot;</span>);</div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    </div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    PyObject* pGetPk = PyDict_GetItemString(<a class="code hl_variable" href="../../d5/d13/pycosmotools_8c.html#a4c58d8a78161ee3a083fffb212903b03">pDict</a>, <span class="stringliteral">&quot;get_pk&quot;</span>);</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    PyObject* pGetPk = PyDict_GetItemString(pDict, <span class="stringliteral">&quot;get_pk&quot;</span>);</div>
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span> </div>
 <div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    PyObject* presult;</div>
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
@@ -399,10 +399,10 @@ $(document).ready(function(){initNavTree('d1/dc2/ccamb_8c_source.html','../../')
 <div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span> </div>
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    <a class="code hl_define" href="../../d1/dc2/ccamb_8c.html#aede6a850e442b96dd236d1bed8bf19e5">getIndent</a>(calls);</div>
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    <span class="comment">// pDict is a borrowed reference </span></div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    PyObject* <a class="code hl_variable" href="../../d5/d13/pycosmotools_8c.html#a4c58d8a78161ee3a083fffb212903b03">pDict</a> = PyModule_GetDict(<a class="code hl_variable" href="../../d1/dc2/ccamb_8c.html#a4dbc047c32fb0f01d244b0fc49a8d35a">pModule</a>);</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    PyObject* pDict = PyModule_GetDict(<a class="code hl_variable" href="../../d1/dc2/ccamb_8c.html#a4dbc047c32fb0f01d244b0fc49a8d35a">pModule</a>);</div>
 <div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span> </div>
 <div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    <span class="comment">// pFunc is also a borrowed reference get_pk</span></div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    PyObject* pGetDeltaAndDotDelta = PyDict_GetItemString(<a class="code hl_variable" href="../../d5/d13/pycosmotools_8c.html#a4c58d8a78161ee3a083fffb212903b03">pDict</a>, <span class="stringliteral">&quot;get_delta_and_dotDelta&quot;</span>);</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    PyObject* pGetDeltaAndDotDelta = PyDict_GetItemString(pDict, <span class="stringliteral">&quot;get_delta_and_dotDelta&quot;</span>);</div>
 <div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    </div>
 <div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    <span class="comment">//PyObject* pGetPk = PyDict_GetItemString(pDict, &quot;get_pk&quot;);</span></div>
 <div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span> </div>
@@ -444,7 +444,6 @@ $(document).ready(function(){initNavTree('d1/dc2/ccamb_8c_source.html','../../')
 <div class="ttc" id="accamb_8c_html_acede3def4aca9816e9ed0d9f91a67567"><div class="ttname"><a href="../../d1/dc2/ccamb_8c.html#acede3def4aca9816e9ed0d9f91a67567">init_python</a></div><div class="ttdeci">void init_python(int calls, int world_rank_)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dc2/ccamb_8c_source.html#l00026">ccamb.c:26</a></div></div>
 <div class="ttc" id="accamb_8c_html_adfd639d241b38fd2eb37e5ac724f8e1c"><div class="ttname"><a href="../../d1/dc2/ccamb_8c.html#adfd639d241b38fd2eb37e5ac724f8e1c">do_analysis</a></div><div class="ttdeci">int do_analysis</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dc2/ccamb_8c_source.html#l00018">ccamb.c:18</a></div></div>
 <div class="ttc" id="accamb_8c_html_aede6a850e442b96dd236d1bed8bf19e5"><div class="ttname"><a href="../../d1/dc2/ccamb_8c.html#aede6a850e442b96dd236d1bed8bf19e5">getIndent</a></div><div class="ttdeci">#define getIndent(calls)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dc2/ccamb_8c_source.html#l00009">ccamb.c:9</a></div></div>
-<div class="ttc" id="apycosmotools_8c_html_a4c58d8a78161ee3a083fffb212903b03"><div class="ttname"><a href="../../d5/d13/pycosmotools_8c.html#a4c58d8a78161ee3a083fffb212903b03">pDict</a></div><div class="ttdeci">PyObject * pDict</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d13/pycosmotools_8c_source.html#l00012">pycosmotools.c:12</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

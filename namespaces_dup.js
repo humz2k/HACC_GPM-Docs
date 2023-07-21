@@ -1,7 +1,5 @@
 var namespaces_dup =
 [
-    [ "analysis1", "d2/d17/namespaceanalysis1.html", "d2/d17/namespaceanalysis1" ],
-    [ "analysis2", "d5/def/namespaceanalysis2.html", "d5/def/namespaceanalysis2" ],
     [ "animation", "d3/d39/namespaceanimation.html", [
       [ "onAnalysisStep", "d3/d39/namespaceanimation.html#a3e41e8ef3a750740bf43fc230d841216", null ]
     ] ],
@@ -33,18 +31,6 @@ var namespaces_dup =
       [ "z2a", "d1/d99/namespacecambpy.html#ab8110986119c68e3a2221ee1c7a2a62a", null ],
       [ "context", "d1/d99/namespacecambpy.html#a17ba5b3d88a5555b2d518f944ca0b605", null ],
       [ "test_context_module", "d1/d99/namespacecambpy.html#a32c4bceab65f710fa81504483186f6a0", null ]
-    ] ],
-    [ "driver", "df/d9e/namespacedriver.html", [
-      [ "do_analysis_step", "df/d9e/namespacedriver.html#a4f0770f39a6acc55a05d9b415f782d09", null ],
-      [ "do_final_step", "df/d9e/namespacedriver.html#a37f76f2e07c832c7f8ecc6141773e839", null ],
-      [ "do_initial_conditions_step", "df/d9e/namespacedriver.html#aa42cf067aeb9f80734bc20c9e88260d0", null ],
-      [ "do_power_spectrum_step", "df/d9e/namespacedriver.html#a632c42eecdcbe428989211af90fbea39", null ],
-      [ "find_analysis_classes", "df/d9e/namespacedriver.html#a5eb45b42bd72b793d81e3f0e2863875f", null ],
-      [ "find_analysis_modules", "df/d9e/namespacedriver.html#a67794853ca876b1fdb5bde7513bc4c3a", null ],
-      [ "import_analysis_modules", "df/d9e/namespacedriver.html#ab4d1c96b22bcad3b827d7b1fe93a5f09", null ],
-      [ "init_analysis_objects", "df/d9e/namespacedriver.html#a6f1ce292b578dade6ea88d9930403cac", null ],
-      [ "context", "df/d9e/namespacedriver.html#ac8c3b9e4059bb754bc3135a0461e3b0f", null ],
-      [ "test_context_module", "df/d9e/namespacedriver.html#a3370df484bdbf235f7c2fbc818c27ed6", null ]
     ] ],
     [ "example", "d3/daf/namespaceexample.html", [
       [ "onAnalysisStep", "d3/daf/namespaceexample.html#a840bbc15bea890a6d169a297f8b89a18", null ],
@@ -87,11 +73,6 @@ var namespaces_dup =
       [ "path", "dc/dce/namespacepackage__cambpy.html#ac51f6d16910737baf62bf01169e27519", null ],
       [ "raw", "dc/dce/namespacepackage__cambpy.html#a433a8aa6c4a88e28aaf40e66ea132867", null ]
     ] ],
-    [ "package_pycosmo", "de/de6/namespacepackage__pycosmo.html", [
-      [ "path", "de/de6/namespacepackage__pycosmo.html#a3127a437b5eefdd5c7b3d0070efeb889", null ],
-      [ "raw", "de/de6/namespacepackage__pycosmo.html#aa036dedbda3c64f3f858b0cc2797732d", null ]
-    ] ],
-    [ "pycosmo", "d1/d43/namespacepycosmo.html", "d1/d43/namespacepycosmo" ],
     [ "trajectory", "db/d99/namespacetrajectory.html", [
       [ "onAnalysisStep", "db/d99/namespacetrajectory.html#af028671439282f59740b8e095c296289", null ],
       [ "ps", "db/d99/namespacetrajectory.html#a5c535932375ac9f48729ca0f055759a2", null ],

@@ -25,28 +25,6 @@
 var NAVTREE =
 [
   [ "HACC_GPM", "index.html", [
-    [ "PyCosmoTools", "d0/d2e/md__2home_2hqureshi_2HACC__GPM_2pycosmotools_2README.html", [
-      [ "Getting started", "d0/d2e/md__2home_2hqureshi_2HACC__GPM_2pycosmotools_2README.html#autotoc_md1", null ],
-      [ "Add your files", "d0/d2e/md__2home_2hqureshi_2HACC__GPM_2pycosmotools_2README.html#autotoc_md2", null ],
-      [ "Integrate with your tools", "d0/d2e/md__2home_2hqureshi_2HACC__GPM_2pycosmotools_2README.html#autotoc_md3", null ],
-      [ "Collaborate with your team", "d0/d2e/md__2home_2hqureshi_2HACC__GPM_2pycosmotools_2README.html#autotoc_md4", null ],
-      [ "Test and Deploy", "d0/d2e/md__2home_2hqureshi_2HACC__GPM_2pycosmotools_2README.html#autotoc_md5", null ],
-      [ "Editing this README", "d0/d2e/md__2home_2hqureshi_2HACC__GPM_2pycosmotools_2README.html#autotoc_md6", [
-        [ "Suggestions for a good README", "d0/d2e/md__2home_2hqureshi_2HACC__GPM_2pycosmotools_2README.html#autotoc_md7", null ],
-        [ "Name", "d0/d2e/md__2home_2hqureshi_2HACC__GPM_2pycosmotools_2README.html#autotoc_md8", null ],
-        [ "Description", "d0/d2e/md__2home_2hqureshi_2HACC__GPM_2pycosmotools_2README.html#autotoc_md9", null ],
-        [ "Badges", "d0/d2e/md__2home_2hqureshi_2HACC__GPM_2pycosmotools_2README.html#autotoc_md10", null ],
-        [ "Visuals", "d0/d2e/md__2home_2hqureshi_2HACC__GPM_2pycosmotools_2README.html#autotoc_md11", null ],
-        [ "Installation", "d0/d2e/md__2home_2hqureshi_2HACC__GPM_2pycosmotools_2README.html#autotoc_md12", null ],
-        [ "Usage", "d0/d2e/md__2home_2hqureshi_2HACC__GPM_2pycosmotools_2README.html#autotoc_md13", null ],
-        [ "Support", "d0/d2e/md__2home_2hqureshi_2HACC__GPM_2pycosmotools_2README.html#autotoc_md14", null ],
-        [ "Roadmap", "d0/d2e/md__2home_2hqureshi_2HACC__GPM_2pycosmotools_2README.html#autotoc_md15", null ],
-        [ "Contributing", "d0/d2e/md__2home_2hqureshi_2HACC__GPM_2pycosmotools_2README.html#autotoc_md16", null ],
-        [ "Authors and acknowledgment", "d0/d2e/md__2home_2hqureshi_2HACC__GPM_2pycosmotools_2README.html#autotoc_md17", null ],
-        [ "License", "d0/d2e/md__2home_2hqureshi_2HACC__GPM_2pycosmotools_2README.html#autotoc_md18", null ],
-        [ "Project status", "d0/d2e/md__2home_2hqureshi_2HACC__GPM_2pycosmotools_2README.html#autotoc_md19", null ]
-      ] ]
-    ] ],
     [ "HACC_GPM", "d7/d5b/md__2home_2hqureshi_2HACC__GPM_2README.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -61,7 +39,7 @@ var NAVTREE =
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", "functions_dup" ],
+        [ "All", "functions.html", null ],
         [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ]
       ] ]
@@ -82,10 +60,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d2/df8/classHACCGPM_1_1parallel_1_1GridExchange.html#a209cb325be1ea196db4c0dd91c899afa",
-"d5/de1/structHACCGPM_1_1Params.html#a6c52655235a8b890381fe234ff330d6a",
-"d8/da0/classanalysis1_1_1myAnalysis.html#a9760a7799e3b1e334667cc490e4005dd",
-"db/df0/classHACCGPM_1_1Timestepper.html#adfdf31cff6181c0620faede8a70baa5b"
+"d3/daf/namespaceexample.html#a426a5e1167b1d9f7678fd3064926667f",
+"d6/d11/classHACCGPM_1_1CosmoClass.html#a4ab74a7564b9b42a25a6c7b42d10e756",
+"da/dcb/cosmo_8cpp.html#a209d2f3e34a127f58efd94e32782a0a7"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

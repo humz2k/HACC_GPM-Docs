@@ -119,7 +119,7 @@ Collaboration diagram for HACCGPM::Timestepper:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:abf9926510942c2e41a23cd91f6012332"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df0/classHACCGPM_1_1Timestepper.html#abf9926510942c2e41a23cd91f6012332">Timestepper</a> (<a class="el" href="../../d5/de1/structHACCGPM_1_1Params.html">Params</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">iparams</a>)</td></tr>
 <tr class="separator:abf9926510942c2e41a23cd91f6012332"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62ccfb08e0771695f7e0c4b2747c5092"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df0/classHACCGPM_1_1Timestepper.html#a62ccfb08e0771695f7e0c4b2747c5092">setInitialA</a> (<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a> a)</td></tr>
+<tr class="memitem:a62ccfb08e0771695f7e0c4b2747c5092"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df0/classHACCGPM_1_1Timestepper.html#a62ccfb08e0771695f7e0c4b2747c5092">setInitialA</a> (<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">a</a>)</td></tr>
 <tr class="separator:a62ccfb08e0771695f7e0c4b2747c5092"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6155f2c22c7bc7ceb485685c3a82ba6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df0/classHACCGPM_1_1Timestepper.html#a6155f2c22c7bc7ceb485685c3a82ba6e">setInitialZ</a> (<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a> <a class="el" href="../../db/df0/classHACCGPM_1_1Timestepper.html#a83f4d84ce0f243415ee4d8d5b4b6877b">z</a>)</td></tr>
 <tr class="separator:a6155f2c22c7bc7ceb485685c3a82ba6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -328,32 +328,33 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d4a/timestepper_8cpp_source.html#l00035">35</a> of file <a class="el" href="../../d7/d4a/timestepper_8cpp_source.html">timestepper.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   35</span>                                            {</div>
-<div class="line"><span class="lineno">   36</span>    <a class="code hl_variable" href="../../db/df0/classHACCGPM_1_1Timestepper.html#aa27100376a4cba8759eb071259df0174">aa</a> = a;</div>
+<div class="line"><span class="lineno">   36</span>    <a class="code hl_variable" href="../../db/df0/classHACCGPM_1_1Timestepper.html#aa27100376a4cba8759eb071259df0174">aa</a> = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">a</a>;</div>
 <div class="line"><span class="lineno">   37</span>    <a class="code hl_variable" href="../../db/df0/classHACCGPM_1_1Timestepper.html#a83f4d84ce0f243415ee4d8d5b4b6877b">z</a> = (1.0f/<a class="code hl_variable" href="../../db/df0/classHACCGPM_1_1Timestepper.html#aa27100376a4cba8759eb071259df0174">aa</a>) - 1;</div>
 <div class="line"><span class="lineno">   38</span>    <a class="code hl_variable" href="../../db/df0/classHACCGPM_1_1Timestepper.html#a86c7011d1168ac217c82747ce8624fca">adot</a> = <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ae31040d68a45a644d5e079616e99061c">HACCGPM::serial::get_adot</a>(<a class="code hl_variable" href="../../db/df0/classHACCGPM_1_1Timestepper.html#aa27100376a4cba8759eb071259df0174">aa</a>,<a class="code hl_variable" href="../../db/df0/classHACCGPM_1_1Timestepper.html#aba320f085045ca0e2cbfcad7748f2669">params</a>.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a6c52655235a8b890381fe234ff330d6a">m_w_de</a>,<a class="code hl_variable" href="../../db/df0/classHACCGPM_1_1Timestepper.html#aba320f085045ca0e2cbfcad7748f2669">params</a>.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a45c3151dc78e0cb9e9fc3755db21b2b4">m_wa_de</a>,<a class="code hl_variable" href="../../db/df0/classHACCGPM_1_1Timestepper.html#aba320f085045ca0e2cbfcad7748f2669">params</a>.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a46b39e0393483157f70173122b36c7f1">m_omega_cb</a>,<a class="code hl_variable" href="../../db/df0/classHACCGPM_1_1Timestepper.html#aba320f085045ca0e2cbfcad7748f2669">params</a>.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#afa42d982a25eb7454cd48b9215d9af04">m_omega_radiation</a>,<a class="code hl_variable" href="../../db/df0/classHACCGPM_1_1Timestepper.html#aba320f085045ca0e2cbfcad7748f2669">params</a>.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a83479de82a2d7a144ec3a179a022e2c9">m_f_nu_massless</a>,<a class="code hl_variable" href="../../db/df0/classHACCGPM_1_1Timestepper.html#aba320f085045ca0e2cbfcad7748f2669">params</a>.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a2b816e28ca8560c0b68461d3ac166804">m_f_nu_massive</a>,<a class="code hl_variable" href="../../db/df0/classHACCGPM_1_1Timestepper.html#aba320f085045ca0e2cbfcad7748f2669">params</a>.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#aeca45b0690c51bcd2d1ed4653f4f59c1">m_omega_matter</a>,<a class="code hl_variable" href="../../db/df0/classHACCGPM_1_1Timestepper.html#aba320f085045ca0e2cbfcad7748f2669">params</a>.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a8987d99c0564ee988f3a6ffee157b70e">m_omega_nu</a>);</div>
 <div class="line"><span class="lineno">   39</span>    <a class="code hl_variable" href="../../db/df0/classHACCGPM_1_1Timestepper.html#a0bd90d6926912b009519e60d43f4b81a">fscal</a> = <a class="code hl_function" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ab791cb661ee56bd0e61992d605b9dd80">HACCGPM::serial::get_fscal</a>(<a class="code hl_variable" href="../../db/df0/classHACCGPM_1_1Timestepper.html#aa27100376a4cba8759eb071259df0174">aa</a>,<a class="code hl_variable" href="../../db/df0/classHACCGPM_1_1Timestepper.html#a86c7011d1168ac217c82747ce8624fca">adot</a>,<a class="code hl_variable" href="../../db/df0/classHACCGPM_1_1Timestepper.html#aba320f085045ca0e2cbfcad7748f2669">params</a>.<a class="code hl_variable" href="../../d5/de1/structHACCGPM_1_1Params.html#a46b39e0393483157f70173122b36c7f1">m_omega_cb</a>);</div>
 <div class="line"><span class="lineno">   40</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d7/d4a/timestepper_8cpp_source.html#l00011">HACCGPM::serial::get_adot()</a>, and <a class="el" href="../../d7/d4a/timestepper_8cpp_source.html#l00021">HACCGPM::serial::get_fscal()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">do_return()</a>, <a class="el" href="../../d7/d4a/timestepper_8cpp_source.html#l00011">HACCGPM::serial::get_adot()</a>, and <a class="el" href="../../d7/d4a/timestepper_8cpp_source.html#l00021">HACCGPM::serial::get_fscal()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../db/df0/classHACCGPM_1_1Timestepper_a62ccfb08e0771695f7e0c4b2747c5092_cgraph.png" border="0" usemap="#adb/df0/classHACCGPM_1_1Timestepper_a62ccfb08e0771695f7e0c4b2747c5092_cgraph" alt=""/></div>
 <map name="adb/df0/classHACCGPM_1_1Timestepper_a62ccfb08e0771695f7e0c4b2747c5092_cgraph" id="adb/df0/classHACCGPM_1_1Timestepper_a62ccfb08e0771695f7e0c4b2747c5092_cgraph">
-<area shape="rect" title=" " alt="" coords="5,45,176,85"/>
-<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ae31040d68a45a644d5e079616e99061c" title=" " alt="" coords="224,24,412,50"/>
-<area shape="poly" title=" " alt="" coords="176,52,210,48,211,53,177,57"/>
-<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ab791cb661ee56bd0e61992d605b9dd80" title=" " alt="" coords="460,74,616,114"/>
-<area shape="poly" title=" " alt="" coords="177,68,446,86,446,91,176,73"/>
-<area shape="rect" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf" title=" " alt="" coords="664,24,740,50"/>
-<area shape="poly" title=" " alt="" coords="375,22,460,9,538,3,616,9,655,18,654,23,616,14,538,8,460,14,376,27"/>
-<area shape="rect" href="../../d7/d4a/timestepper_8cpp.html#aa212987f3df0db02b305c7bf57dba992" title=" " alt="" coords="469,24,607,50"/>
-<area shape="poly" title=" " alt="" coords="413,34,455,34,455,40,413,40"/>
-<area shape="rect" href="../../da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6" title=" " alt="" coords="788,24,872,50"/>
-<area shape="poly" title=" " alt="" coords="740,43,775,43,774,49,740,48"/>
-<area shape="poly" title=" " alt="" coords="788,31,754,31,754,26,788,26"/>
-<area shape="poly" title=" " alt="" coords="608,34,650,34,650,40,608,40"/>
-<area shape="poly" title=" " alt="" coords="594,72,652,52,654,57,596,77"/>
+<area shape="rect" title=" " alt="" coords="5,22,176,62"/>
+<area shape="rect" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf" title=" " alt="" coords="664,29,740,55"/>
+<area shape="poly" title=" " alt="" coords="176,21,224,14,334,5,420,3,506,8,616,21,651,27,650,32,616,26,506,14,420,9,334,10,224,19,176,26"/>
+<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ae31040d68a45a644d5e079616e99061c" title=" " alt="" coords="224,29,412,55"/>
+<area shape="poly" title=" " alt="" coords="177,39,210,39,210,45,177,45"/>
+<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ab791cb661ee56bd0e61992d605b9dd80" title=" " alt="" coords="460,105,616,145"/>
+<area shape="poly" title=" " alt="" coords="177,55,447,105,446,110,176,60"/>
+<area shape="rect" href="../../da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6" title=" " alt="" coords="788,29,872,55"/>
+<area shape="poly" title=" " alt="" coords="740,48,775,48,774,54,740,53"/>
+<area shape="poly" title=" " alt="" coords="788,36,754,36,754,30,788,31"/>
+<area shape="poly" title=" " alt="" coords="412,39,650,39,650,45,412,45"/>
+<area shape="rect" href="../../d7/d4a/timestepper_8cpp.html#aa212987f3df0db02b305c7bf57dba992" title=" " alt="" coords="469,55,607,80"/>
+<area shape="poly" title=" " alt="" coords="413,50,455,55,454,60,412,56"/>
+<area shape="poly" title=" " alt="" coords="607,54,650,47,650,53,608,59"/>
+<area shape="poly" title=" " alt="" coords="589,102,615,90,670,59,672,64,617,95,591,107"/>
 </map>
 </div>
 
@@ -513,7 +514,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00126">126</a> of file <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html">haccgpm.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/d8c/analysistools_8py_source.html#l00030">pycosmo.analysistools.PyCosmoAnalysis::__set_power_spectrum__()</a>, and <a class="el" href="../../d7/d4a/timestepper_8cpp_source.html#l00029">Timestepper()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/d4a/timestepper_8cpp_source.html#l00029">Timestepper()</a>.</p>
 
 </div>
 </div>
@@ -531,7 +532,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00122">122</a> of file <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html">haccgpm.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/d8c/analysistools_8py_source.html#l00018">pycosmo.analysistools.PyCosmoAnalysis::__set_time__()</a>, and <a class="el" href="../../d0/dad/py__analysis_8cu_source.html#l00003">HACCGPM::serial::PyAnalysis()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/dad/py__analysis_8cu_source.html#l00003">HACCGPM::serial::PyAnalysis()</a>.</p>
 
 </div>
 </div>

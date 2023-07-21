@@ -17,7 +17,7 @@ var searchData=
   ['m_5ftcmb_14',['m_Tcmb',['../d5/de1/structHACCGPM_1_1Params.html#ab2779b136a1530371695a7d8f8ed6649',1,'HACCGPM::Params']]],
   ['m_5fw_5fde_15',['m_w_de',['../d5/de1/structHACCGPM_1_1Params.html#a6c52655235a8b890381fe234ff330d6a',1,'HACCGPM::Params']]],
   ['m_5fwa_5fde_16',['m_wa_de',['../d5/de1/structHACCGPM_1_1Params.html#a45c3151dc78e0cb9e9fc3755db21b2b4',1,'HACCGPM::Params']]],
-  ['main_17',['main',['../df/dac/test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;test.cpp'],['../da/d8b/driver__pm_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;driver_pm.cpp']]],
+  ['main_17',['main',['../da/d8b/driver__pm_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'driver_pm.cpp']]],
   ['max_5fsteps_18',['MAX_STEPS',['../da/d0d/haccgpm_8hpp.html#aa0414caef00a64a51d4c6c0711d9e70a',1,'haccgpm.hpp']]],
   ['maxarg1_19',['maxarg1',['../da/dcb/cosmo_8cpp.html#a85cb6f9d189d8032d20ce3f7dcc28d3c',1,'cosmo.cpp']]],
   ['maxarg2_20',['maxarg2',['../da/dcb/cosmo_8cpp.html#ac8e3cf3cd6ae7b008566e865da40ed95',1,'cosmo.cpp']]],
@@ -28,6 +28,5 @@ var searchData=
   ['minarg1_25',['minarg1',['../da/dcb/cosmo_8cpp.html#a2261c531b8255043109a1f3387abdfce',1,'cosmo.cpp']]],
   ['minarg2_26',['minarg2',['../da/dcb/cosmo_8cpp.html#a209d2f3e34a127f58efd94e32782a0a7',1,'cosmo.cpp']]],
   ['mmanager_2ecu_27',['mmanager.cu',['../d8/ddb/mmanager_8cu.html',1,'']]],
-  ['myanalysis_28',['myAnalysis',['../d8/da0/classanalysis1_1_1myAnalysis.html',1,'analysis1.myAnalysis'],['../d8/d4e/classbasic_1_1myAnalysis.html',1,'basic.myAnalysis']]],
-  ['myanalysis2_29',['myAnalysis2',['../dc/da4/classanalysis2_1_1myAnalysis2.html',1,'analysis2']]]
+  ['myanalysis_28',['myAnalysis',['../d8/d4e/classbasic_1_1myAnalysis.html',1,'basic']]]
 ];

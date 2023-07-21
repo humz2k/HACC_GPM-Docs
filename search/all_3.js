@@ -18,7 +18,7 @@ var searchData=
   ['combine_15',['combine',['../d8/d93/solver_8cu.html#a71c3109fe66f9f1fcac25bd98c8f486d',1,'solver.cu']]],
   ['combine_5fparallel_16',['combine_parallel',['../d8/d93/solver_8cu.html#a9e2976837e5de95f50276159a5ecb287',1,'solver.cu']]],
   ['combineparticles_17',['combineParticles',['../d1/dc6/particleswapkernels_8cu.html#a71f6ae8b4acb6ccfcc9cc653be5845ac',1,'particleswapkernels.cu']]],
-  ['context_18',['context',['../d1/d99/namespacecambpy.html#a17ba5b3d88a5555b2d518f944ca0b605',1,'cambpy.context'],['../df/d9e/namespacedriver.html#ac8c3b9e4059bb754bc3135a0461e3b0f',1,'driver.context']]],
+  ['context_18',['context',['../d1/d99/namespacecambpy.html#a17ba5b3d88a5555b2d518f944ca0b605',1,'cambpy']]],
   ['copy_19',['copy',['../d1/dc6/particleswapkernels_8cu.html#a5ace1b44eb57b3ce75b5c54575963da5',1,'particleswapkernels.cu']]],
   ['cos_20',['cos',['../d4/d77/greens_8cu.html#a433f2f14e1f68ea413b287f57dfb019c',1,'greens.cu']]],
   ['cosmo_2ecpp_21',['cosmo.cpp',['../da/dcb/cosmo_8cpp.html',1,'']]],
