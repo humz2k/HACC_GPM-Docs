@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>HACC_GPM: /home/hqureshi/HACC_GPM/src/pm_actions/icic_pm.cu File Reference</title>
+<title>HACC_GPM: /home/hqureshi/HACC_GPM/src/pm_actions/cuda/icic_pm.cu File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -100,14 +100,14 @@ $(document).ready(function(){initNavTree('d2/da0/icic__pm_8cu.html','../../'); i
   <div class="headertitle"><div class="title">icic_pm.cu File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="../../d7/dba/pm__kernels_8hpp_source.html">pm_kernels.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d7/dba/pm__kernels_8hpp_source.html">../pm_kernels.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for icic_pm.cu:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d3/db6/icic__pm_8cu__incl.png" border="0" usemap="#a_2home_2hqureshi_2HACC__GPM_2src_2pm__actions_2icic__pm_8cu" alt=""/></div>
-<map name="a_2home_2hqureshi_2HACC__GPM_2src_2pm__actions_2icic__pm_8cu" id="a_2home_2hqureshi_2HACC__GPM_2src_2pm__actions_2icic__pm_8cu">
+<div class="center"><img src="../../d3/db6/icic__pm_8cu__incl.png" border="0" usemap="#a_2home_2hqureshi_2HACC__GPM_2src_2pm__actions_2cuda_2icic__pm_8cu" alt=""/></div>
+<map name="a_2home_2hqureshi_2HACC__GPM_2src_2pm__actions_2cuda_2icic__pm_8cu" id="a_2home_2hqureshi_2HACC__GPM_2src_2pm__actions_2cuda_2icic__pm_8cu">
 <area shape="rect" title=" " alt="" coords="261,5,415,60"/>
-<area shape="rect" href="../../d7/dba/pm__kernels_8hpp.html" title=" " alt="" coords="281,108,395,133"/>
+<area shape="rect" href="../../d7/dba/pm__kernels_8hpp.html" title=" " alt="" coords="275,108,401,133"/>
 <area shape="poly" title=" " alt="" coords="341,60,341,94,335,94,335,60"/>
 <area shape="rect" href="../../da/d0d/haccgpm_8hpp.html" title=" " alt="" coords="288,181,388,207"/>
 <area shape="poly" title=" " alt="" coords="341,133,341,167,335,167,335,133"/>
@@ -136,6 +136,10 @@ Functions</h2></td></tr>
 <tr class="separator:a20b249a212f2f720e5c25742b90f3292"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c201279a51dea9ece4f7613fd5787dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__global__</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da0/icic__pm_8cu.html#a7c201279a51dea9ece4f7613fd5787dd">ICICKernel</a> (<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a> d_vel, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">const</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a> d_grad, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">const</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_pos</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a> deltaT, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a> fscal, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> ng)</td></tr>
 <tr class="separator:a7c201279a51dea9ece4f7613fd5787dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3fcd5b9c390c8b9cbaff6402fe69534"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d0d/haccgpm_8hpp.html#aa790b6767cf9152c32b179d29c46e3ef">CPUTimer_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da0/icic__pm_8cu.html#ae3fcd5b9c390c8b9cbaff6402fe69534">launch_icic</a> (<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *d_vel, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *d_grad, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *d_pos, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a> deltaT, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a> fscal, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> ng, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">numBlocks</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> blockSize, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">calls</a>)</td></tr>
+<tr class="separator:ae3fcd5b9c390c8b9cbaff6402fe69534"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae864ea2c4f748326a2c204520b234559"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d0d/haccgpm_8hpp.html#aa790b6767cf9152c32b179d29c46e3ef">CPUTimer_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da0/icic__pm_8cu.html#ae864ea2c4f748326a2c204520b234559">launch_icic</a> (<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *d_vel, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *d_grad, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *d_pos, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a> deltaT, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a> fscal, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> overload, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int3</a> local_grid_size, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> ng, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> n_particles, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> <a class="el" href="../../d1/dc2/ccamb_8c.html#a0be0ed3102aab1d72782301d75cf570b">world_rank</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">numBlocks</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> blockSize, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">calls</a>)</td></tr>
+<tr class="separator:ae864ea2c4f748326a2c204520b234559"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a7c201279a51dea9ece4f7613fd5787dd" name="a7c201279a51dea9ece4f7613fd5787dd"></a>
@@ -247,7 +251,7 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">do_return()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/df6/pm__actions_8cu_source.html#l00148">HACCGPM::serial::UpdateVelocities()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/da0/icic__pm_8cu_source.html#l00126">launch_icic()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -404,7 +408,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">do_return()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/df6/pm__actions_8cu_source.html#l00091">HACCGPM::parallel::UpdateVelocities()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/da0/icic__pm_8cu_source.html#l00131">launch_icic()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -421,12 +425,231 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="ae3fcd5b9c390c8b9cbaff6402fe69534" name="ae3fcd5b9c390c8b9cbaff6402fe69534"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3fcd5b9c390c8b9cbaff6402fe69534">&#9670;&#160;</a></span>launch_icic() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d0d/haccgpm_8hpp.html#aa790b6767cf9152c32b179d29c46e3ef">CPUTimer_t</a> launch_icic </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *&#160;</td>
+          <td class="paramname"><em>d_vel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *&#160;</td>
+          <td class="paramname"><em>d_grad</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *&#160;</td>
+          <td class="paramname"><em>d_pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a>&#160;</td>
+          <td class="paramname"><em>deltaT</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a>&#160;</td>
+          <td class="paramname"><em>fscal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
+          <td class="paramname"><em>ng</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
+          <td class="paramname"><em>numBlocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
+          <td class="paramname"><em>blockSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
+          <td class="paramname"><em>calls</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/da0/icic__pm_8cu_source.html#l00126">126</a> of file <a class="el" href="../../d2/da0/icic__pm_8cu_source.html">icic_pm.cu</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  126</span>                                                                                                                                                  {</div>
+<div class="line"><span class="lineno">  127</span>    <a class="code hl_define" href="../../d1/dc2/ccamb_8c.html#aede6a850e442b96dd236d1bed8bf19e5">getIndent</a>(<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">calls</a>);</div>
+<div class="line"><span class="lineno">  128</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="../../da/d0d/haccgpm_8hpp.html#a426f47de81eb03392ad93bb0e34433b2">InvokeGPUKernel</a>(<a class="code hl_function" href="../../d2/da0/icic__pm_8cu.html#a7c201279a51dea9ece4f7613fd5787dd">ICICKernel</a>,<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">numBlocks</a>,blockSize,d_vel,d_grad,d_pos,deltaT,fscal,ng);</div>
+<div class="line"><span class="lineno">  129</span>}</div>
+<div class="ttc" id="accamb_8c_html_aede6a850e442b96dd236d1bed8bf19e5"><div class="ttname"><a href="../../d1/dc2/ccamb_8c.html#aede6a850e442b96dd236d1bed8bf19e5">getIndent</a></div><div class="ttdeci">#define getIndent(calls)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dc2/ccamb_8c_source.html#l00009">ccamb.c:9</a></div></div>
+<div class="ttc" id="ahaccgpm_8hpp_html_a426f47de81eb03392ad93bb0e34433b2"><div class="ttname"><a href="../../da/d0d/haccgpm_8hpp.html#a426f47de81eb03392ad93bb0e34433b2">InvokeGPUKernel</a></div><div class="ttdeci">#define InvokeGPUKernel(func, numBlocks, blockSize,...)</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00053">haccgpm.hpp:53</a></div></div>
+<div class="ttc" id="aicic__pm_8cu_html_a7c201279a51dea9ece4f7613fd5787dd"><div class="ttname"><a href="../../d2/da0/icic__pm_8cu.html#a7c201279a51dea9ece4f7613fd5787dd">ICICKernel</a></div><div class="ttdeci">__global__ void ICICKernel(float4 *__restrict d_vel, const float4 *__restrict d_grad, const float4 *__restrict my_pos, double deltaT, double fscal, int ng)</div><div class="ttdef"><b>Definition</b> <a href="../../d2/da0/icic__pm_8cu_source.html#l00072">icic_pm.cu:72</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">do_return()</a>, <a class="el" href="../../d1/dc2/ccamb_8c_source.html#l00009">getIndent</a>, <a class="el" href="../../d2/da0/icic__pm_8cu_source.html#l00072">ICICKernel()</a>, and <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00053">InvokeGPUKernel</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d42/pm__actions_8cpp_source.html#l00116">HACCGPM::parallel::UpdateVelocities()</a>, and <a class="el" href="../../d4/d42/pm__actions_8cpp_source.html#l00179">HACCGPM::serial::UpdateVelocities()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/da0/icic__pm_8cu_ae3fcd5b9c390c8b9cbaff6402fe69534_cgraph.png" border="0" usemap="#ad2/da0/icic__pm_8cu_ae3fcd5b9c390c8b9cbaff6402fe69534_cgraph" alt=""/></div>
+<map name="ad2/da0/icic__pm_8cu_ae3fcd5b9c390c8b9cbaff6402fe69534_cgraph" id="ad2/da0/icic__pm_8cu_ae3fcd5b9c390c8b9cbaff6402fe69534_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,92,31"/>
+<area shape="rect" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf" title=" " alt="" coords="275,5,351,31"/>
+<area shape="poly" title=" " alt="" coords="92,15,261,15,261,21,92,21"/>
+<area shape="rect" href="../../d2/da0/icic__pm_8cu.html#a7c201279a51dea9ece4f7613fd5787dd" title=" " alt="" coords="140,31,227,56"/>
+<area shape="poly" title=" " alt="" coords="93,24,127,30,126,35,92,29"/>
+<area shape="rect" href="../../da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6" title=" " alt="" coords="399,5,483,31"/>
+<area shape="poly" title=" " alt="" coords="351,24,385,24,385,30,351,29"/>
+<area shape="poly" title=" " alt="" coords="398,12,364,12,364,6,399,7"/>
+<area shape="poly" title=" " alt="" coords="226,32,260,26,261,31,227,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae864ea2c4f748326a2c204520b234559" name="ae864ea2c4f748326a2c204520b234559"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae864ea2c4f748326a2c204520b234559">&#9670;&#160;</a></span>launch_icic() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d0d/haccgpm_8hpp.html#aa790b6767cf9152c32b179d29c46e3ef">CPUTimer_t</a> launch_icic </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *&#160;</td>
+          <td class="paramname"><em>d_vel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *&#160;</td>
+          <td class="paramname"><em>d_grad</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *&#160;</td>
+          <td class="paramname"><em>d_pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a>&#160;</td>
+          <td class="paramname"><em>deltaT</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a>&#160;</td>
+          <td class="paramname"><em>fscal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
+          <td class="paramname"><em>overload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int3</a>&#160;</td>
+          <td class="paramname"><em>local_grid_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
+          <td class="paramname"><em>ng</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
+          <td class="paramname"><em>n_particles</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
+          <td class="paramname"><em>world_rank</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
+          <td class="paramname"><em>numBlocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
+          <td class="paramname"><em>blockSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
+          <td class="paramname"><em>calls</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/da0/icic__pm_8cu_source.html#l00131">131</a> of file <a class="el" href="../../d2/da0/icic__pm_8cu_source.html">icic_pm.cu</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  131</span>                                                                                                                                                                                                                       {</div>
+<div class="line"><span class="lineno">  132</span>    <a class="code hl_define" href="../../d1/dc2/ccamb_8c.html#aede6a850e442b96dd236d1bed8bf19e5">getIndent</a>(<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">calls</a>);</div>
+<div class="line"><span class="lineno">  133</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="../../da/d0d/haccgpm_8hpp.html#aeb036429c3ef20a1b4d863bf03ff5648">InvokeGPUKernelParallel</a>(<a class="code hl_function" href="../../d2/da0/icic__pm_8cu.html#a20b249a212f2f720e5c25742b90f3292">ICICKernelParallel</a>,<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">numBlocks</a>,blockSize,d_vel,d_grad,d_pos,deltaT,fscal,overload,local_grid_size,ng,n_particles);</div>
+<div class="line"><span class="lineno">  134</span>}</div>
+<div class="ttc" id="ahaccgpm_8hpp_html_aeb036429c3ef20a1b4d863bf03ff5648"><div class="ttname"><a href="../../da/d0d/haccgpm_8hpp.html#aeb036429c3ef20a1b4d863bf03ff5648">InvokeGPUKernelParallel</a></div><div class="ttdeci">#define InvokeGPUKernelParallel(func, numBlocks, blockSize,...)</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00054">haccgpm.hpp:54</a></div></div>
+<div class="ttc" id="aicic__pm_8cu_html_a20b249a212f2f720e5c25742b90f3292"><div class="ttname"><a href="../../d2/da0/icic__pm_8cu.html#a20b249a212f2f720e5c25742b90f3292">ICICKernelParallel</a></div><div class="ttdeci">__global__ void ICICKernelParallel(float4 *__restrict d_vel, const float4 *__restrict d_grad, const float4 *__restrict my_pos, double deltaT, double fscal, int overload, int3 local_grid_size, int ng, int n_particles)</div><div class="ttdef"><b>Definition</b> <a href="../../d2/da0/icic__pm_8cu_source.html#l00003">icic_pm.cu:3</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">do_return()</a>, <a class="el" href="../../d1/dc2/ccamb_8c_source.html#l00009">getIndent</a>, <a class="el" href="../../d2/da0/icic__pm_8cu_source.html#l00003">ICICKernelParallel()</a>, and <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00054">InvokeGPUKernelParallel</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/da0/icic__pm_8cu_ae864ea2c4f748326a2c204520b234559_cgraph.png" border="0" usemap="#ad2/da0/icic__pm_8cu_ae864ea2c4f748326a2c204520b234559_cgraph" alt=""/></div>
+<map name="ad2/da0/icic__pm_8cu_ae864ea2c4f748326a2c204520b234559_cgraph" id="ad2/da0/icic__pm_8cu_ae864ea2c4f748326a2c204520b234559_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,92,31"/>
+<area shape="rect" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf" title=" " alt="" coords="319,5,395,31"/>
+<area shape="poly" title=" " alt="" coords="92,15,305,15,305,21,92,21"/>
+<area shape="rect" href="../../d2/da0/icic__pm_8cu.html#a20b249a212f2f720e5c25742b90f3292" title=" " alt="" coords="140,31,271,56"/>
+<area shape="poly" title=" " alt="" coords="93,22,127,28,126,33,92,28"/>
+<area shape="rect" href="../../da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6" title=" " alt="" coords="443,5,527,31"/>
+<area shape="poly" title=" " alt="" coords="395,24,429,24,429,30,395,29"/>
+<area shape="poly" title=" " alt="" coords="442,12,408,12,408,6,443,7"/>
+<area shape="poly" title=" " alt="" coords="270,30,305,24,306,29,271,35"/>
+</map>
+</div>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_687cfde5d1c22650f31ee17392f4aea5.html">pm_actions</a></li><li class="navelem"><a class="el" href="../../d2/da0/icic__pm_8cu.html">icic_pm.cu</a></li>
+    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_687cfde5d1c22650f31ee17392f4aea5.html">pm_actions</a></li><li class="navelem"><a class="el" href="../../dir_9cc2adb122f345ab11c801eec0889b88.html">cuda</a></li><li class="navelem"><a class="el" href="../../d2/da0/icic__pm_8cu.html">icic_pm.cu</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

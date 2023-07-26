@@ -1,5 +1,5 @@
-<map id="/home/hqureshi/HACC_GPM/src/power_spectrum/fold_particles_power.cu" name="/home/hqureshi/HACC_GPM/src/power_spectrum/fold_particles_power.cu">
-<area shape="rect" id="Node000001" title=" " alt="" coords="247,5,429,60"/>
+<map id="/home/hqureshi/HACC_GPM/src/power_spectrum/cuda/fold_particles_power.cu" name="/home/hqureshi/HACC_GPM/src/power_spectrum/cuda/fold_particles_power.cu">
+<area shape="rect" id="Node000001" title=" " alt="" coords="241,5,435,60"/>
 <area shape="rect" id="Node000002" href="$d6/d81/power__kernels_8hpp.html" title=" " alt="" coords="273,108,403,133"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="341,60,341,94,335,94,335,60"/>
 <area shape="rect" id="Node000003" href="$da/d0d/haccgpm_8hpp.html" title=" " alt="" coords="288,181,388,207"/>

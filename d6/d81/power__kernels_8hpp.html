@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>HACC_GPM: /home/hqureshi/HACC_GPM/src/power_spectrum/power_kernels.hpp File Reference</title>
+<title>HACC_GPM: /home/hqureshi/HACC_GPM/src/power_spectrum/cuda/power_kernels.hpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -104,8 +104,8 @@ $(document).ready(function(){initNavTree('d6/d81/power__kernels_8hpp.html','../.
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for power_kernels.hpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d6/d4f/power__kernels_8hpp__incl.png" border="0" usemap="#a_2home_2hqureshi_2HACC__GPM_2src_2power__spectrum_2power__kernels_8hpp" alt=""/></div>
-<map name="a_2home_2hqureshi_2HACC__GPM_2src_2power__spectrum_2power__kernels_8hpp" id="a_2home_2hqureshi_2HACC__GPM_2src_2power__spectrum_2power__kernels_8hpp">
+<div class="center"><img src="../../d6/d4f/power__kernels_8hpp__incl.png" border="0" usemap="#a_2home_2hqureshi_2HACC__GPM_2src_2power__spectrum_2cuda_2power__kernels_8hpp" alt=""/></div>
+<map name="a_2home_2hqureshi_2HACC__GPM_2src_2power__spectrum_2cuda_2power__kernels_8hpp" id="a_2home_2hqureshi_2HACC__GPM_2src_2power__spectrum_2cuda_2power__kernels_8hpp">
 <area shape="rect" title=" " alt="" coords="247,5,429,60"/>
 <area shape="rect" href="../../da/d0d/haccgpm_8hpp.html" title=" " alt="" coords="288,108,388,133"/>
 <area shape="poly" title=" " alt="" coords="341,60,341,94,335,94,335,60"/>
@@ -128,19 +128,19 @@ Include dependency graph for power_kernels.hpp:</div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../da/d0e/power__kernels_8hpp__dep__incl.png" border="0" usemap="#a_2home_2hqureshi_2HACC__GPM_2src_2power__spectrum_2power__kernels_8hppdep" alt=""/></div>
-<map name="a_2home_2hqureshi_2HACC__GPM_2src_2power__spectrum_2power__kernels_8hppdep" id="a_2home_2hqureshi_2HACC__GPM_2src_2power__spectrum_2power__kernels_8hppdep">
-<area shape="rect" title=" " alt="" coords="416,5,597,60"/>
+<div class="center"><img src="../../da/d0e/power__kernels_8hpp__dep__incl.png" border="0" usemap="#a_2home_2hqureshi_2HACC__GPM_2src_2power__spectrum_2cuda_2power__kernels_8hppdep" alt=""/></div>
+<map name="a_2home_2hqureshi_2HACC__GPM_2src_2power__spectrum_2cuda_2power__kernels_8hppdep" id="a_2home_2hqureshi_2HACC__GPM_2src_2power__spectrum_2cuda_2power__kernels_8hppdep">
+<area shape="rect" title=" " alt="" coords="423,5,604,60"/>
 <area shape="rect" href="../../d8/da9/bin__power_8cu.html" title=" " alt="" coords="5,108,187,163"/>
-<area shape="poly" title=" " alt="" coords="403,60,199,111,187,114,186,109,198,105,402,55"/>
+<area shape="poly" title=" " alt="" coords="410,59,199,111,188,114,187,108,198,105,409,54"/>
 <area shape="rect" href="../../d5/d24/filter__power_8cu.html" title=" " alt="" coords="211,108,392,163"/>
-<area shape="poly" title=" " alt="" coords="441,69,357,110,355,106,438,64"/>
-<area shape="rect" href="../../db/dc9/fold__particles__power_8cu.html" title=" " alt="" coords="416,108,597,163"/>
-<area shape="poly" title=" " alt="" coords="509,74,509,108,504,108,504,74"/>
-<area shape="rect" href="../../d0/d33/power_8cu.html" title=" " alt="" coords="621,108,803,163"/>
-<area shape="poly" title=" " alt="" coords="575,64,658,106,656,110,573,69"/>
-<area shape="rect" href="../../d1/d89/scale__power_8cu.html" title=" " alt="" coords="827,108,1008,163"/>
-<area shape="poly" title=" " alt="" coords="611,55,815,105,827,109,826,114,814,111,610,60"/>
+<area shape="poly" title=" " alt="" coords="446,68,359,110,357,106,443,64"/>
+<area shape="rect" href="../../db/dc9/fold__particles__power_8cu.html" title=" " alt="" coords="416,108,611,163"/>
+<area shape="poly" title=" " alt="" coords="516,74,516,108,511,108,511,74"/>
+<area shape="rect" href="../../d0/d33/power_8cu.html" title=" " alt="" coords="635,108,816,163"/>
+<area shape="poly" title=" " alt="" coords="583,64,670,106,668,110,581,68"/>
+<area shape="rect" href="../../d1/d89/scale__power_8cu.html" title=" " alt="" coords="840,108,1021,163"/>
+<area shape="poly" title=" " alt="" coords="618,54,829,105,840,108,839,114,827,111,617,59"/>
 </map>
 </div>
 </div>
@@ -237,9 +237,9 @@ Functions</h2></td></tr>
 <div class="ttc" id="abin__power_8cu_html_a02aa01bbb043f7af43d44192a877b885"><div class="ttname"><a href="../../d8/da9/bin__power_8cu.html#a02aa01bbb043f7af43d44192a877b885">calc_power_bins</a></div><div class="ttdeci">__forceinline__ __device__ void calc_power_bins(double *__restrict d_binVals, int *__restrict d_binCounts, double this_val, int idx, int3 idx3d, double minK, double binDelta, double rl, int ng)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/da9/bin__power_8cu_source.html#l00003">bin_power.cu:3</a></div></div>
 <div class="ttc" id="agridexchange_8cpp_html_aee62b8f3ede200a395ed04dc3531efcf"><div class="ttname"><a href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">do_return</a></div><div class="ttdeci">void do_return(float4 *grad, int left_rank, int right_rank, int size, int3 local_grid_size, int3 local_coords, int3 total_grid_dims, int overload, int world_rank, size_t *bytes, CPUTimer_t *mpi_time, int blockSize, int calls)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">gridexchange.cpp:31</a></div></div>
 <div class="ttc" id="ahaccgpm_8hpp_html_a27d89e2a5f98ab524846b9bac59ebf44"><div class="ttname"><a href="../../da/d0d/haccgpm_8hpp.html#a27d89e2a5f98ab524846b9bac59ebf44">deviceFFT_t</a></div><div class="ttdeci">#define deviceFFT_t</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00026">haccgpm.hpp:26</a></div></div>
-<div class="ttc" id="anamespaceHACCGPM_1_1serial_html_ad9fb99027bd0e8c4666c28a5b85d419e"><div class="ttname"><a href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ad9fb99027bd0e8c4666c28a5b85d419e">HACCGPM::serial::get_index</a></div><div class="ttdeci">__device__ __forceinline__ int3 get_index(int idx, int ng)</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00334">haccgpm.hpp:334</a></div></div>
+<div class="ttc" id="anamespaceHACCGPM_1_1serial_html_ad9fb99027bd0e8c4666c28a5b85d419e"><div class="ttname"><a href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ad9fb99027bd0e8c4666c28a5b85d419e">HACCGPM::serial::get_index</a></div><div class="ttdeci">__device__ __forceinline__ int3 get_index(int idx, int ng)</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00354">haccgpm.hpp:354</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d8/da9/bin__power_8cu_source.html#l00003">calc_power_bins()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00026">deviceFFT_t</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">do_return()</a>, and <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00334">HACCGPM::serial::get_index()</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/da9/bin__power_8cu_source.html#l00003">calc_power_bins()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00026">deviceFFT_t</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">do_return()</a>, and <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00354">HACCGPM::serial::get_index()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/d33/power_8cu_source.html#l00028">HACCGPM::parallel::GetPowerSpectrum()</a>, and <a class="el" href="../../d0/d33/power_8cu_source.html#l00114">HACCGPM::serial::GetPowerSpectrum()</a>.</p>
 <div class="dynheader">
@@ -366,9 +366,9 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   39</span>    <a class="code hl_function" href="../../d8/da9/bin__power_8cu.html#a02aa01bbb043f7af43d44192a877b885">calc_power_bins</a>(<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">d_binVals</a>,<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">d_binCounts</a>,<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">this_val</a>.x,<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a>,<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx3d</a>,<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">minK</a>,<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">binDelta</a>,rl,ng);</div>
 <div class="line"><span class="lineno">   40</span> </div>
 <div class="line"><span class="lineno">   41</span>}</div>
-<div class="ttc" id="anamespaceHACCGPM_1_1parallel_html_a4bd825592e67337ba3718aaa3503827a"><div class="ttname"><a href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a4bd825592e67337ba3718aaa3503827a">HACCGPM::parallel::get_global_index</a></div><div class="ttdeci">__device__ __forceinline__ int3 get_global_index(int idx, int ng, int3 local_dims, int3 local_coords)</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00262">haccgpm.hpp:262</a></div></div>
+<div class="ttc" id="anamespaceHACCGPM_1_1parallel_html_a4bd825592e67337ba3718aaa3503827a"><div class="ttname"><a href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#a4bd825592e67337ba3718aaa3503827a">HACCGPM::parallel::get_global_index</a></div><div class="ttdeci">__device__ __forceinline__ int3 get_global_index(int idx, int ng, int3 local_dims, int3 local_coords)</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00278">haccgpm.hpp:278</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d8/da9/bin__power_8cu_source.html#l00003">calc_power_bins()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00026">deviceFFT_t</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">do_return()</a>, and <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00262">HACCGPM::parallel::get_global_index()</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/da9/bin__power_8cu_source.html#l00003">calc_power_bins()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00026">deviceFFT_t</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">do_return()</a>, and <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00278">HACCGPM::parallel::get_global_index()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -559,7 +559,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   58</span>}</div>
 <div class="ttc" id="afilter__power_8cu_html_a9cd93f4518244a8ca6bf3aeea40fc301"><div class="ttname"><a href="../../d5/d24/filter__power_8cu.html#a9cd93f4518244a8ca6bf3aeea40fc301">get_pk_cic_filter</a></div><div class="ttdeci">__forceinline__ __device__ double get_pk_cic_filter(int3 idx3d, int ng)</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d24/filter__power_8cu_source.html#l00003">filter_power.cu:3</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00026">deviceFFT_t</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">do_return()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00334">HACCGPM::serial::get_index()</a>, and <a class="el" href="../../d5/d24/filter__power_8cu_source.html#l00003">get_pk_cic_filter()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00026">deviceFFT_t</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">do_return()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00354">HACCGPM::serial::get_index()</a>, and <a class="el" href="../../d5/d24/filter__power_8cu_source.html#l00003">get_pk_cic_filter()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -643,7 +643,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   44</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">grid</a>[<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a>] = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_grid</a>;</div>
 <div class="line"><span class="lineno">   45</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00026">deviceFFT_t</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">do_return()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00262">HACCGPM::parallel::get_global_index()</a>, and <a class="el" href="../../d5/d24/filter__power_8cu_source.html#l00003">get_pk_cic_filter()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00026">deviceFFT_t</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">do_return()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00278">HACCGPM::parallel::get_global_index()</a>, and <a class="el" href="../../d5/d24/filter__power_8cu_source.html#l00003">get_pk_cic_filter()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/d33/power_8cu_source.html#l00028">HACCGPM::parallel::GetPowerSpectrum()</a>, and <a class="el" href="../../d0/d33/power_8cu_source.html#l00114">HACCGPM::serial::GetPowerSpectrum()</a>.</p>
 <div class="dynheader">
@@ -808,7 +808,7 @@ Here is the call graph for this function:</div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_d9f53075555d4d96bf65600944a3c863.html">power_spectrum</a></li><li class="navelem"><a class="el" href="../../d6/d81/power__kernels_8hpp.html">power_kernels.hpp</a></li>
+    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_d9f53075555d4d96bf65600944a3c863.html">power_spectrum</a></li><li class="navelem"><a class="el" href="../../dir_054470826b0705677f193d6f72447b2f.html">cuda</a></li><li class="navelem"><a class="el" href="../../d6/d81/power__kernels_8hpp.html">power_kernels.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

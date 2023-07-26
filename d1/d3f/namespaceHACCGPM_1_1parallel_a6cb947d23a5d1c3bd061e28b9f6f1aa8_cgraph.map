@@ -1,0 +1,35 @@
+<map id="HACCGPM::parallel::SolveGradient" name="HACCGPM::parallel::SolveGradient">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,127,153,167"/>
+<area shape="rect" id="Node000002" href="$d1/d3f/namespaceHACCGPM_1_1parallel.html#add12ee925b08f1eca77ec3d4c2b94aed" title=" " alt="" coords="201,5,349,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,124,146,90,200,55,211,49,214,54,203,60,149,95,105,129"/>
+<area shape="rect" id="Node000004" href="$d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf" title=" " alt="" coords="819,261,895,286"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="154,142,300,142,480,147,651,161,720,173,772,190,811,216,841,247,837,251,808,220,770,194,719,178,650,166,480,152,300,147,154,148"/>
+<area shape="rect" id="Node000005" href="$d1/d3f/namespaceHACCGPM_1_1parallel.html#ab6fb9d3fbd0ac120db603cad0fe58b40" title=" " alt="" coords="201,69,349,109"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="147,124,193,111,194,116,149,129"/>
+<area shape="rect" id="Node000006" href="$d5/ddc/combine_8cu.html#a18959ae3cbadea3d2185e0bf597b9d1c" title=" " alt="" coords="417,185,533,210"/>
+<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="154,156,202,163,403,187,403,192,201,168,153,161"/>
+<area shape="rect" id="Node000008" href="$d5/dc1/kspace__solver_8cu.html#a99abb450008460bdcb9925f5aa71e9d4" title=" " alt="" coords="202,279,349,319"/>
+<area shape="poly" id="edge12_Node000001_Node000008" title=" " alt="" coords="107,165,240,268,237,272,104,169"/>
+<area shape="rect" id="Node000003" href="$da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6" title=" " alt="" coords="433,71,517,97"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="344,43,420,65,418,70,343,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="517,85,572,86,638,91,708,107,741,120,772,138,799,162,821,191,848,247,844,249,816,193,795,165,769,142,739,125,706,112,637,97,571,91,517,90"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="852,261,843,230,827,190,803,150,787,133,769,118,741,102,711,90,647,75,584,70,530,73,530,67,584,65,648,70,712,85,743,97,772,114,791,129,807,147,832,188,848,228,857,260"/>
+<area shape="poly" id="edge7_Node000005_Node000003" title=" " alt="" coords="349,85,419,83,419,88,350,90"/>
+<area shape="poly" id="edge11_Node000006_Node000004" title=" " alt="" coords="533,192,645,196,709,205,772,220,803,234,830,250,827,255,800,238,770,225,708,210,644,202,533,197"/>
+<area shape="rect" id="Node000007" href="$d5/ddc/combine_8cu.html#a71c3109fe66f9f1fcac25bd98c8f486d" title=" " alt="" coords="650,235,721,261"/>
+<area shape="poly" id="edge9_Node000006_Node000007" title=" " alt="" coords="528,208,637,234,636,239,527,213"/>
+<area shape="poly" id="edge10_Node000007_Node000004" title=" " alt="" coords="721,251,805,263,805,268,720,256"/>
+<area shape="poly" id="edge13_Node000008_Node000004" title=" " alt="" coords="349,293,805,273,805,278,349,298"/>
+<area shape="rect" id="Node000009" href="$d5/dc1/kspace__solver_8cu.html#a2a09f5b82d8b136faf1a7f16078d832c" title=" " alt="" coords="397,387,552,413"/>
+<area shape="poly" id="edge14_Node000008_Node000009" title=" " alt="" coords="316,316,438,379,436,383,314,321"/>
+<area shape="poly" id="edge15_Node000009_Node000004" title=" " alt="" coords="533,385,644,356,770,315,821,290,824,295,772,320,646,361,534,390"/>
+<area shape="rect" id="Node000010" href="$d5/dc1/kspace__solver_8cu.html#a1f0dcdf9546948280cdbc0f9a95fdb8a" title=" " alt="" coords="639,387,732,413"/>
+<area shape="poly" id="edge16_Node000009_Node000010" title=" " alt="" coords="553,397,625,397,625,403,553,403"/>
+<area shape="rect" id="Node000011" href="$d5/d07/namespaceHACCGPM_1_1serial.html#ad9fb99027bd0e8c4666c28a5b85d419e" title=" " alt="" coords="607,437,763,477"/>
+<area shape="poly" id="edge18_Node000009_Node000011" title=" " alt="" coords="522,410,599,431,598,436,521,415"/>
+<area shape="rect" id="Node000012" href="$d5/d1c/namespaceHACCGPM.html#acccb2a9f88cb15d894d9b865b991ef8d" title=" " alt="" coords="600,502,771,527"/>
+<area shape="poly" id="edge20_Node000009_Node000012" title=" " alt="" coords="491,411,538,448,601,487,621,495,618,500,599,492,535,452,487,415"/>
+<area shape="poly" id="edge17_Node000010_Node000004" title=" " alt="" coords="730,385,769,366,808,332,838,296,842,299,812,335,772,370,732,390"/>
+<area shape="poly" id="edge19_Node000011_Node000004" title=" " alt="" coords="752,435,769,423,796,394,818,361,846,298,851,300,822,363,800,397,772,427,755,439"/>
+<area shape="poly" id="edge21_Node000012_Node000004" title=" " alt="" coords="750,500,769,487,788,467,804,443,828,391,843,341,851,299,856,300,848,342,833,393,809,446,792,470,772,491,753,504"/>
+</map>

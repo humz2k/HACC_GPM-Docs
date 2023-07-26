@@ -3,7 +3,6 @@ var ffts_8cu =
     [ "PlanManager", "d4/d83/classPlanManager.html", "d4/d83/classPlanManager" ],
     [ "FFTCacheSize", "d2/df9/ffts_8cu.html#ab69b53cecd86e169b6c4b767162a3fdb", null ],
     [ "UsePlanManager", "d2/df9/ffts_8cu.html#a39ff8f6275f1a859060d1f5d75cf3ac6", null ],
-    [ "VerboseFFT", "d2/df9/ffts_8cu.html#a40b86402b9d00a5949347e0575359a22", null ],
     [ "FFT_BACKWARD_CALLS_IP", "d2/df9/ffts_8cu.html#a8e917450629fec0bba13fe3ed19f9f3d", null ],
     [ "FFT_BACKWARD_CALLS_OP", "d2/df9/ffts_8cu.html#a10c41d1c7b046f472f0865cbc2f6f1d1", null ],
     [ "FFT_BACKWARD_PLAN_TIME_IP", "d2/df9/ffts_8cu.html#a0a1088ef396eb179693acf3bcaf20059", null ],

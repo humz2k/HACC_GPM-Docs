@@ -1,14 +1,12 @@
 <map id="storeZRight" name="storeZRight">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,96,31"/>
-<area shape="rect" id="Node000002" href="$d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf" title=" " alt="" coords="515,31,591,56"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,13,260,10,363,13,467,22,502,28,501,33,466,27,363,18,260,15,96,18"/>
-<area shape="rect" id="Node000004" href="$d1/d6e/gridexchangekernels_8cu.html#a4d76349d71040ee4ab4368d21f3a6f5b" title=" " alt="" coords="144,31,271,56"/>
-<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="97,23,131,28,130,34,96,28"/>
-<area shape="rect" id="Node000003" href="$da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6" title=" " alt="" coords="639,31,723,56"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="591,49,625,50,625,55,591,54"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="638,37,604,37,604,32,639,32"/>
-<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="271,41,501,41,501,46,271,46"/>
-<area shape="rect" id="Node000005" href="$d1/d3f/namespaceHACCGPM_1_1parallel.html#abcddbac52c4da4a8a55b5b9dbb3940ce" title=" " alt="" coords="319,81,467,121"/>
-<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="249,54,316,74,314,79,248,59"/>
-<area shape="poly" id="edge7_Node000005_Node000002" title=" " alt="" coords="448,78,503,58,505,63,450,83"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,13,96,38"/>
+<area shape="rect" id="Node000002" href="$d1/d6e/gridexchangekernels_8cu.html#a4d76349d71040ee4ab4368d21f3a6f5b" title=" " alt="" coords="144,13,271,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,23,130,23,130,28,96,28"/>
+<area shape="rect" id="Node000003" href="$d1/d3f/namespaceHACCGPM_1_1parallel.html#abcddbac52c4da4a8a55b5b9dbb3940ce" title=" " alt="" coords="319,5,467,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="271,23,305,23,305,28,271,28"/>
+<area shape="rect" id="Node000004" href="$d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf" title=" " alt="" coords="515,13,591,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="467,23,501,23,501,28,467,28"/>
+<area shape="rect" id="Node000005" href="$da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6" title=" " alt="" coords="639,13,723,38"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="591,31,625,32,625,37,591,36"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="638,19,604,19,604,14,639,14"/>
 </map>

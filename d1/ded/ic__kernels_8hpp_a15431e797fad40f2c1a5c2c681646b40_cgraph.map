@@ -1,0 +1,14 @@
+<map id="launch_place_particles" name="launch_place_particles">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,160,31"/>
+<area shape="rect" id="Node000002" href="$d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf" title=" " alt="" coords="564,31,640,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,12,324,10,421,13,516,22,551,28,550,33,516,27,420,19,324,15,160,17"/>
+<area shape="rect" id="Node000004" href="$dc/d83/place__particles__initializer_8cu.html#a2fe476c02dd57a3bf0adeed08604e935" title=" " alt="" coords="208,31,312,56"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="161,26,195,31,194,37,160,32"/>
+<area shape="rect" id="Node000003" href="$da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6" title=" " alt="" coords="688,31,772,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="640,49,675,50,674,55,640,54"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="688,37,654,37,654,32,688,32"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="312,41,551,41,551,46,312,46"/>
+<area shape="rect" id="Node000005" href="$d5/d07/namespaceHACCGPM_1_1serial.html#ad9fb99027bd0e8c4666c28a5b85d419e" title=" " alt="" coords="360,81,516,121"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="300,54,364,74,362,79,299,59"/>
+<area shape="poly" id="edge7_Node000005_Node000002" title=" " alt="" coords="494,78,552,58,554,63,496,83"/>
+</map>

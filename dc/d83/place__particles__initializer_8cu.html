@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>HACC_GPM: /home/hqureshi/HACC_GPM/src/initial_conditions/place_particles_initializer.cu File Reference</title>
+<title>HACC_GPM: /home/hqureshi/HACC_GPM/src/initial_conditions/cuda/place_particles_initializer.cu File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -100,21 +100,17 @@ $(document).ready(function(){initNavTree('dc/d83/place__particles__initializer_8
   <div class="headertitle"><div class="title">place_particles_initializer.cu File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="../../d1/ded/ic__kernels_8hpp_source.html">ic_kernels.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d1/ded/ic__kernels_8hpp_source.html">../ic_kernels.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for place_particles_initializer.cu:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../db/dc7/place__particles__initializer_8cu__incl.png" border="0" usemap="#a_2home_2hqureshi_2HACC__GPM_2src_2initial__conditions_2place__particles__initializer_8cu" alt=""/></div>
-<map name="a_2home_2hqureshi_2HACC__GPM_2src_2initial__conditions_2place__particles__initializer_8cu" id="a_2home_2hqureshi_2HACC__GPM_2src_2initial__conditions_2place__particles__initializer_8cu">
-<area shape="rect" title=" " alt="" coords="354,5,543,60"/>
-<area shape="rect" href="../../d1/ded/ic__kernels_8hpp.html" title=" " alt="" coords="395,108,502,133"/>
-<area shape="poly" title=" " alt="" coords="451,60,451,94,446,94,446,60"/>
+<div class="center"><img src="../../db/dc7/place__particles__initializer_8cu__incl.png" border="0" usemap="#a_2home_2hqureshi_2HACC__GPM_2src_2initial__conditions_2cuda_2place__particles__initializer_8cu" alt=""/></div>
+<map name="a_2home_2hqureshi_2HACC__GPM_2src_2initial__conditions_2cuda_2place__particles__initializer_8cu" id="a_2home_2hqureshi_2HACC__GPM_2src_2initial__conditions_2cuda_2place__particles__initializer_8cu">
+<area shape="rect" title=" " alt="" coords="227,5,449,60"/>
+<area shape="rect" href="../../d1/ded/ic__kernels_8hpp.html" title=" " alt="" coords="279,108,397,133"/>
+<area shape="poly" title=" " alt="" coords="341,60,341,94,335,94,335,60"/>
 <area shape="rect" href="../../da/d0d/haccgpm_8hpp.html" title=" " alt="" coords="288,181,388,207"/>
-<area shape="poly" title=" " alt="" coords="431,136,370,176,367,171,428,131"/>
-<area shape="rect" title=" " alt="" coords="413,181,485,207"/>
-<area shape="poly" title=" " alt="" coords="451,133,451,167,446,167,446,133"/>
-<area shape="rect" title=" " alt="" coords="509,181,623,207"/>
-<area shape="poly" title=" " alt="" coords="471,131,535,172,533,176,468,136"/>
+<area shape="poly" title=" " alt="" coords="341,133,341,167,335,167,335,133"/>
 <area shape="rect" title=" " alt="" coords="5,255,116,280"/>
 <area shape="poly" title=" " alt="" coords="290,209,123,254,121,249,289,204"/>
 <area shape="rect" title=" " alt="" coords="141,255,199,280"/>
@@ -140,8 +136,304 @@ Functions</h2></td></tr>
 <tr class="separator:a2fe476c02dd57a3bf0adeed08604e935"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62e1420cd08868a7735ed883297a1292"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__global__</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d83/place__particles__initializer_8cu.html#a62e1420cd08868a7735ed883297a1292">placeParticles</a> (<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a> d_pos, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a> d_vel, <a class="el" href="../../da/d0d/haccgpm_8hpp.html#a27d89e2a5f98ab524846b9bac59ebf44">deviceFFT_t</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">outSx</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp.html#a27d89e2a5f98ab524846b9bac59ebf44">deviceFFT_t</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">outSy</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp.html#a27d89e2a5f98ab524846b9bac59ebf44">deviceFFT_t</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">outSz</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a> delta, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a> dotDelta, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a> rl, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">a</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a> deltaT, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a> fscal, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> ng, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">nx</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">ny</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">nz</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> nlocal, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> <a class="el" href="../../d1/dc2/ccamb_8c.html#a0be0ed3102aab1d72782301d75cf570b">world_rank</a>)</td></tr>
 <tr class="separator:a62e1420cd08868a7735ed883297a1292"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade8d931c1c46e566ed0278dcaa39a294"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d83/place__particles__initializer_8cu.html#ade8d931c1c46e566ed0278dcaa39a294">launch_place_particles</a> (<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *d_pos, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *d_vel, <a class="el" href="../../da/d0d/haccgpm_8hpp.html#a27d89e2a5f98ab524846b9bac59ebf44">deviceFFT_t</a> *d_x, <a class="el" href="../../da/d0d/haccgpm_8hpp.html#a27d89e2a5f98ab524846b9bac59ebf44">deviceFFT_t</a> *d_y, <a class="el" href="../../da/d0d/haccgpm_8hpp.html#a27d89e2a5f98ab524846b9bac59ebf44">deviceFFT_t</a> *d_z, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a> delta, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a> dotDelta, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a> rl, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a> z_ini, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a> deltaT, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a> fscal, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> ng, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">numBlocks</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> blockSize, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">calls</a>)</td></tr>
+<tr class="separator:ade8d931c1c46e566ed0278dcaa39a294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15431e797fad40f2c1a5c2c681646b40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d83/place__particles__initializer_8cu.html#a15431e797fad40f2c1a5c2c681646b40">launch_place_particles</a> (<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *d_pos, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *d_vel, <a class="el" href="../../da/d0d/haccgpm_8hpp.html#a27d89e2a5f98ab524846b9bac59ebf44">deviceFFT_t</a> *d_x, <a class="el" href="../../da/d0d/haccgpm_8hpp.html#a27d89e2a5f98ab524846b9bac59ebf44">deviceFFT_t</a> *d_y, <a class="el" href="../../da/d0d/haccgpm_8hpp.html#a27d89e2a5f98ab524846b9bac59ebf44">deviceFFT_t</a> *d_z, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a> delta, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a> dotDelta, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a> rl, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a> z_ini, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a> deltaT, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a> fscal, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> ng, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> nlocal, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int3</a> local_grid_size, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> <a class="el" href="../../d1/dc2/ccamb_8c.html#a0be0ed3102aab1d72782301d75cf570b">world_rank</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">numBlocks</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> blockSize, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">calls</a>)</td></tr>
+<tr class="separator:a15431e797fad40f2c1a5c2c681646b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a15431e797fad40f2c1a5c2c681646b40" name="a15431e797fad40f2c1a5c2c681646b40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15431e797fad40f2c1a5c2c681646b40">&#9670;&#160;</a></span>launch_place_particles() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">void</a> launch_place_particles </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *&#160;</td>
+          <td class="paramname"><em>d_pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *&#160;</td>
+          <td class="paramname"><em>d_vel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d0d/haccgpm_8hpp.html#a27d89e2a5f98ab524846b9bac59ebf44">deviceFFT_t</a> *&#160;</td>
+          <td class="paramname"><em>d_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d0d/haccgpm_8hpp.html#a27d89e2a5f98ab524846b9bac59ebf44">deviceFFT_t</a> *&#160;</td>
+          <td class="paramname"><em>d_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d0d/haccgpm_8hpp.html#a27d89e2a5f98ab524846b9bac59ebf44">deviceFFT_t</a> *&#160;</td>
+          <td class="paramname"><em>d_z</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a>&#160;</td>
+          <td class="paramname"><em>delta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a>&#160;</td>
+          <td class="paramname"><em>dotDelta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a>&#160;</td>
+          <td class="paramname"><em>rl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a>&#160;</td>
+          <td class="paramname"><em>z_ini</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a>&#160;</td>
+          <td class="paramname"><em>deltaT</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a>&#160;</td>
+          <td class="paramname"><em>fscal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
+          <td class="paramname"><em>ng</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
+          <td class="paramname"><em>nlocal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int3</a>&#160;</td>
+          <td class="paramname"><em>local_grid_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
+          <td class="paramname"><em>world_rank</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
+          <td class="paramname"><em>numBlocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
+          <td class="paramname"><em>blockSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
+          <td class="paramname"><em>calls</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d83/place__particles__initializer_8cu_source.html#l00064">64</a> of file <a class="el" href="../../dc/d83/place__particles__initializer_8cu_source.html">place_particles_initializer.cu</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   64</span>                                                                                                                                                                                                                                                                                                       {</div>
+<div class="line"><span class="lineno">   65</span>    <a class="code hl_define" href="../../d1/dc2/ccamb_8c.html#aede6a850e442b96dd236d1bed8bf19e5">getIndent</a>(<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">calls</a>);</div>
+<div class="line"><span class="lineno">   66</span>    <a class="code hl_define" href="../../da/d0d/haccgpm_8hpp.html#aeb036429c3ef20a1b4d863bf03ff5648">InvokeGPUKernelParallel</a>(<a class="code hl_function" href="../../dc/d83/place__particles__initializer_8cu.html#a2fe476c02dd57a3bf0adeed08604e935">placeParticles</a>,<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">numBlocks</a>,blockSize,d_pos,d_vel,d_x,d_y,d_z,delta,dotDelta,rl,1/(1+z_ini),deltaT,fscal,ng,local_grid_size.x,local_grid_size.y,local_grid_size.z, nlocal, <a class="code hl_variable" href="../../d1/dc2/ccamb_8c.html#a0be0ed3102aab1d72782301d75cf570b">world_rank</a>);</div>
+<div class="line"><span class="lineno">   67</span>}</div>
+<div class="ttc" id="accamb_8c_html_a0be0ed3102aab1d72782301d75cf570b"><div class="ttname"><a href="../../d1/dc2/ccamb_8c.html#a0be0ed3102aab1d72782301d75cf570b">world_rank</a></div><div class="ttdeci">int world_rank</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dc2/ccamb_8c_source.html#l00020">ccamb.c:20</a></div></div>
+<div class="ttc" id="accamb_8c_html_aede6a850e442b96dd236d1bed8bf19e5"><div class="ttname"><a href="../../d1/dc2/ccamb_8c.html#aede6a850e442b96dd236d1bed8bf19e5">getIndent</a></div><div class="ttdeci">#define getIndent(calls)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dc2/ccamb_8c_source.html#l00009">ccamb.c:9</a></div></div>
+<div class="ttc" id="agridexchange_8cpp_html_aee62b8f3ede200a395ed04dc3531efcf"><div class="ttname"><a href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">do_return</a></div><div class="ttdeci">void do_return(float4 *grad, int left_rank, int right_rank, int size, int3 local_grid_size, int3 local_coords, int3 total_grid_dims, int overload, int world_rank, size_t *bytes, CPUTimer_t *mpi_time, int blockSize, int calls)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">gridexchange.cpp:31</a></div></div>
+<div class="ttc" id="ahaccgpm_8hpp_html_aeb036429c3ef20a1b4d863bf03ff5648"><div class="ttname"><a href="../../da/d0d/haccgpm_8hpp.html#aeb036429c3ef20a1b4d863bf03ff5648">InvokeGPUKernelParallel</a></div><div class="ttdeci">#define InvokeGPUKernelParallel(func, numBlocks, blockSize,...)</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00054">haccgpm.hpp:54</a></div></div>
+<div class="ttc" id="aplace__particles__initializer_8cu_html_a2fe476c02dd57a3bf0adeed08604e935"><div class="ttname"><a href="../../dc/d83/place__particles__initializer_8cu.html#a2fe476c02dd57a3bf0adeed08604e935">placeParticles</a></div><div class="ttdeci">__global__ void placeParticles(float4 *__restrict d_pos, float4 *__restrict d_vel, deviceFFT_t *__restrict outSx, deviceFFT_t *__restrict outSy, deviceFFT_t *__restrict outSz, double delta, double dotDelta, double rl, double a, double deltaT, double fscal, int ng)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d83/place__particles__initializer_8cu_source.html#l00003">place_particles_initializer.cu:3</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">do_return()</a>, <a class="el" href="../../d1/dc2/ccamb_8c_source.html#l00009">getIndent</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00054">InvokeGPUKernelParallel</a>, <a class="el" href="../../dc/d83/place__particles__initializer_8cu_source.html#l00003">placeParticles()</a>, and <a class="el" href="../../d1/dc2/ccamb_8c_source.html#l00020">world_rank</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d83/place__particles__initializer_8cu_a15431e797fad40f2c1a5c2c681646b40_cgraph.png" border="0" usemap="#adc/d83/place__particles__initializer_8cu_a15431e797fad40f2c1a5c2c681646b40_cgraph" alt=""/></div>
+<map name="adc/d83/place__particles__initializer_8cu_a15431e797fad40f2c1a5c2c681646b40_cgraph" id="adc/d83/place__particles__initializer_8cu_a15431e797fad40f2c1a5c2c681646b40_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,160,31"/>
+<area shape="rect" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf" title=" " alt="" coords="564,31,640,56"/>
+<area shape="poly" title=" " alt="" coords="160,12,324,10,421,13,516,22,551,28,550,33,516,27,420,19,324,15,160,17"/>
+<area shape="rect" href="../../dc/d83/place__particles__initializer_8cu.html#a2fe476c02dd57a3bf0adeed08604e935" title=" " alt="" coords="208,31,312,56"/>
+<area shape="poly" title=" " alt="" coords="161,26,195,31,194,37,160,32"/>
+<area shape="rect" href="../../da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6" title=" " alt="" coords="688,31,772,56"/>
+<area shape="poly" title=" " alt="" coords="640,49,675,50,674,55,640,54"/>
+<area shape="poly" title=" " alt="" coords="688,37,654,37,654,32,688,32"/>
+<area shape="poly" title=" " alt="" coords="312,41,551,41,551,46,312,46"/>
+<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ad9fb99027bd0e8c4666c28a5b85d419e" title=" " alt="" coords="360,81,516,121"/>
+<area shape="poly" title=" " alt="" coords="300,54,364,74,362,79,299,59"/>
+<area shape="poly" title=" " alt="" coords="494,78,552,58,554,63,496,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ade8d931c1c46e566ed0278dcaa39a294" name="ade8d931c1c46e566ed0278dcaa39a294"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade8d931c1c46e566ed0278dcaa39a294">&#9670;&#160;</a></span>launch_place_particles() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">void</a> launch_place_particles </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *&#160;</td>
+          <td class="paramname"><em>d_pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *&#160;</td>
+          <td class="paramname"><em>d_vel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d0d/haccgpm_8hpp.html#a27d89e2a5f98ab524846b9bac59ebf44">deviceFFT_t</a> *&#160;</td>
+          <td class="paramname"><em>d_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d0d/haccgpm_8hpp.html#a27d89e2a5f98ab524846b9bac59ebf44">deviceFFT_t</a> *&#160;</td>
+          <td class="paramname"><em>d_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d0d/haccgpm_8hpp.html#a27d89e2a5f98ab524846b9bac59ebf44">deviceFFT_t</a> *&#160;</td>
+          <td class="paramname"><em>d_z</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a>&#160;</td>
+          <td class="paramname"><em>delta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a>&#160;</td>
+          <td class="paramname"><em>dotDelta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a>&#160;</td>
+          <td class="paramname"><em>rl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a>&#160;</td>
+          <td class="paramname"><em>z_ini</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a>&#160;</td>
+          <td class="paramname"><em>deltaT</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">double</a>&#160;</td>
+          <td class="paramname"><em>fscal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
+          <td class="paramname"><em>ng</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
+          <td class="paramname"><em>numBlocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
+          <td class="paramname"><em>blockSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
+          <td class="paramname"><em>calls</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d83/place__particles__initializer_8cu_source.html#l00059">59</a> of file <a class="el" href="../../dc/d83/place__particles__initializer_8cu_source.html">place_particles_initializer.cu</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   59</span>                                                                                                                                                                                                                                                     {</div>
+<div class="line"><span class="lineno">   60</span>    <a class="code hl_define" href="../../d1/dc2/ccamb_8c.html#aede6a850e442b96dd236d1bed8bf19e5">getIndent</a>(<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">calls</a>);</div>
+<div class="line"><span class="lineno">   61</span>    <a class="code hl_define" href="../../da/d0d/haccgpm_8hpp.html#a426f47de81eb03392ad93bb0e34433b2">InvokeGPUKernel</a>(<a class="code hl_function" href="../../dc/d83/place__particles__initializer_8cu.html#a2fe476c02dd57a3bf0adeed08604e935">placeParticles</a>,<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">numBlocks</a>,blockSize,d_pos,d_vel,d_x,d_y,d_z,delta,dotDelta,rl,1/(1+z_ini),deltaT,fscal,ng);</div>
+<div class="line"><span class="lineno">   62</span>}</div>
+<div class="ttc" id="ahaccgpm_8hpp_html_a426f47de81eb03392ad93bb0e34433b2"><div class="ttname"><a href="../../da/d0d/haccgpm_8hpp.html#a426f47de81eb03392ad93bb0e34433b2">InvokeGPUKernel</a></div><div class="ttdeci">#define InvokeGPUKernel(func, numBlocks, blockSize,...)</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00053">haccgpm.hpp:53</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">do_return()</a>, <a class="el" href="../../d1/dc2/ccamb_8c_source.html#l00009">getIndent</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00053">InvokeGPUKernel</a>, and <a class="el" href="../../dc/d83/place__particles__initializer_8cu_source.html#l00003">placeParticles()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d5/de2/initializer_8cpp_source.html#l00176">HACCGPM::parallel::GenerateDisplacementIC()</a>, and <a class="el" href="../../d5/de2/initializer_8cpp_source.html#l00064">HACCGPM::serial::GenerateDisplacementIC()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d83/place__particles__initializer_8cu_ade8d931c1c46e566ed0278dcaa39a294_cgraph.png" border="0" usemap="#adc/d83/place__particles__initializer_8cu_ade8d931c1c46e566ed0278dcaa39a294_cgraph" alt=""/></div>
+<map name="adc/d83/place__particles__initializer_8cu_ade8d931c1c46e566ed0278dcaa39a294_cgraph" id="adc/d83/place__particles__initializer_8cu_ade8d931c1c46e566ed0278dcaa39a294_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,160,31"/>
+<area shape="rect" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf" title=" " alt="" coords="564,31,640,56"/>
+<area shape="poly" title=" " alt="" coords="160,12,324,10,421,13,516,22,551,28,550,33,516,27,420,19,324,15,160,17"/>
+<area shape="rect" href="../../dc/d83/place__particles__initializer_8cu.html#a2fe476c02dd57a3bf0adeed08604e935" title=" " alt="" coords="208,31,312,56"/>
+<area shape="poly" title=" " alt="" coords="161,26,195,31,194,37,160,32"/>
+<area shape="rect" href="../../da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6" title=" " alt="" coords="688,31,772,56"/>
+<area shape="poly" title=" " alt="" coords="640,49,675,50,674,55,640,54"/>
+<area shape="poly" title=" " alt="" coords="688,37,654,37,654,32,688,32"/>
+<area shape="poly" title=" " alt="" coords="312,41,551,41,551,46,312,46"/>
+<area shape="rect" href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ad9fb99027bd0e8c4666c28a5b85d419e" title=" " alt="" coords="360,81,516,121"/>
+<area shape="poly" title=" " alt="" coords="300,54,364,74,362,79,299,59"/>
+<area shape="poly" title=" " alt="" coords="494,78,552,58,554,63,496,83"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a2fe476c02dd57a3bf0adeed08604e935" name="a2fe476c02dd57a3bf0adeed08604e935"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2fe476c02dd57a3bf0adeed08604e935">&#9670;&#160;</a></span>placeParticles() <span class="overload">[1/2]</span></h2>
 
@@ -256,15 +548,14 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   27</span>    d_pos[<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a>] = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>;</div>
 <div class="line"><span class="lineno">   28</span>    d_vel[<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a>] = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_vel</a>;</div>
 <div class="line"><span class="lineno">   29</span>}</div>
-<div class="ttc" id="agridexchange_8cpp_html_aee62b8f3ede200a395ed04dc3531efcf"><div class="ttname"><a href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">do_return</a></div><div class="ttdeci">void do_return(float4 *grad, int left_rank, int right_rank, int size, int3 local_grid_size, int3 local_coords, int3 total_grid_dims, int overload, int world_rank, size_t *bytes, CPUTimer_t *mpi_time, int blockSize, int calls)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">gridexchange.cpp:31</a></div></div>
 <div class="ttc" id="ahaccgpm_8hpp_html_a27d89e2a5f98ab524846b9bac59ebf44"><div class="ttname"><a href="../../da/d0d/haccgpm_8hpp.html#a27d89e2a5f98ab524846b9bac59ebf44">deviceFFT_t</a></div><div class="ttdeci">#define deviceFFT_t</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00026">haccgpm.hpp:26</a></div></div>
-<div class="ttc" id="anamespaceHACCGPM_1_1serial_html_ad9fb99027bd0e8c4666c28a5b85d419e"><div class="ttname"><a href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ad9fb99027bd0e8c4666c28a5b85d419e">HACCGPM::serial::get_index</a></div><div class="ttdeci">__device__ __forceinline__ int3 get_index(int idx, int ng)</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00334">haccgpm.hpp:334</a></div></div>
+<div class="ttc" id="anamespaceHACCGPM_1_1serial_html_ad9fb99027bd0e8c4666c28a5b85d419e"><div class="ttname"><a href="../../d5/d07/namespaceHACCGPM_1_1serial.html#ad9fb99027bd0e8c4666c28a5b85d419e">HACCGPM::serial::get_index</a></div><div class="ttdeci">__device__ __forceinline__ int3 get_index(int idx, int ng)</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00354">haccgpm.hpp:354</a></div></div>
 <div class="ttc" id="anamespacecambpy_html_afaaa166a85f018ae912052e45e3fdad5"><div class="ttname"><a href="../../d1/d99/namespacecambpy.html#afaaa166a85f018ae912052e45e3fdad5">cambpy.delta</a></div><div class="ttdeci">delta(a, OmM, OmL)</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d54/cambpy_8py_source.html#l00121">cambpy.py:121</a></div></div>
 <div class="ttc" id="anamespacecambpy_html_afe968ea9d93d332cf69b7ede445f2767"><div class="ttname"><a href="../../d1/d99/namespacecambpy.html#afe968ea9d93d332cf69b7ede445f2767">cambpy.dotDelta</a></div><div class="ttdeci">dotDelta(a, OmM, OmL)</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d54/cambpy_8py_source.html#l00127">cambpy.py:127</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00026">deviceFFT_t</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">do_return()</a>, and <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00334">HACCGPM::serial::get_index()</a>.</p>
+<p class="reference">References <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00026">deviceFFT_t</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">do_return()</a>, and <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00354">HACCGPM::serial::get_index()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d3b/initializer_8cu_source.html#l00306">HACCGPM::parallel::GenerateDisplacementIC()</a>, and <a class="el" href="../../de/d3b/initializer_8cu_source.html#l00119">HACCGPM::serial::GenerateDisplacementIC()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/d83/place__particles__initializer_8cu_source.html#l00064">launch_place_particles()</a>, and <a class="el" href="../../dc/d83/place__particles__initializer_8cu_source.html#l00059">launch_place_particles()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -428,10 +719,9 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   55</span>    d_pos[<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a>] = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_particle</a>;</div>
 <div class="line"><span class="lineno">   56</span>    d_vel[<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a>] = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_vel</a>;</div>
 <div class="line"><span class="lineno">   57</span>}</div>
-<div class="ttc" id="accamb_8c_html_a0be0ed3102aab1d72782301d75cf570b"><div class="ttname"><a href="../../d1/dc2/ccamb_8c.html#a0be0ed3102aab1d72782301d75cf570b">world_rank</a></div><div class="ttdeci">int world_rank</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dc2/ccamb_8c_source.html#l00020">ccamb.c:20</a></div></div>
-<div class="ttc" id="anamespaceHACCGPM_1_1parallel_html_abcddbac52c4da4a8a55b5b9dbb3940ce"><div class="ttname"><a href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#abcddbac52c4da4a8a55b5b9dbb3940ce">HACCGPM::parallel::get_local_index</a></div><div class="ttdeci">__device__ __forceinline__ int3 get_local_index(int idx, int nx, int ny, int nz)</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00254">haccgpm.hpp:254</a></div></div>
+<div class="ttc" id="anamespaceHACCGPM_1_1parallel_html_abcddbac52c4da4a8a55b5b9dbb3940ce"><div class="ttname"><a href="../../d1/d3f/namespaceHACCGPM_1_1parallel.html#abcddbac52c4da4a8a55b5b9dbb3940ce">HACCGPM::parallel::get_local_index</a></div><div class="ttdeci">__device__ __forceinline__ int3 get_local_index(int idx, int nx, int ny, int nz)</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00270">haccgpm.hpp:270</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00026">deviceFFT_t</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">do_return()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00254">HACCGPM::parallel::get_local_index()</a>, and <a class="el" href="../../d1/dc2/ccamb_8c_source.html#l00020">world_rank</a>.</p>
+<p class="reference">References <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00026">deviceFFT_t</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">do_return()</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00270">HACCGPM::parallel::get_local_index()</a>, and <a class="el" href="../../d1/dc2/ccamb_8c_source.html#l00020">world_rank</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -456,7 +746,7 @@ Here is the call graph for this function:</div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_bfc8151ff5c266777ea3036bebb58fa4.html">initial_conditions</a></li><li class="navelem"><a class="el" href="../../dc/d83/place__particles__initializer_8cu.html">place_particles_initializer.cu</a></li>
+    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_bfc8151ff5c266777ea3036bebb58fa4.html">initial_conditions</a></li><li class="navelem"><a class="el" href="../../dir_58da956da9620b13cc6d0672d435fa2f.html">cuda</a></li><li class="navelem"><a class="el" href="../../dc/d83/place__particles__initializer_8cu.html">place_particles_initializer.cu</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

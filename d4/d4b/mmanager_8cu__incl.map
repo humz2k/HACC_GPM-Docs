@@ -1,4 +1,4 @@
-<map id="/home/hqureshi/HACC_GPM/src/simulation/mmanager.cu" name="/home/hqureshi/HACC_GPM/src/simulation/mmanager.cu">
+<map id="/home/hqureshi/HACC_GPM/src/simulation/cuda/mmanager.cu" name="/home/hqureshi/HACC_GPM/src/simulation/cuda/mmanager.cu">
 <area shape="rect" id="Node000001" title=" " alt="" coords="29,5,184,60"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,108,69,133"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,62,58,99,54,96,83,58"/>

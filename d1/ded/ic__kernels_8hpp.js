@@ -1,14 +1,17 @@
 var ic__kernels_8hpp =
 [
-    [ "GenerateRealRandom", "d1/ded/ic__kernels_8hpp.html#ae67a3d4d01f9152ba384d96f64b9b8e1", null ],
-    [ "initRNG", "d1/ded/ic__kernels_8hpp.html#a174a7dfb28cda0d682d3532053a673af", null ],
-    [ "initRNG", "d1/ded/ic__kernels_8hpp.html#a2ca76f977274882899d773edb1d18667", null ],
-    [ "interpolatePowerSpectrum", "d1/ded/ic__kernels_8hpp.html#a7a96b24806d23b22034098d3eb5d7914", null ],
-    [ "interpolatePowerSpectrum", "d1/ded/ic__kernels_8hpp.html#aeed43f80a8f2b7fa0ef0a4972cd57715", null ],
-    [ "placeParticles", "d1/ded/ic__kernels_8hpp.html#a2fe476c02dd57a3bf0adeed08604e935", null ],
-    [ "placeParticles", "d1/ded/ic__kernels_8hpp.html#a62e1420cd08868a7735ed883297a1292", null ],
-    [ "ScaleAmplitudes", "d1/ded/ic__kernels_8hpp.html#a9ad239dc61e5070a3d7e8ad73c20ce07", null ],
-    [ "ScaleFFT", "d1/ded/ic__kernels_8hpp.html#a4c334f39512d626ca379fb303b0e0fa4", null ],
-    [ "transformDensityField", "d1/ded/ic__kernels_8hpp.html#ac29241f3695227eb88a70b902a8b3cdb", null ],
-    [ "transformDensityField", "d1/ded/ic__kernels_8hpp.html#a5ce26ec7487f2a4ea7cd546587c21592", null ]
+    [ "launch_generate_rng", "d1/ded/ic__kernels_8hpp.html#a70ef531f3c53d160d3f2b88c5dc43497", null ],
+    [ "launch_generate_rng", "d1/ded/ic__kernels_8hpp.html#a0f1af931036649967b85e158e087ee82", null ],
+    [ "launch_get_pk", "d1/ded/ic__kernels_8hpp.html#afd1ac83dbdf66265ccca7e053d671d69", null ],
+    [ "launch_get_pk", "d1/ded/ic__kernels_8hpp.html#a09a14835a9fa9c0eea159229368733d4", null ],
+    [ "launch_interpolate_pk", "d1/ded/ic__kernels_8hpp.html#a53fb5db757d6fd9737801a0218b1be80", null ],
+    [ "launch_interpolate_pk", "d1/ded/ic__kernels_8hpp.html#a28f209de7e4c59f91219a23a1f682bb5", null ],
+    [ "launch_place_particles", "d1/ded/ic__kernels_8hpp.html#a15431e797fad40f2c1a5c2c681646b40", null ],
+    [ "launch_place_particles", "d1/ded/ic__kernels_8hpp.html#ade8d931c1c46e566ed0278dcaa39a294", null ],
+    [ "launch_scale_amplitudes", "d1/ded/ic__kernels_8hpp.html#ab9afa8a9de8970443638819006ed0f57", null ],
+    [ "launch_scale_amplitudes", "d1/ded/ic__kernels_8hpp.html#a2553927dcef849690005690ac80686a3", null ],
+    [ "launch_scale_fft", "d1/ded/ic__kernels_8hpp.html#ae2be74614de0a7ebdb724108775313f6", null ],
+    [ "launch_scale_fft", "d1/ded/ic__kernels_8hpp.html#a55acdb670cca38e55e28b705a98a84e7", null ],
+    [ "launch_transform_density_field", "d1/ded/ic__kernels_8hpp.html#a7e98d8559143044d914b94fbaf42f726", null ],
+    [ "launch_transform_density_field", "d1/ded/ic__kernels_8hpp.html#a6ff439b30a3494f8b487701db5dcceca", null ]
 ];

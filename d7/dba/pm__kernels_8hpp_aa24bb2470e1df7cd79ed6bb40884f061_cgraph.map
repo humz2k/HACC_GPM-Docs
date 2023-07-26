@@ -1,0 +1,11 @@
+<map id="launch_updatepos" name="launch_updatepos">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,132,31"/>
+<area shape="rect" id="Node000002" href="$d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf" title=" " alt="" coords="352,5,428,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,15,338,15,338,21,132,21"/>
+<area shape="rect" id="Node000004" href="$d7/dcf/update__positions__pm_8cu.html#aa574c845e54a29eb9a143efa0ed493b2" title=" " alt="" coords="180,31,304,56"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="133,25,167,30,166,35,132,30"/>
+<area shape="rect" id="Node000003" href="$da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6" title=" " alt="" coords="476,5,560,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="428,24,463,24,462,30,428,29"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="476,12,442,12,442,6,476,7"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="304,30,338,24,339,29,305,35"/>
+</map>

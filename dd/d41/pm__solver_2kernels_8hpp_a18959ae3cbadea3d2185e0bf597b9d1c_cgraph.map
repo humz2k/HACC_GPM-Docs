@@ -1,0 +1,11 @@
+<map id="launch_combine" name="launch_combine">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,121,56"/>
+<area shape="rect" id="Node000002" href="$d5/ddc/combine_8cu.html#a71c3109fe66f9f1fcac25bd98c8f486d" title=" " alt="" coords="169,5,240,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,30,155,24,156,29,122,36"/>
+<area shape="rect" id="Node000003" href="$d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf" title=" " alt="" coords="288,31,364,56"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="122,41,274,41,274,46,122,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="241,23,275,30,274,35,240,28"/>
+<area shape="rect" id="Node000004" href="$da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6" title=" " alt="" coords="412,31,496,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="364,49,399,50,398,55,364,54"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="412,37,378,37,378,32,412,32"/>
+</map>

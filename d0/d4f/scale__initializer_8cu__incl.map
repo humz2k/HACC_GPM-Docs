@@ -1,13 +1,9 @@
-<map id="/home/hqureshi/HACC_GPM/src/initial_conditions/scale_initializer.cu" name="/home/hqureshi/HACC_GPM/src/initial_conditions/scale_initializer.cu">
-<area shape="rect" id="Node000001" title=" " alt="" coords="358,5,539,60"/>
-<area shape="rect" id="Node000002" href="$d1/ded/ic__kernels_8hpp.html" title=" " alt="" coords="395,108,502,133"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="451,60,451,94,446,94,446,60"/>
+<map id="/home/hqureshi/HACC_GPM/src/initial_conditions/cuda/scale_initializer.cu" name="/home/hqureshi/HACC_GPM/src/initial_conditions/cuda/scale_initializer.cu">
+<area shape="rect" id="Node000001" title=" " alt="" coords="247,5,429,60"/>
+<area shape="rect" id="Node000002" href="$d1/ded/ic__kernels_8hpp.html" title=" " alt="" coords="279,108,397,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="341,60,341,94,335,94,335,60"/>
 <area shape="rect" id="Node000003" href="$da/d0d/haccgpm_8hpp.html" title=" " alt="" coords="288,181,388,207"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="431,136,370,176,367,171,428,131"/>
-<area shape="rect" id="Node000011" title=" " alt="" coords="413,181,485,207"/>
-<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="451,133,451,167,446,167,446,133"/>
-<area shape="rect" id="Node000012" title=" " alt="" coords="509,181,623,207"/>
-<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="471,131,535,172,533,176,468,136"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="341,133,341,167,335,167,335,133"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="5,255,116,280"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="290,209,123,254,121,249,289,204"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="141,255,199,280"/>

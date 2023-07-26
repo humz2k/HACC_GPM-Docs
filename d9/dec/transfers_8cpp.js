@@ -1,6 +1,5 @@
 var transfers_8cpp =
 [
-    [ "VerboseTransfer", "d9/dec/transfers_8cpp.html#a4022ca93a25a71ab7d34e1f60335c2d3", null ],
     [ "TRANSFER_BYTES", "d9/dec/transfers_8cpp.html#a14b788c3f735a7b27f2e949757f2cf6e", null ],
     [ "TRANSFER_CALLS", "d9/dec/transfers_8cpp.html#a4dc572e7a9c13a695ed78af5920c07a5", null ],
     [ "TRANSFER_GPU_TIME", "d9/dec/transfers_8cpp.html#a786261e6f4b64c51b4aba20b05999f15", null ],

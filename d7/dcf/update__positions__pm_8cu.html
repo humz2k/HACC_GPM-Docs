@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>HACC_GPM: /home/hqureshi/HACC_GPM/src/pm_actions/update_positions_pm.cu File Reference</title>
+<title>HACC_GPM: /home/hqureshi/HACC_GPM/src/pm_actions/cuda/update_positions_pm.cu File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -100,14 +100,14 @@ $(document).ready(function(){initNavTree('d7/dcf/update__positions__pm_8cu.html'
   <div class="headertitle"><div class="title">update_positions_pm.cu File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="../../d7/dba/pm__kernels_8hpp_source.html">pm_kernels.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d7/dba/pm__kernels_8hpp_source.html">../pm_kernels.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for update_positions_pm.cu:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d0/d6f/update__positions__pm_8cu__incl.png" border="0" usemap="#a_2home_2hqureshi_2HACC__GPM_2src_2pm__actions_2update__positions__pm_8cu" alt=""/></div>
-<map name="a_2home_2hqureshi_2HACC__GPM_2src_2pm__actions_2update__positions__pm_8cu" id="a_2home_2hqureshi_2HACC__GPM_2src_2pm__actions_2update__positions__pm_8cu">
-<area shape="rect" title=" " alt="" coords="255,5,421,60"/>
-<area shape="rect" href="../../d7/dba/pm__kernels_8hpp.html" title=" " alt="" coords="281,108,395,133"/>
+<div class="center"><img src="../../d0/d6f/update__positions__pm_8cu__incl.png" border="0" usemap="#a_2home_2hqureshi_2HACC__GPM_2src_2pm__actions_2cuda_2update__positions__pm_8cu" alt=""/></div>
+<map name="a_2home_2hqureshi_2HACC__GPM_2src_2pm__actions_2cuda_2update__positions__pm_8cu" id="a_2home_2hqureshi_2HACC__GPM_2src_2pm__actions_2cuda_2update__positions__pm_8cu">
+<area shape="rect" title=" " alt="" coords="239,5,437,60"/>
+<area shape="rect" href="../../d7/dba/pm__kernels_8hpp.html" title=" " alt="" coords="275,108,401,133"/>
 <area shape="poly" title=" " alt="" coords="341,60,341,94,335,94,335,60"/>
 <area shape="rect" href="../../da/d0d/haccgpm_8hpp.html" title=" " alt="" coords="288,181,388,207"/>
 <area shape="poly" title=" " alt="" coords="341,133,341,167,335,167,335,133"/>
@@ -134,10 +134,218 @@ Include dependency graph for update_positions_pm.cu:</div>
 Functions</h2></td></tr>
 <tr class="memitem:aa574c845e54a29eb9a143efa0ed493b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__global__</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dcf/update__positions__pm_8cu.html#aa574c845e54a29eb9a143efa0ed493b2">UpdatePosKernel</a> (<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a> d_pos, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">const</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a> d_vel, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">prefactor</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float</a> ng)</td></tr>
 <tr class="separator:aa574c845e54a29eb9a143efa0ed493b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8720537a98a2aa1596be8d30fd71efa9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__global__</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dcf/update__positions__pm_8cu.html#a8720537a98a2aa1596be8d30fd71efa9">UpdatePosKernelParallel</a> (<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a> d_pos, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">const</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a> d_vel, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">prefactor</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">n</a>)</td></tr>
-<tr class="separator:a8720537a98a2aa1596be8d30fd71efa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38022b79e2a7a19fd726880021a51e55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__global__</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dcf/update__positions__pm_8cu.html#a38022b79e2a7a19fd726880021a51e55">UpdatePosKernelParallel</a> (<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a> d_pos, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">const</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__restrict</a> d_vel, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">prefactor</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">n</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">do_refresh</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int3</a> local_grid_size, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> overload)</td></tr>
+<tr class="separator:a38022b79e2a7a19fd726880021a51e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa24bb2470e1df7cd79ed6bb40884f061"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d0d/haccgpm_8hpp.html#aa790b6767cf9152c32b179d29c46e3ef">CPUTimer_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dcf/update__positions__pm_8cu.html#aa24bb2470e1df7cd79ed6bb40884f061">launch_updatepos</a> (<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *d_pos, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *d_vel, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">prefactor</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> ng, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">numBlocks</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> blockSize, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">calls</a>)</td></tr>
+<tr class="separator:aa24bb2470e1df7cd79ed6bb40884f061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9daa9c770102571960ce823db6e96ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d0d/haccgpm_8hpp.html#aa790b6767cf9152c32b179d29c46e3ef">CPUTimer_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dcf/update__positions__pm_8cu.html#ad9daa9c770102571960ce823db6e96ed">launch_updatepos</a> (<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *d_pos, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *d_vel, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">prefactor</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> n_particles, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int3</a> local_grid_size, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> overload, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> *<a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">h_do_refresh</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> <a class="el" href="../../d1/dc2/ccamb_8c.html#a0be0ed3102aab1d72782301d75cf570b">world_rank</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">numBlocks</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> blockSize, <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> <a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">calls</a>)</td></tr>
+<tr class="separator:ad9daa9c770102571960ce823db6e96ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ad9daa9c770102571960ce823db6e96ed" name="ad9daa9c770102571960ce823db6e96ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9daa9c770102571960ce823db6e96ed">&#9670;&#160;</a></span>launch_updatepos() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d0d/haccgpm_8hpp.html#aa790b6767cf9152c32b179d29c46e3ef">CPUTimer_t</a> launch_updatepos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *&#160;</td>
+          <td class="paramname"><em>d_pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *&#160;</td>
+          <td class="paramname"><em>d_vel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float</a>&#160;</td>
+          <td class="paramname"><em>prefactor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
+          <td class="paramname"><em>n_particles</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int3</a>&#160;</td>
+          <td class="paramname"><em>local_grid_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
+          <td class="paramname"><em>overload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> *&#160;</td>
+          <td class="paramname"><em>h_do_refresh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
+          <td class="paramname"><em>world_rank</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
+          <td class="paramname"><em>numBlocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
+          <td class="paramname"><em>blockSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
+          <td class="paramname"><em>calls</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/dcf/update__positions__pm_8cu_source.html#l00046">46</a> of file <a class="el" href="../../d7/dcf/update__positions__pm_8cu_source.html">update_positions_pm.cu</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   46</span>                                                                                                                                                                                                           {</div>
+<div class="line"><span class="lineno">   47</span>    <a class="code hl_define" href="../../d1/dc2/ccamb_8c.html#aede6a850e442b96dd236d1bed8bf19e5">getIndent</a>(<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">calls</a>);</div>
+<div class="line"><span class="lineno">   48</span>    <span class="keywordtype">int</span>* <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">do_refresh</a>; <a class="code hl_define" href="../../da/d0d/haccgpm_8hpp.html#a28fb452217abf040d6df7890f94a54b9">cudaCall</a>(<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">cudaMalloc</a>,&amp;<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">do_refresh</a>,<span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
+<div class="line"><span class="lineno">   49</span>    <a class="code hl_define" href="../../da/d0d/haccgpm_8hpp.html#a28fb452217abf040d6df7890f94a54b9">cudaCall</a>(<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">cudaMemset</a>,<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">do_refresh</a>,0,<span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
+<div class="line"><span class="lineno">   50</span>    <a class="code hl_typedef" href="../../da/d0d/haccgpm_8hpp.html#aa790b6767cf9152c32b179d29c46e3ef">CPUTimer_t</a> <a class="code hl_variable" href="../../d3/dc3/namespacegenerate__ipk.html#a29e02f1550c510c49839d6a253ea30cb">out</a> = <a class="code hl_define" href="../../da/d0d/haccgpm_8hpp.html#aeb036429c3ef20a1b4d863bf03ff5648">InvokeGPUKernelParallel</a>(<a class="code hl_function" href="../../d7/dcf/update__positions__pm_8cu.html#a38022b79e2a7a19fd726880021a51e55">UpdatePosKernelParallel</a>,<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">numBlocks</a>,blockSize,d_pos,d_vel,<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">prefactor</a>,n_particles,<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">do_refresh</a>,local_grid_size,overload);</div>
+<div class="line"><span class="lineno">   51</span>    <a class="code hl_define" href="../../da/d0d/haccgpm_8hpp.html#a28fb452217abf040d6df7890f94a54b9">cudaCall</a>(<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">cudaMemcpy</a>,<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">h_do_refresh</a>,<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">do_refresh</a>,<span class="keyword">sizeof</span>(<span class="keywordtype">int</span>),<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">cudaMemcpyDeviceToHost</a>);</div>
+<div class="line"><span class="lineno">   52</span>    <a class="code hl_define" href="../../da/d0d/haccgpm_8hpp.html#a28fb452217abf040d6df7890f94a54b9">cudaCall</a>(<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">cudaFree</a>,<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">do_refresh</a>);</div>
+<div class="line"><span class="lineno">   53</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d3/dc3/namespacegenerate__ipk.html#a29e02f1550c510c49839d6a253ea30cb">out</a>;</div>
+<div class="line"><span class="lineno">   54</span>}</div>
+<div class="ttc" id="accamb_8c_html_aede6a850e442b96dd236d1bed8bf19e5"><div class="ttname"><a href="../../d1/dc2/ccamb_8c.html#aede6a850e442b96dd236d1bed8bf19e5">getIndent</a></div><div class="ttdeci">#define getIndent(calls)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dc2/ccamb_8c_source.html#l00009">ccamb.c:9</a></div></div>
+<div class="ttc" id="agridexchange_8cpp_html_aee62b8f3ede200a395ed04dc3531efcf"><div class="ttname"><a href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">do_return</a></div><div class="ttdeci">void do_return(float4 *grad, int left_rank, int right_rank, int size, int3 local_grid_size, int3 local_coords, int3 total_grid_dims, int overload, int world_rank, size_t *bytes, CPUTimer_t *mpi_time, int blockSize, int calls)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">gridexchange.cpp:31</a></div></div>
+<div class="ttc" id="ahaccgpm_8hpp_html_a28fb452217abf040d6df7890f94a54b9"><div class="ttname"><a href="../../da/d0d/haccgpm_8hpp.html#a28fb452217abf040d6df7890f94a54b9">cudaCall</a></div><div class="ttdeci">#define cudaCall(func,...)</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00042">haccgpm.hpp:42</a></div></div>
+<div class="ttc" id="ahaccgpm_8hpp_html_aa790b6767cf9152c32b179d29c46e3ef"><div class="ttname"><a href="../../da/d0d/haccgpm_8hpp.html#aa790b6767cf9152c32b179d29c46e3ef">CPUTimer_t</a></div><div class="ttdeci">unsigned long long CPUTimer_t</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00017">haccgpm.hpp:17</a></div></div>
+<div class="ttc" id="ahaccgpm_8hpp_html_aeb036429c3ef20a1b4d863bf03ff5648"><div class="ttname"><a href="../../da/d0d/haccgpm_8hpp.html#aeb036429c3ef20a1b4d863bf03ff5648">InvokeGPUKernelParallel</a></div><div class="ttdeci">#define InvokeGPUKernelParallel(func, numBlocks, blockSize,...)</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00054">haccgpm.hpp:54</a></div></div>
+<div class="ttc" id="anamespacegenerate__ipk_html_a29e02f1550c510c49839d6a253ea30cb"><div class="ttname"><a href="../../d3/dc3/namespacegenerate__ipk.html#a29e02f1550c510c49839d6a253ea30cb">generate_ipk.out</a></div><div class="ttdeci">out</div><div class="ttdef"><b>Definition</b> <a href="../../df/d1f/generate__ipk_8py_source.html#l00198">generate_ipk.py:198</a></div></div>
+<div class="ttc" id="aupdate__positions__pm_8cu_html_a38022b79e2a7a19fd726880021a51e55"><div class="ttname"><a href="../../d7/dcf/update__positions__pm_8cu.html#a38022b79e2a7a19fd726880021a51e55">UpdatePosKernelParallel</a></div><div class="ttdeci">__global__ void UpdatePosKernelParallel(float4 *__restrict d_pos, const float4 *__restrict d_vel, float prefactor, int n, int *do_refresh, int3 local_grid_size, int overload)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/dcf/update__positions__pm_8cu_source.html#l00020">update_positions_pm.cu:20</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00042">cudaCall</a>, <a class="el" href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">do_return()</a>, <a class="el" href="../../d1/dc2/ccamb_8c_source.html#l00009">getIndent</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00054">InvokeGPUKernelParallel</a>, and <a class="el" href="../../d7/dcf/update__positions__pm_8cu_source.html#l00020">UpdatePosKernelParallel()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/dcf/update__positions__pm_8cu_ad9daa9c770102571960ce823db6e96ed_cgraph.png" border="0" usemap="#ad7/dcf/update__positions__pm_8cu_ad9daa9c770102571960ce823db6e96ed_cgraph" alt=""/></div>
+<map name="ad7/dcf/update__positions__pm_8cu_ad9daa9c770102571960ce823db6e96ed_cgraph" id="ad7/dcf/update__positions__pm_8cu_ad9daa9c770102571960ce823db6e96ed_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,132,31"/>
+<area shape="rect" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf" title=" " alt="" coords="395,5,471,31"/>
+<area shape="poly" title=" " alt="" coords="132,15,381,15,381,21,132,21"/>
+<area shape="rect" href="../../d7/dcf/update__positions__pm_8cu.html#a38022b79e2a7a19fd726880021a51e55" title=" " alt="" coords="180,31,347,56"/>
+<area shape="poly" title=" " alt="" coords="133,24,167,28,166,33,132,29"/>
+<area shape="rect" href="../../da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6" title=" " alt="" coords="519,5,603,31"/>
+<area shape="poly" title=" " alt="" coords="471,24,505,24,505,30,471,29"/>
+<area shape="poly" title=" " alt="" coords="518,12,484,12,484,6,519,7"/>
+<area shape="poly" title=" " alt="" coords="347,28,381,23,382,28,347,33"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa24bb2470e1df7cd79ed6bb40884f061" name="aa24bb2470e1df7cd79ed6bb40884f061"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa24bb2470e1df7cd79ed6bb40884f061">&#9670;&#160;</a></span>launch_updatepos() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d0d/haccgpm_8hpp.html#aa790b6767cf9152c32b179d29c46e3ef">CPUTimer_t</a> launch_updatepos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *&#160;</td>
+          <td class="paramname"><em>d_pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> *&#160;</td>
+          <td class="paramname"><em>d_vel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float</a>&#160;</td>
+          <td class="paramname"><em>prefactor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
+          <td class="paramname"><em>ng</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
+          <td class="paramname"><em>numBlocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
+          <td class="paramname"><em>blockSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
+          <td class="paramname"><em>calls</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/dcf/update__positions__pm_8cu_source.html#l00041">41</a> of file <a class="el" href="../../d7/dcf/update__positions__pm_8cu_source.html">update_positions_pm.cu</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   41</span>                                                                                                                           {</div>
+<div class="line"><span class="lineno">   42</span>    <a class="code hl_define" href="../../d1/dc2/ccamb_8c.html#aede6a850e442b96dd236d1bed8bf19e5">getIndent</a>(<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">calls</a>);</div>
+<div class="line"><span class="lineno">   43</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="../../da/d0d/haccgpm_8hpp.html#a426f47de81eb03392ad93bb0e34433b2">InvokeGPUKernel</a>(<a class="code hl_function" href="../../d7/dcf/update__positions__pm_8cu.html#aa574c845e54a29eb9a143efa0ed493b2">UpdatePosKernel</a>,<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">numBlocks</a>,blockSize,d_pos,d_vel,<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">prefactor</a>,(<span class="keywordtype">float</span>)ng);</div>
+<div class="line"><span class="lineno">   44</span>}</div>
+<div class="ttc" id="ahaccgpm_8hpp_html_a426f47de81eb03392ad93bb0e34433b2"><div class="ttname"><a href="../../da/d0d/haccgpm_8hpp.html#a426f47de81eb03392ad93bb0e34433b2">InvokeGPUKernel</a></div><div class="ttdeci">#define InvokeGPUKernel(func, numBlocks, blockSize,...)</div><div class="ttdef"><b>Definition</b> <a href="../../da/d0d/haccgpm_8hpp_source.html#l00053">haccgpm.hpp:53</a></div></div>
+<div class="ttc" id="aupdate__positions__pm_8cu_html_aa574c845e54a29eb9a143efa0ed493b2"><div class="ttname"><a href="../../d7/dcf/update__positions__pm_8cu.html#aa574c845e54a29eb9a143efa0ed493b2">UpdatePosKernel</a></div><div class="ttdeci">__global__ void UpdatePosKernel(float4 *__restrict d_pos, const float4 *__restrict d_vel, float prefactor, float ng)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/dcf/update__positions__pm_8cu_source.html#l00003">update_positions_pm.cu:3</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">do_return()</a>, <a class="el" href="../../d1/dc2/ccamb_8c_source.html#l00009">getIndent</a>, <a class="el" href="../../da/d0d/haccgpm_8hpp_source.html#l00053">InvokeGPUKernel</a>, and <a class="el" href="../../d7/dcf/update__positions__pm_8cu_source.html#l00003">UpdatePosKernel()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d42/pm__actions_8cpp_source.html#l00200">HACCGPM::serial::UpdatePositions()</a>, and <a class="el" href="../../d4/d42/pm__actions_8cpp_source.html#l00082">HACCGPM::parallel::UpdatePositions()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/dcf/update__positions__pm_8cu_aa24bb2470e1df7cd79ed6bb40884f061_cgraph.png" border="0" usemap="#ad7/dcf/update__positions__pm_8cu_aa24bb2470e1df7cd79ed6bb40884f061_cgraph" alt=""/></div>
+<map name="ad7/dcf/update__positions__pm_8cu_aa24bb2470e1df7cd79ed6bb40884f061_cgraph" id="ad7/dcf/update__positions__pm_8cu_aa24bb2470e1df7cd79ed6bb40884f061_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,132,31"/>
+<area shape="rect" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf" title=" " alt="" coords="352,5,428,31"/>
+<area shape="poly" title=" " alt="" coords="132,15,338,15,338,21,132,21"/>
+<area shape="rect" href="../../d7/dcf/update__positions__pm_8cu.html#aa574c845e54a29eb9a143efa0ed493b2" title=" " alt="" coords="180,31,304,56"/>
+<area shape="poly" title=" " alt="" coords="133,25,167,30,166,35,132,30"/>
+<area shape="rect" href="../../da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6" title=" " alt="" coords="476,5,560,31"/>
+<area shape="poly" title=" " alt="" coords="428,24,463,24,462,30,428,29"/>
+<area shape="poly" title=" " alt="" coords="476,12,442,12,442,6,476,7"/>
+<area shape="poly" title=" " alt="" coords="304,30,338,24,339,29,305,35"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="aa574c845e54a29eb9a143efa0ed493b2" name="aa574c845e54a29eb9a143efa0ed493b2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa574c845e54a29eb9a143efa0ed493b2">&#9670;&#160;</a></span>UpdatePosKernel()</h2>
 
@@ -193,11 +401,10 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   16</span>    <span class="comment">//}</span></div>
 <div class="line"><span class="lineno">   17</span>    d_pos[<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a>] = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_pos</a>;</div>
 <div class="line"><span class="lineno">   18</span>}</div>
-<div class="ttc" id="agridexchange_8cpp_html_aee62b8f3ede200a395ed04dc3531efcf"><div class="ttname"><a href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">do_return</a></div><div class="ttdeci">void do_return(float4 *grad, int left_rank, int right_rank, int size, int3 local_grid_size, int3 local_coords, int3 total_grid_dims, int overload, int world_rank, size_t *bytes, CPUTimer_t *mpi_time, int blockSize, int calls)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">gridexchange.cpp:31</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">do_return()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/df6/pm__actions_8cu_source.html#l00167">HACCGPM::serial::UpdatePositions()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/dcf/update__positions__pm_8cu_source.html#l00041">launch_updatepos()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -214,8 +421,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a8720537a98a2aa1596be8d30fd71efa9" name="a8720537a98a2aa1596be8d30fd71efa9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8720537a98a2aa1596be8d30fd71efa9">&#9670;&#160;</a></span>UpdatePosKernelParallel()</h2>
+<a id="a38022b79e2a7a19fd726880021a51e55" name="a38022b79e2a7a19fd726880021a51e55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38022b79e2a7a19fd726880021a51e55">&#9670;&#160;</a></span>UpdatePosKernelParallel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -242,7 +449,25 @@ Here is the call graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
-          <td class="paramname"><em>n</em>&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a> *&#160;</td>
+          <td class="paramname"><em>do_refresh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int3</a>&#160;</td>
+          <td class="paramname"><em>local_grid_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">int</a>&#160;</td>
+          <td class="paramname"><em>overload</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -253,7 +478,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d7/dcf/update__positions__pm_8cu_source.html#l00020">20</a> of file <a class="el" href="../../d7/dcf/update__positions__pm_8cu_source.html">update_positions_pm.cu</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   20</span>                                                                                                                         {</div>
+<div class="fragment"><div class="line"><span class="lineno">   20</span>                                                                                                                                                                              {</div>
 <div class="line"><span class="lineno">   21</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a> = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">threadIdx</a>.x+<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">blockDim</a>.x*<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">blockIdx</a>.x;</div>
 <div class="line"><span class="lineno">   22</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a> &gt;= <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">n</a>)<span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">   23</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">float4</a> <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_pos</a> = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">__ldg</a>(&amp;d_pos[<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a>]);</div>
@@ -263,16 +488,25 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   27</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_pos</a>.y += <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_vel</a>.y * <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">prefactor</a>;</div>
 <div class="line"><span class="lineno">   28</span>    <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_pos</a>.z += <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_vel</a>.z * <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">prefactor</a>;</div>
 <div class="line"><span class="lineno">   29</span>    d_pos[<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">idx</a>] = <a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_pos</a>;</div>
-<div class="line"><span class="lineno">   30</span>}</div>
+<div class="line"><span class="lineno">   30</span> </div>
+<div class="line"><span class="lineno">   31</span>    <span class="keywordflow">if</span> ((<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_pos</a>.x &lt; -overload) || </div>
+<div class="line"><span class="lineno">   32</span>        (<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_pos</a>.y &lt; -overload) ||</div>
+<div class="line"><span class="lineno">   33</span>        (<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_pos</a>.z &lt; -overload) ||</div>
+<div class="line"><span class="lineno">   34</span>        (<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_pos</a>.x &gt; (local_grid_size.x - 1) + overload) ||</div>
+<div class="line"><span class="lineno">   35</span>        (<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_pos</a>.y &gt; (local_grid_size.y - 1) + overload) ||</div>
+<div class="line"><span class="lineno">   36</span>        (<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">my_pos</a>.z &gt; (local_grid_size.z - 1) + overload)){</div>
+<div class="line"><span class="lineno">   37</span>        *<a class="code hl_function" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf">do_refresh</a> = 1;</div>
+<div class="line"><span class="lineno">   38</span>    }</div>
+<div class="line"><span class="lineno">   39</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d1/dbf/gridexchange_8cpp_source.html#l00031">do_return()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/df6/pm__actions_8cu_source.html#l00071">HACCGPM::parallel::UpdatePositions()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/dcf/update__positions__pm_8cu_source.html#l00046">launch_updatepos()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d7/dcf/update__positions__pm_8cu_a8720537a98a2aa1596be8d30fd71efa9_cgraph.png" border="0" usemap="#ad7/dcf/update__positions__pm_8cu_a8720537a98a2aa1596be8d30fd71efa9_cgraph" alt=""/></div>
-<map name="ad7/dcf/update__positions__pm_8cu_a8720537a98a2aa1596be8d30fd71efa9_cgraph" id="ad7/dcf/update__positions__pm_8cu_a8720537a98a2aa1596be8d30fd71efa9_cgraph">
+<div class="center"><img src="../../d7/dcf/update__positions__pm_8cu_a38022b79e2a7a19fd726880021a51e55_cgraph.png" border="0" usemap="#ad7/dcf/update__positions__pm_8cu_a38022b79e2a7a19fd726880021a51e55_cgraph" alt=""/></div>
+<map name="ad7/dcf/update__positions__pm_8cu_a38022b79e2a7a19fd726880021a51e55_cgraph" id="ad7/dcf/update__positions__pm_8cu_a38022b79e2a7a19fd726880021a51e55_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,172,31"/>
 <area shape="rect" href="../../d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf" title=" " alt="" coords="220,5,296,31"/>
 <area shape="poly" title=" " alt="" coords="172,15,206,15,206,21,172,21"/>
@@ -289,7 +523,7 @@ Here is the call graph for this function:</div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_687cfde5d1c22650f31ee17392f4aea5.html">pm_actions</a></li><li class="navelem"><a class="el" href="../../d7/dcf/update__positions__pm_8cu.html">update_positions_pm.cu</a></li>
+    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_687cfde5d1c22650f31ee17392f4aea5.html">pm_actions</a></li><li class="navelem"><a class="el" href="../../dir_9cc2adb122f345ab11c801eec0889b88.html">cuda</a></li><li class="navelem"><a class="el" href="../../d7/dcf/update__positions__pm_8cu.html">update_positions_pm.cu</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

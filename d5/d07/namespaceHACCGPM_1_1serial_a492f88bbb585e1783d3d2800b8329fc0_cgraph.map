@@ -1,0 +1,38 @@
+<map id="HACCGPM::serial::SolveGradient" name="HACCGPM::serial::SolveGradient">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,143,225,168"/>
+<area shape="rect" id="Node000002" href="$d5/d07/namespaceHACCGPM_1_1serial.html#af8d988b0ca5106d342dc9591708ff789" title=" " alt="" coords="273,143,487,168"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="226,153,260,153,260,158,226,158"/>
+<area shape="rect" id="Node000004" href="$d1/dbf/gridexchange_8cpp.html#aee62b8f3ede200a395ed04dc3531efcf" title=" " alt="" coords="956,232,1032,257"/>
+<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="133,140,194,107,232,90,273,78,454,33,531,15,604,5,675,4,747,17,824,44,910,90,940,118,964,152,980,187,990,218,985,220,975,189,959,155,936,121,906,95,822,49,746,22,674,10,604,10,532,21,456,38,274,83,234,95,196,112,136,145"/>
+<area shape="rect" id="Node000006" href="$d5/d07/namespaceHACCGPM_1_1serial.html#a33ccdffdab832aa754528e05d4255b7c" title=" " alt="" coords="280,93,480,119"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="183,140,298,119,299,124,184,145"/>
+<area shape="rect" id="Node000007" href="$d5/ddc/combine_8cu.html#a18959ae3cbadea3d2185e0bf597b9d1c" title=" " alt="" coords="554,193,670,219"/>
+<area shape="poly" id="edge10_Node000001_Node000007" title=" " alt="" coords="187,165,274,178,416,191,540,200,540,205,415,197,273,183,186,171"/>
+<area shape="rect" id="Node000009" href="$d5/dc1/kspace__solver_8cu.html#a99abb450008460bdcb9925f5aa71e9d4" title=" " alt="" coords="307,250,453,290"/>
+<area shape="poly" id="edge14_Node000001_Node000009" title=" " alt="" coords="145,166,274,222,321,242,319,247,272,227,143,171"/>
+<area shape="rect" id="Node000003" href="$da/d0d/haccgpm_8hpp.html#a78588985bccaffcba4aa40467d7961d6" title=" " alt="" coords="570,93,654,119"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="439,140,556,115,557,120,440,145"/>
+<area shape="rect" id="Node000005" href="$d4/d83/classPlanManager.html#a42f7d34dc999efd9bb3d2665537101e0" title=" " alt="" coords="535,143,689,168"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="487,153,521,153,521,158,487,158"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="654,107,708,108,773,114,843,127,877,138,909,153,930,167,948,184,976,219,972,222,944,187,927,171,907,158,875,143,842,132,773,119,708,114,654,113"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="988,233,977,210,959,182,935,155,907,134,846,110,782,97,721,93,668,95,667,90,721,88,783,92,848,105,909,129,939,151,963,179,981,207,993,231"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="480,103,556,103,556,109,480,109"/>
+<area shape="poly" id="edge9_Node000006_Node000005" title=" " alt="" coords="440,116,539,137,538,142,439,121"/>
+<area shape="poly" id="edge13_Node000007_Node000004" title=" " alt="" coords="670,209,943,237,942,242,670,214"/>
+<area shape="rect" id="Node000008" href="$d5/ddc/combine_8cu.html#a71c3109fe66f9f1fcac25bd98c8f486d" title=" " alt="" coords="787,156,858,181"/>
+<area shape="poly" id="edge11_Node000007_Node000008" title=" " alt="" coords="670,193,773,175,774,180,671,198"/>
+<area shape="poly" id="edge12_Node000008_Node000004" title=" " alt="" coords="859,178,909,198,960,223,958,228,907,203,857,183"/>
+<area shape="poly" id="edge15_Node000009_Node000004" title=" " alt="" coords="453,264,942,244,942,249,454,270"/>
+<area shape="rect" id="Node000010" href="$d5/dc1/kspace__solver_8cu.html#a2a09f5b82d8b136faf1a7f16078d832c" title=" " alt="" coords="535,365,689,391"/>
+<area shape="poly" id="edge16_Node000009_Node000010" title=" " alt="" coords="424,288,573,357,571,362,422,292"/>
+<area shape="poly" id="edge17_Node000010_Node000004" title=" " alt="" coords="627,388,674,426,705,444,738,458,787,473,827,482,864,479,907,458,928,440,945,418,970,366,984,314,990,270,995,271,989,315,975,368,950,421,932,444,909,463,866,484,826,487,785,478,736,463,702,449,671,430,624,393"/>
+<area shape="rect" id="Node000011" href="$d5/dc1/kspace__solver_8cu.html#a1f0dcdf9546948280cdbc0f9a95fdb8a" title=" " alt="" coords="776,308,869,333"/>
+<area shape="poly" id="edge18_Node000010_Node000011" title=" " alt="" coords="658,363,762,334,764,339,659,368"/>
+<area shape="rect" id="Node000012" href="$d5/d07/namespaceHACCGPM_1_1serial.html#ad9fb99027bd0e8c4666c28a5b85d419e" title=" " alt="" coords="745,358,901,398"/>
+<area shape="poly" id="edge20_Node000010_Node000012" title=" " alt="" coords="690,375,731,375,731,381,690,381"/>
+<area shape="rect" id="Node000013" href="$d5/d1c/namespaceHACCGPM.html#acccb2a9f88cb15d894d9b865b991ef8d" title=" " alt="" coords="737,423,908,448"/>
+<area shape="poly" id="edge22_Node000010_Node000013" title=" " alt="" coords="659,388,764,416,762,422,658,393"/>
+<area shape="poly" id="edge19_Node000011_Node000004" title=" " alt="" coords="859,305,907,286,958,261,960,266,909,291,861,310"/>
+<area shape="poly" id="edge21_Node000012_Node000004" title=" " alt="" coords="886,355,906,344,947,306,977,267,981,270,951,310,910,348,889,360"/>
+<area shape="poly" id="edge23_Node000013_Node000004" title=" " alt="" coords="885,420,906,408,936,376,958,339,974,302,985,270,990,272,979,304,963,341,940,379,910,412,888,425"/>
+</map>

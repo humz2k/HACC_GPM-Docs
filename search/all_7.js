@@ -8,6 +8,8 @@ var searchData=
   ['haccgpm_2ehpp_5',['haccgpm.hpp',['../da/d0d/haccgpm_8hpp.html',1,'']]],
   ['header_6',['header',['../d3/dc3/namespacegenerate__ipk.html#a4cd3dd009b62e91a7d9bed5b90c49baf',1,'generate_ipk']]],
   ['hostfft_5ft_7',['hostFFT_t',['../da/d0d/haccgpm_8hpp.html#a2f67acc29a084b658dd371975fb27bd8',1,'hostFFT_t:&#160;haccgpm.hpp'],['../da/d0d/haccgpm_8hpp.html#a2f67acc29a084b658dd371975fb27bd8',1,'hostFFT_t:&#160;haccgpm.hpp']]],
-  ['parallel_8',['parallel',['../d1/d3f/namespaceHACCGPM_1_1parallel.html',1,'HACCGPM']]],
-  ['serial_9',['serial',['../d5/d07/namespaceHACCGPM_1_1serial.html',1,'HACCGPM']]]
+  ['hostfree_8',['HostFree',['../da/d0d/haccgpm_8hpp.html#a46ec1b723c37f9184d678033aee0489d',1,'haccgpm.hpp']]],
+  ['hostmalloc_9',['HostMalloc',['../da/d0d/haccgpm_8hpp.html#a64ec0db632fb926965011cb9ea5c2076',1,'haccgpm.hpp']]],
+  ['parallel_10',['parallel',['../d1/d3f/namespaceHACCGPM_1_1parallel.html',1,'HACCGPM']]],
+  ['serial_11',['serial',['../d5/d07/namespaceHACCGPM_1_1serial.html',1,'HACCGPM']]]
 ];
